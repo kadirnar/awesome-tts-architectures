@@ -1,0 +1,941 @@
+{
+  "schema_version": 1,
+  "models": {
+    "bark": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/bark.svg",
+      "source_url": "https://github.com/suno-ai/bark",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "base-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/base-tts.png",
+      "source_url": "https://arxiv.org/abs/2402.08093",
+      "origin_url": "https://arxiv.org/html/2402.08093v2/figures/gpt.png",
+      "locator": "Figure 1",
+      "sha256": "f686dfa579a9f36372277c3d0201dca536ae0a3c84efd2b62f863fd2adc8e552"
+    },
+    "chatterbox": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/chatterbox.svg",
+      "source_url": "https://github.com/resemble-ai/chatterbox",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "chattts": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/chattts.svg",
+      "source_url": "https://github.com/2noise/ChatTTS",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "clam-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/clam-tts.png",
+      "source_url": "https://arxiv.org/abs/2404.02781",
+      "origin_url": "https://arxiv.org/html/2404.02781v1/Fig1_overview_R4.png",
+      "locator": "Figure 1",
+      "sha256": "171c285f64d3ed0e16a7327eda80ca52d684b1632fa45ca60dcdb4f3f3b6d39c"
+    },
+    "cosyvoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cosyvoice.png",
+      "source_url": "https://arxiv.org/abs/2407.05407",
+      "origin_url": "https://arxiv.org/html/2407.05407v2/overview2.svg",
+      "locator": "Figure 1",
+      "sha256": "363c28dc7d28629fb9f2da47a843fd48e40de8bc7c7bc1a90398325703f5bd0f"
+    },
+    "cosyvoice-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cosyvoice-2.png",
+      "source_url": "https://arxiv.org/abs/2412.10117",
+      "origin_url": "https://arxiv.org/html/2412.10117v3/CosyVoice2-overview.png",
+      "locator": "Figure 1",
+      "sha256": "963637ac577d0e2739d370598af5babea34f54ba3d38736f6b40e7b4e6db30fe"
+    },
+    "cosyvoice-3": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cosyvoice-3.png",
+      "source_url": "https://arxiv.org/abs/2505.17589",
+      "origin_url": "https://arxiv.org/html/2505.17589v2/overview.svg",
+      "locator": "Figure 2",
+      "sha256": "a287801e5e05858bc157665b3f0b053557c8cc93e7f4564c023b447115e18b87"
+    },
+    "csm": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/csm.svg",
+      "source_url": "https://github.com/sesameailabs/csm",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "dia": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/dia.svg",
+      "source_url": "https://github.com/nari-labs/dia",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "dia2": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/dia2.svg",
+      "source_url": "https://github.com/nari-labs/dia2",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "ella-v": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ella-v.png",
+      "source_url": "https://arxiv.org/abs/2401.07333",
+      "origin_url": "https://arxiv.org/html/2401.07333v1/overall4.svg",
+      "locator": "Figure 1",
+      "sha256": "a87d48fb2751cfaa0897006d05b1dba9229be9288527be4fea6ee7ba72a62ded"
+    },
+    "fireredtts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fireredtts.png",
+      "source_url": "https://arxiv.org/abs/2409.03283",
+      "origin_url": "https://arxiv.org/html/2409.03283v2/image/fireredtts.png",
+      "locator": "Figure 3",
+      "sha256": "c3029824ebd963713a8ac247acf1ef2cada22e97066e623e86cdf0f8973df102"
+    },
+    "fireredtts-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fireredtts-2.png",
+      "source_url": "https://arxiv.org/abs/2509.02020",
+      "origin_url": "https://arxiv.org/html/2509.02020v2/image/tts_model_framework.png",
+      "locator": "Figure 1",
+      "sha256": "e87b4985379a791a35d3ce64b3a3988d70cfe19b55062ccaad04727cac4178c5"
+    },
+    "openaudio-s1": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/openaudio-s1.svg",
+      "source_url": "https://huggingface.co/fishaudio/s1-mini",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "fish-audio-s2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fish-audio-s2.png",
+      "source_url": "https://arxiv.org/abs/2603.08823",
+      "origin_url": "https://arxiv.org/html/2603.08823v2/figures/fish_audio_s2_arch_v16.png",
+      "locator": "Figure 2",
+      "sha256": "98254426d8f9a4d9e6e80b56b6a086ee12bacacd1c7de40717ba9584baf5b532"
+    },
+    "fish-speech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fish-speech.png",
+      "source_url": "https://arxiv.org/abs/2411.01156",
+      "origin_url": "https://arxiv.org/html/2411.01156v2/DualAR2_0.png",
+      "locator": "Figure 2",
+      "sha256": "d19ffcc8f5b0d6389972342976dfc8d816845f03636d6c82b8c55c5fac923add"
+    },
+    "gemini-2-5-tts": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/gemini-2-5-tts.svg",
+      "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-preview-tts",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "gemini-3-1-flash-tts": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/gemini-3-1-flash-tts.svg",
+      "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-tts-preview",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "glm-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/glm-tts.png",
+      "source_url": "https://arxiv.org/abs/2512.14291",
+      "origin_url": "https://arxiv.org/html/2512.14291v1/architecture.png",
+      "locator": "Figure 1",
+      "sha256": "d7b9b14725bc499325ac615eb8ac414a1ec4c39d97b41ec7aeacc3971d342f4a"
+    },
+    "gpt-4o-mini-tts": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/gpt-4o-mini-tts.svg",
+      "source_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini-tts",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "gpt-sovits": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/gpt-sovits.svg",
+      "source_url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "higgs-audio-v2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/higgs-audio-v2.png",
+      "source_url": "https://huggingface.co/bosonai/higgs-audio-v2-generation-3B-base",
+      "origin_url": "https://huggingface.co/bosonai/higgs-audio-v2-generation-3B-base/resolve/main/higgs_audio_v2_architecture_combined.png",
+      "locator": "Official architecture diagram",
+      "sha256": "e51631c9b3c3852c7000ad60ce0910208cc166d67bc80f78f842875955ccf2f9"
+    },
+    "higgs-audio-v2-5": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/higgs-audio-v2-5.svg",
+      "source_url": "https://www.boson.ai/blog/higgs-audio-v2.5",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "higgs-audio-v3-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/higgs-audio-v3-tts.png",
+      "source_url": "https://huggingface.co/bosonai/higgs-tts-3-4b",
+      "origin_url": "https://huggingface.co/bosonai/higgs-tts-3-4b/resolve/main/assets/model_architecture.png",
+      "locator": "Official architecture diagram",
+      "sha256": "fc95ec283388b684c02d3e0d9c7cfc8d939d62ee83d5918bf303cbef65f85faf"
+    },
+    "hume-octave-tts": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/hume-octave-tts.svg",
+      "source_url": "https://dev.hume.ai/docs/text-to-speech-tts/overview",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "indextts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/indextts.png",
+      "source_url": "https://arxiv.org/abs/2502.05512",
+      "origin_url": "https://arxiv.org/html/2502.05512v1/indexTTS3.drawio.svg",
+      "locator": "Figure 1",
+      "sha256": "4ee4e4b584a519062f948431b28cd32b6f805972e96aef51c1591e75cf2f7d75"
+    },
+    "indextts-2-5": {
+      "kind": "source-figure",
+      "path": "assets/architectures/indextts-2-5.png",
+      "source_url": "https://arxiv.org/abs/2601.03888",
+      "origin_url": "https://arxiv.org/html/2601.03888v5/tree1.png",
+      "locator": "Figure 1",
+      "sha256": "2981b521c5023d1f62451ccb4eb225369f338d42f6a714ce0a8e4600db4b028f"
+    },
+    "indextts2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/indextts2.png",
+      "source_url": "https://arxiv.org/abs/2506.21619",
+      "origin_url": "https://arxiv.org/html/2506.21619v2/indextts2-drawio.png",
+      "locator": "Figure 1",
+      "sha256": "5f26f337c2bc67d5ef9a420d37bf5c694f82c9953a30eaed58c01259c46b02f9"
+    },
+    "kyutai-tts-dsm": {
+      "kind": "source-figure",
+      "path": "assets/architectures/kyutai-tts-dsm.png",
+      "source_url": "https://arxiv.org/abs/2509.08753",
+      "origin_url": "https://arxiv.org/html/2509.08753v2/Figure_time_delay-3_cropped.svg",
+      "locator": "Figure 1",
+      "sha256": "0cc8203482da1dad8a6fd2bb1fa6389eb44ae22f8f3c01187f11e71425e3bd15"
+    },
+    "llasa": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/llasa.svg",
+      "source_url": "https://arxiv.org/abs/2502.04128",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "llasa-plus": {
+      "kind": "source-figure",
+      "path": "assets/architectures/llasa-plus.png",
+      "source_url": "https://arxiv.org/abs/2508.06262",
+      "origin_url": "https://arxiv.org/html/2508.06262v1/llasa+.png",
+      "locator": "Figure 1",
+      "sha256": "fe5d9ee0f5299fc8a4281c7aa12a2102a520ff04e44bd9d653b8e03585cdd99e"
+    },
+    "maskgct": {
+      "kind": "source-figure",
+      "path": "assets/architectures/maskgct.png",
+      "source_url": "https://arxiv.org/abs/2409.00750",
+      "origin_url": "https://arxiv.org/html/2409.00750v3/x1.png",
+      "locator": "Figure 1",
+      "sha256": "73c061adedcaae12328f458cb508daf7b13ce248ff4e1e10cb45d183c0089c26"
+    },
+    "mega-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mega-tts.png",
+      "source_url": "https://arxiv.org/abs/2306.03509",
+      "origin_url": "https://arxiv.org/html/2306.03509v1/MegaTTS.png",
+      "locator": "Figure 1",
+      "sha256": "260119ae6b244dd7ecf6161e0ae3f3b9bd4153045f6e071f5dad62e7c8f119fc"
+    },
+    "mega-tts-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mega-tts-2.png",
+      "source_url": "https://arxiv.org/abs/2307.07218",
+      "origin_url": "https://arxiv.org/html/2307.07218v4/Main_Arch.png",
+      "locator": "Figure 1",
+      "sha256": "a0b11e0e5d9c5bc7feb47c3e73f81b06670be1d832ee92775215670d40d2fe15"
+    },
+    "minimax-speech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/minimax-speech.png",
+      "source_url": "https://arxiv.org/abs/2505.07916",
+      "origin_url": "https://arxiv.org/html/2505.07916v1/overview.svg",
+      "locator": "Figure 1",
+      "sha256": "bc7c95db53c1fb81cefca8a05bbc75e282a5543deddb6191a60fcb4cd931bcf4"
+    },
+    "moss-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/moss-tts.png",
+      "source_url": "https://arxiv.org/abs/2603.18090",
+      "origin_url": "https://arxiv.org/pdf/2603.18090",
+      "locator": "Figure 2, PDF p. 8",
+      "sha256": "477a6a8892fc7d33eac25586c41018e9f274769a62b3a45c28153b5544a7e769"
+    },
+    "moss-tts-nano": {
+      "kind": "source-figure",
+      "path": "assets/architectures/moss-tts-nano.png",
+      "source_url": "https://github.com/OpenMOSS/MOSS-TTS",
+      "origin_url": "https://raw.githubusercontent.com/OpenMOSS/MOSS-TTS/main/assets/arch_moss_tts_nano.png",
+      "locator": "Official architecture diagram",
+      "sha256": "e15e4330ed8df7f144437359115c229cf422411e94dbbd6f0928bf1f909955c7"
+    },
+    "moss-tts-realtime": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/moss-tts-realtime.svg",
+      "source_url": "https://github.com/OpenMOSS/MOSS-TTS",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "moss-ttsd": {
+      "kind": "source-figure",
+      "path": "assets/architectures/moss-ttsd.png",
+      "source_url": "https://arxiv.org/abs/2603.19739",
+      "origin_url": "https://arxiv.org/pdf/2603.19739",
+      "locator": "Figure 2, PDF p. 4",
+      "sha256": "a97fe22a97397a076f5f8f555759df197ef1e3d61093dd97366441e0a0715bf0"
+    },
+    "moss-voicegenerator": {
+      "kind": "source-figure",
+      "path": "assets/architectures/moss-voicegenerator.png",
+      "source_url": "https://arxiv.org/abs/2603.28086",
+      "origin_url": "https://arxiv.org/html/2603.28086v1/its-modelarchv2.png",
+      "locator": "Figure 1",
+      "sha256": "7c49aba12e120fe165769c654bd2ca0cdd3021c894116876f3ff296da2c86e41"
+    },
+    "omnivoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/omnivoice.png",
+      "source_url": "https://arxiv.org/abs/2604.00688",
+      "origin_url": "https://arxiv.org/html/2604.00688v3/architecture.svg",
+      "locator": "Figure 1",
+      "sha256": "7b3ab671bac467d736b0893aa6dddb715e8f0bf3dadb16d68f573eebfad59940"
+    },
+    "orpheus-tts": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/orpheus-tts.svg",
+      "source_url": "https://github.com/canopyai/Orpheus-TTS",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "outetts": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/outetts.svg",
+      "source_url": "https://github.com/edwko/OuteTTS",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "parler-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/parler-tts.png",
+      "source_url": "https://arxiv.org/abs/2402.01912",
+      "origin_url": "https://arxiv.org/html/2402.01912v1/architecture_v3.png",
+      "locator": "Figure 1",
+      "sha256": "a9ca5174fd0f4005725d816a75bb34979e47df032634287175bda0b75162a54f"
+    },
+    "pocket-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/pocket-tts.png",
+      "source_url": "https://arxiv.org/abs/2509.06926",
+      "origin_url": "https://arxiv.org/html/2509.06926v3/fig1.png",
+      "locator": "Figure 1",
+      "sha256": "8e2c55b3a8ea4b9a9082e8302675862edb46580aed7e8e9406e6432a47613420"
+    },
+    "qwen3-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/qwen3-tts.png",
+      "source_url": "https://arxiv.org/abs/2601.15621",
+      "origin_url": "https://arxiv.org/html/2601.15621v1/figures/Qwen3TTS_1104.png",
+      "locator": "Figure 3",
+      "sha256": "d7372e583e5fb7b11d63dcaae39415ca3b1137e50da3be5ce297b539f3bdc046"
+    },
+    "rall-e": {
+      "kind": "source-figure",
+      "path": "assets/architectures/rall-e.png",
+      "source_url": "https://arxiv.org/abs/2404.03204",
+      "origin_url": "https://arxiv.org/html/2404.03204v3/overview.png",
+      "locator": "Figure 1",
+      "sha256": "0edcc5b685b545d66ecfeb245819c8843dd775c07b2e3cff02f7ab981aaeea29"
+    },
+    "seed-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/seed-tts.png",
+      "source_url": "https://arxiv.org/abs/2406.02430",
+      "origin_url": "https://arxiv.org/html/2406.02430v1/seedtts-cpd-p1.svg",
+      "locator": "Figure 1",
+      "sha256": "d7c392ae3b2b0e074b2cc05ea33ef29b3a7d19f755541877e303623f6461524f"
+    },
+    "spark-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/spark-tts.png",
+      "source_url": "https://arxiv.org/abs/2503.01710",
+      "origin_url": "https://arxiv.org/html/2503.01710v1/spark-tts-lm.svg",
+      "locator": "Figure 3",
+      "sha256": "9977a45e812e2eaf324ac18d7d267666eaf67b61c8cb21168e0f14547f22f518"
+    },
+    "spear-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/spear-tts.png",
+      "source_url": "https://arxiv.org/abs/2302.03540",
+      "origin_url": "https://arxiv.org/html/2302.03540v1/arch_v2.png",
+      "locator": "Figure 1",
+      "sha256": "997242768c2005e2aacc2532fe9be6d4b20e8689d86ee8e198e76e3e7e57fac9"
+    },
+    "speecht5": {
+      "kind": "source-figure",
+      "path": "assets/architectures/speecht5.png",
+      "source_url": "https://arxiv.org/abs/2110.07205",
+      "origin_url": "https://arxiv.org/html/2110.07205v3/architecture-cb-v2.jpg",
+      "locator": "Figure 2",
+      "sha256": "dc042614f45c54916b058c063e48110cc448320a456b9d94fc22e90e4adab8bf"
+    },
+    "speechx": {
+      "kind": "source-figure",
+      "path": "assets/architectures/speechx.png",
+      "source_url": "https://arxiv.org/abs/2308.06873",
+      "origin_url": "https://arxiv.org/html/2308.06873v2/overview-v5.png",
+      "locator": "Figure 1",
+      "sha256": "4c1213ce9852f5c7f3a64fd35c694d1db4a5350e5f576b7a685a8ddb46379686"
+    },
+    "step-audio-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/step-audio-tts.png",
+      "source_url": "https://arxiv.org/abs/2502.11946",
+      "origin_url": "https://arxiv.org/html/2502.11946v2/stepAudio-20250217-ff.png",
+      "locator": "Figure 2",
+      "sha256": "76ac0f53f1ca2a4017aa177ca447465ac9a9801ebdadd0c7b5714e8618a6bc2c"
+    },
+    "tortoise-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/tortoise-tts.png",
+      "source_url": "https://arxiv.org/abs/2305.07243",
+      "origin_url": "https://arxiv.org/html/2305.07243v2/figures/tortoise_diagram.png",
+      "locator": "Figure 1",
+      "sha256": "21cb63756c4183888d5a9679eab475ab33f576e3ab1b6f11558d5a1986838ac4"
+    },
+    "vall-e": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vall-e.png",
+      "source_url": "https://arxiv.org/abs/2301.02111",
+      "origin_url": "https://arxiv.org/html/2301.02111v1/prompt.jpg",
+      "locator": "Figure 1",
+      "sha256": "eb52cc2cf99467aff0125af9acfb35ea07d53bce1a5575496ee846672dfdc5d3"
+    },
+    "vall-e-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vall-e-2.png",
+      "source_url": "https://arxiv.org/abs/2406.05370",
+      "origin_url": "https://arxiv.org/html/2406.05370v2/inference.png",
+      "locator": "Figure 3",
+      "sha256": "6f4e377a089fce336fbb2679625b49a58ed859f740d965d81b5e58f47b202b67"
+    },
+    "vall-e-x": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vall-e-x.png",
+      "source_url": "https://arxiv.org/abs/2303.03926",
+      "origin_url": "https://arxiv.org/html/2303.03926v1/vallex_framework.svg",
+      "locator": "Figure 1",
+      "sha256": "0d54fb04eae3afcba38e42c28ed985ae8860ab662b32628cbd39310de844c51d"
+    },
+    "vall-t": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vall-t.png",
+      "source_url": "https://arxiv.org/abs/2401.14321",
+      "origin_url": "https://arxiv.org/html/2401.14321v5/main_figure.png",
+      "locator": "Figure 1",
+      "sha256": "782eb0c580382a4060e71a472b618e698301a7f6dc3a5d2a2dc87ac838411c5c"
+    },
+    "vibevoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vibevoice.png",
+      "source_url": "https://arxiv.org/abs/2508.19205",
+      "origin_url": "https://arxiv.org/html/2508.19205v1/vv_fig1.png",
+      "locator": "Figure 2",
+      "sha256": "a552e51e3e9b43ad4af826d6a77016f69e68e287fa9ae634f908196e028d8e0a"
+    },
+    "vibevoice-realtime": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vibevoice-realtime.png",
+      "source_url": "https://github.com/microsoft/VibeVoice",
+      "origin_url": "https://raw.githubusercontent.com/microsoft/VibeVoice/main/Figures/VibeVoice_Realtime.png",
+      "locator": "Official architecture diagram",
+      "sha256": "2706fbc554cd8ed0b3ad3f22c4f19e30c1d9f5d1070cfd5ad2eac4fe834b8abf"
+    },
+    "voicecraft": {
+      "kind": "source-figure",
+      "path": "assets/architectures/voicecraft.png",
+      "source_url": "https://arxiv.org/abs/2403.16973",
+      "origin_url": "https://arxiv.org/html/2403.16973v3/archi.png",
+      "locator": "Figure 2",
+      "sha256": "9f79b261204d0dff28f9aa7d0159897f978c934ad1de78fa3ff6cd5dceb36d5f"
+    },
+    "voxcpm": {
+      "kind": "source-figure",
+      "path": "assets/architectures/voxcpm.png",
+      "source_url": "https://arxiv.org/abs/2509.24650",
+      "origin_url": "https://arxiv.org/html/2509.24650v1/images/draft_1.png",
+      "locator": "Figure 1",
+      "sha256": "d1fa96d6fec42133cf6ea73593161ae92ee9142c3db9fa5c0f100875c755051f"
+    },
+    "voxcpm2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/voxcpm2.png",
+      "source_url": "https://arxiv.org/abs/2606.06928",
+      "origin_url": "https://arxiv.org/html/2606.06928v1/VoxCPM2-fig.png",
+      "locator": "Figure 1",
+      "sha256": "1ccc8b67bdda21356d00900117db694ba68f7a13969359615f00141277f5dcfd"
+    },
+    "xtts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/xtts.png",
+      "source_url": "https://arxiv.org/abs/2406.04904",
+      "origin_url": "https://arxiv.org/html/2406.04904v1/Images/XTTS.png",
+      "locator": "Figure 1",
+      "sha256": "7a6de71919db10f9a5950041154fceec721124b964b3a6b5eefe42616ea83659"
+    },
+    "zonos": {
+      "kind": "source-figure",
+      "path": "assets/architectures/zonos.png",
+      "source_url": "https://github.com/Zyphra/Zonos",
+      "origin_url": "https://raw.githubusercontent.com/Zyphra/Zonos/main/assets/ArchitectureDiagram.png",
+      "locator": "Official architecture diagram",
+      "sha256": "44b53a55f6eee58cc07a1ecd4d86575549f8957bab2f905f8db0f3c1edb71e6a"
+    },
+    "tacotron": {
+      "kind": "source-figure",
+      "path": "assets/architectures/tacotron.png",
+      "source_url": "https://arxiv.org/abs/1703.10135",
+      "origin_url": "https://arxiv.org/html/1703.10135v2/model.svg",
+      "locator": "Figure 1",
+      "sha256": "fb0a0159f7e008aa0f421c5bb9382a0b04f1d804e3cde942748591597fb78a98"
+    },
+    "tacotron-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/tacotron-2.png",
+      "source_url": "https://arxiv.org/abs/1712.05884",
+      "origin_url": "https://arxiv.org/html/1712.05884v2/TTSArchitecture.png",
+      "locator": "Figure 1",
+      "sha256": "16d3aa6ac6b7a3422c196c5cf5f9d6ebc47aff0e2e05b50c2ab664bce4da49db"
+    },
+    "deep-voice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/deep-voice.png",
+      "source_url": "https://arxiv.org/abs/1702.07825",
+      "origin_url": "https://arxiv.org/html/1702.07825v2/system-diagram.svg",
+      "locator": "Figure 1",
+      "sha256": "673d8e4ee360582d47626d3dc74f20548db977ef90631f9a23dbeded47cbc870"
+    },
+    "deep-voice-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/deep-voice-2.png",
+      "source_url": "https://arxiv.org/abs/1705.08947",
+      "origin_url": "https://arxiv.org/html/1705.08947v2/system_model.svg",
+      "locator": "Figure 1",
+      "sha256": "254b52eda702eed8d34be845fc3513b769d88afeb5029bdc263f9f4642520a3d"
+    },
+    "deep-voice-3": {
+      "kind": "source-figure",
+      "path": "assets/architectures/deep-voice-3.png",
+      "source_url": "https://arxiv.org/abs/1710.07654",
+      "origin_url": "https://arxiv.org/html/1710.07654v3/spectranet_concise.svg",
+      "locator": "Figure 1",
+      "sha256": "902b62ee0efebd6b413733788c4efd588a7db314b3c37ba2333631d6c0445427"
+    },
+    "transformer-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/transformer-tts.png",
+      "source_url": "https://arxiv.org/abs/1809.08895",
+      "origin_url": "https://arxiv.org/html/1809.08895v3/Transtron.jpg",
+      "locator": "Figure 3",
+      "sha256": "04cf4b9cc513ab8822f777dcaf47ab2432a938bafc3b7bdea9d26358df947cdb"
+    },
+    "fastpitch": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fastpitch.png",
+      "source_url": "https://arxiv.org/abs/2006.06873",
+      "origin_url": "https://arxiv.org/html/2006.06873v2/model.svg",
+      "locator": "Figure 1",
+      "sha256": "f55d6131dc63e2420dcee0871091eccf82bc5390f450b70831ba4f64696ed9d1"
+    },
+    "parallel-tacotron": {
+      "kind": "source-figure",
+      "path": "assets/architectures/parallel-tacotron.png",
+      "source_url": "https://arxiv.org/abs/2010.11439",
+      "origin_url": "https://arxiv.org/html/2010.11439v1/PTacoBlock.svg",
+      "locator": "Figure 1",
+      "sha256": "689446ef45b2d2eef7bc51577a65a03d356cd31921242968d707988d06a245c8"
+    },
+    "parallel-tacotron-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/parallel-tacotron-2.png",
+      "source_url": "https://arxiv.org/abs/2103.14574",
+      "origin_url": "https://arxiv.org/html/2103.14574v7/MoreSimplifiedPTacoBlock.svg",
+      "locator": "Figure 1",
+      "sha256": "43a40ae5cc6dbf291c2f48bceedcbc330bcb5f13e74d64ce8fd93aa3f662e13b"
+    },
+    "speedyspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/speedyspeech.png",
+      "source_url": "https://arxiv.org/abs/2008.03802",
+      "origin_url": "https://arxiv.org/html/2008.03802v1/speedy_speech.png",
+      "locator": "Figure 3",
+      "sha256": "547787d1688c9927976d7b129e00868eba11807f8aec9ef6305a51b84c48ac4c"
+    },
+    "flowtron": {
+      "kind": "source-figure",
+      "path": "assets/architectures/flowtron.png",
+      "source_url": "https://arxiv.org/abs/2005.05957",
+      "origin_url": "https://arxiv.org/html/2005.05957v3/images/flowtron.png",
+      "locator": "Figure 1",
+      "sha256": "06ed3872bcdc1ac2ab2e43baa96eda84f70ddf28852ad7128a5032fa5c8d9ef9"
+    },
+    "styletts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/styletts.png",
+      "source_url": "https://arxiv.org/abs/2205.15439",
+      "origin_url": "https://arxiv.org/html/2205.15439v2/Figure1_new_1.svg",
+      "locator": "Figure 1",
+      "sha256": "bab31fec1536eaff9abcef38a1d98e6a75063e7b9e7ab27e15de13efdb73d5f1"
+    },
+    "grad-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/grad-tts.png",
+      "source_url": "https://arxiv.org/abs/2105.06337",
+      "origin_url": "https://arxiv.org/html/2105.06337v2/grad-tts-new.png",
+      "locator": "Figure 2",
+      "sha256": "944739fc185e8dfbb14b239e11d50636e22f25652063dd46933477f06a0eab84"
+    },
+    "diff-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/diff-tts.png",
+      "source_url": "https://arxiv.org/abs/2104.01409",
+      "origin_url": "https://arxiv.org/html/2104.01409v1/final_model.svg",
+      "locator": "Figure 3",
+      "sha256": "478428727a9d636fdd4569e7c6138b5d44ea80d530e2a3056a526799104403c5"
+    },
+    "naturalspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/naturalspeech.png",
+      "source_url": "https://arxiv.org/abs/2205.04421",
+      "origin_url": "https://arxiv.org/html/2205.04421v2/x1.svg",
+      "locator": "Figure 1",
+      "sha256": "f67b99a4f7e06531d9b15962024f4edb60024589497996f3e12a2679f28f933b"
+    },
+    "naturalspeech-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/naturalspeech-2.png",
+      "source_url": "https://arxiv.org/abs/2304.09116",
+      "origin_url": "https://arxiv.org/html/2304.09116v3/x1.svg",
+      "locator": "Figure 1",
+      "sha256": "a27ae0e50785fb4c10813b3860ff8f787cb10f3706fb77c1e595fe869b4ab19b"
+    },
+    "naturalspeech-3": {
+      "kind": "source-figure",
+      "path": "assets/architectures/naturalspeech-3.png",
+      "source_url": "https://arxiv.org/abs/2403.03100",
+      "origin_url": "https://arxiv.org/html/2403.03100v3/fig-ns3-gen-new.svg",
+      "locator": "Figure 3",
+      "sha256": "0970a23f96ca83cdc7cfe3c0adf3612fda5a6fbece77838b62eb96e287087349"
+    },
+    "voicebox": {
+      "kind": "source-figure",
+      "path": "assets/architectures/voicebox.png",
+      "source_url": "https://arxiv.org/abs/2306.15687",
+      "origin_url": "https://arxiv.org/html/2306.15687v2/voicebox_model_diagram.svg",
+      "locator": "Figure 2",
+      "sha256": "0eed6448eb134d9572cb4c07f376364be2ee8a28ae09769b4a8218257f7290a1"
+    },
+    "matcha-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/matcha-tts.png",
+      "source_url": "https://arxiv.org/abs/2309.03199",
+      "origin_url": "https://arxiv.org/html/2309.03199v2/architectural_overview.png",
+      "locator": "Figure 1",
+      "sha256": "269d95efc9b0edbc7430f0d860f826a3913081ab49b26c78af304974df261c9e"
+    },
+    "f5-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/f5-tts.png",
+      "source_url": "https://arxiv.org/abs/2410.06885",
+      "origin_url": "https://arxiv.org/html/2410.06885v3/F5-TTS.png",
+      "locator": "Figure 1",
+      "sha256": "8abcae1a304cf4b781ee4d905f48e1531ffca785f8242d7ac24ba1c09cdc22e0"
+    },
+    "e2-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/e2-tts.png",
+      "source_url": "https://arxiv.org/abs/2406.18009",
+      "origin_url": "https://arxiv.org/html/2406.18009v2/e2tts_main_figure_c.png",
+      "locator": "Figure 1",
+      "sha256": "5969e3bc6bbd5201bce5071d50d51578ce6abbe817dfb3ef2624e2e180e319c7"
+    },
+    "ditto-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ditto-tts.png",
+      "source_url": "https://arxiv.org/abs/2406.11427",
+      "origin_url": "https://arxiv.org/html/2406.11427v2/thisis9.png",
+      "locator": "Figure 1",
+      "sha256": "06bb0b9f5609c27a7829e57f2fef8799d561ca974f1afaec4de86ee2cf382e60"
+    },
+    "mega-tts-3": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mega-tts-3.png",
+      "source_url": "https://arxiv.org/abs/2502.18924",
+      "origin_url": "https://arxiv.org/html/2502.18924v4/Main_Arch.png",
+      "locator": "Figure 1",
+      "sha256": "329aa026a97936fd8c0aedb554bafe14dd7eb65017ce10789259262320aac2fa"
+    },
+    "delightfultts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/delightfultts.png",
+      "source_url": "https://arxiv.org/abs/2110.12612",
+      "origin_url": "https://arxiv.org/html/2110.12612v2/v16.png",
+      "locator": "Figure 1",
+      "sha256": "39e78c47d3758f609b6554393259c3d7944ab900a1e9a99facd96df834966b21"
+    },
+    "gst-tacotron": {
+      "kind": "source-figure",
+      "path": "assets/architectures/gst-tacotron.png",
+      "source_url": "https://arxiv.org/abs/1803.09017",
+      "origin_url": "https://arxiv.org/html/1803.09017v1/st_token_small.svg",
+      "locator": "Figure 1",
+      "sha256": "a33b44021e260343e2830ef575ac1b45b82cb5690508079a0fa2484775d64384"
+    },
+    "wave-tacotron": {
+      "kind": "source-figure",
+      "path": "assets/architectures/wave-tacotron.png",
+      "source_url": "https://arxiv.org/abs/2011.03568",
+      "origin_url": "https://arxiv.org/html/2011.03568v2/2020-09-10-waveform_tacotron_system_diagram-v6-noR.svg",
+      "locator": "Figure 1",
+      "sha256": "4df9b259f0ca7cdf3cbda7d840117c2c3ce82a301edee7bf9381e64bb37d234a"
+    },
+    "prompttts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/prompttts.png",
+      "source_url": "https://arxiv.org/abs/2211.12171",
+      "origin_url": "https://arxiv.org/html/2211.12171v1/model.png",
+      "locator": "Figure 1",
+      "sha256": "0e930fad2904100ebc04a81955e868905950a3224fd2e1be36d7c930fa809a95"
+    },
+    "prompttts-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/prompttts-2.png",
+      "source_url": "https://arxiv.org/abs/2309.02285",
+      "origin_url": "https://arxiv.org/html/2309.02285v2/figs/model.jpg",
+      "locator": "Figure 1",
+      "sha256": "8675e9628674ea2ce8584cf35b63281b4b763406ea831e40572e2556eb87de01"
+    },
+    "fastspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fastspeech.png",
+      "source_url": "https://arxiv.org/abs/1905.09263",
+      "origin_url": "https://arxiv.org/pdf/1905.09263",
+      "locator": "Figure 1, PDF p. 4",
+      "sha256": "91c3248f676b028920036467c3ab3fbd84ba8ef829aa891b19eaf4af4f535f91"
+    },
+    "fastspeech-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fastspeech-2.png",
+      "source_url": "https://arxiv.org/abs/2006.04558",
+      "origin_url": "https://arxiv.org/pdf/2006.04558",
+      "locator": "Figure 1, PDF p. 3",
+      "sha256": "825a663693b22c3b83ee522c8711f83ea994a3a4c66309dbc6ea647ac01e8066"
+    },
+    "glow-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/glow-tts.png",
+      "source_url": "https://arxiv.org/abs/2005.11129",
+      "origin_url": "https://arxiv.org/pdf/2005.11129",
+      "locator": "Figure 1, PDF p. 3",
+      "sha256": "86851cb9d3bc5f4884ca41a79b827dca64914c74b30aca0ea53989ce81f24a40"
+    },
+    "vits": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vits.png",
+      "source_url": "https://arxiv.org/abs/2106.06103",
+      "origin_url": "https://arxiv.org/pdf/2106.06103",
+      "locator": "Figure 1, PDF p. 3",
+      "sha256": "7742958606343abc1a39da628ab3c39f18de73738d1229c2e25bb409929b130d"
+    },
+    "vits-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vits-2.png",
+      "source_url": "https://arxiv.org/abs/2307.16430",
+      "origin_url": "https://arxiv.org/pdf/2307.16430",
+      "locator": "Figure 1, PDF p. 2",
+      "sha256": "05544ac2416678fcc668e0e214355dd485fe11f2b032983715ea137337d96ca1"
+    },
+    "yourtts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/yourtts.png",
+      "source_url": "https://arxiv.org/abs/2112.02418",
+      "origin_url": "https://arxiv.org/pdf/2112.02418",
+      "locator": "Figure 1, PDF p. 3",
+      "sha256": "92503d329b06df7fec26a2c4faeea92cb6d6edb14d7036d4a5f7f9f1b5db8bfe"
+    },
+    "styletts-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/styletts-2.png",
+      "source_url": "https://arxiv.org/abs/2306.07691",
+      "origin_url": "https://arxiv.org/pdf/2306.07691",
+      "locator": "Figure 1, PDF p. 4",
+      "sha256": "85daeeeba6af286bb1f6bd96f302510de2cb295b462a8584eca458410f79aaa5"
+    },
+    "portaspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/portaspeech.png",
+      "source_url": "https://arxiv.org/abs/2109.15166",
+      "origin_url": "https://arxiv.org/pdf/2109.15166",
+      "locator": "Figure 1, PDF p. 4",
+      "sha256": "cd2280e6e0d3cd1204ad2c6fd1f1a4850387a7f1c5c80c4e0d131220a17b4d41"
+    },
+    "jets": {
+      "kind": "source-figure",
+      "path": "assets/architectures/jets.png",
+      "source_url": "https://arxiv.org/abs/2203.16852",
+      "origin_url": "https://arxiv.org/pdf/2203.16852",
+      "locator": "Figure 1, PDF p. 2",
+      "sha256": "5e65ba50a3438ade5594a4a9fc28f436f8bc0fff0a16c4922fec3064c3cfb831"
+    },
+    "lightspeech": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/lightspeech.svg",
+      "source_url": "https://arxiv.org/abs/2102.04040",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "mellotron": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/mellotron.svg",
+      "source_url": "https://arxiv.org/abs/1910.11997",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "kokoro": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/kokoro.svg",
+      "source_url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "kitten-tts": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/kitten-tts.svg",
+      "source_url": "https://github.com/KittenML/KittenTTS",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "melo-tts": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/melo-tts.svg",
+      "source_url": "https://github.com/myshell-ai/MeloTTS",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "piper": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/piper.svg",
+      "source_url": "https://github.com/OHF-Voice/piper1-gpl",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "neutts-air": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/neutts-air.svg",
+      "source_url": "https://github.com/neuphonic/neutts",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "neutts-nano": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/neutts-nano.svg",
+      "source_url": "https://github.com/neuphonic/neutts",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "neutts-2e": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/neutts-2e.svg",
+      "source_url": "https://github.com/neuphonic/neutts",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "whisperspeech": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/whisperspeech.svg",
+      "source_url": "https://github.com/WhisperSpeech/WhisperSpeech",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "emotivoice": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/emotivoice.svg",
+      "source_url": "https://github.com/netease-youdao/EmotiVoice",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "supertonic": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/supertonic.svg",
+      "source_url": "https://huggingface.co/Supertone/supertonic",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "supertonic-2": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/supertonic-2.svg",
+      "source_url": "https://huggingface.co/Supertone/supertonic-2",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    },
+    "supertonic-3": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/supertonic-3.svg",
+      "source_url": "https://huggingface.co/Supertone/supertonic-3",
+      "origin_url": null,
+      "locator": "Input/output diagram",
+      "sha256": null
+    }
+  }
+}
