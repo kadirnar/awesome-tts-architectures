@@ -4,38 +4,302 @@
 
 [← Model index](../README.md#models)
 
-Reviewed as of **2026-09-13**. 83 entries have a verified source date; 34 are undated in this catalog.
+Reviewed as of **2026-09-13**. 347 entries have a verified source date; 33 are undated in this catalog.
 
 These are dates of the linked paper or explicitly dated announcement. An arXiv submission can precede or follow model/weights/API availability. A paper's first submission date can also precede the release of variants discussed in later revisions. Repository updates, API snapshot suffixes and model training cutoffs are not treated as release dates.
 
 | Source date | Model | Date type | Primary sources |
 | --- | --- | --- | --- |
-| 2026-06-05 | [VoxCPM2](../models/continuous-lm.md#voxcpm2) | paper | [Paper](https://arxiv.org/abs/2606.06928) · [Repository](https://github.com/OpenBMB/VoxCPM) |
-| 2026-04-01 | [OmniVoice](../models/token-lm.md#omnivoice) | paper | [Paper](https://arxiv.org/abs/2604.00688) · [Repository](https://github.com/k2-fsa/OmniVoice) |
-| 2026-03-30 | [MOSS-VoiceGenerator](../models/token-lm.md#moss-voicegenerator) | paper | [Paper](https://arxiv.org/abs/2603.28086) |
-| 2026-03-20 | [MOSS-TTSD](../models/token-lm.md#moss-ttsd) | paper | [Paper](https://arxiv.org/abs/2603.19739) |
-| 2026-03-18 | [MOSS-TTS](../models/token-lm.md#moss-tts) | paper | [Paper](https://arxiv.org/abs/2603.18090) · [Repository](https://github.com/OpenMOSS/MOSS-TTS) |
-| 2026-03-09 | [Fish Audio S2](../models/token-lm.md#fish-audio-s2) | paper | [Paper](https://arxiv.org/abs/2603.08823) · [Repository](https://github.com/fishaudio/fish-speech) |
-| 2026-01-22 | [Qwen3-TTS](../models/token-lm.md#qwen3-tts) | paper | [Paper](https://arxiv.org/abs/2601.15621) · [Repository](https://github.com/QwenLM/Qwen3-TTS) |
+| 2026-09-10 | [CDE-StyleTTS](../models/diffusion.md#cde-styletts) | paper | [Paper](https://arxiv.org/abs/2609.11725) · [GitHub](https://github.com/Mattias421/CDE_StyleTTS) |
+| 2026-09-08 | [TontaubeV1](../models/token-lm.md#tontaubev1) | paper | [Paper](https://arxiv.org/abs/2609.08703) · [GitHub](https://github.com/craitech/tontaube) |
+| 2026-09-08 | [AuK](../models/diffusion.md#auk) | paper | [Paper](https://arxiv.org/abs/2609.08936) · [GitHub](https://github.com/Tencent-Hunyuan/AuK) |
+| 2026-09-07 | [KABURI-TTS](../models/diffusion.md#kaburi-tts) | paper | [Paper](https://arxiv.org/abs/2609.07200) · GitHub: no author-linked repository found |
+| 2026-08-25 | [FireRedAudio](../models/continuous-lm.md#fireredaudio) | paper | [Paper](https://arxiv.org/abs/2608.24168) · [GitHub](https://github.com/FireRedTeam/FireRedAudio) |
+| 2026-08-24 | [EmoTra-TTS](../models/token-lm.md#emotra-tts) | paper | [Paper](https://arxiv.org/abs/2608.23791) · [GitHub](https://github.com/Liu-Tianchi/EmoTra-TTS) · [Project](https://liu-tianchi.github.io/EmoTra_DemoPage/) |
+| 2026-08-19 | [X2Streaming-TTS](../models/token-lm.md#x2streaming-tts) | paper | [Paper](https://arxiv.org/abs/2608.18661) · [GitHub](https://github.com/X-Square-Robot/X2Streaming-TTS) |
+| 2026-08-18 | [FireRedTTS3](../models/continuous-lm.md#fireredtts3) | paper | [Paper](https://arxiv.org/abs/2608.17492) · [GitHub](https://github.com/FireRedTeam/FireRedTTS3) |
+| 2026-08-13 | [VoiceChat-TTS](../models/continuous-lm.md#voicechat-tts) | paper | [Paper](https://arxiv.org/abs/2608.13831) · GitHub: no author-linked repository found |
+| 2026-08-12 | [VoiceDesigner](../models/diffusion.md#voicedesigner) | paper | [Paper](https://arxiv.org/abs/2608.13613) · [Project](https://voicedesigner-demo.github.io/) · GitHub: no author-linked repository found |
+| 2026-08-12 | [Phoenix TTS](../models/token-lm.md#phoenix-tts) | paper | [Paper](https://arxiv.org/abs/2608.11737) · GitHub: no author-linked repository found |
+| 2026-08-12 | [MiDashengLM-Gen](../models/continuous-lm.md#midashenglm-gen) | paper | [Paper](https://arxiv.org/abs/2608.11804) · [GitHub](https://github.com/xiaomi-research/midashenglm-gen) · [Project](https://xingws.github.io/midashenglm-gen-demo/) |
+| 2026-08-12 | [Luna-TTS](../models/token-lm.md#luna-tts) | paper | [Paper](https://arxiv.org/abs/2608.11593) · [Project](https://vuilabs-ai.github.io/luna-tts) · GitHub: no author-linked repository found |
+| 2026-08-12 | [CookVoice](../models/diffusion.md#cookvoice) | paper | [Paper](https://arxiv.org/abs/2608.11590) · [Project](https://haoweilou.github.io/CookVoice/) · GitHub: no author-linked repository found |
+| 2026-08-12 | [Confucius4-TTS](../models/token-lm.md#confucius4-tts) | paper | [Paper](https://arxiv.org/abs/2608.11650) · [GitHub](https://github.com/netease-youdao/Confucius4-TTS) |
+| 2026-08-09 | [CuteTTS](../models/continuous-lm.md#cutetts) | paper | [Paper](https://arxiv.org/abs/2608.08638) · [GitHub](https://github.com/OPPO-Mente-Lab/CuteTTS) |
+| 2026-08-08 | [CtrlSpeech](../models/continuous-lm.md#ctrlspeech) | paper | [Paper](https://arxiv.org/abs/2608.08362) · [GitHub](https://github.com/zszheng147/ctrlspeech) |
+| 2026-08-07 | [SemBridge](../models/continuous-lm.md#sembridge) | paper | [Paper](https://arxiv.org/abs/2608.07462) · [GitHub](https://github.com/ASLP-lab/SemBridge) |
+| 2026-07-31 | [MP-ELD](../models/continuous-lm.md#mp-eld) | paper | [Paper](https://arxiv.org/abs/2607.29363) · GitHub: no author-linked repository found |
+| 2026-07-29 | [Face-adapted StyleTTS 2](../models/diffusion.md#face-adapted-styletts-2) | paper | [Paper](https://arxiv.org/abs/2607.26742) · GitHub: no author-linked repository found |
+| 2026-07-27 | [Qwen-Audio-3.0-TTS](../models/token-lm.md#qwen-audio-3-0-tts) | paper | [Paper](https://arxiv.org/abs/2607.23938) · [Project](https://qwenaudio.github.io/FunAudioLLM.github.io/qwen-audio-3.0-tts/) · GitHub: no author-linked repository found |
+| 2026-07-27 | [FacialTalker](../models/token-lm.md#facialtalker) | paper | [Paper](https://arxiv.org/abs/2607.24430) · [GitHub](https://github.com/walker-hyf/FacialTalker) |
+| 2026-07-22 | [StellarTTS](../models/compact.md#stellartts) | paper | [Paper](https://arxiv.org/abs/2607.19859) · [Project](https://stellartts.github.io/) · GitHub: no author-linked repository found |
+| 2026-07-17 | [TTSYoruba](../models/concatenative.md#ttsyoruba) | paper | [Paper](https://arxiv.org/abs/2607.18317) · GitHub: no author-linked repository found |
+| 2026-07-17 | [AuEmoChat](../models/token-lm.md#auemochat) | paper | [Paper](https://arxiv.org/abs/2607.15755) · [GitHub](https://github.com/AI-S2-Lab/AuEmoChat) |
+| 2026-07-14 | [AutoSIFT](../models/diffusion.md#autosift) | paper | [Paper](https://arxiv.org/abs/2607.12706) · GitHub: no author-linked repository found |
+| 2026-07-10 | [ReGenVoice](../models/diffusion.md#regenvoice) | paper | [Paper](https://arxiv.org/abs/2607.09134) · [Project](https://regenvoice.github.io/demo/) · GitHub: no author-linked repository found |
+| 2026-07-10 | [FreyaTTS](../models/diffusion.md#freyatts) | paper | [Paper](https://arxiv.org/abs/2607.09530) · GitHub: no author-linked repository found |
+| 2026-07-07 | [WordVoice](../models/token-lm.md#wordvoice) | paper | [Paper](https://arxiv.org/abs/2607.06461) · [GitHub](https://github.com/XXH333/WordVoice-main) · [Project](https://xxh333.github.io/wordvoice-demo/) |
+| 2026-07-05 | [DELTA-TTS](../models/token-lm.md#delta-tts) | paper | [Paper](https://arxiv.org/abs/2607.04140) · GitHub: no author-linked repository found |
+| 2026-07-02 | [GRAFT](../models/token-lm.md#graft) | paper | [Paper](https://arxiv.org/abs/2607.02633) · GitHub: no author-linked repository found |
+| 2026-06-24 | [Sarashina2.2-TTS](../models/token-lm.md#sarashina2-2-tts) | paper | [Paper](https://arxiv.org/abs/2606.25369) · [GitHub](https://github.com/sbintuitions/sarashina2.2-tts) |
+| 2026-06-24 | [OscillaTTS](../models/diffusion.md#oscillatts) | paper | [Paper](https://arxiv.org/abs/2606.25424) · GitHub: no author-linked repository found |
+| 2026-06-24 | [CrossAccent-TTS](../models/token-lm.md#crossaccent-tts) | paper | [Paper](https://arxiv.org/abs/2606.25403) · GitHub: no author-linked repository found |
+| 2026-06-22 | [Lombard Matcha-TTS](../models/diffusion.md#lombard-matcha-tts) | paper | [Paper](https://arxiv.org/abs/2606.23176) · GitHub: no author-linked repository found |
+| 2026-06-22 | [Bagpiper-TTS](../models/token-lm.md#bagpiper-tts) | paper | [Paper](https://arxiv.org/abs/2606.22811) · [Project](https://bagpipertts.github.io/bagpiper_tts_demo/) · GitHub: no author-linked repository found |
+| 2026-06-20 | [S5-TTS](../models/token-lm.md#s5-tts) | paper | [Paper](https://arxiv.org/abs/2606.21882) · GitHub: no author-linked repository found |
+| 2026-06-19 | [DisSpeech](../models/token-lm.md#disspeech) | paper | [Paper](https://arxiv.org/abs/2606.21457) · GitHub: no author-linked repository found |
+| 2026-06-18 | [RTFree-F5](../models/diffusion.md#rtfree-f5) | paper | [Paper](https://arxiv.org/abs/2606.20266) · GitHub: no author-linked repository found |
+| 2026-06-17 | [FineCombo-TTS](../models/diffusion.md#finecombo-tts) | paper | [Paper](https://arxiv.org/abs/2606.19209) · [Project](https://thuhcsi.github.io/interspeech2026-FineCombo-TTS) · GitHub: no author-linked repository found |
+| 2026-06-16 | [MagpieTTS-LF](../models/token-lm.md#magpietts-lf) | paper | [Paper](https://arxiv.org/abs/2606.18485) · GitHub: no author-linked repository found |
+| 2026-06-15 | [Joycent](../models/diffusion.md#joycent) | paper | [Paper](https://arxiv.org/abs/2606.16417) · [GitHub](https://github.com/oshindow/Joycent-code) · [Project](https://oshindow.github.io/joycent/) |
+| 2026-06-08 | [TLDR (TTS)](../models/token-lm.md#tldr-tts) | paper | [Paper](https://arxiv.org/abs/2606.09019) · GitHub: no author-linked repository found |
+| 2026-06-08 | [Nüshu-PitchVITS](../models/flow-vae.md#nushu-pitchvits) | paper | [Paper](https://arxiv.org/abs/2606.09295) · GitHub: no author-linked repository found |
+| 2026-06-08 | [Mel-LLM (TTS)](../models/continuous-lm.md#mel-llm-tts) | paper | [Paper](https://arxiv.org/abs/2606.10231) · GitHub: no author-linked repository found |
+| 2026-06-08 | [HoliDubber](../models/continuous-lm.md#holidubber) | paper | [Paper](https://arxiv.org/abs/2606.09098) · [Project](https://holidubber.github.io) · GitHub: no author-linked repository found |
+| 2026-06-08 | [FlashTTS](../models/token-lm.md#flashtts) | paper | [Paper](https://arxiv.org/abs/2606.09141) · [GitHub](https://github.com/ASLP-lab/FlashTTS) · [Project](https://aslp-lab.github.io/flashtts_demo) |
+| 2026-06-08 | [End-to-end discrete-token TTS](../models/token-lm.md#end-to-end-discrete-token-tts) | paper | [Paper](https://arxiv.org/abs/2606.09234) · GitHub: no author-linked repository found |
+| 2026-06-08 | [BareWave](../models/diffusion.md#barewave) | paper | [Paper](https://arxiv.org/abs/2606.09048) · [Project](https://barewave.github.io/) · GitHub: no author-linked repository found |
+| 2026-06-05 | [VoxCPM2](../models/continuous-lm.md#voxcpm2) | paper | [Paper](https://arxiv.org/abs/2606.06928) · [GitHub](https://github.com/OpenBMB/VoxCPM) · [Project](https://openbmb.github.io/voxcpm2-demopage/) |
+| 2026-06-05 | [dots.tts](../models/continuous-lm.md#dots-tts) | paper | [Paper](https://arxiv.org/abs/2606.07080) · [GitHub](https://github.com/studio-dots-ai/dots.tts) · [Project](https://studio-dots-ai.github.io/dots.tts-demo/) |
+| 2026-06-04 | [UniVoice (speech and singing)](../models/diffusion.md#univoice-speech-and-singing) | paper | [Paper](https://arxiv.org/abs/2606.05852) · GitHub: no author-linked repository found |
+| 2026-06-02 | [WavTTS](../models/diffusion.md#wavtts) | paper | [Paper](https://arxiv.org/abs/2606.03455) · [GitHub](https://github.com/cwx-worst-one/WavTTS) |
+| 2026-06-01 | [UniVocal](../models/token-lm.md#univocal) | paper | [Paper](https://arxiv.org/abs/2606.01677) · [GitHub](https://github.com/FunAudioLLM/FunResearch) · [Project](https://project-univocal-demo.github.io/demo/) |
+| 2026-05-29 | [UNISON](../models/diffusion.md#unison) | paper | [Paper](https://arxiv.org/abs/2605.31530) · [GitHub](https://github.com/lizhaoqing/UNISON) · [Project](https://lizhaoqing.github.io/UNISON-demo/) |
+| 2026-05-29 | [SwanVoice](../models/diffusion.md#swanvoice) | paper | [Paper](https://arxiv.org/abs/2605.30993) · [Project](https://swanaigc.github.io/#/swanvoice) · GitHub: no author-linked repository found |
+| 2026-05-29 | [ImmersiveTTS](../models/diffusion.md#immersivetts) | paper | [Paper](https://arxiv.org/abs/2605.30965) · [GitHub](https://github.com/immersivetts/ImmersiveTTS) · [Project](https://jjunak-yun.github.io/ImmersiveTTS) |
+| 2026-05-29 | [Chatterbox-Flash](../models/token-lm.md#chatterbox-flash) | paper | [Paper](https://arxiv.org/abs/2605.30748) · [GitHub](https://github.com/resemble-ai/chatterbox-flash) |
+| 2026-05-28 | [MELD](../models/token-lm.md#meld) | paper | [Paper](https://arxiv.org/abs/2605.29859) · GitHub: no author-linked repository found |
+| 2026-05-28 | [HoliTok (TTS)](../models/continuous-lm.md#holitok-tts) | paper | [Paper](https://arxiv.org/abs/2605.29948) · [GitHub](https://github.com/bovod-sjtu/HoliTok) |
+| 2026-05-26 | [PilotTTS](../models/token-lm.md#pilottts) | paper | [Paper](https://arxiv.org/abs/2605.27258) · [GitHub](https://github.com/AMAPVOICE/PilotTTS) |
+| 2026-05-25 | [CosyEdit2](../models/token-lm.md#cosyedit2) | paper | [Paper](https://arxiv.org/abs/2605.25930) · [Project](https://cjy1018.github.io/CosyEdit2) · GitHub: no author-linked repository found |
+| 2026-05-23 | [FC-TTS](../models/token-lm.md#fc-tts) | paper | [Paper](https://arxiv.org/abs/2605.24618) · GitHub: no author-linked repository found |
+| 2026-05-22 | [StepAudio 2.5 TTS](../models/token-lm.md#stepaudio-2-5-tts) | paper | [Paper](https://arxiv.org/abs/2605.23463) · GitHub: no author-linked repository found |
+| 2026-05-20 | [Raon-OpenTTS](../models/diffusion.md#raon-opentts) | paper | [Paper](https://arxiv.org/abs/2605.20830) · [GitHub](https://github.com/krafton-ai/RAON-OpenTTS) |
+| 2026-05-16 | [SemaVoice](../models/continuous-lm.md#semavoice) | paper | [Paper](https://arxiv.org/abs/2605.16964) · GitHub: no author-linked repository found |
+| 2026-05-14 | [AgentSteerTTS](../models/token-lm.md#agentsteertts) | paper | [Paper](https://arxiv.org/abs/2605.17583) · GitHub: no author-linked repository found |
+| 2026-05-10 | [GibbsTTS](../models/token-lm.md#gibbstts) | paper | [Paper](https://arxiv.org/abs/2605.09386) · [GitHub](https://github.com/ydqmkkx/GibbsTTS) · [Project](https://ydqmkkx.github.io/GibbsTTSProject) |
+| 2026-05-07 | [X-Voice](../models/diffusion.md#x-voice) | paper | [Paper](https://arxiv.org/abs/2605.05611) · [GitHub](https://github.com/sunnyxrxrx/X-Voice) |
+| 2026-05-04 | [Tibetan-TTS](../models/token-lm.md#tibetan-tts) | paper | [Paper](https://arxiv.org/abs/2605.02496) · GitHub: no author-linked repository found |
+| 2026-04-30 | [JaiTTS](../models/continuous-lm.md#jaitts) | paper | [Paper](https://arxiv.org/abs/2604.27607) · [GitHub](https://github.com/JTS-AI-Team/JaiTTS) |
+| 2026-04-24 | [UniSonate](../models/diffusion.md#unisonate) | paper | [Paper](https://arxiv.org/abs/2604.22209) · [Project](https://qiangchunyu.github.io/UniSonate/) · GitHub: no author-linked repository found |
+| 2026-04-23 | [MAGIC-TTS](../models/token-lm.md#magic-tts) | paper | [Paper](https://arxiv.org/abs/2604.21164) · [GitHub](https://github.com/yongaifadian1/MAGIC-TTS) |
+| 2026-04-21 | [Chain-of-Details TTS](../models/token-lm.md#chain-of-details-tts) | paper | [Paper](https://arxiv.org/abs/2604.19330) · GitHub: no author-linked repository found |
+| 2026-04-21 | [ATRIE](../models/token-lm.md#atrie) | paper | [Paper](https://arxiv.org/abs/2604.19055) · GitHub: no author-linked repository found |
+| 2026-04-14 | [CoSyncDiT](../models/diffusion.md#cosyncdit) | paper | [Paper](https://arxiv.org/abs/2604.12292) · [GitHub](https://github.com/GalaxyCong/CoSyncDiT) |
+| 2026-04-14 | [Block-wise Mimi TTS](../models/token-lm.md#block-wise-mimi-tts) | paper | [Paper](https://arxiv.org/abs/2604.12438) · GitHub: no author-linked repository found |
+| 2026-04-13 | [SASLM](../models/continuous-lm.md#saslm) | paper | [Paper](https://arxiv.org/abs/2604.11424) · [GitHub](https://github.com/wangkevin02/SASLM) · [Project](https://wangkevin02.github.io/SASLM/) |
+| 2026-04-10 | [PS-TTS](../models/token-lm.md#ps-tts) | paper | [Paper](https://arxiv.org/abs/2604.09111) · GitHub: no author-linked repository found |
+| 2026-04-09 | [CapTalk](../models/token-lm.md#captalk) | paper | [Paper](https://arxiv.org/abs/2604.08363) · GitHub: no author-linked repository found |
+| 2026-04-01 | [OmniVoice](../models/token-lm.md#omnivoice) | paper | [Paper](https://arxiv.org/abs/2604.00688) · [GitHub](https://github.com/k2-fsa/OmniVoice) |
+| 2026-03-31 | [MambaVoiceCloning](../models/diffusion.md#mambavoicecloning) | paper | [Paper](https://arxiv.org/abs/2604.00292) · [GitHub](https://github.com/sahilkumar15/MVC) |
+| 2026-03-31 | [LongCat-AudioDiT](../models/diffusion.md#longcat-audiodit) | paper | [Paper](https://arxiv.org/abs/2603.29339) · [GitHub](https://github.com/meituan-longcat/LongCat-AudioDiT) |
+| 2026-03-30 | [MOSS-VoiceGenerator](../models/token-lm.md#moss-voicegenerator) | paper | [Paper](https://arxiv.org/abs/2603.28086) · [GitHub](https://github.com/OpenMOSS/MOSS-TTS) |
+| 2026-03-27 | [LLaDA-TTS](../models/token-lm.md#llada-tts) | paper | [Paper](https://arxiv.org/abs/2603.26364) · GitHub: no author-linked repository found |
+| 2026-03-26 | [Voxtral TTS](../models/token-lm.md#voxtral-tts) | paper | [Paper](https://arxiv.org/abs/2603.25551) · GitHub: no author-linked repository found |
+| 2026-03-23 | [SelfTTS](../models/flow-vae.md#selftts) | paper | [Paper](https://arxiv.org/abs/2603.22252) · [GitHub](https://github.com/AI-Unicamp/SelfTTS) · [Project](https://ai-unicamp.github.io/publications/tts/selftts/) |
+| 2026-03-20 | [MOSS-TTSD](../models/token-lm.md#moss-ttsd) | paper | [Paper](https://arxiv.org/abs/2603.19739) · [GitHub](https://github.com/OpenMOSS/MOSS-TTSD) |
+| 2026-03-20 | [Borderless Long Speech Synthesis](../models/continuous-lm.md#borderless-long-speech-synthesis) | paper | [Paper](https://arxiv.org/abs/2603.19798) · GitHub: no author-linked repository found |
+| 2026-03-18 | [MOSS-TTS](../models/token-lm.md#moss-tts) | paper | [Paper](https://arxiv.org/abs/2603.18090) · [GitHub](https://github.com/OpenMOSS/MOSS-TTS) |
+| 2026-03-17 | [CAST-TTS](../models/diffusion.md#cast-tts) | paper | [Paper](https://arxiv.org/abs/2603.16280) · [GitHub](https://github.com/HiRookie9/CAST-TTS) · [Project](https://HiRookie9.github.io/CAST-TTS-Page) |
+| 2026-03-16 | [CosyWhisper (WhispSynth)](../models/token-lm.md#cosywhisper-whispsynth) | paper | [Paper](https://arxiv.org/abs/2603.14853) · [GitHub](https://github.com/tan90xx/cosywhisper) |
+| 2026-03-15 | [DiFlowDubber](../models/token-lm.md#diflowdubber) | paper | [Paper](https://arxiv.org/abs/2603.14267) · [GitHub](https://github.com/Fsoft-AIC/DiFlowDubber) · [Project](https://nngocson2002.github.io/projects/diflowdubber) |
+| 2026-03-15 | [Affectron](../models/token-lm.md#affectron) | paper | [Paper](https://arxiv.org/abs/2603.14432) · [GitHub](https://github.com/Choddeok/Affectron) · [Project](https://choddeok.github.io/Affectron/) |
+| 2026-03-13 | [VoXtream2](../models/token-lm.md#voxtream2) | paper | [Paper](https://arxiv.org/abs/2603.13518) · [GitHub](https://github.com/herimor/voxtream) · [Project](https://herimor.github.io/voxtream2/) |
+| 2026-03-12 | [MamTra](../models/diffusion.md#mamtra) | paper | [Paper](https://arxiv.org/abs/2603.12342) · [GitHub](https://github.com/kaistmm/mamtra_inference) · [Project](https://mamtratts.github.io) |
+| 2026-03-12 | [Causal-prosody FastSpeech 2](../models/parallel.md#causal-prosody-fastspeech-2) | paper | [Paper](https://arxiv.org/abs/2603.11683) · GitHub: no author-linked repository found |
+| 2026-03-09 | [USCF-conditioned TTS](../models/diffusion.md#uscf-conditioned-tts) | paper | [Paper](https://arxiv.org/abs/2603.08977) · [GitHub](https://github.com/HSTEHSTEHSTE/uscf) |
+| 2026-03-09 | [Fish Audio S2](../models/token-lm.md#fish-audio-s2) | paper | [Paper](https://arxiv.org/abs/2603.08823) · [GitHub](https://github.com/fishaudio/fish-speech) |
+| 2026-03-08 | [Bolbosh](../models/diffusion.md#bolbosh) | paper | [Paper](https://arxiv.org/abs/2603.07513) · [GitHub](https://github.com/gaash-lab/Bolbosh) |
+| 2026-03-02 | [DARS](../models/diffusion.md#dars) | paper | [Paper](https://arxiv.org/abs/2603.01369) · GitHub: no author-linked repository found |
+| 2026-02-26 | [TADA](../models/continuous-lm.md#tada) | paper | [Paper](https://arxiv.org/abs/2602.23068) · [GitHub](https://github.com/HumeAI/tada) |
+| 2026-02-23 | [CTC-TTS](../models/token-lm.md#ctc-tts) | paper | [Paper](https://arxiv.org/abs/2602.19574) · [GitHub](https://github.com/thu-spmi/CTC-TTS) |
+| 2026-02-17 | [UniTAF](../models/token-lm.md#unitaf) | paper | [Paper](https://arxiv.org/abs/2602.15651) · [GitHub](https://github.com/GoldenFishes/UniTAF) |
+| 2026-02-09 | [ProtoDisent-TTS](../models/flow-vae.md#protodisent-tts) | paper | [Paper](https://arxiv.org/abs/2602.08696) · [Project](https://mors20.github.io/ProtoDisent-TTS) · GitHub: no author-linked repository found |
+| 2026-02-05 | [ARCHI-TTS](../models/diffusion.md#archi-tts) | paper | [Paper](https://arxiv.org/abs/2602.05207) · [Project](https://archimickey.github.io/architts) · GitHub: no author-linked repository found |
+| 2026-02-04 | [PFluxTTS](../models/diffusion.md#pfluxtts) | paper | [Paper](https://arxiv.org/abs/2602.04160) · [Project](https://braskai.github.io/pfluxtts/) · GitHub: no author-linked repository found |
+| 2026-02-01 | [VividVoice](../models/diffusion.md#vividvoice) | paper | [Paper](https://arxiv.org/abs/2602.02591) · [Project](https://chengyuann.github.io/VividVoice/) · GitHub: no author-linked repository found |
+| 2026-01-30 | [EmoShift](../models/token-lm.md#emoshift) | paper | [Paper](https://arxiv.org/abs/2601.22873) · GitHub: no author-linked repository found |
+| 2026-01-22 | [Qwen3-TTS](../models/token-lm.md#qwen3-tts) | paper | [Paper](https://arxiv.org/abs/2601.15621) · [GitHub](https://github.com/QwenLM/Qwen3-TTS) |
+| 2026-01-22 | [DeepASMR](../models/token-lm.md#deepasmr) | paper | [Paper](https://arxiv.org/abs/2601.15596) · GitHub: no author-linked repository found |
+| 2026-01-20 | [Habibi](../models/diffusion.md#habibi) | paper | [Paper](https://arxiv.org/abs/2601.13802) · [GitHub](https://github.com/SWivid/Habibi-TTS) · [Project](https://SWivid.github.io/Habibi/) |
+| 2026-01-18 | [SpeechEdit](../models/token-lm.md#speechedit) | paper | [Paper](https://arxiv.org/abs/2601.12480) · [Project](https://speech-editing.github.io/speech-editing/) · GitHub: no author-linked repository found |
+| 2026-01-16 | [WenetSpeech-Wu TTS](../models/token-lm.md#wenetspeech-wu-tts) | paper | [Paper](https://arxiv.org/abs/2601.11027) · [GitHub](https://github.com/ASLP-lab/WenetSpeech-Wu-Repo) |
+| 2026-01-15 | [VoiceSculptor](../models/token-lm.md#voicesculptor) | paper | [Paper](https://arxiv.org/abs/2601.10629) · [GitHub](https://github.com/ASLP-lab/VoiceSculptor) · [Project](https://hujingbin1.github.io/VoiceSculptor-Demo) |
+| 2026-01-15 | [GPA](../models/token-lm.md#gpa) | paper | [Paper](https://arxiv.org/abs/2601.10770) · [GitHub](https://github.com/AutoArk/GPA) |
 | 2026-01-09 | [Higgs Audio v2.5](../models/token-lm.md#higgs-audio-v2-5) | announcement | [Announcement](https://www.boson.ai/blog/higgs-audio-v2.5) |
-| 2026-01-07 | [IndexTTS 2.5](../models/token-lm.md#indextts-2-5) | paper | [Paper](https://arxiv.org/abs/2601.03888) |
-| 2025-12-16 | [GLM-TTS](../models/token-lm.md#glm-tts) | paper | [Paper](https://arxiv.org/abs/2512.14291) · [Repository](https://github.com/zai-org/GLM-TTS) |
-| 2025-09-29 | [VoxCPM](../models/continuous-lm.md#voxcpm) | paper | [Paper](https://arxiv.org/abs/2509.24650) |
-| 2025-09-10 | [Kyutai TTS (DSM)](../models/token-lm.md#kyutai-tts-dsm) | paper | [Paper](https://arxiv.org/abs/2509.08753) · [Repository](https://github.com/kyutai-labs/delayed-streams-modeling) |
-| 2025-09-02 | [FireRedTTS-2](../models/token-lm.md#fireredtts-2) | paper | [Paper](https://arxiv.org/abs/2509.02020) |
+| 2026-01-08 | [FlexiVoice](../models/token-lm.md#flexivoice) | paper | [Paper](https://arxiv.org/abs/2601.04656) · [Project](https://flexi-voice.github.io) · GitHub: no author-linked repository found |
+| 2026-01-07 | [ReStyle-TTS](../models/diffusion.md#restyle-tts) | paper | [Paper](https://arxiv.org/abs/2601.03632) · GitHub: no author-linked repository found |
+| 2026-01-07 | [IndexTTS 2.5](../models/token-lm.md#indextts-2-5) | paper | [Paper](https://arxiv.org/abs/2601.03888) · [GitHub](https://github.com/index-tts/index-tts) |
+| 2026-01-06 | [Vclip](../models/flow-vae.md#vclip) | paper | [Paper](https://arxiv.org/abs/2601.02753) · GitHub: no author-linked repository found |
+| 2026-01-06 | [TED-TTS](../models/token-lm.md#ted-tts) | paper | [Paper](https://arxiv.org/abs/2601.03170) · [GitHub](https://github.com/Simon-leong/TED-TTS) |
+| 2026-01-04 | [OV-InstructTTS](../models/token-lm.md#ov-instructtts) | paper | [Paper](https://arxiv.org/abs/2601.01459) · [GitHub](https://github.com/y-ren16/OV-InstructTTS) |
+| 2026-01-01 | [DepFlow](../models/diffusion.md#depflow) | paper | [Paper](https://arxiv.org/abs/2601.00303) · GitHub: no author-linked repository found |
+| 2025-12-27 | [ManchuTTS](../models/diffusion.md#manchutts) | paper | [Paper](https://arxiv.org/abs/2512.22491) · GitHub: no author-linked repository found |
+| 2025-12-22 | [JoyVoice](../models/token-lm.md#joyvoice) | paper | [Paper](https://arxiv.org/abs/2512.19090) · [Project](https://jea-speech.github.io/JoyVoice) · GitHub: no author-linked repository found |
+| 2025-12-16 | [GLM-TTS](../models/token-lm.md#glm-tts) | paper | [Paper](https://arxiv.org/abs/2512.14291) · [GitHub](https://github.com/zai-org/GLM-TTS) |
+| 2025-12-15 | [DisCo-Speech](../models/token-lm.md#disco-speech) | paper | [Paper](https://arxiv.org/abs/2512.13251) · [GitHub](https://github.com/disco-speech/DisCo-Speech-main) · [Project](https://disco-speech.github.io/DisCo-demo/) |
+| 2025-12-10 | [DMP-TTS](../models/diffusion.md#dmp-tts) | paper | [Paper](https://arxiv.org/abs/2512.09504) · GitHub: no author-linked repository found |
+| 2025-12-04 | [M3-TTS](../models/diffusion.md#m3-tts) | paper | [Paper](https://arxiv.org/abs/2512.04720) · GitHub: no author-linked repository found |
+| 2025-11-27 | [VSpeechLM](../models/token-lm.md#vspeechlm) | paper | [Paper](https://arxiv.org/abs/2511.22229) · GitHub: no author-linked repository found |
+| 2025-11-23 | [InstructAudio](../models/diffusion.md#instructaudio) | paper | [Paper](https://arxiv.org/abs/2511.18487) · [Project](https://qiangchunyu.github.io/InstructAudio/) · GitHub: no author-linked repository found |
+| 2025-11-18 | [Authentic-Dubber](../models/diffusion.md#authentic-dubber) | paper | [Paper](https://arxiv.org/abs/2511.14249) · [GitHub](https://github.com/AI-S2-Lab/Authentic-Dubber) |
+| 2025-11-13 | [VocalNet-M2](../models/token-lm.md#vocalnet-m2) | paper | [Paper](https://arxiv.org/abs/2511.10232) · GitHub: no author-linked repository found |
+| 2025-11-05 | [Step-Audio-EditX](../models/token-lm.md#step-audio-editx) | paper | [Paper](https://arxiv.org/abs/2511.03601) · [GitHub](https://github.com/stepfun-ai/Step-Audio-EditX) |
+| 2025-10-28 | [BELLE](../models/continuous-lm.md#belle) | paper | [Paper](https://arxiv.org/abs/2510.24372) · [GitHub](https://github.com/OpenTSLab/BELLE) · [Project](https://belletts.github.io/Belle/) |
+| 2025-10-27 | [SoulX-Podcast](../models/token-lm.md#soulx-podcast) | paper | [Paper](https://arxiv.org/abs/2510.23541) · [GitHub](https://github.com/Soul-AILab/SoulX-Podcast) · [Project](https://soul-ailab.github.io/soulx-podcast/) |
+| 2025-10-21 | [ParaStyleTTS](../models/parallel.md#parastyletts) | paper | [Paper](https://arxiv.org/abs/2510.18308) · [GitHub](https://github.com/haoweilou/ParaStyleTTS) · [Project](https://parastyletts.github.io/ParaStyleTTS_Demo/) |
+| 2025-10-14 | [DiSTAR](../models/token-lm.md#distar) | paper | [Paper](https://arxiv.org/abs/2510.12210) · GitHub: no author-linked repository found |
+| 2025-10-14 | [Continuous-token diffusion TTS](../models/continuous-lm.md#continuous-token-diffusion-tts) | paper | [Paper](https://arxiv.org/abs/2510.12995) · GitHub: no author-linked repository found |
+| 2025-10-13 | [EMM-TTS](../models/token-lm.md#emm-tts) | paper | [Paper](https://arxiv.org/abs/2510.11124) · GitHub: no author-linked repository found |
+| 2025-10-13 | [BridgeTTS](../models/token-lm.md#bridgetts) | paper | [Paper](https://arxiv.org/abs/2510.11646) · GitHub: no author-linked repository found |
+| 2025-10-09 | [IntMeanFlow](../models/diffusion.md#intmeanflow) | paper | [Paper](https://arxiv.org/abs/2510.07979) · [Project](https://vvwangvv.github.io/intmeanflow) · GitHub: no author-linked repository found |
+| 2025-10-09 | [DialoSpeech](../models/token-lm.md#dialospeech) | paper | [Paper](https://arxiv.org/abs/2510.08373) · [Project](https://tiamojames.github.io/DialoSpeech) · GitHub: no author-linked repository found |
+| 2025-10-07 | [ECTSpeech](../models/diffusion.md#ectspeech) | paper | [Paper](https://arxiv.org/abs/2510.05984) · GitHub: no author-linked repository found |
+| 2025-10-06 | [UniVoice (ASR and TTS)](../models/diffusion.md#univoice-asr-and-tts) | paper | [Paper](https://arxiv.org/abs/2510.04593) · [GitHub](https://github.com/gwh22/UniVoice) |
+| 2025-10-06 | [MAVE](../models/token-lm.md#mave) | paper | [Paper](https://arxiv.org/abs/2510.04738) · GitHub: no author-linked repository found |
+| 2025-10-03 | [Flamed-TTS](../models/diffusion.md#flamed-tts) | paper | [Paper](https://arxiv.org/abs/2510.02848) · [Project](https://flamed-tts.github.io) · GitHub: no author-linked repository found |
+| 2025-10-02 | [Emotion-timbre disentangled TTS](../models/parallel.md#emotion-timbre-disentangled-tts) | paper | [Paper](https://arxiv.org/abs/2510.01722) · [GitHub](https://github.com/BaleYang/emotion-timbre-disentangled-tts-code) · [Project](https://baleyang.github.io/emotion-timbre-disentangled-tts/) |
+| 2025-09-30 | [HiStyle](../models/diffusion.md#histyle) | paper | [Paper](https://arxiv.org/abs/2509.25842) · GitHub: no author-linked repository found |
+| 2025-09-30 | [BatonTTS (BatonVoice)](../models/token-lm.md#batontts-batonvoice) | paper | [Paper](https://arxiv.org/abs/2509.26514) · GitHub: no author-linked repository found |
+| 2025-09-29 | [WeSCon](../models/token-lm.md#wescon) | paper | [Paper](https://arxiv.org/abs/2509.24629) · [Project](https://wangtianrui.github.io/wescon/) · GitHub: no author-linked repository found |
+| 2025-09-29 | [VoxCPM](../models/continuous-lm.md#voxcpm) | paper | [Paper](https://arxiv.org/abs/2509.24650) · [GitHub](https://github.com/OpenBMB/VoxCPM) · [Project](https://openbmb.github.io/VoxCPM-demopage/) |
+| 2025-09-29 | [UniFlow-Audio](../models/diffusion.md#uniflow-audio) | paper | [Paper](https://arxiv.org/abs/2509.24391) · [GitHub](https://github.com/wsntxxn/UniFlow-Audio) · [Project](https://wsntxxn.github.io/uniflow_audio) |
+| 2025-09-26 | [CaT-TTS](../models/token-lm.md#cat-tts) | paper | [Paper](https://arxiv.org/abs/2509.22062) · GitHub: no author-linked repository found |
+| 2025-09-23 | [HD-PPT](../models/token-lm.md#hd-ppt) | paper | [Paper](https://arxiv.org/abs/2509.19001) · GitHub: no author-linked repository found |
+| 2025-09-23 | [Frame-stacked local Transformer TTS](../models/token-lm.md#frame-stacked-local-transformer-tts) | paper | [Paper](https://arxiv.org/abs/2509.19592) · GitHub: no author-linked repository found |
+| 2025-09-22 | [Audiobook-CC](../models/token-lm.md#audiobook-cc) | paper | [Paper](https://arxiv.org/abs/2509.17516) · GitHub: no author-linked repository found |
+| 2025-09-19 | [VoXtream](../models/token-lm.md#voxtream) | paper | [Paper](https://arxiv.org/abs/2509.15969) · [GitHub](https://github.com/herimor/voxtream) · [Project](https://herimor.github.io/voxtream) |
+| 2025-09-19 | [DeepDubbing](../models/token-lm.md#deepdubbing) | paper | [Paper](https://arxiv.org/abs/2509.15845) · [GitHub](https://github.com/TME-Lyra-Lab/DeepDubbing) |
+| 2025-09-19 | [BVS](../models/token-lm.md#bvs) | paper | [Paper](https://arxiv.org/abs/2509.15492) · GitHub: no author-linked repository found |
+| 2025-09-18 | [MELA-TTS](../models/continuous-lm.md#mela-tts) | paper | [Paper](https://arxiv.org/abs/2509.14784) · GitHub: no author-linked repository found |
+| 2025-09-18 | [DAIEN-TTS](../models/diffusion.md#daien-tts) | paper | [Paper 1](https://arxiv.org/abs/2608.03011) · [Project 1](https://yxlu-0102.github.io/DAIEN-TTS/journal) · [Paper 2](https://arxiv.org/abs/2509.14684) · [GitHub](https://github.com/yxlu-0102/DAIEN-TTS) · [Project 2](https://yxlu-0102.github.io/DAIEN-TTS) |
+| 2025-09-18 | [Cross-Lingual F5-TTS](../models/diffusion.md#cross-lingual-f5-tts) | paper | [Paper](https://arxiv.org/abs/2509.14579) · [Project](https://qingyuliu0521.github.io/Cross_lingual-F5-TTS/) · GitHub: no author-linked repository found |
+| 2025-09-11 | [DiFlow-TTS](../models/token-lm.md#diflow-tts) | paper | [Paper](https://arxiv.org/abs/2509.09631) · [GitHub](https://github.com/Fsoft-AIC/DiFlowTTS) |
+| 2025-09-10 | [Kyutai TTS (DSM)](../models/token-lm.md#kyutai-tts-dsm) | paper | [Paper](https://arxiv.org/abs/2509.08753) · [GitHub](https://github.com/kyutai-labs/delayed-streams-modeling) |
+| 2025-09-09 | [Progressive face-conditioned TTS](../models/flow-vae.md#progressive-face-conditioned-tts) | paper | [Paper](https://arxiv.org/abs/2509.07376) · GitHub: no author-linked repository found |
+| 2025-09-07 | [MFCIG-CSS](../models/token-lm.md#mfcig-css) | paper | [Paper](https://arxiv.org/abs/2509.06074) · [GitHub](https://github.com/AI-S2-Lab/MFCIG-CSS) |
+| 2025-09-06 | [LatinX](../models/token-lm.md#latinx) | paper | [Paper](https://arxiv.org/abs/2509.05863) · [Project](https://seu-usuario.github.io/latinx-demo) · GitHub: no author-linked repository found |
+| 2025-09-02 | [FireRedTTS-2](../models/token-lm.md#fireredtts-2) | paper | [Paper](https://arxiv.org/abs/2509.02020) · [GitHub](https://github.com/FireRedTeam/FireRedTTS2) |
+| 2025-09-01 | [MixedG2P-T5](../models/token-lm.md#mixedg2p-t5) | paper | [Paper](https://arxiv.org/abs/2509.01391) · GitHub: no author-linked repository found |
 | 2025-08-26 | [VibeVoice](../models/continuous-lm.md#vibevoice) | paper | [Paper](https://arxiv.org/abs/2508.19205) |
-| 2025-08-08 | [Llasa+](../models/token-lm.md#llasa-plus) | paper | [Paper](https://arxiv.org/abs/2508.06262) |
-| 2025-06-23 | [IndexTTS2](../models/token-lm.md#indextts2) | paper | [Paper](https://arxiv.org/abs/2506.21619) |
-| 2025-05-23 | [CosyVoice 3](../models/token-lm.md#cosyvoice-3) | paper | [Paper](https://arxiv.org/abs/2505.17589) · [Repository](https://github.com/QwenAudio/CosyVoice) |
-| 2025-05-12 | [MiniMax-Speech](../models/token-lm.md#minimax-speech) | paper | [Paper](https://arxiv.org/abs/2505.07916) |
-| 2025-03-03 | [Spark-TTS](../models/token-lm.md#spark-tts) | paper | [Paper](https://arxiv.org/abs/2503.01710) · [Repository](https://github.com/SparkAudio/Spark-TTS) |
-| 2025-02-26 | [MegaTTS 3](../models/diffusion.md#mega-tts-3) | paper | [Paper](https://arxiv.org/abs/2502.18924) |
-| 2025-02-17 | [Step-Audio-TTS](../models/token-lm.md#step-audio-tts) | paper | [Paper](https://arxiv.org/abs/2502.11946) · [Repository](https://github.com/stepfun-ai/Step-Audio) |
-| 2025-02-08 | [IndexTTS](../models/token-lm.md#indextts) | paper | [Paper](https://arxiv.org/abs/2502.05512) |
-| 2025-02-06 | [Llasa](../models/token-lm.md#llasa) | paper | [Paper](https://arxiv.org/abs/2502.04128) |
+| 2025-08-26 | [CLEAR](../models/continuous-lm.md#clear) | paper | [Paper](https://arxiv.org/abs/2508.19098) · GitHub: no author-linked repository found |
+| 2025-08-22 | [AVLM (expressive speech)](../models/token-lm.md#avlm-expressive-speech) | paper | [Paper](https://arxiv.org/abs/2508.16188) · [GitHub](https://github.com/steventan0110/AVLM) |
+| 2025-08-20 | [CAM-TTS](../models/token-lm.md#cam-tts) | paper | [Paper](https://arxiv.org/abs/2508.14713) · GitHub: no author-linked repository found |
+| 2025-08-16 | [FNH-TTS](../models/flow-vae.md#fnh-tts) | paper | [Paper](https://arxiv.org/abs/2508.12001) · GitHub: no author-linked repository found |
+| 2025-08-15 | [MoE-TTS](../models/token-lm.md#moe-tts) | paper | [Paper](https://arxiv.org/abs/2508.11326) · GitHub: no author-linked repository found |
+| 2025-08-15 | [EmoSSLSphere](../models/token-lm.md#emosslsphere) | paper | [Paper](https://arxiv.org/abs/2508.11273) · GitHub: no author-linked repository found |
+| 2025-08-12 | [DualSpeechLM](../models/token-lm.md#dualspeechlm) | paper | [Paper](https://arxiv.org/abs/2508.08961) · GitHub: no author-linked repository found |
+| 2025-08-10 | [XEmoRAG](../models/token-lm.md#xemorag) | paper | [Paper](https://arxiv.org/abs/2508.07302) · GitHub: no author-linked repository found |
+| 2025-08-09 | [Meitei Mayek TTS](../models/autoregressive.md#meitei-mayek-tts) | paper | [Paper](https://arxiv.org/abs/2508.06870) · GitHub: no author-linked repository found |
+| 2025-08-08 | [Llasa+](../models/token-lm.md#llasa-plus) | paper | [Paper](https://arxiv.org/abs/2508.06262) · [GitHub](https://github.com/ASLP-lab/LLaSA_Plus) |
+| 2025-08-06 | [UniTalker](../models/token-lm.md#unitalker) | paper | [Paper](https://arxiv.org/abs/2508.04585) · [GitHub](https://github.com/AI-S2-Lab/UniTalker) |
+| 2025-08-06 | [Parallel GPT](../models/token-lm.md#parallel-gpt) | paper | [Paper](https://arxiv.org/abs/2508.04141) · GitHub: no author-linked repository found |
+| 2025-08-06 | [NVSpeech TTS](../models/token-lm.md#nvspeech-tts) | paper | [Paper](https://arxiv.org/abs/2508.04195) · [Project](https://nvspeech170k.github.io/) · GitHub: no author-linked repository found |
+| 2025-08-05 | [EmoSteer-TTS](../models/diffusion.md#emosteer-tts) | paper | [Paper](https://arxiv.org/abs/2508.03543) · GitHub: no author-linked repository found |
+| 2025-08-04 | [Marco-Voice](../models/token-lm.md#marco-voice) | paper | [Paper](https://arxiv.org/abs/2508.02038) · [GitHub](https://github.com/AIDC-AI/Marco-Voice) |
+| 2025-07-30 | [Dragon-FM](../models/token-lm.md#dragon-fm) | paper | [Paper](https://arxiv.org/abs/2507.22746) · [Project](https://cognitivespeech.github.io/dragon-fm) · GitHub: no author-linked repository found |
+| 2025-07-22 | [Inworld TTS-1](../models/token-lm.md#inworld-tts-1) | paper | [Paper](https://arxiv.org/abs/2507.21138) · [GitHub](https://github.com/inworld-ai/tts) |
+| 2025-07-21 | [A2TTS](../models/diffusion.md#a2tts) | paper | [Paper](https://arxiv.org/abs/2507.15272) · GitHub: no author-linked repository found |
+| 2025-07-20 | [DMOSpeech 2](../models/diffusion.md#dmospeech-2) | paper | [Paper](https://arxiv.org/abs/2507.14988) · [GitHub](https://github.com/yl4579/DMOSpeech2) · [Project](https://dmospeech2.github.io/) |
+| 2025-07-16 | [QTTS](../models/token-lm.md#qtts) | paper | [Paper](https://arxiv.org/abs/2507.12197) · GitHub: no author-linked repository found |
+| 2025-07-16 | [EME-TTS](../models/parallel.md#eme-tts) | paper | [Paper](https://arxiv.org/abs/2507.12015) · GitHub: no author-linked repository found |
+| 2025-07-14 | [DualDub](../models/token-lm.md#dualdub) | paper | [Paper](https://arxiv.org/abs/2507.10109) · GitHub: no author-linked repository found |
+| 2025-07-12 | [ZipVoice-Dialog](../models/diffusion.md#zipvoice-dialog) | paper | [Paper](https://arxiv.org/abs/2507.09318) · [GitHub](https://github.com/k2-fsa/ZipVoice) |
+| 2025-07-06 | [TTS-CtrlNet](../models/diffusion.md#tts-ctrlnet) | paper | [Paper](https://arxiv.org/abs/2507.04349) · [Project](https://curryjung.github.io/ttsctrlnet_project_page) · GitHub: no author-linked repository found |
+| 2025-07-02 | [SpeechAccentLLM](../models/token-lm.md#speechaccentllm) | paper | [Paper](https://arxiv.org/abs/2507.01348) · GitHub: no author-linked repository found |
+| 2025-06-30 | [TinyWave](../models/token-lm.md#tinywave) | paper | [Paper](https://arxiv.org/abs/2506.23670) · [GitHub](https://github.com/mohammadmahdinoori/TinyWave) · [Project](https://mohammadmahdinoori.github.io/tinywave-landing/) |
+| 2025-06-30 | [JAM-Flow](../models/diffusion.md#jam-flow) | paper | [Paper](https://arxiv.org/abs/2506.23552) · GitHub: no author-linked repository found |
+| 2025-06-27 | [DCAR](../models/token-lm.md#dcar) | paper | [Paper](https://arxiv.org/abs/2506.22023) · GitHub: no author-linked repository found |
+| 2025-06-26 | [Multistage multimodal TTS](../models/diffusion.md#multistage-multimodal-tts) | paper | [Paper](https://arxiv.org/abs/2506.20945) · GitHub: no author-linked repository found |
+| 2025-06-23 | [IndexTTS2](../models/token-lm.md#indextts2) | paper | [Paper](https://arxiv.org/abs/2506.21619) · [GitHub](https://github.com/index-tts/index-tts) |
+| 2025-06-21 | [OpusLM](../models/token-lm.md#opuslm) | paper | [Paper](https://arxiv.org/abs/2506.17611) · GitHub: no author-linked repository found |
+| 2025-06-20 | [V-CASS](../models/token-lm.md#v-cass) | paper | [Paper](https://arxiv.org/abs/2506.16716) · GitHub: no author-linked repository found |
+| 2025-06-20 | [RapFlow-TTS](../models/diffusion.md#rapflow-tts) | paper | [Paper](https://arxiv.org/abs/2506.16741) · [GitHub](https://github.com/naver-ai/RapFlow-TTS) |
+| 2025-06-19 | [Parler-TTS Hinglish adaptation](../models/token-lm.md#parler-tts-hinglish-adaptation) | paper | [Paper](https://arxiv.org/abs/2506.16310) · [GitHub](https://github.com/En1gma02/Parler-TTS-Hinglish-Accent-Emotions) |
+| 2025-06-18 | [EmojiVoice](../models/diffusion.md#emojivoice) | paper | [Paper](https://arxiv.org/abs/2506.15085) · [GitHub](https://github.com/rosielab/emojivoice) |
+| 2025-06-16 | [ZipVoice](../models/diffusion.md#zipvoice) | paper | [Paper](https://arxiv.org/abs/2506.13053) · [GitHub](https://github.com/k2-fsa/ZipVoice) |
+| 2025-06-14 | [StreamMel](../models/continuous-lm.md#streammel) | paper | [Paper](https://arxiv.org/abs/2506.12570) · GitHub: no author-linked repository found |
+| 2025-06-11 | [UmbraTTS](../models/diffusion.md#umbratts) | paper | [Paper](https://arxiv.org/abs/2506.09874) · [Project](https://aiola-lab.github.io/umbra-tts/) · GitHub: no author-linked repository found |
+| 2025-06-04 | [BitTTS](../models/compact.md#bittts) | paper | [Paper](https://arxiv.org/abs/2506.03515) · GitHub: no author-linked repository found |
+| 2025-06-03 | [Prompt-Unseen-Emotion](../models/token-lm.md#prompt-unseen-emotion) | paper | [Paper](https://arxiv.org/abs/2506.02742) · GitHub: no author-linked repository found |
+| 2025-06-03 | [Masked-style TTS](../models/token-lm.md#masked-style-tts) | paper | [Paper](https://arxiv.org/abs/2506.02997) · GitHub: no author-linked repository found |
+| 2025-06-01 | [DS-TTS](../models/diffusion.md#ds-tts) | paper | [Paper](https://arxiv.org/abs/2506.01020) · GitHub: no author-linked repository found |
+| 2025-06-01 | [CoVoMix2](../models/diffusion.md#covomix2) | paper | [Paper](https://arxiv.org/abs/2506.00885) · [GitHub](https://github.com/vivian556123/covomix2-dataprep) |
+| 2025-05-30 | [Compressed-to-fine speech LM](../models/token-lm.md#compressed-to-fine-speech-lm) | paper | [Paper](https://arxiv.org/abs/2505.24496) · GitHub: no author-linked repository found |
+| 2025-05-27 | [Spotlight-TTS](../models/diffusion.md#spotlight-tts) | paper | [Paper 1](https://arxiv.org/abs/2511.14824) · [Paper 2](https://arxiv.org/abs/2505.20868) · GitHub: no author-linked repository found |
+| 2025-05-26 | [SMLLE](../models/token-lm.md#smlle) | paper | [Paper](https://arxiv.org/abs/2505.19669) · [Project](https://shy-98.github.io/SMLLE_demo_page/) · GitHub: no author-linked repository found |
+| 2025-05-26 | [GSA-TTS](../models/parallel.md#gsa-tts) | paper | [Paper](https://arxiv.org/abs/2505.19384) · GitHub: no author-linked repository found |
+| 2025-05-26 | [DiEmo-TTS](../models/parallel.md#diemo-tts) | paper | [Paper](https://arxiv.org/abs/2505.19687) · [GitHub](https://github.com/Choddeok/DiEmo-TTS) |
+| 2025-05-25 | [SpeakStream](../models/continuous-lm.md#speakstream) | paper | [Paper](https://arxiv.org/abs/2505.19206) · [Project](https://apple.github.io/speakstream-demo) · GitHub: no author-linked repository found |
+| 2025-05-25 | [RV-TTS](../models/diffusion.md#rv-tts) | paper | [Paper](https://arxiv.org/abs/2505.18972) · GitHub: no author-linked repository found |
+| 2025-05-24 | [MPE-TTS](../models/token-lm.md#mpe-tts) | paper | [Paper](https://arxiv.org/abs/2505.18453) · GitHub: no author-linked repository found |
+| 2025-05-23 | [UniTTS](../models/token-lm.md#unitts) | paper | [Paper](https://arxiv.org/abs/2505.17426) · [GitHub](https://github.com/IDEA-Emdoor-Lab/UniTTS) |
+| 2025-05-23 | [CosyVoice 3](../models/token-lm.md#cosyvoice-3) | paper | [Paper](https://arxiv.org/abs/2505.17589) · [GitHub](https://github.com/QwenAudio/CosyVoice) · [Project](https://funaudiollm.github.io/cosyvoice3) |
+| 2025-05-22 | [MM-MovieDubber](../models/diffusion.md#mm-moviedubber) | paper | [Paper](https://arxiv.org/abs/2505.16279) · GitHub: no author-linked repository found |
+| 2025-05-20 | [TMD-TTS (formerly FMSD-TTS)](../models/diffusion.md#tmd-tts) | paper | [Paper 1](https://arxiv.org/abs/2509.18060) · [Paper 2](https://arxiv.org/abs/2505.14351) · GitHub: no author-linked repository found |
+| 2025-05-20 | [NR-LauraTTS](../models/token-lm.md#nr-lauratts) | paper | [Paper](https://arxiv.org/abs/2505.13830) · [GitHub](https://github.com/yxlu-0102/NR-LauraTTS) · [Project](https://yxlu-0102.github.io/NR-LauraTTS) |
+| 2025-05-19 | [SLED](../models/continuous-lm.md#sled) | paper | [Paper](https://arxiv.org/abs/2505.13181) · [GitHub](https://github.com/ictnlp/SLED-TTS) |
+| 2025-05-19 | [OZSpeech](../models/token-lm.md#ozspeech) | paper | [Paper](https://arxiv.org/abs/2505.12800) · [GitHub](https://github.com/ozspeech/OZSpeech) · [Project](https://ozspeech.github.io/OZSpeech_Web/) |
+| 2025-05-19 | [Chain-Talker](../models/token-lm.md#chain-talker) | paper | [Paper](https://arxiv.org/abs/2505.12597) · [GitHub](https://github.com/AI-S2-Lab/Chain-Talker) |
+| 2025-05-18 | [Shallow Flow Matching TTS](../models/diffusion.md#shallow-flow-matching-tts) | paper | [Paper](https://arxiv.org/abs/2505.12226) · [GitHub](https://github.com/ydqmkkx/ShallowFlowMatching-TTS) |
+| 2025-05-15 | [UDDETTS](../models/token-lm.md#uddetts) | paper | [Paper](https://arxiv.org/abs/2505.10599) · GitHub: no author-linked repository found |
+| 2025-05-12 | [MiniMax-Speech](../models/token-lm.md#minimax-speech) | paper | [Paper](https://arxiv.org/abs/2505.07916) · GitHub: no author-linked repository found |
+| 2025-05-12 | [LE2E-TTS](../models/compact.md#le2e-tts) | paper | [Paper](https://arxiv.org/abs/2505.07701) · GitHub: no author-linked repository found |
+| 2025-05-08 | [FlexSpeech](../models/diffusion.md#flexspeech) | paper | [Paper](https://arxiv.org/abs/2505.05159) · [Project](https://flexspeech.github.io/DEMO/) · GitHub: no author-linked repository found |
+| 2025-04-29 | [AlignDiT](../models/diffusion.md#aligndit) | paper | [Paper](https://arxiv.org/abs/2504.20629) · [GitHub](https://github.com/kaistmm/AlignDiT) |
+| 2025-04-27 | [Muyan-TTS](../models/token-lm.md#muyan-tts) | paper | [Paper](https://arxiv.org/abs/2504.19146) · [GitHub](https://github.com/MYZY-AI/Muyan-TTS) |
+| 2025-04-17 | [EmoVoice](../models/token-lm.md#emovoice) | paper | [Paper](https://arxiv.org/abs/2504.12867) · [GitHub](https://github.com/yanghaha0908/EmoVoice) |
+| 2025-04-15 | [GOAT-TTS](../models/token-lm.md#goat-tts) | paper | [Paper](https://arxiv.org/abs/2504.12339) · GitHub: no author-linked repository found |
+| 2025-04-14 | [PALLE](../models/token-lm.md#palle) | paper | [Paper](https://arxiv.org/abs/2504.10352) · GitHub: no author-linked repository found |
+| 2025-04-14 | [AutoStyle-TTS](../models/token-lm.md#autostyle-tts) | paper | [Paper](https://arxiv.org/abs/2504.10309) · [GitHub](https://github.com/Chengyuann/AutoStyle-TTS) · [Project](https://thuhcsi.github.io/icme2025-AutoStyle-TTS) |
+| 2025-04-12 | [AMNet](../models/parallel.md#amnet) | paper | [Paper](https://arxiv.org/abs/2504.09225) · GitHub: no author-linked repository found |
+| 2025-04-11 | [LanStyleTTS](../models/parallel.md#lanstyletts) | paper | [Paper](https://arxiv.org/abs/2504.08274) · GitHub: no author-linked repository found |
+| 2025-04-10 | [SlimSpeech](../models/compact.md#slimspeech) | paper | [Paper](https://arxiv.org/abs/2504.07776) · GitHub: no author-linked repository found |
+| 2025-04-10 | [Phoneme-tone adaptive Thai TTS](../models/parallel.md#phoneme-tone-adaptive-thai-tts) | paper | [Paper](https://arxiv.org/abs/2504.07858) · GitHub: no author-linked repository found |
+| 2025-04-04 | [RWKVTTS](../models/token-lm.md#rwkvtts) | paper | [Paper](https://arxiv.org/abs/2504.03289) · [GitHub](https://github.com/yynil/RWKVTTS) |
+| 2025-04-03 | [VoiceCraft-Dub](../models/token-lm.md#voicecraft-dub) | paper | [Paper](https://arxiv.org/abs/2504.02386) · [GitHub](https://github.com/kaist-ami/voicecraft-dub) |
+| 2025-04-03 | [F5R-TTS](../models/diffusion.md#f5r-tts) | paper | [Paper](https://arxiv.org/abs/2504.02407) · [GitHub](https://github.com/FrontierLabs/F5R-TTS) |
+| 2025-03-31 | [DeepDubber-V1](../models/diffusion.md#deepdubber-v1) | paper | [Paper](https://arxiv.org/abs/2503.23660) · [GitHub](https://github.com/woka-0a/DeepDubber-V1) |
+| 2025-03-29 | [Supertonic](../models/compact.md#supertonic) | paper | [Model card](https://huggingface.co/Supertone/supertonic) · [Paper](https://arxiv.org/abs/2503.23108) · [GitHub](https://github.com/supertone-inc/supertonic) · [Project](https://supertonictts.github.io/) |
+| 2025-03-26 | [FireRedTTS-1S](../models/token-lm.md#fireredtts-1s) | paper | [Paper](https://arxiv.org/abs/2503.20499) · GitHub: no author-linked repository found |
+| 2025-03-18 | [MoonCast](../models/token-lm.md#mooncast) | paper | [Paper](https://arxiv.org/abs/2503.14345) · [GitHub](https://github.com/jzq2000/MoonCast) · [Project](https://mooncastdemo.github.io) |
+| 2025-03-06 | [LLMVoX](../models/token-lm.md#llmvox) | paper | [Paper](https://arxiv.org/abs/2503.04724) · [GitHub](https://github.com/mbzuai-oryx/LLMVoX) · [Project](https://mbzuai-oryx.github.io/LLMVoX) |
+| 2025-03-03 | [Spark-TTS](../models/token-lm.md#spark-tts) | paper | [Paper](https://arxiv.org/abs/2503.01710) · [GitHub](https://github.com/SparkAudio/Spark-TTS) |
+| 2025-03-02 | [UniWav (TTS)](../models/diffusion.md#uniwav-tts) | paper | [Paper](https://arxiv.org/abs/2503.00733) · [Project](https://alexander-h-liu.github.io/uniwav-demo.github.io/) · GitHub: no author-linked repository found |
+| 2025-02-27 | [DiffCSS](../models/token-lm.md#diffcss) | paper | [Paper](https://arxiv.org/abs/2502.19924) · GitHub: no author-linked repository found |
+| 2025-02-26 | [MegaTTS 3](../models/diffusion.md#mega-tts-3) | paper | [Paper](https://arxiv.org/abs/2502.18924) · [GitHub](https://github.com/bytedance/MegaTTS3) |
+| 2025-02-26 | [Clip-TTS](../models/parallel.md#clip-tts) | paper | [Paper](https://arxiv.org/abs/2502.18889) · GitHub: no author-linked repository found |
+| 2025-02-17 | [Step-Audio-TTS](../models/token-lm.md#step-audio-tts) | paper | [Paper](https://arxiv.org/abs/2502.11946) · [GitHub](https://github.com/stepfun-ai/Step-Audio) |
+| 2025-02-16 | [SyncSpeech](../models/token-lm.md#syncspeech) | paper | [Paper](https://arxiv.org/abs/2502.11094) · [Project](https://SyncSpeech.github.io/) · GitHub: no author-linked repository found |
+| 2025-02-16 | [FELLE](../models/continuous-lm.md#felle) | paper | [Paper](https://arxiv.org/abs/2502.11128) · GitHub: no author-linked repository found |
+| 2025-02-11 | [Vevo](../models/token-lm.md#vevo) | paper | [Paper](https://arxiv.org/abs/2502.07243) · [GitHub](https://github.com/open-mmlab/Amphion) |
+| 2025-02-11 | [LoRP-TTS](../models/diffusion.md#lorp-tts) | paper | [Paper](https://arxiv.org/abs/2502.07562) · GitHub: no author-linked repository found |
+| 2025-02-11 | [Controllable masked-speech TTS](../models/token-lm.md#controllable-masked-speech-tts) | paper | [Paper](https://arxiv.org/abs/2502.07345) · GitHub: no author-linked repository found |
+| 2025-02-09 | [BnTTS](../models/token-lm.md#bntts) | paper | [Paper](https://arxiv.org/abs/2502.05729) · GitHub: no author-linked repository found |
+| 2025-02-08 | [IndexTTS](../models/token-lm.md#indextts) | paper | [Paper](https://arxiv.org/abs/2502.05512) · [GitHub](https://github.com/index-tts/index-tts) · [Project](https://index-tts.github.io) |
+| 2025-02-07 | [Koel-TTS](../models/token-lm.md#koel-tts) | paper | [Paper](https://arxiv.org/abs/2502.05236) · [Project](https://koeltts.github.io/) · GitHub: no author-linked repository found |
+| 2025-02-06 | [Llasa](../models/token-lm.md#llasa) | paper | [Paper](https://arxiv.org/abs/2502.04128) · [GitHub](https://github.com/zhenye234/LLaSA_training) · [Project](https://llasatts.github.io/llasatts/) |
+| 2025-02-06 | [DiTAR](../models/continuous-lm.md#ditar) | paper | [Paper](https://arxiv.org/abs/2502.03930) · [Project](https://spicyresearch.github.io/ditar/) · GitHub: no author-linked repository found |
+| 2025-02-05 | [Metis](../models/token-lm.md#metis) | paper | [Paper](https://arxiv.org/abs/2502.03128) · [GitHub](https://github.com/open-mmlab/Amphion) · [Project](https://metis-demo.github.io/) |
+| 2025-02-04 | [Ojibwe-Mi'kmaq-Maliseet TTS](../models/diffusion.md#ojibwe-mi-kmaq-maliseet-tts) | paper | [Paper](https://arxiv.org/abs/2502.02703) · [GitHub](https://github.com/ShenranTomWang/TTS) |
+| 2025-02-03 | [Stochastic-alignment continuous TTS](../models/continuous-lm.md#stochastic-alignment-continuous-tts) | paper | [Paper](https://arxiv.org/abs/2502.01084) · GitHub: no author-linked repository found |
+| 2025-01-31 | [VisualSpeech](../models/parallel.md#visualspeech) | paper | [Paper](https://arxiv.org/abs/2501.19258) · [Project](https://ariameetgit.github.io/VISUALSPEECH-SAMPLES/) · GitHub: no author-linked repository found |
+| 2025-01-29 | [BreezyVoice](../models/token-lm.md#breezyvoice) | paper | [Paper](https://arxiv.org/abs/2501.17790) · [GitHub](https://github.com/mtkresearch/BreezyVoice) |
+| 2025-01-28 | [Compact neural accessibility TTS](../models/compact.md#compact-neural-accessibility-tts) | paper | [Paper](https://arxiv.org/abs/2501.17332) · GitHub: no author-linked repository found |
+| 2025-01-15 | [Self-distilled zero-shot TTS](../models/compact.md#self-distilled-zero-shot-tts) | paper | [Paper](https://arxiv.org/abs/2501.08566) · GitHub: no author-linked repository found |
+| 2025-01-15 | [Joint non-autoregressive STT-TTS](../models/parallel.md#joint-non-autoregressive-stt-tts) | paper | [Paper](https://arxiv.org/abs/2501.09104) · GitHub: no author-linked repository found |
+| 2025-01-11 | [UniSpeaker](../models/diffusion.md#unispeaker) | paper | [Paper](https://arxiv.org/abs/2501.06394) · [Project](https://UniSpeaker.github.io) · GitHub: no author-linked repository found |
+| 2025-01-11 | [RADKA-CSS](../models/token-lm.md#radka-css) | paper | [Paper](https://arxiv.org/abs/2501.06467) · [GitHub](https://github.com/Coder-jzq/RADKA-CSS) · [Project](https://coder-jzq.github.io/RADKA-CSS-Website/index.html#case-study) |
+| 2025-01-10 | [TTS-Transducer](../models/token-lm.md#tts-transducer) | paper | [Paper](https://arxiv.org/abs/2501.06320) · [Project](https://tts-transducer.github.io) · GitHub: no author-linked repository found |
+| 2025-01-10 | [PROEMO](../models/parallel.md#proemo) | paper | [Paper](https://arxiv.org/abs/2501.06276) · GitHub: no author-linked repository found |
+| 2025-01-10 | [MARS6](../models/token-lm.md#mars6) | paper | [Paper](https://arxiv.org/abs/2501.05787) · [GitHub](https://github.com/Camb-ai/mars6-turbo) · [Project](https://camb-ai.github.io/mars6-turbo/) |
+| 2025-01-09 | [JELLY](../models/token-lm.md#jelly) | paper | [Paper](https://arxiv.org/abs/2501.04904) · [GitHub](https://github.com/jh-cha-prml/JELLY) · [Project](https://jh-cha-prml.github.io/JELLY) |
+| 2025-01-08 | [FleSpeech](../models/token-lm.md#flespeech) | paper | [Paper](https://arxiv.org/abs/2501.04644) · [Project](https://kkksuper.github.io/FleSpeech/) · GitHub: no author-linked repository found |
+| 2025-01-08 | [DrawSpeech](../models/diffusion.md#drawspeech) | paper | [Paper](https://arxiv.org/abs/2501.04256) · [GitHub](https://github.com/HappyColor/DrawSpeech_PyTorch) |
+| 2025-01-02 | [FaceSpeak](../models/diffusion.md#facespeak) | paper | [Paper](https://arxiv.org/abs/2501.03181) · GitHub: no author-linked repository found |
 | 2024-12-13 | [CosyVoice 2](../models/token-lm.md#cosyvoice-2) | paper | [Paper](https://arxiv.org/abs/2412.10117) |
-| 2024-11-02 | [Fish Speech](../models/token-lm.md#fish-speech) | paper | [Paper](https://arxiv.org/abs/2411.01156) · [Repository](https://github.com/fishaudio/fish-speech) |
-| 2024-10-09 | [F5-TTS](../models/diffusion.md#f5-tts) | paper | [Paper](https://arxiv.org/abs/2410.06885) · [Repository](https://github.com/SWivid/F5-TTS) |
+| 2024-11-02 | [Fish Speech](../models/token-lm.md#fish-speech) | paper | [Paper](https://arxiv.org/abs/2411.01156) · [GitHub](https://github.com/fishaudio/fish-speech) |
+| 2024-10-09 | [F5-TTS](../models/diffusion.md#f5-tts) | paper | [Paper](https://arxiv.org/abs/2410.06885) · [GitHub](https://github.com/SWivid/F5-TTS) |
 | 2024-09-05 | [FireRedTTS](../models/token-lm.md#fireredtts) | paper | [Paper](https://arxiv.org/abs/2409.03283) |
 | 2024-09-01 | [MaskGCT](../models/token-lm.md#maskgct) | paper | [Paper](https://arxiv.org/abs/2409.00750) |
 | 2024-07-07 | [CosyVoice](../models/token-lm.md#cosyvoice) | paper | [Paper](https://arxiv.org/abs/2407.05407) |
@@ -46,7 +310,7 @@ These are dates of the linked paper or explicitly dated announcement. An arXiv s
 | 2024-06-04 | [Seed-TTS](../models/token-lm.md#seed-tts) | paper | [Paper](https://arxiv.org/abs/2406.02430) |
 | 2024-04-04 | [RALL-E](../models/token-lm.md#rall-e) | paper | [Paper](https://arxiv.org/abs/2404.03204) |
 | 2024-04-03 | [CLaM-TTS](../models/token-lm.md#clam-tts) | paper | [Paper](https://arxiv.org/abs/2404.02781) |
-| 2024-03-25 | [VoiceCraft](../models/token-lm.md#voicecraft) | paper | [Paper](https://arxiv.org/abs/2403.16973) · [Repository](https://github.com/jasonppy/VoiceCraft) |
+| 2024-03-25 | [VoiceCraft](../models/token-lm.md#voicecraft) | paper | [Paper](https://arxiv.org/abs/2403.16973) · [GitHub](https://github.com/jasonppy/VoiceCraft) |
 | 2024-03-05 | [NaturalSpeech 3](../models/diffusion.md#naturalspeech-3) | paper | [Paper](https://arxiv.org/abs/2403.03100) |
 | 2024-02-12 | [BASE TTS](../models/token-lm.md#base-tts) | paper | [Paper](https://arxiv.org/abs/2402.08093) |
 | 2024-01-25 | [VALL-T](../models/token-lm.md#vall-t) | paper | [Paper](https://arxiv.org/abs/2401.14321) |
@@ -59,7 +323,7 @@ These are dates of the linked paper or explicitly dated announcement. An arXiv s
 | 2023-06-23 | [Voicebox](../models/diffusion.md#voicebox) | paper | [Paper](https://arxiv.org/abs/2306.15687) |
 | 2023-06-13 | [StyleTTS 2](../models/diffusion.md#styletts-2) | paper | [Paper](https://arxiv.org/abs/2306.07691) |
 | 2023-06-06 | [Mega-TTS](../models/token-lm.md#mega-tts) | paper | [Paper](https://arxiv.org/abs/2306.03509) |
-| 2023-05-12 | [Tortoise TTS](../models/token-lm.md#tortoise-tts) | paper | [Paper](https://arxiv.org/abs/2305.07243) · [Repository](https://github.com/neonbjb/tortoise-tts) |
+| 2023-05-12 | [Tortoise TTS](../models/token-lm.md#tortoise-tts) | paper | [Paper](https://arxiv.org/abs/2305.07243) · [GitHub](https://github.com/neonbjb/tortoise-tts) |
 | 2023-04-18 | [NaturalSpeech 2](../models/diffusion.md#naturalspeech-2) | paper | [Paper](https://arxiv.org/abs/2304.09116) |
 | 2023-03-07 | [VALL-E X](../models/token-lm.md#vall-e-x) | paper | [Paper](https://arxiv.org/abs/2303.03926) |
 | 2023-02-07 | [SPEAR-TTS](../models/token-lm.md#spear-tts) | paper | [Paper](https://arxiv.org/abs/2302.03540) |
@@ -126,7 +390,6 @@ These entries remain searchable without assigning a guessed publication or relea
 - [Parler-TTS](../models/token-lm.md#parler-tts)
 - [Piper (VITS voices)](../models/flow-vae.md#piper)
 - [Pocket TTS](../models/continuous-lm.md#pocket-tts)
-- [Supertonic](../models/compact.md#supertonic)
 - [Supertonic 2](../models/compact.md#supertonic-2)
 - [Supertonic 3](../models/compact.md#supertonic-3)
 - [VibeVoice-Realtime](../models/continuous-lm.md#vibevoice-realtime)

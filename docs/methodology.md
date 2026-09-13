@@ -14,6 +14,7 @@ Groups are navigation aids, not mutually exclusive technical claims:
 
 | Group | Organizing feature |
 | --- | --- |
+| Concatenative | Recorded speech units selected and joined using linguistic rules |
 | Autoregressive | Sequential acoustic or waveform prediction |
 | Parallel | Feed-forward acoustic generation and duration expansion |
 | Flow / VAE | Normalizing flows, variational inference and related hybrids |
@@ -31,6 +32,8 @@ For example, Flowtron is autoregressive but appears under normalizing flows; Sty
 - **S input:** reference speech, audio prefix, speaker conditioning or prosody, often optional and variant-dependent. It does not establish spoken-question understanding. Training-only audio is not an inference input.
 - **S output:** synthesized speech through the documented complete pipeline. Acoustic-model entries include their accompanying vocoder or waveform reconstruction stage.
 - **A:** broader generated audio where a TTS-capable model also supports non-speech sounds.
+- **I:** an image used to condition voice, expression or a visual scene; it is not an image-recognition capability claim.
+- **V:** video conditioning for dubbing, timing, expression or a generated audio scene. It does not imply video output.
 - **Generation:** speech synthesis is established; this label makes no latency claim.
 - **Streaming:** the source explicitly documents incremental synthesis. Backend and checkpoint restrictions remain in the notes.
 
@@ -44,8 +47,18 @@ The [2025–2026 descriptions](model-descriptions.md) explain synthesis methods,
 
 Every card has a local image. Paper or developer figures retain attribution and their original download URL in [figure credits](../assets/architectures/CREDITS.md). Multi-panel PDF excerpts preserve the technical content. Where a suitable primary-source figure is unavailable, a generated SVG explicitly summarizes documented inputs and outputs without inventing internal architecture. Third-party figures retain their own rights; see the [figure notice](../assets/architectures/FIGURE_NOTICE.md).
 
+## TTS-arxiv-daily import
+
+The [2025 onward collection](tts-arxiv-daily.md) screens every 2025–2026 row in a pinned snapshot of [TTS-arxiv-daily](https://github.com/liutaocode/TTS-arxiv-daily). Its date threshold is the paper's **first submission on or after 2025-01-01**. The existing historical catalog is retained. The [screening ledger](../data/tts-arxiv-daily.json) records the source commit, snapshot checksum, every decision, review level, first submission dates for included papers, model-family mappings and repository verification evidence.
+
+The source list is a discovery index. Its code column is not treated as proof that a repository belongs to a paper: links are checked against the paper, author-linked project pages or a matching author repository. Incorrect or unrelated upstream links are omitted. `author-linked` means a GitHub source was identified, which may contain an implementation, a placeholder or supporting data; the notes distinguish these cases. `not-found` means no author-linked repository was found in the reviewed sources, not that one cannot exist. Missing repositories are never replaced with search links or unrelated implementations.
+
+Named synthesis adaptations and distinct unnamed architectures are included with explanatory names. Components and optimization methods without a distinct synthesis system are excluded. Retitled papers and extended versions share a family when they describe the same system. Withdrawn papers retain a visible status note; a replacement paper is linked where the authors identify one. A figure from a withdrawn version is attributed to the exact accessible version.
+
+Figures extracted from arXiv HTML may be converted from SVG to PNG. Multiple panels from the same figure can be assembled for display, with every original image URL retained in `origin_urls`. PDF excerpts are cropped to the relevant diagrams. These are source figures; they do not assert that the full synthesis implementation is available.
+
 The catalog format and initial speech-generation entries are adapted from [Awesome Omni Architectures](https://github.com/kadirnar/awesome-omni-architectures). The TTS scope additionally includes conventional neural acoustic models and diffusion systems. The [neural speech synthesis survey](https://arxiv.org/abs/2106.15561) was used for discovery; model-level claims cite their own primary sources.
 
 ## Maintenance
 
-[data/models.json](../data/models.json) and [data/figures.json](../data/figures.json) are the sources of truth. Run `python3 scripts/catalog.py --check` to verify the catalog offline. See [CONTRIBUTING.md](../CONTRIBUTING.md) for updates and corrections.
+[data/models.json](../data/models.json), [data/figures.json](../data/figures.json) and [the daily screening ledger](../data/tts-arxiv-daily.json) are the sources of truth. Run `python3 scripts/catalog.py --check` to verify the catalog offline. See [CONTRIBUTING.md](../CONTRIBUTING.md) for updates and corrections.

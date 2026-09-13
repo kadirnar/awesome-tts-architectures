@@ -4,25 +4,31 @@
 
 [← All models](../README.md#models)
 
-**9 models · Reviewed 2026-09-13**
+**15 models · Reviewed 2026-09-13**
 
 Primary-source figures and labeled input/output diagrams. [Figure credits](../assets/architectures/CREDITS.md).
 
 <details>
 <summary>Model index and modality key</summary>
 
-**Inputs and outputs:** T = text, S = speech, A = other audio. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
+**Inputs and outputs:** T = text, S = speech, A = other audio, I = image, V = video. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
 
 Dates refer to papers or announcements, not necessarily model releases.
 
 | Model | Source date | Input → output | Interaction |
 | --- | --- | --- | --- |
 | [Flowtron](#flowtron) | 2020-05-12 | T, S → S | generation |
+| [FNH-TTS](#fnh-tts) | 2025-08-16 | T, S → S | generation |
 | [Glow-TTS](#glow-tts) | 2020-05-22 | T → S | generation |
 | [MeloTTS](#melo-tts) | — | T → S | generation |
 | [NaturalSpeech](#naturalspeech) | 2022-05-09 | T → S | generation |
+| [Nüshu-PitchVITS](#nushu-pitchvits) | 2026-06-08 | T → S | generation |
 | [Piper (VITS voices)](#piper) | — | T → S | generation |
 | [PortaSpeech](#portaspeech) | 2021-09-30 | T → S | generation |
+| [Progressive face-conditioned TTS](#progressive-face-conditioned-tts) | 2025-09-09 | T, I → S | generation |
+| [ProtoDisent-TTS](#protodisent-tts) | 2026-02-09 | T, S → S | generation |
+| [SelfTTS](#selftts) | 2026-03-23 | T, S → S | generation |
+| [Vclip](#vclip) | 2026-01-06 | T, I → S | generation |
 | [VITS](#vits) | 2021-06-11 | T → S | generation |
 | [VITS2](#vits-2) | 2023-07-31 | T → S | generation |
 | [YourTTS](#yourtts) | 2021-12-04 | T, S → S | generation |
@@ -49,6 +55,29 @@ Autoregressive normalizing flows over mel spectrograms.
 **Input → output:** T, S → S · **Interaction:** generation
 
 An invertible acoustic model supports sampling and style transfer. A separate vocoder produces the waveform.
+
+</details>
+
+<a id="fnh-tts"></a>
+
+### FNH-TTS
+
+VITS with a mixture-of-experts duration predictor.
+
+FNH-TTS routes linguistic and speaker information through several duration experts to model varied timing patterns. It combines this predictor with changes to waveform generation, aiming for robust end-to-end speech synthesis across voices and prosodic conditions.
+
+[Paper](https://arxiv.org/abs/2508.12001) · GitHub: no author-linked repository found
+
+![FNH-TTS — Figure 1](../assets/architectures/fnh-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2508.12001)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -79,7 +108,7 @@ Learns text-to-speech alignment without an external aligner and generates mel sp
 
 VITS-family multilingual speech synthesis.
 
-[Repository](https://github.com/myshell-ai/MeloTTS)
+[GitHub](https://github.com/myshell-ai/MeloTTS)
 
 ![MeloTTS — Input/output diagram](../assets/architectures/melo-tts.svg)
 
@@ -117,13 +146,36 @@ Combines phoneme pretraining, a differentiable durator, bidirectional prior/post
 
 </details>
 
+<a id="nushu-pitchvits"></a>
+
+### Nüshu-PitchVITS
+
+VITS with explicit pitch supervision from Nüshu tone notation.
+
+Nüshu-PitchVITS uses pitch annotations from Nüshu's writing system to guide acoustic generation under very limited data. A frame-level pitch predictor conditions the VITS waveform path, allowing syllable recordings and linguistic tone knowledge to support sentence synthesis.
+
+[Paper](https://arxiv.org/abs/2606.09295) · GitHub: no author-linked repository found
+
+![Nüshu-PitchVITS — Figure 3](../assets/architectures/nushu-pitchvits.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2606.09295)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="piper"></a>
 
 ### Piper (VITS voices)
 
 VITS voice models exported for local inference.
 
-[Repository](https://github.com/OHF-Voice/piper1-gpl) · [Docs](https://github.com/rhasspy/piper/blob/master/TRAINING.md)
+[GitHub](https://github.com/OHF-Voice/piper1-gpl) · [Docs](https://github.com/rhasspy/piper/blob/master/TRAINING.md)
 
 ![Piper (VITS voices) — Input/output diagram](../assets/architectures/piper.svg)
 
@@ -158,6 +210,98 @@ Variational acoustic model and flow-based post-net.
 **Input → output:** T → S · **Interaction:** generation
 
 Combines word-level and phoneme-level alignment with a lightweight VAE; the post-net restores acoustic detail before vocoding.
+
+</details>
+
+<a id="progressive-face-conditioned-tts"></a>
+
+### Progressive face-conditioned TTS
+
+Multi-granularity facial conditioning for speech synthesis.
+
+This face-conditioned synthesizer combines local facial regions into progressively broader visual representations. Joint visual and acoustic attribute learning and multiple photographs of each training speaker align the face representation with voice characteristics, conditioning speech generation on text and a face image.
+
+[Paper](https://arxiv.org/abs/2509.07376) · GitHub: no author-linked repository found
+
+![Progressive face-conditioned TTS — Figure 1](../assets/architectures/progressive-face-conditioned-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2509.07376)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, I → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="protodisent-tts"></a>
+
+### ProtoDisent-TTS
+
+Prototype-based separation of speaker timbre and dysarthric articulation.
+
+ProtoDisent-TTS learns a codebook of healthy and dysarthric articulation patterns separately from speaker identity. Adversarial constraints reduce pathological information in the speaker representation, enabling controlled synthesis of articulation characteristics in a target voice.
+
+[Paper](https://arxiv.org/abs/2602.08696) · [Project](https://mors20.github.io/ProtoDisent-TTS) · GitHub: no author-linked repository found
+
+![ProtoDisent-TTS — Figure 1](../assets/architectures/protodisent-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2602.08696)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="selftts"></a>
+
+### SelfTTS
+
+Disentangled speaker and emotion embeddings with self-refined synthesis.
+
+SelfTTS learns separate representations of a speaker's identity and emotional delivery using contrastive and adversarial objectives. It then improves synthesis through self-generated training examples, allowing emotion transfer to speakers originally recorded with neutral expression.
+
+[Paper](https://arxiv.org/abs/2603.22252) · [GitHub](https://github.com/AI-Unicamp/SelfTTS) · [Project](https://ai-unicamp.github.io/publications/tts/selftts/)
+
+![SelfTTS — Figure 1](../assets/architectures/selftts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2603.22252)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="vclip"></a>
+
+### Vclip
+
+CLIP-based face-to-voice retrieval with speaker-distribution modeling.
+
+Vclip learns an association between facial appearance and voice representations. Given a portrait, it retrieves and combines plausible speaker candidates for a downstream TTS model; the generated voice is an inferred match rather than a reconstruction of an unheard recording.
+
+[Paper](https://arxiv.org/abs/2601.02753) · GitHub: no author-linked repository found
+
+![Vclip — Figure 1](../assets/architectures/vclip.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2601.02753)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, I → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 

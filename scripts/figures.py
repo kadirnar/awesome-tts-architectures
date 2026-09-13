@@ -22,8 +22,16 @@ def validate_figures(catalog, manifest, root):
     required = {"kind", "path", "source_url", "origin_url", "locator", "sha256"}
     checked = set()
     for mid, figure in manifest["models"].items():
-        if set(figure) != required or figure["kind"] not in {"source-figure", "io-diagram"}:
+        if not required <= set(figure) or set(figure) - required - {"origin_urls"} or figure["kind"] not in {"source-figure", "io-diagram"}:
             raise ValueError(f"{mid}: invalid figure fields/kind")
+        if "origin_urls" in figure:
+            origins = figure["origin_urls"]
+            if figure["kind"] != "source-figure" or not isinstance(origins, list) or len(origins) < 2 or len(set(origins)) != len(origins) or origins[0] != figure["origin_url"]:
+                raise ValueError(f"{mid}: invalid multi-panel figure origins")
+            for origin_url in origins:
+                origin = urlsplit(origin_url)
+                if origin.scheme != "https" or not origin.netloc or origin.username or origin.password or re.search(r"\s", origin_url):
+                    raise ValueError(f"{mid}: invalid panel origin URL")
         if figure["source_url"] not in {s["url"] for s in models[mid]["sources"]}:
             raise ValueError(f"{mid}: figure must cite one of the model's primary sources")
         path = Path(figure["path"])
@@ -115,5 +123,7 @@ def render_credits(models, manifest):
     for model in models:
         figure = figures[model["id"]]
         origin = f'[Original]({figure["origin_url"]})' if figure["origin_url"] else "Generated from catalog"
+        if figure.get("origin_urls"):
+            origin = " · ".join(f'[Panel {n}]({url})' for n, url in enumerate(figure["origin_urls"], 1))
         lines.append(f'| {model["name"]} | [{figure["locator"]}]({Path(figure["path"]).name}) | [Source]({figure["source_url"]}) | {origin} |')
     return "\n".join(lines) + "\n"

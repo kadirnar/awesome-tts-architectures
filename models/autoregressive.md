@@ -4,14 +4,14 @@
 
 [← All models](../README.md#models)
 
-**10 models · Reviewed 2026-09-13**
+**11 models · Reviewed 2026-09-13**
 
 Primary-source figures and labeled input/output diagrams. [Figure credits](../assets/architectures/CREDITS.md).
 
 <details>
 <summary>Model index and modality key</summary>
 
-**Inputs and outputs:** T = text, S = speech, A = other audio. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
+**Inputs and outputs:** T = text, S = speech, A = other audio, I = image, V = video. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
 
 Dates refer to papers or announcements, not necessarily model releases.
 
@@ -21,6 +21,7 @@ Dates refer to papers or announcements, not necessarily model releases.
 | [Deep Voice 2](#deep-voice-2) | 2017-05-24 | T → S | generation |
 | [Deep Voice 3](#deep-voice-3) | 2017-10-20 | T → S | generation |
 | [GST-Tacotron](#gst-tacotron) | 2018-03-23 | T, S → S | generation |
+| [Meitei Mayek TTS](#meitei-mayek-tts) | 2025-08-09 | T → S | generation |
 | [Mellotron](#mellotron) | 2019-10-26 | T, S → S | generation |
 | [SpeechT5](#speecht5) | 2021-10-14 | T, S → S | generation |
 | [Tacotron](#tacotron) | 2017-03-29 | T → S | generation |
@@ -113,6 +114,29 @@ Tacotron with a reference encoder and global style tokens.
 **Input → output:** T, S → S · **Interaction:** generation
 
 Unsupervised style embeddings control delivery; synthesis can use reference audio or manually selected token weights.
+
+</details>
+
+<a id="meitei-mayek-tts"></a>
+
+### Meitei Mayek TTS
+
+Tacotron 2 with a Meitei Mayek phoneme frontend and HiFi-GAN.
+
+This Manipuri speech synthesizer maps Meitei Mayek writing to an ARPAbet-based phoneme representation before acoustic generation with Tacotron 2. A HiFi-GAN vocoder reconstructs the waveform. The paper develops a single-speaker system for a language with limited training resources and tonal pronunciation requirements.
+
+[Paper](https://arxiv.org/abs/2508.06870) · GitHub: no author-linked repository found
+
+![Meitei Mayek TTS — Paper figure](../assets/architectures/meitei-mayek-tts.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2508.06870)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The paper illustrates the Tacotron 2 reference architecture with a WaveNet block; its reported Meitei Mayek implementation uses HiFi-GAN for waveform reconstruction.
 
 </details>
 

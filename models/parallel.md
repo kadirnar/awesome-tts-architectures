@@ -4,35 +4,117 @@
 
 [← All models](../README.md#models)
 
-**12 models · Reviewed 2026-09-13**
+**25 models · Reviewed 2026-09-13**
 
 Primary-source figures and labeled input/output diagrams. [Figure credits](../assets/architectures/CREDITS.md).
 
 <details>
 <summary>Model index and modality key</summary>
 
-**Inputs and outputs:** T = text, S = speech, A = other audio. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
+**Inputs and outputs:** T = text, S = speech, A = other audio, I = image, V = video. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
 
 Dates refer to papers or announcements, not necessarily model releases.
 
 | Model | Source date | Input → output | Interaction |
 | --- | --- | --- | --- |
+| [AMNet](#amnet) | 2025-04-12 | T → S | generation |
+| [Causal-prosody FastSpeech 2](#causal-prosody-fastspeech-2) | 2026-03-12 | T → S | generation |
+| [Clip-TTS](#clip-tts) | 2025-02-26 | T → S | generation |
 | [DelightfulTTS](#delightfultts) | 2021-10-25 | T → S | generation |
+| [DiEmo-TTS](#diemo-tts) | 2025-05-26 | T, S → S | generation |
+| [EME-TTS](#eme-tts) | 2025-07-16 | T → S | generation |
+| [Emotion-timbre disentangled TTS](#emotion-timbre-disentangled-tts) | 2025-10-02 | T, S → S | generation |
 | [EmotiVoice](#emotivoice) | — | T → S | generation |
 | [FastPitch](#fastpitch) | 2020-06-11 | T → S | generation |
 | [FastSpeech](#fastspeech) | 2019-05-22 | T → S | generation |
 | [FastSpeech 2](#fastspeech-2) | 2020-06-08 | T → S | generation |
+| [GSA-TTS](#gsa-tts) | 2025-05-26 | T, S → S | generation |
 | [JETS](#jets) | 2022-03-31 | T → S | generation |
+| [Joint non-autoregressive STT-TTS](#joint-non-autoregressive-stt-tts) | 2025-01-15 | T → S | generation |
+| [LanStyleTTS](#lanstyletts) | 2025-04-11 | T, S → S | generation |
 | [LightSpeech](#lightspeech) | 2021-02-08 | T → S | generation |
 | [Parallel Tacotron](#parallel-tacotron) | 2020-10-22 | T → S | generation |
 | [Parallel Tacotron 2](#parallel-tacotron-2) | 2021-03-26 | T → S | generation |
+| [ParaStyleTTS](#parastyletts) | 2025-10-21 | T → S | generation |
+| [Phoneme-tone adaptive Thai TTS](#phoneme-tone-adaptive-thai-tts) | 2025-04-10 | T, S → S | generation |
+| [PROEMO](#proemo) | 2025-01-10 | T → S | generation |
 | [PromptTTS](#prompttts) | 2022-11-22 | T → S | generation |
 | [SpeedySpeech](#speedyspeech) | 2020-08-09 | T → S | generation |
 | [StyleTTS](#styletts) | 2022-05-30 | T, S → S | generation |
+| [VisualSpeech](#visualspeech) | 2025-01-31 | T, V → S | generation |
 
 </details>
 
 ## Architectures
+
+<a id="amnet"></a>
+
+### AMNet
+
+FastSpeech 2 with phrase annotations and local convolution.
+
+AMNet adds phrase-structure information and local convolutional modeling to a parallel Mandarin acoustic model. These changes help capture contextual pauses, emphasis and intonation before the accompanying vocoder reconstructs the waveform.
+
+[Paper](https://arxiv.org/abs/2504.09225) · GitHub: no author-linked repository found
+
+![AMNet — Paper figure](../assets/architectures/amnet.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2504.09225)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="causal-prosody-fastspeech-2"></a>
+
+### Causal-prosody FastSpeech 2
+
+Emotion-conditioned variance adaptation with counterfactual prosody training.
+
+This FastSpeech 2 extension explicitly models emotion alongside duration, pitch and energy. Counterfactual training separates emotional changes from linguistic content, allowing users to modify prosody while preserving the intended words.
+
+[Paper](https://arxiv.org/abs/2603.11683) · GitHub: no author-linked repository found
+
+![Causal-prosody FastSpeech 2 — Figure 1 (paper page 3)](../assets/architectures/causal-prosody-fastspeech-2.png)
+
+*Figure 1 (paper page 3) · [Source](https://arxiv.org/abs/2603.11683)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="clip-tts"></a>
+
+### Clip-TTS
+
+Contrastively aligned text and mel features in a Transformer acoustic model.
+
+Clip-TTS trains its textual representation against corresponding mel-spectrogram information through a contrastive objective. The acoustic Transformer uses the resulting context-aware features to improve prosodic interpretation during speech generation.
+
+[Paper](https://arxiv.org/abs/2502.18889) · GitHub: no author-linked repository found
+
+![Clip-TTS — Figure 3](../assets/architectures/clip-tts.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2502.18889)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
 
 <a id="delightfultts"></a>
 
@@ -55,13 +137,82 @@ Predicts acoustic features and variation factors, then uses HiFiNet to synthesiz
 
 </details>
 
+<a id="diemo-tts"></a>
+
+### DiEmo-TTS
+
+Self-supervised emotion distillation with disentangled voice conditioning.
+
+DiEmo-TTS distills emotion information from speech while suppressing unrelated speaker characteristics. Cluster-based sampling and representation perturbation improve cross-speaker emotion transfer, including situations where extensive emotion labels are unavailable.
+
+[Paper](https://arxiv.org/abs/2505.19687) · [GitHub](https://github.com/Choddeok/DiEmo-TTS)
+
+![DiEmo-TTS — Figure 1](../assets/architectures/diemo-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2505.19687)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="eme-tts"></a>
+
+### EME-TTS
+
+Emotion-aware emphasis modeling with weakly supervised controls.
+
+EME-TTS jointly models emotional delivery and local emphasis instead of treating them as independent effects. Automatically derived emphasis labels and variance-related features help users stress selected material while retaining a recognizable target emotion.
+
+[Paper](https://arxiv.org/abs/2507.12015) · GitHub: no author-linked repository found
+
+![EME-TTS — Figure 1](../assets/architectures/eme-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2507.12015)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="emotion-timbre-disentangled-tts"></a>
+
+### Emotion-timbre disentangled TTS
+
+Phoneme-level emotion prediction with mutual-information disentanglement.
+
+This emotional synthesizer learns separate reference encoders for timbre and emotion. A mutual-information objective reduces their overlap, while phoneme-level emotion prediction carries changing expression into the generated acoustic sequence.
+
+[Paper](https://arxiv.org/abs/2510.01722) · [GitHub](https://github.com/BaleYang/emotion-timbre-disentangled-tts-code) · [Project](https://baleyang.github.io/emotion-timbre-disentangled-tts/)
+
+![Emotion-timbre disentangled TTS — Figure 1](../assets/architectures/emotion-timbre-disentangled-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2510.01722)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="emotivoice"></a>
 
 ### EmotiVoice
 
 PromptTTS-derived style and content conditioning.
 
-[Repository](https://github.com/netease-youdao/EmotiVoice)
+[GitHub](https://github.com/netease-youdao/EmotiVoice)
 
 ![EmotiVoice — Input/output diagram](../assets/architectures/emotivoice.svg)
 
@@ -143,6 +294,29 @@ Learns from ground-truth speech without teacher distillation. FastSpeech 2s adds
 
 </details>
 
+<a id="gsa-tts"></a>
+
+### GSA-TTS
+
+Hierarchical gradual style encoding from reference speech.
+
+GSA-TTS extracts local style information at successive levels and combines it through attention into a global reference condition. This richer style representation guides the acoustic model when synthesizing an unseen speaker's voice.
+
+[Paper](https://arxiv.org/abs/2505.19384) · GitHub: no author-linked repository found
+
+![GSA-TTS — Figure 1](../assets/architectures/gsa-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2505.19384)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="jets"></a>
 
 ### JETS
@@ -161,6 +335,52 @@ Joint FastSpeech 2 and HiFi-GAN with learned alignment.
 **Input → output:** T → S · **Interaction:** generation
 
 Trains the acoustic model and waveform generator together, avoiding a separately supplied text-speech alignment.
+
+</details>
+
+<a id="joint-non-autoregressive-stt-tts"></a>
+
+### Joint non-autoregressive STT-TTS
+
+Shared multimodal encoder-decoder with iterative output refinement.
+
+This model handles text and speech within one non-autoregressive architecture. Its TTS path predicts acoustic output from text, and feeding partial predictions back into the model improves generation through iterative refinement while also supporting recognition training.
+
+[Paper](https://arxiv.org/abs/2501.09104) · GitHub: no author-linked repository found
+
+![Joint non-autoregressive STT-TTS — Paper figure](../assets/architectures/joint-non-autoregressive-stt-tts.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2501.09104)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="lanstyletts"></a>
+
+### LanStyleTTS
+
+Shared multilingual phonemes with language-aware style adaptation.
+
+LanStyleTTS standardizes phonetic inputs and introduces local style conditioning across languages. The framework can augment several parallel acoustic backbones, allowing one multilingual model to vary delivery at phoneme level.
+
+[Paper](https://arxiv.org/abs/2504.08274) · GitHub: no author-linked repository found
+
+![LanStyleTTS — Paper figure](../assets/architectures/lanstyletts.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2504.08274)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -229,6 +449,75 @@ Learns alignment and token durations through differentiable upsampling and a Sof
 
 </details>
 
+<a id="parastyletts"></a>
+
+### ParaStyleTTS
+
+Two-level adaptation separating prosodic and paralinguistic style.
+
+ParaStyleTTS converts textual style prompts into separate controls for prosody and broader paralinguistic characteristics. The lightweight adaptation design targets expressive speech from descriptions while making the roles of the two conditioning levels explicit.
+
+[Paper](https://arxiv.org/abs/2510.18308) · [GitHub](https://github.com/haoweilou/ParaStyleTTS) · [Project](https://parastyletts.github.io/ParaStyleTTS_Demo/)
+
+![ParaStyleTTS — Figure 1](../assets/architectures/parastyletts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2510.18308)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="phoneme-tone-adaptive-thai-tts"></a>
+
+### Phoneme-tone adaptive Thai TTS
+
+Phoneme-tone BERT with duration, pitch and energy predictors.
+
+This Thai speech synthesizer encodes phonemes and tones with a language-specific BERT model, then predicts duration, pitch and energy for a GAN-trained waveform decoder. A reference-derived style vector supports voice cloning. Multilingual pretraining of acoustic feature extractors and Thai adaptation address limited language-specific data.
+
+[Paper](https://arxiv.org/abs/2504.07858) · GitHub: no author-linked repository found
+
+![Phoneme-tone adaptive Thai TTS — Figure 2](../assets/architectures/phoneme-tone-adaptive-thai-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2504.07858)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="proemo"></a>
+
+### PROEMO
+
+Prompt-conditioned multi-speaker emotion and intensity modeling.
+
+PROEMO combines emotional prompts with an explicit intensity control in a multi-speaker synthesizer. The conditioning adjusts delivery strength and prosodic variation, allowing the same spoken text to be rendered with different emotional performances.
+
+[Paper](https://arxiv.org/abs/2501.06276) · GitHub: no author-linked repository found
+
+![PROEMO — Figure 1](../assets/architectures/proemo.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2501.06276)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="prompttts"></a>
 
 ### PromptTTS
@@ -289,5 +578,28 @@ Style-conditioned parallel synthesis with a transferable aligner.
 **Input → output:** T, S → S · **Interaction:** generation
 
 Extracts speaking style from reference speech and predicts duration, pitch and energy for acoustic generation.
+
+</details>
+
+<a id="visualspeech"></a>
+
+### VisualSpeech
+
+Visual-textual context conditioning for prosodic synthesis.
+
+VisualSpeech adds video-derived context to a text-to-speech model to reduce ambiguity in delivery. The visual representation guides prosodic choices so the same text can be rendered in a way that fits its scene.
+
+[Paper](https://arxiv.org/abs/2501.19258) · [Project](https://ariameetgit.github.io/VISUALSPEECH-SAMPLES/) · GitHub: no author-linked repository found
+
+![VisualSpeech — Figure 1](../assets/architectures/visualspeech.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2501.19258)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, V → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
