@@ -242,12 +242,16 @@
       "sha256": "0cc8203482da1dad8a6fd2bb1fa6389eb44ae22f8f3c01187f11e71425e3bd15"
     },
     "llasa": {
-      "kind": "io-diagram",
-      "path": "assets/architectures/llasa.svg",
+      "kind": "source-figure",
+      "path": "assets/architectures/llasa.png",
       "source_url": "https://arxiv.org/abs/2502.04128",
-      "origin_url": null,
-      "locator": "Input/output diagram",
-      "sha256": null
+      "origin_url": "https://arxiv.org/html/2502.04128v2/comparison_plot.png",
+      "locator": "Figure 2",
+      "sha256": "6f2a51ce8a6ed9ea9a69bd0cae7f50134d3ccc7be4afc041fc7731f8729be044",
+      "origin_urls": [
+        "https://arxiv.org/html/2502.04128v2/comparison_plot.png",
+        "https://arxiv.org/html/2502.04128v2/comparison_plot2.png"
+      ]
     },
     "llasa-plus": {
       "kind": "source-figure",
@@ -914,12 +918,12 @@
       "sha256": null
     },
     "supertonic": {
-      "kind": "io-diagram",
-      "path": "assets/architectures/supertonic.svg",
-      "source_url": "https://huggingface.co/Supertone/supertonic",
-      "origin_url": null,
-      "locator": "Input/output diagram",
-      "sha256": null
+      "kind": "source-figure",
+      "path": "assets/architectures/supertonic.png",
+      "source_url": "https://arxiv.org/abs/2503.23108",
+      "origin_url": "https://arxiv.org/html/2503.23108v3/SupertonicTTS-overview-cropped.png",
+      "locator": "Figure 1",
+      "sha256": "ac16f21319411f5bdf8c276374ff3542143da699112d1b1934194740212593ab"
     },
     "supertonic-2": {
       "kind": "io-diagram",
@@ -936,6 +940,2157 @@
       "origin_url": null,
       "locator": "Input/output diagram",
       "sha256": null
+    },
+    "amnet": {
+      "kind": "source-figure",
+      "path": "assets/architectures/amnet.png",
+      "source_url": "https://arxiv.org/abs/2504.09225",
+      "origin_url": "https://arxiv.org/html/2504.09225v1/figure/1.png",
+      "locator": "Paper figure",
+      "sha256": "266d38ca7a26d080f0bc6eca3df1e15c3c2e3f6db5b046834817708d7d35d353"
+    },
+    "fc-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fc-tts.png",
+      "source_url": "https://arxiv.org/abs/2605.24618",
+      "origin_url": "https://arxiv.org/html/2605.24618v1/model.png",
+      "locator": "Figure 1",
+      "sha256": "e073ef6cabf047e6d13c8bcda3dcfdb5be6d0c588236cccc7f3a3f8a8b4a2e57"
+    },
+    "cam-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cam-tts.png",
+      "source_url": "https://arxiv.org/abs/2508.14713",
+      "origin_url": "https://arxiv.org/html/2508.14713v1/figure2.png",
+      "locator": "Figure 2",
+      "sha256": "2298bb6ff00e9fac05c79379b95ba5504408082e0498446d02830dff9d2660f8"
+    },
+    "flexspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/flexspeech.png",
+      "source_url": "https://arxiv.org/abs/2505.05159",
+      "origin_url": "https://arxiv.org/html/2505.05159v3/overview_new.png",
+      "locator": "Figure 1",
+      "sha256": "17f4d51c4b3738dfa9fa5fed781afb2b5dee41423901f2dd777987079b295c49"
+    },
+    "delta-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/delta-tts.png",
+      "source_url": "https://arxiv.org/abs/2607.04140",
+      "origin_url": "https://arxiv.org/html/2607.04140v2/fig1_architecture.svg",
+      "locator": "Figure 1",
+      "sha256": "8ae0f96e2b45477dd836cac48a844af72d7978b44c6b9eaca7e564f233cca612"
+    },
+    "immersivetts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/immersivetts.png",
+      "source_url": "https://arxiv.org/abs/2605.30965",
+      "origin_url": "https://arxiv.org/html/2605.30965v1/camera_ready_main_architecture.png",
+      "locator": "Figure 1",
+      "sha256": "5b288fbb42327e9466e30254dd9060903fd708bcef91863f39d38c8112f6da95"
+    },
+    "muyan-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/muyan-tts.png",
+      "source_url": "https://arxiv.org/abs/2504.19146",
+      "origin_url": "https://arxiv.org/html/2504.19146v1/img/framework.png",
+      "locator": "Figure 1",
+      "sha256": "2647f5dcb5ae26df2ed29006e46a5a5baf6a1a5f92bc0ed1a69557a8b6e3dc43"
+    },
+    "moe-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/moe-tts.png",
+      "source_url": "https://arxiv.org/abs/2508.11326",
+      "origin_url": "https://arxiv.org/html/2508.11326v1/moe-tts-framework.svg",
+      "locator": "Figure 1",
+      "sha256": "5c85616a45c811328cf5ae94f40115e1f7e7d570a3b6cbbb46402d9db1e5e114"
+    },
+    "midashenglm-gen": {
+      "kind": "source-figure",
+      "path": "assets/architectures/midashenglm-gen.png",
+      "source_url": "https://arxiv.org/abs/2608.11804",
+      "origin_url": "https://arxiv.org/html/2608.11804v1/train.png",
+      "locator": "Paper figure",
+      "sha256": "6c53d0b02892b97f6a4617b5691c67f71bffd825bd68fce38ad84c0ac932e5d7",
+      "origin_urls": [
+        "https://arxiv.org/html/2608.11804v1/train.png",
+        "https://arxiv.org/html/2608.11804v1/infer.png"
+      ]
+    },
+    "authentic-dubber": {
+      "kind": "source-figure",
+      "path": "assets/architectures/authentic-dubber.png",
+      "source_url": "https://arxiv.org/abs/2511.14249",
+      "origin_url": "https://arxiv.org/html/2511.14249v1/figure_2.png",
+      "locator": "Figure 2",
+      "sha256": "47445db5a021cb9e85038001a1d2d0309638eb95998be56f02db2dc8a8d95735"
+    },
+    "dualspeechlm": {
+      "kind": "source-figure",
+      "path": "assets/architectures/dualspeechlm.png",
+      "source_url": "https://arxiv.org/abs/2508.08961",
+      "origin_url": "https://arxiv.org/html/2508.08961v3/mllm.png",
+      "locator": "Figure 3",
+      "sha256": "3b5e5c59a73c8a5347f2f0f556ed0d313edb857f7baae0dc9004f9c7241f23da"
+    },
+    "phoneme-tone-adaptive-thai-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/phoneme-tone-adaptive-thai-tts.png",
+      "source_url": "https://arxiv.org/abs/2504.07858",
+      "origin_url": "https://arxiv.org/html/2504.07858v1/pic1.png",
+      "locator": "Figure 2",
+      "sha256": "33e05588a3f75625f15d9c9450733b8fa221afb7334b68f25bdfb81d4a6412c9"
+    },
+    "emotion-timbre-disentangled-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/emotion-timbre-disentangled-tts.png",
+      "source_url": "https://arxiv.org/abs/2510.01722",
+      "origin_url": "https://arxiv.org/html/2510.01722v1/architecture_all.png",
+      "locator": "Figure 1",
+      "sha256": "2489b50c5734091c02c10295d25c6e80b599e1ca7e394c9e7de353e474bd567f"
+    },
+    "llmvox": {
+      "kind": "source-figure",
+      "path": "assets/architectures/llmvox.png",
+      "source_url": "https://arxiv.org/abs/2503.04724",
+      "origin_url": "https://arxiv.org/html/2503.04724v1/arch_diagram.png",
+      "locator": "Figure 2",
+      "sha256": "ad302cff5bd3d6dd372f8e7910df68489e2ef0b333b6de6d082a45ec99e9dc3e"
+    },
+    "meld": {
+      "kind": "source-figure",
+      "path": "assets/architectures/meld.png",
+      "source_url": "https://arxiv.org/abs/2605.29859",
+      "origin_url": "https://arxiv.org/pdf/2605.29859v2",
+      "locator": "Figures 1–2 (paper page 2; panels assembled)",
+      "sha256": "2d102e308dc932a4bf080900728c50da1ecdfe0a8f09368426d011f711e3e283"
+    },
+    "eme-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/eme-tts.png",
+      "source_url": "https://arxiv.org/abs/2507.12015",
+      "origin_url": "https://arxiv.org/html/2507.12015v1/aaa.svg",
+      "locator": "Figure 1",
+      "sha256": "130c1ce8809f457cd6df0de6b434220940d2cd3a311caf9170e0edd438f8b01e",
+      "origin_urls": [
+        "https://arxiv.org/html/2507.12015v1/aaa.svg",
+        "https://arxiv.org/html/2507.12015v1/bb.png",
+        "https://arxiv.org/html/2507.12015v1/cc.svg"
+      ]
+    },
+    "visualspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/visualspeech.png",
+      "source_url": "https://arxiv.org/abs/2501.19258",
+      "origin_url": "https://arxiv.org/html/2501.19258v2/241117_model.png",
+      "locator": "Figure 1",
+      "sha256": "8e5b21fee69b228ba219db8656bc3ef93370c50822b94093408d04f633409efd"
+    },
+    "causal-prosody-fastspeech-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/causal-prosody-fastspeech-2.png",
+      "source_url": "https://arxiv.org/abs/2603.11683",
+      "origin_url": "https://arxiv.org/pdf/2603.11683v1",
+      "locator": "Figure 1 (paper page 3)",
+      "sha256": "cb82cd04be917e46ec4a1c140d05cb7e72e1f19eed064295a91d2678c9c6c6c9"
+    },
+    "flexivoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/flexivoice.png",
+      "source_url": "https://arxiv.org/abs/2601.04656",
+      "origin_url": "https://arxiv.org/html/2601.04656v1/main.png",
+      "locator": "Figure 1",
+      "sha256": "ea31c35b35d47704726f8437a28039a407533fc70abdd1ec52282a6a2f2816f0"
+    },
+    "kaburi-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/kaburi-tts.png",
+      "source_url": "https://arxiv.org/abs/2609.07200",
+      "origin_url": "https://arxiv.org/html/2609.07200v1/acoustic_model_architecture.svg",
+      "locator": "Figure 1",
+      "sha256": "40a647c0d0e394b4369fe9684b6716687d188bc743870338eed42e9388ffabf8"
+    },
+    "m3-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/m3-tts.png",
+      "source_url": "https://arxiv.org/abs/2512.04720",
+      "origin_url": "https://arxiv.org/html/2512.04720v1/M3-TTS-framework.png",
+      "locator": "Figure 1",
+      "sha256": "0490d5f721199cebc94d81855f0bf65249d566b2d354ace80a7c6e05c56145c3"
+    },
+    "stellartts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/stellartts.png",
+      "source_url": "https://arxiv.org/abs/2607.19859",
+      "origin_url": "https://arxiv.org/html/2607.19859v1/illustration3.6.png",
+      "locator": "Paper figure",
+      "sha256": "df687a676748e3ec4e7a1fd08f097ced25573ec28f0f0d7a030a6a8f6db6ac39"
+    },
+    "felle": {
+      "kind": "source-figure",
+      "path": "assets/architectures/felle.png",
+      "source_url": "https://arxiv.org/abs/2502.11128",
+      "origin_url": "https://arxiv.org/html/2502.11128v2/overview.png",
+      "locator": "Figure 1",
+      "sha256": "47baf0a0cfb3eecf8f609f42241467a8cf68a9d2e388536583195485e4d6a8b7"
+    },
+    "hd-ppt": {
+      "kind": "source-figure",
+      "path": "assets/architectures/hd-ppt.png",
+      "source_url": "https://arxiv.org/abs/2509.19001",
+      "origin_url": "https://arxiv.org/html/2509.19001v2/mot.png",
+      "locator": "Figure 1",
+      "sha256": "7020705b0a458c5a73e4368396333a753bd2611ec0900911d8142a6dfc1fa3e3"
+    },
+    "belle": {
+      "kind": "source-figure",
+      "path": "assets/architectures/belle.png",
+      "source_url": "https://arxiv.org/abs/2510.24372",
+      "origin_url": "https://arxiv.org/html/2510.24372v3/BELLE_v2.svg",
+      "locator": "Figure 1",
+      "sha256": "6e0855fc1796ebc7090d777730058197342d96cf752b81e432d54c9d81860bff"
+    },
+    "emosslsphere": {
+      "kind": "source-figure",
+      "path": "assets/architectures/emosslsphere.png",
+      "source_url": "https://arxiv.org/abs/2508.11273",
+      "origin_url": "https://arxiv.org/html/2508.11273v2/training_inference.png",
+      "locator": "Figure 2",
+      "sha256": "ae2f5a9b5fb1eb69db8ec9e758e25f19cf42bad8e8ace44e4203d93e678d3d44"
+    },
+    "borderless-long-speech-synthesis": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/borderless-long-speech-synthesis.svg",
+      "source_url": "https://arxiv.org/abs/2603.19798",
+      "origin_url": null,
+      "locator": "Editorial input/output diagram",
+      "sha256": null
+    },
+    "uddetts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/uddetts.png",
+      "source_url": "https://arxiv.org/abs/2505.10599",
+      "origin_url": "https://arxiv.org/html/2505.10599v2/pictures/overview.png",
+      "locator": "Figure 1",
+      "sha256": "f060d134f43c96ec83d84535ab14b7c2720c139820b3413bbd6ebdf17ffab75d"
+    },
+    "gsa-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/gsa-tts.png",
+      "source_url": "https://arxiv.org/abs/2505.19384",
+      "origin_url": "https://arxiv.org/html/2505.19384v1/architecture.png",
+      "locator": "Figure 1",
+      "sha256": "bccec98caf0960e5d2e13692ad432b7d002382331eb206cf2259c00e54b59bcc"
+    },
+    "joyvoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/joyvoice.png",
+      "source_url": "https://arxiv.org/abs/2512.19090",
+      "origin_url": "https://arxiv.org/html/2512.19090v1/Joyvoice.drawio.png",
+      "locator": "Figure 2",
+      "sha256": "c8aadafdb586e99796608a52cdb1d9d922f4ea676b37a7b787190fd9a39a3ca1"
+    },
+    "uniwav-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/uniwav-tts.png",
+      "source_url": "https://arxiv.org/abs/2503.00733",
+      "origin_url": "https://arxiv.org/html/2503.00733v1/overview.svg",
+      "locator": "Figure 1",
+      "sha256": "289eef1583888492af241bb28dfa20549ffa2a8e22674f27e05879dda693e0fe"
+    },
+    "rtfree-f5": {
+      "kind": "source-figure",
+      "path": "assets/architectures/rtfree-f5.png",
+      "source_url": "https://arxiv.org/abs/2606.20266",
+      "origin_url": "https://arxiv.org/html/2606.20266v1/rtfree-f5_revised.png",
+      "locator": "Figure 1",
+      "sha256": "fc842fa4041b85c1f875979d59e03d82d8532ed1ae64ac6a63730f75f71534ef"
+    },
+    "fireredaudio": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fireredaudio.png",
+      "source_url": "https://arxiv.org/abs/2608.24168",
+      "origin_url": "https://arxiv.org/html/2608.24168v2/image/FireRedAudio_model.png",
+      "locator": "Figure 1",
+      "sha256": "7c41a5674aa2426df37d55badf84bcd80bb625f269d08e3a768b88aa65dd06e4"
+    },
+    "flespeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/flespeech.png",
+      "source_url": "https://arxiv.org/abs/2501.04644",
+      "origin_url": "https://arxiv.org/html/2501.04644v2/241214_model_1.drawio.png",
+      "locator": "Figure 2",
+      "sha256": "75c134078831de0f8798d792f9dc0d8aea3da03b46f54837b4a54f466ae88f2c",
+      "origin_urls": [
+        "https://arxiv.org/html/2501.04644v2/241214_model_1.drawio.png",
+        "https://arxiv.org/html/2501.04644v2/241214_model_2.drawio.svg"
+      ]
+    },
+    "longcat-audiodit": {
+      "kind": "source-figure",
+      "path": "assets/architectures/longcat-audiodit.png",
+      "source_url": "https://arxiv.org/abs/2603.29339",
+      "origin_url": "https://arxiv.org/html/2603.29339v1/diagram_cropped.png",
+      "locator": "Figure 1",
+      "sha256": "cc0b1ee9589ff955751e55eec56b57b32ab49bd7faf12942210b86af822d3bad"
+    },
+    "cookvoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cookvoice.png",
+      "source_url": "https://arxiv.org/abs/2608.11590",
+      "origin_url": "https://arxiv.org/html/2608.11590v2/cookvoice.png",
+      "locator": "Figure 1",
+      "sha256": "3b0e755a76638884b8ce2bbc3b73aeec2d0877be8e12c45880a5f3710230b9a2"
+    },
+    "fireredtts3": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fireredtts3.png",
+      "source_url": "https://arxiv.org/abs/2608.17492",
+      "origin_url": "https://arxiv.org/html/2608.17492v2/image/fireredtts3_arch.png",
+      "locator": "Figure 1",
+      "sha256": "88aa4c4097edc1bbe36df7d34b12efb8126500e413bdc3f4597682b19dafc705"
+    },
+    "stepaudio-2-5-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/stepaudio-2-5-tts.png",
+      "source_url": "https://arxiv.org/abs/2605.23463",
+      "origin_url": "https://arxiv.org/html/2605.23463v1/figures/stepaudio25-unified-foundation-architecture.png",
+      "locator": "Figure 1",
+      "sha256": "3743e6c99200f4e364bebeb51bf51b7ba43ab7f95ab270559b4db34a4b7a4bc9"
+    },
+    "cutetts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cutetts.png",
+      "source_url": "https://arxiv.org/abs/2608.08638",
+      "origin_url": "https://arxiv.org/html/2608.08638v2/cute_backbone.png",
+      "locator": "Figure 1",
+      "sha256": "373d682b738ec57a4f1bc78c0136c05c70d0f50c262f718a2b3586761652ed80"
+    },
+    "emosteer-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/emosteer-tts.png",
+      "source_url": "https://arxiv.org/abs/2508.03543",
+      "origin_url": "https://arxiv.org/html/2508.03543v3/figure-framework.png",
+      "locator": "Figure 3",
+      "sha256": "b97133b19f8d0630be4370973eae5260d507b57b1eb4e736781b5b6c728bf558"
+    },
+    "chain-talker": {
+      "kind": "source-figure",
+      "path": "assets/architectures/chain-talker.png",
+      "source_url": "https://arxiv.org/abs/2505.12597",
+      "origin_url": "https://arxiv.org/html/2505.12597v1/acl-model.png",
+      "locator": "Figure 2",
+      "sha256": "bd3322592110cbd7fe47f8a9b986e1051b30428fb1cd433e7d791161fc80cb63"
+    },
+    "captalk": {
+      "kind": "source-figure",
+      "path": "assets/architectures/captalk.png",
+      "source_url": "https://arxiv.org/abs/2604.08363",
+      "origin_url": "https://arxiv.org/html/2604.08363v1/captalk_model.jpg",
+      "locator": "Figure 1",
+      "sha256": "c11f32825557ab7cd62c41607e5897e135c5dea1fccf07860625cd9e7b8344c7"
+    },
+    "dcar": {
+      "kind": "source-figure",
+      "path": "assets/architectures/dcar.png",
+      "source_url": "https://arxiv.org/abs/2506.22023",
+      "origin_url": "https://arxiv.org/html/2506.22023v1/DCAR_fig1.svg",
+      "locator": "Figure 1",
+      "sha256": "e1d84f1accf26a74d20c042589f277b485b52b6471c4eefe92ee31ddee66a033",
+      "origin_urls": [
+        "https://arxiv.org/html/2506.22023v1/DCAR_fig1.svg",
+        "https://arxiv.org/html/2506.22023v1/DCAR_fig2.svg"
+      ]
+    },
+    "uniflow-audio": {
+      "kind": "source-figure",
+      "path": "assets/architectures/uniflow-audio.png",
+      "source_url": "https://arxiv.org/abs/2509.24391",
+      "origin_url": "https://arxiv.org/html/2509.24391v1/uniflow_audio-uncolored.png",
+      "locator": "Figure 2",
+      "sha256": "9860960aac96d2de0202dbc2578055a6443a20a02fe53cb0d44ca9554f34d3c6"
+    },
+    "self-distilled-zero-shot-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/self-distilled-zero-shot-tts.png",
+      "source_url": "https://arxiv.org/abs/2501.08566",
+      "origin_url": "https://arxiv.org/html/2501.08566v1/model_arch.svg",
+      "locator": "Figure 1",
+      "sha256": "2b06274ff6c0d7fb7eb2cd134caafb9e0ecff1699398969711a14b42e2ea2190"
+    },
+    "slimspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/slimspeech.png",
+      "source_url": "https://arxiv.org/abs/2504.07776",
+      "origin_url": "https://arxiv.org/html/2504.07776v2/fig1.png",
+      "locator": "Paper figure",
+      "sha256": "8a1abf0a79f4d234263dbb9e0bb2282dc5900b0a8e5b0137e2bfeb5a7a3f579a"
+    },
+    "speakstream": {
+      "kind": "source-figure",
+      "path": "assets/architectures/speakstream.png",
+      "source_url": "https://arxiv.org/abs/2505.19206",
+      "origin_url": "https://arxiv.org/html/2505.19206v1/main.png",
+      "locator": "Paper figure",
+      "sha256": "75468627c79706d24b237ac1ee382ed11183f6b73329f65b5f4b06d8ce608675"
+    },
+    "atrie": {
+      "kind": "source-figure",
+      "path": "assets/architectures/atrie.png",
+      "source_url": "https://arxiv.org/abs/2604.19055",
+      "origin_url": "https://arxiv.org/html/2604.19055v2/Main_structure.png",
+      "locator": "Figure 1",
+      "sha256": "6f0b7bc9b65ed872059c2febf4fcb8aa12cf24e8d0b7d764204d8749decc1ed1"
+    },
+    "metis": {
+      "kind": "source-figure",
+      "path": "assets/architectures/metis.png",
+      "source_url": "https://arxiv.org/abs/2502.03128",
+      "origin_url": "https://arxiv.org/html/2502.03128v1/figs/speech_gen.png",
+      "locator": "Paper figure",
+      "sha256": "8a5a051189b0e40a27bb4b7dbe4091643b61ffba2f088b9f881c1cdebbc9abc4",
+      "origin_urls": [
+        "https://arxiv.org/html/2502.03128v1/figs/speech_gen.png",
+        "https://arxiv.org/html/2502.03128v1/figs/pre-train.png",
+        "https://arxiv.org/html/2502.03128v1/figs/finetune.png"
+      ]
+    },
+    "mambavoicecloning": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mambavoicecloning.png",
+      "source_url": "https://arxiv.org/abs/2604.00292",
+      "origin_url": "https://arxiv.org/html/2604.00292v1/figures/MVC_1.png",
+      "locator": "Figure 1",
+      "sha256": "95e67f853223a0183ab238dddef69cf642024db84f206aff4ec331619180b81e"
+    },
+    "unispeaker": {
+      "kind": "source-figure",
+      "path": "assets/architectures/unispeaker.png",
+      "source_url": "https://arxiv.org/abs/2501.06394",
+      "origin_url": "https://arxiv.org/html/2501.06394v1/pipeline.png",
+      "locator": "Figure 1",
+      "sha256": "dff1464c87ef9c37ccd92b6f1955dfb9c545b9531a6fcfcf4eae6e94a09086b2"
+    },
+    "barewave": {
+      "kind": "source-figure",
+      "path": "assets/architectures/barewave.png",
+      "source_url": "https://arxiv.org/abs/2606.09048",
+      "origin_url": "https://arxiv.org/html/2606.09048v1/overview.png",
+      "locator": "Figure 2",
+      "sha256": "5ea5ec4b9ebdf612bc5a9fb8ba56867038e726a6ac5556c68df40817b88a53c8"
+    },
+    "opuslm": {
+      "kind": "source-figure",
+      "path": "assets/architectures/opuslm.png",
+      "source_url": "https://arxiv.org/abs/2506.17611",
+      "origin_url": "https://arxiv.org/html/2506.17611v1/delay.svg",
+      "locator": "Figure 1",
+      "sha256": "4cb495c6d9eb6bc6010807af4dc2310cd1ad3b2a3a21b3aadb7b172294d86c39"
+    },
+    "regenvoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/regenvoice.png",
+      "source_url": "https://arxiv.org/abs/2607.09134",
+      "origin_url": "https://arxiv.org/html/2607.09134v1/fig1_final.png",
+      "locator": "Figure 1",
+      "sha256": "360275c369d1f80162d9b636413f58a2fd2a28451d17bf8b60948e702d44e109"
+    },
+    "breezyvoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/breezyvoice.png",
+      "source_url": "https://arxiv.org/abs/2501.17790",
+      "origin_url": "https://arxiv.org/html/2501.17790v1/Data_Augmentation_Pipeline_v2.svg",
+      "locator": "Figure 1",
+      "sha256": "155e96e3dd283fcc6de23ec5692862b22ff7fbc031833138d63e5a826c0b714f"
+    },
+    "latinx": {
+      "kind": "source-figure",
+      "path": "assets/architectures/latinx.png",
+      "source_url": "https://arxiv.org/abs/2509.05863",
+      "origin_url": "https://arxiv.org/html/2509.05863v1/dpo_training.png",
+      "locator": "Figure 1",
+      "sha256": "26add3a56b05deed685f638412df04f9ab18fbb7672e7a3a2d355c99548e5c80"
+    },
+    "uscf-conditioned-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/uscf-conditioned-tts.png",
+      "source_url": "https://arxiv.org/abs/2603.08977",
+      "origin_url": "https://arxiv.org/html/2603.08977v2/USCF_VC.png",
+      "locator": "Figure 1",
+      "sha256": "f1f80d36ee8de8465538c4d1a8fb0e3b3b94a8221dea28cdc7298d3e5a91120a"
+    },
+    "emotra-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/emotra-tts.png",
+      "source_url": "https://arxiv.org/abs/2608.23791",
+      "origin_url": "https://arxiv.org/html/2608.23791v1/EmoTrav2.png",
+      "locator": "Figure 2",
+      "sha256": "184daadcae42f8e9108ac8b0f494c430140b2e2aa11c48cb1046dae80a099c70"
+    },
+    "semavoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/semavoice.png",
+      "source_url": "https://arxiv.org/abs/2605.16964",
+      "origin_url": "https://arxiv.org/html/2605.16964v1/semavoice.png",
+      "locator": "Figure 1",
+      "sha256": "7e50bc762bf75528a959efda5378fb5c882b84ee94ff5ca9585de5197dc64aa8"
+    },
+    "wescon": {
+      "kind": "source-figure",
+      "path": "assets/architectures/wescon.png",
+      "source_url": "https://arxiv.org/abs/2509.24629",
+      "origin_url": "https://arxiv.org/html/2509.24629v2/overview2.png",
+      "locator": "Figure 2",
+      "sha256": "7cecc95540a5cfe1381f4b3b7066c46ee0342c95b2ece79a4588a9fb749e212b"
+    },
+    "a2tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/a2tts.png",
+      "source_url": "https://arxiv.org/abs/2507.15272",
+      "origin_url": "https://arxiv.org/html/2507.15272v1/tts_architecture.drawio_4.png",
+      "locator": "Figure 1",
+      "sha256": "abab277c698e496ff7fa55b0b1646fee0b6c0e4b5f2a4be5ce46268f98db8746"
+    },
+    "bittts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/bittts.png",
+      "source_url": "https://arxiv.org/abs/2506.03515",
+      "origin_url": "https://arxiv.org/html/2506.03515v1/bitconv_v15.png",
+      "locator": "Figure 1",
+      "sha256": "bf22d57a9f56af64b6bb86223e117d809f542141fce284b4c16302fa37fd86e7"
+    },
+    "wavtts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/wavtts.png",
+      "source_url": "https://arxiv.org/abs/2606.03455",
+      "origin_url": "https://arxiv.org/html/2606.03455v1/figures/WavTTS.png",
+      "locator": "Figure 2",
+      "sha256": "9f332b5923de8a8be5828d83a4e0bbd7aa2f935ce2dda3b43cf20ffcbec1a85d"
+    },
+    "qwen-audio-3-0-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/qwen-audio-3-0-tts.png",
+      "source_url": "https://arxiv.org/abs/2607.23938",
+      "origin_url": "https://arxiv.org/html/2607.23938v1/qwen_audio_3_tts_architecture.png",
+      "locator": "Figure 3",
+      "sha256": "f0ff0e77ef178457151ca1492269f4f0b635c64623dc4f71b258195c3f4f0326"
+    },
+    "unitts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/unitts.png",
+      "source_url": "https://arxiv.org/abs/2505.17426",
+      "origin_url": "https://arxiv.org/html/2505.17426v1/figure_1.png",
+      "locator": "Figure 1",
+      "sha256": "9ecb572b56efa03e9395e96bcabdb9be85e5954ded584174fffffb61cb763dbe"
+    },
+    "x-voice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/x-voice.png",
+      "source_url": "https://arxiv.org/abs/2605.05611",
+      "origin_url": "https://arxiv.org/html/2605.05611v2/overview.svg",
+      "locator": "Figure 1",
+      "sha256": "36b5d1556de6811c9f8c195fc4162f8443f441d65085d41cb9096abc73143f88"
+    },
+    "histyle": {
+      "kind": "source-figure",
+      "path": "assets/architectures/histyle.png",
+      "source_url": "https://arxiv.org/abs/2509.25842",
+      "origin_url": "https://arxiv.org/html/2509.25842v1/new.png",
+      "locator": "Figure 2",
+      "sha256": "f114890a5a43abc13993810a55f89be862b216902c0cdc409326481398bfedc8"
+    },
+    "voicedesigner": {
+      "kind": "source-figure",
+      "path": "assets/architectures/voicedesigner.png",
+      "source_url": "https://arxiv.org/abs/2608.13613",
+      "origin_url": "https://arxiv.org/html/2608.13613v1/figs/dreamvoice_framework_v2.drawio.png",
+      "locator": "Paper figure",
+      "sha256": "67c7476b157706820b5be0556266f621215ffad52f239e5d046c2cdf81f582f3"
+    },
+    "phoenix-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/phoenix-tts.png",
+      "source_url": "https://arxiv.org/abs/2608.11737",
+      "origin_url": "https://arxiv.org/html/2608.11737v1/PhoenixTTS.png",
+      "locator": "Figure 2",
+      "sha256": "fc1dfe10ff4ccf57fd599e7862171a4a646a13f72340002f1f98b9022ef2498b"
+    },
+    "spotlight-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/spotlight-tts.png",
+      "source_url": "https://arxiv.org/abs/2505.20868",
+      "origin_url": "https://arxiv.org/html/2505.20868v2/Figure1.png",
+      "locator": "Figure 1",
+      "sha256": "ddade00598cbfa284b153a1cb393872dac3dd89012e8efdb33e337c81299f670"
+    },
+    "swanvoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/swanvoice.png",
+      "source_url": "https://arxiv.org/abs/2605.30993",
+      "origin_url": "https://arxiv.org/html/2605.30993v1/arch.png",
+      "locator": "Figure 2",
+      "sha256": "08ac0bcd8b9a662378104d012d528b06bd93b3f4bb22d63eb2c729067d73c480"
+    },
+    "bolbosh": {
+      "kind": "source-figure",
+      "path": "assets/architectures/bolbosh.png",
+      "source_url": "https://arxiv.org/abs/2603.07513",
+      "origin_url": "https://arxiv.org/html/2603.07513v1/spectrogram_fig_comparison.png",
+      "locator": "Figure 1",
+      "sha256": "e66a1d2bc1336f99ed870f633798ded750e64b8f9b1c124a88d70f3b9bf504f8"
+    },
+    "facialtalker": {
+      "kind": "source-figure",
+      "path": "assets/architectures/facialtalker.png",
+      "source_url": "https://arxiv.org/abs/2607.24430",
+      "origin_url": "https://arxiv.org/html/2607.24430v1/2026-MM-Model.png",
+      "locator": "Figure 2",
+      "sha256": "49a5bd57b66d361af63c0094ce3b50c2fb8145e7796a4ee68494e8fc5d2a378d"
+    },
+    "cast-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cast-tts.png",
+      "source_url": "https://arxiv.org/abs/2603.16280",
+      "origin_url": "https://arxiv.org/html/2603.16280v1/model_v2.png",
+      "locator": "Figure 1",
+      "sha256": "8e3534a833b8e9164c94992903c7ef026a20abe229db14047dd132b74598d523"
+    },
+    "stochastic-alignment-continuous-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/stochastic-alignment-continuous-tts.png",
+      "source_url": "https://arxiv.org/abs/2502.01084",
+      "origin_url": "https://arxiv.org/html/2502.01084v2/codec_comp.png",
+      "locator": "Figure 1",
+      "sha256": "7644bd8b8d9bfb368a588b6f32b9665ec0bd8c2fe883ea72d607c9964f78b8bc"
+    },
+    "confucius4-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/confucius4-tts.png",
+      "source_url": "https://arxiv.org/abs/2608.11650",
+      "origin_url": "https://arxiv.org/html/2608.11650v1/img/confucius4-tts-model.png",
+      "locator": "Figure 1",
+      "sha256": "a493531bde54ab046f8032d42ba068616669514fc42fca8a724875123741a384"
+    },
+    "goat-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/goat-tts.png",
+      "source_url": "https://arxiv.org/abs/2504.12339",
+      "origin_url": "https://arxiv.org/html/2504.12339v2/GOAT_TTS.png",
+      "locator": "Figure 1",
+      "sha256": "e456af91cd365789cfdb27bfc161e2163094fa1087c54b9ee7dfa203a5d8db4d"
+    },
+    "nushu-pitchvits": {
+      "kind": "source-figure",
+      "path": "assets/architectures/nushu-pitchvits.png",
+      "source_url": "https://arxiv.org/abs/2606.09295",
+      "origin_url": "https://arxiv.org/html/2606.09295v1/train_infer.png",
+      "locator": "Figure 3",
+      "sha256": "424694bed3e0efbb69e4f5231454d720924e81767730c9597fa730ab7942ea6a"
+    },
+    "mm-moviedubber": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mm-moviedubber.png",
+      "source_url": "https://arxiv.org/abs/2505.16279",
+      "origin_url": "https://arxiv.org/html/2505.16279v1/mmdubber.png",
+      "locator": "Figure 2",
+      "sha256": "18696e8c196197c7a699a9b2913fa708fb8b04b39d2a683b3fc4f5d9c78e9a63"
+    },
+    "diffcss": {
+      "kind": "source-figure",
+      "path": "assets/architectures/diffcss.png",
+      "source_url": "https://arxiv.org/abs/2502.19924",
+      "origin_url": "https://arxiv.org/html/2502.19924v1/backbone.png",
+      "locator": "Paper figure",
+      "sha256": "c0944d6e38359e89ccae1ac056d8756673e3fa3bc8b9827790fd8f73dfc6f182"
+    },
+    "pilottts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/pilottts.png",
+      "source_url": "https://arxiv.org/abs/2605.27258",
+      "origin_url": "https://arxiv.org/html/2605.27258v2/figure/PilotTTS.png",
+      "locator": "Figure 3",
+      "sha256": "3211672701b15d14f88f25ba92bc42477b58843d269c0c9a0c6b38dac4790e25"
+    },
+    "audiobook-cc": {
+      "kind": "source-figure",
+      "path": "assets/architectures/audiobook-cc.png",
+      "source_url": "https://arxiv.org/abs/2509.17516",
+      "origin_url": "https://arxiv.org/html/2509.17516v1/pipeline_v7.png",
+      "locator": "Figure 1",
+      "sha256": "324f2a424ca35dd8d3dca6d43e94e24f99c6e79bb9002425ca6fe3f412b0833e"
+    },
+    "distar": {
+      "kind": "source-figure",
+      "path": "assets/architectures/distar.png",
+      "source_url": "https://arxiv.org/abs/2510.12210",
+      "origin_url": "https://arxiv.org/html/2510.12210v2/overall1.png",
+      "locator": "Figure 1",
+      "sha256": "880d2038c6e72428fd9aba82e3bdc39f3264c655bfa4dc45fb96366cadb45ef0"
+    },
+    "flashtts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/flashtts.png",
+      "source_url": "https://arxiv.org/abs/2606.09141",
+      "origin_url": "https://arxiv.org/html/2606.09141v2/flashtts-v4.drawio.svg",
+      "locator": "Figure 1",
+      "sha256": "63964eb4a39f906ba6b8d30fd01ec77002a5c09222fb21462dc37af2972f386e"
+    },
+    "emoshift": {
+      "kind": "source-figure",
+      "path": "assets/architectures/emoshift.png",
+      "source_url": "https://arxiv.org/abs/2601.22873",
+      "origin_url": "https://arxiv.org/html/2601.22873v1/emo-steer.png",
+      "locator": "Figure 2",
+      "sha256": "a30124c16acf281a6f4c250b2d9954cf51e5abaf9a9aa75bceccc44be8fb5eb6"
+    },
+    "umbratts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/umbratts.png",
+      "source_url": "https://arxiv.org/abs/2506.09874",
+      "origin_url": "https://arxiv.org/html/2506.09874v2/figures/arch.png",
+      "locator": "Figure 1",
+      "sha256": "9c54d6600899985077cbe0007d0f8b8b5c8635bcb0ea986657369307099fe8e1"
+    },
+    "clear": {
+      "kind": "source-figure",
+      "path": "assets/architectures/clear.png",
+      "source_url": "https://arxiv.org/abs/2508.19098",
+      "origin_url": "https://arxiv.org/html/2508.19098v1/carm_jj2-2.png",
+      "locator": "Figure 1",
+      "sha256": "07094801fedf9218ec7bb5d2c6d6865eb0e40186436a474219f31a7bbd50468e"
+    },
+    "tts-ctrlnet": {
+      "kind": "source-figure",
+      "path": "assets/architectures/tts-ctrlnet.png",
+      "source_url": "https://arxiv.org/abs/2507.04349",
+      "origin_url": "https://arxiv.org/html/2507.04349v1/architecture.png",
+      "locator": "Figure 1",
+      "sha256": "1bccef7b95fb1c196980bb2cbe635923cbf65862019ed098e0718a51a9402c0b"
+    },
+    "mel-llm-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mel-llm-tts.png",
+      "source_url": "https://arxiv.org/abs/2606.10231",
+      "origin_url": "https://arxiv.org/pdf/2606.10231v3",
+      "locator": "Fig. 1 (paper page 2)",
+      "sha256": "0c44d69f8ce77d9e5899e62396bf81c4754f804c73273820299f805e45454b57"
+    },
+    "end-to-end-discrete-token-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/end-to-end-discrete-token-tts.png",
+      "source_url": "https://arxiv.org/abs/2606.09234",
+      "origin_url": "https://arxiv.org/html/2606.09234v1/framework.drawio.png",
+      "locator": "Figure 1",
+      "sha256": "bb3d2be25d678507e63622c542ad885f5fca836cd00ab569c22803cc80d7141a"
+    },
+    "streammel": {
+      "kind": "source-figure",
+      "path": "assets/architectures/streammel.png",
+      "source_url": "https://arxiv.org/abs/2506.12570",
+      "origin_url": "https://arxiv.org/html/2506.12570v1/HuiWa1.png",
+      "locator": "Paper figure",
+      "sha256": "69694262b4df07e5326c0fcb2d8b5df1d2562fbaf0669a65466f522cd398ce77"
+    },
+    "clip-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/clip-tts.png",
+      "source_url": "https://arxiv.org/abs/2502.18889",
+      "origin_url": "https://arxiv.org/html/2502.18889v2/1739288899038.png",
+      "locator": "Figure 3",
+      "sha256": "a1a016d47ed85e8f3a6d997faff765acf11cc5c5d4b878894b93547eaaa701e0"
+    },
+    "parallel-gpt": {
+      "kind": "source-figure",
+      "path": "assets/architectures/parallel-gpt.png",
+      "source_url": "https://arxiv.org/abs/2508.04141",
+      "origin_url": "https://arxiv.org/html/2508.04141v2/parallel-gpt_3.png",
+      "locator": "Paper figure",
+      "sha256": "a9c35aa062ccac31a7a768475e4f96939e0fe9119443548fcb69194a6a558a7d"
+    },
+    "controllable-masked-speech-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/controllable-masked-speech-tts.png",
+      "source_url": "https://arxiv.org/abs/2502.07345",
+      "origin_url": "https://arxiv.org/html/2502.07345v1/20240912-arch.png",
+      "locator": "Paper figure",
+      "sha256": "9da3855cea18cf11dd258f0ad982deed16b09ca41e3d49b7c7d7466761890ac9"
+    },
+    "dualdub": {
+      "kind": "source-figure",
+      "path": "assets/architectures/dualdub.png",
+      "source_url": "https://arxiv.org/abs/2507.10109",
+      "origin_url": "https://arxiv.org/html/2507.10109v1/DualDub_0414.png",
+      "locator": "Figure 2",
+      "sha256": "d675dc5b3634c7e941cd2c2910ad42c73d08c3e2433b5ac3d3736b27ad190414"
+    },
+    "deepdubber-v1": {
+      "kind": "source-figure",
+      "path": "assets/architectures/deepdubber-v1.png",
+      "source_url": "https://arxiv.org/abs/2503.23660",
+      "origin_url": "https://arxiv.org/html/2503.23660v1/model_comm.png",
+      "locator": "Figure 1",
+      "sha256": "d3b2c39f27a8d654efcbdd52196db10e9a69849dc0795dcb5dbe7d264e130f0f"
+    },
+    "cosyedit2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cosyedit2.png",
+      "source_url": "https://arxiv.org/abs/2605.25930",
+      "origin_url": "https://arxiv.org/html/2605.25930v2/CosyEdit2.png",
+      "locator": "Figure 1",
+      "sha256": "fc1dbd778efb4e6492329bcb23053e177ee904d589f56c201cf79b75ff193ca0"
+    },
+    "ds-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ds-tts.png",
+      "source_url": "https://arxiv.org/abs/2506.01020",
+      "origin_url": "https://arxiv.org/html/2506.01020v1/zongtijiagou.png",
+      "locator": "Paper figure",
+      "sha256": "c014f82985264990ef043c87c90b37a573a2eb53d3227b4351296a526506403b"
+    },
+    "joint-non-autoregressive-stt-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/joint-non-autoregressive-stt-tts.png",
+      "source_url": "https://arxiv.org/abs/2501.09104",
+      "origin_url": "https://arxiv.org/html/2501.09104v2/model.png",
+      "locator": "Paper figure",
+      "sha256": "5f511541deef15f7c754cc1dbd8267a4e936dd0b33061f4e6e0537c8aab04d85"
+    },
+    "zipvoice-dialog": {
+      "kind": "source-figure",
+      "path": "assets/architectures/zipvoice-dialog.png",
+      "source_url": "https://arxiv.org/abs/2507.09318",
+      "origin_url": "https://arxiv.org/html/2507.09318v2/training.png",
+      "locator": "Figure 1",
+      "sha256": "325763fc458ff2b2e3fd58d263968d5d643eae12c1c2362a42f0c9d6dfc7a470",
+      "origin_urls": [
+        "https://arxiv.org/html/2507.09318v2/training.png",
+        "https://arxiv.org/html/2507.09318v2/inference.png"
+      ]
+    },
+    "compressed-to-fine-speech-lm": {
+      "kind": "source-figure",
+      "path": "assets/architectures/compressed-to-fine-speech-lm.png",
+      "source_url": "https://arxiv.org/abs/2505.24496",
+      "origin_url": "https://arxiv.org/html/2505.24496v1/fig/arch/all_attn.jpg",
+      "locator": "Figure 1",
+      "sha256": "1560fbce7d0b8c08a79a5a9355745da8ce9de950ff75bdbc40bc43756b927aeb"
+    },
+    "sarashina2-2-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/sarashina2-2-tts.png",
+      "source_url": "https://arxiv.org/abs/2606.25369",
+      "origin_url": "https://arxiv.org/html/2606.25369v1/img/architecture.png",
+      "locator": "Figure 1",
+      "sha256": "b74fbc0fc7949a5c31ca860596ef8d32e49ebc60016eafbc03248753dac7187b"
+    },
+    "ttsyoruba": {
+      "kind": "io-diagram",
+      "path": "assets/architectures/ttsyoruba.svg",
+      "source_url": "https://arxiv.org/abs/2607.18317",
+      "origin_url": null,
+      "locator": "Editorial input/output diagram",
+      "sha256": null
+    },
+    "diflowdubber": {
+      "kind": "source-figure",
+      "path": "assets/architectures/diflowdubber.png",
+      "source_url": "https://arxiv.org/abs/2603.14267",
+      "origin_url": "https://arxiv.org/html/2603.14267v4/components.png",
+      "locator": "Figure 2",
+      "sha256": "abfb659593b527fbf54031f1d7864eedfe73ab9af0da406db09bc745474cab93"
+    },
+    "mooncast": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mooncast.png",
+      "source_url": "https://arxiv.org/abs/2503.14345",
+      "origin_url": "https://arxiv.org/html/2503.14345v2/x1.svg",
+      "locator": "Figure 1",
+      "sha256": "aa453a66264b01017b8bdc1dfb55cee581c46d6be6675995509b6947253d826f"
+    },
+    "mfcig-css": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mfcig-css.png",
+      "source_url": "https://arxiv.org/abs/2509.06074",
+      "origin_url": "https://arxiv.org/html/2509.06074v1/fine-intera-css2.png",
+      "locator": "Figure 1",
+      "sha256": "f0e1cbec600eae05b312cb610bda9d0ed6dbb5e73750a93eac3311289305ae67"
+    },
+    "shallow-flow-matching-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/shallow-flow-matching-tts.png",
+      "source_url": "https://arxiv.org/abs/2505.12226",
+      "origin_url": "https://arxiv.org/html/2505.12226v2/sfm_head.svg",
+      "locator": "Figure 2",
+      "sha256": "41ec816ff6d126e50e5413548de64bfec6f97346a5494ff45acbfd00f296460a"
+    },
+    "diflow-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/diflow-tts.png",
+      "source_url": "https://arxiv.org/abs/2509.09631",
+      "origin_url": "https://arxiv.org/html/2509.09631v5/components.png",
+      "locator": "Figure 2",
+      "sha256": "32bccf182456d43972a9470c94cf17076798b14696c4e6ef7ff0c8a53719b096"
+    },
+    "vividvoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vividvoice.png",
+      "source_url": "https://arxiv.org/abs/2602.02591",
+      "origin_url": "https://arxiv.org/html/2602.02591v1/net1.png",
+      "locator": "Figure 2",
+      "sha256": "60f1d3a0d51c81c34776dd34e4b517c6554cb54f2e7b1ca1c82d79a6cee1c402"
+    },
+    "voicechat-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/voicechat-tts.png",
+      "source_url": "https://arxiv.org/abs/2608.13831",
+      "origin_url": "https://arxiv.org/html/2608.13831v1/Images/VoiceChat-TTS.png",
+      "locator": "Figure 1",
+      "sha256": "5001f8151811b9603af8dbbe738cd46ad0ba9edb72ea707cc947bee677235c87"
+    },
+    "compact-neural-accessibility-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/compact-neural-accessibility-tts.png",
+      "source_url": "https://arxiv.org/abs/2501.17332",
+      "origin_url": "https://arxiv.org/html/2501.17332v1/Frontend_formatted.png",
+      "locator": "Figure 1",
+      "sha256": "5c9c5518c26be8b013b39e9dc1541830cb6379e9c60a100fd65fb529cc0b8f0e",
+      "origin_urls": [
+        "https://arxiv.org/html/2501.17332v1/Frontend_formatted.png",
+        "https://arxiv.org/html/2501.17332v1/FS2_formatted.png",
+        "https://arxiv.org/html/2501.17332v1/WaveRNN_formatted.png"
+      ]
+    },
+    "f5r-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/f5r-tts.png",
+      "source_url": "https://arxiv.org/abs/2504.02407",
+      "origin_url": "https://arxiv.org/html/2504.02407v3/figures/overall.png",
+      "locator": "Figure 2",
+      "sha256": "b181823d2a25ffd7a75fc9f2a791c3986035dc09f6fd503388f8f84d823aed33"
+    },
+    "mave": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mave.png",
+      "source_url": "https://arxiv.org/abs/2510.04738",
+      "origin_url": "https://arxiv.org/html/2510.04738v1/proposed_arch_cropped.png",
+      "locator": "Figure 1",
+      "sha256": "9fddc62694e390c1d6a8ccc218947c47b1db1f9f58d0d40427ccbe36a575c9e3"
+    },
+    "graft": {
+      "kind": "source-figure",
+      "path": "assets/architectures/graft.png",
+      "source_url": "https://arxiv.org/abs/2607.02633",
+      "origin_url": "https://arxiv.org/html/2607.02633v1/assets/teaser.png",
+      "locator": "Paper figure",
+      "sha256": "c9daf072b22843b9c8f9c6932b6b55bd0c65031a3615ffeda00cbf11f35e632f"
+    },
+    "step-audio-editx": {
+      "kind": "source-figure",
+      "path": "assets/architectures/step-audio-editx.png",
+      "source_url": "https://arxiv.org/abs/2511.03601",
+      "origin_url": "https://arxiv.org/html/2511.03601v2/figures/arch.png",
+      "locator": "Figure 2",
+      "sha256": "7461dbdcc7160f929bdea700b3ff4cb4c65e0f3a40190f3ec795a4cc5b330dd7"
+    },
+    "wordvoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/wordvoice.png",
+      "source_url": "https://arxiv.org/abs/2607.06461",
+      "origin_url": "https://arxiv.org/html/2607.06461v1/Figures/wordvoice.png",
+      "locator": "Figure 3",
+      "sha256": "897a278b217f62918cdee6440881df0af142a50b8199befb79b377d9ef9f8a15"
+    },
+    "emm-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/emm-tts.png",
+      "source_url": "https://arxiv.org/abs/2510.11124",
+      "origin_url": "https://arxiv.org/html/2510.11124v1/fig2_new.jpg",
+      "locator": "Figure 2",
+      "sha256": "c540683428fdc2a0691848ad50e118215081209ad1c6a9af90e2a0d0130d210b"
+    },
+    "gibbstts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/gibbstts.png",
+      "source_url": "https://arxiv.org/abs/2605.09386",
+      "origin_url": "https://arxiv.org/html/2605.09386v1/architecture.svg",
+      "locator": "Figure 1",
+      "sha256": "d0e283158223cd0f155edb647e3282513886dcf3695dd8d555add6ee7273b660"
+    },
+    "sembridge": {
+      "kind": "source-figure",
+      "path": "assets/architectures/sembridge.png",
+      "source_url": "https://arxiv.org/abs/2608.07462",
+      "origin_url": "https://arxiv.org/html/2608.07462v1/sembridge_v7.drawio.svg",
+      "locator": "Figure 1",
+      "sha256": "2bf517df40716ff0523f8160a131deb31aaa4dc51a896f6095afb43a37e3f952"
+    },
+    "diemo-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/diemo-tts.png",
+      "source_url": "https://arxiv.org/abs/2505.19687",
+      "origin_url": "https://arxiv.org/html/2505.19687v2/250219_main.png",
+      "locator": "Figure 1",
+      "sha256": "f5bab16af55c2cae3c434a61712a9fd4995228025ff1e85b6e0aac8a55e6fb5a"
+    },
+    "selftts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/selftts.png",
+      "source_url": "https://arxiv.org/abs/2603.22252",
+      "origin_url": "https://arxiv.org/html/2603.22252v1/figs/arch.png",
+      "locator": "Figure 1",
+      "sha256": "c11481cf1f65787aa715cccc4553ace210acc8d34ddff8fe78844a4c2b4bc482"
+    },
+    "tts-transducer": {
+      "kind": "source-figure",
+      "path": "assets/architectures/tts-transducer.png",
+      "source_url": "https://arxiv.org/abs/2501.06320",
+      "origin_url": "https://arxiv.org/html/2501.06320v1/TTS-Transducer_Arch_v4.png",
+      "locator": "Paper figure",
+      "sha256": "c1b70b9501bfb1da9cf3c1784da7306747b02ad1f616bde403069d3b89f21a04"
+    },
+    "block-wise-mimi-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/block-wise-mimi-tts.png",
+      "source_url": "https://arxiv.org/abs/2604.12438",
+      "origin_url": "https://arxiv.org/pdf/2604.12438v1",
+      "locator": "Figure 1 (paper page 10)",
+      "sha256": "32b7023c52af8406cb320eb95c131a1a1b576a833fb89753023b9a50b1c7a7bd"
+    },
+    "prompt-unseen-emotion": {
+      "kind": "source-figure",
+      "path": "assets/architectures/prompt-unseen-emotion.png",
+      "source_url": "https://arxiv.org/abs/2506.02742",
+      "origin_url": "https://arxiv.org/html/2506.02742v1/inter2.png",
+      "locator": "Paper figure",
+      "sha256": "71fc7fe4ffc8b355ed7a1ea35405b3b00b988dbfd4d0cecea9dd2412e8fd574a"
+    },
+    "wenetspeech-wu-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/wenetspeech-wu-tts.png",
+      "source_url": "https://arxiv.org/abs/2601.11027",
+      "origin_url": "https://arxiv.org/html/2601.11027v1/overall_v3_roma.png",
+      "locator": "Figure 1",
+      "sha256": "adeafa11353752b95800f8d23da1c55761ae028a697be461b3c373cb78da39f9"
+    },
+    "raon-opentts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/raon-opentts.png",
+      "source_url": "https://arxiv.org/abs/2605.20830",
+      "origin_url": "https://arxiv.org/html/2605.20830v2/overview.png",
+      "locator": "Figure 1",
+      "sha256": "d322e7a83353d9daf0f49d43c69202f23be244fde5b55121faa48e8b5fcfbffd"
+    },
+    "cosyncdit": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cosyncdit.png",
+      "source_url": "https://arxiv.org/abs/2604.12292",
+      "origin_url": "https://arxiv.org/html/2604.12292v1/ECCV_Method.png",
+      "locator": "Figure 2",
+      "sha256": "232f4c8872f202e89b60ebf81700307596aaa1d5be4a31f58c70f904c7c13d15"
+    },
+    "jelly": {
+      "kind": "source-figure",
+      "path": "assets/architectures/jelly.png",
+      "source_url": "https://arxiv.org/abs/2501.04904",
+      "origin_url": "https://arxiv.org/html/2501.04904v1/JELLY_overview.png",
+      "locator": "Paper figure",
+      "sha256": "785fea4796d65ad2dd03b95e55a8ffc674ea89af799173e89a85c774036be217"
+    },
+    "lorp-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/lorp-tts.png",
+      "source_url": "https://arxiv.org/abs/2502.07562",
+      "origin_url": "https://arxiv.org/html/2502.07562v1/voicebox_pipeline.svg",
+      "locator": "Figure 3",
+      "sha256": "655c5c3b777291bb4fe28bd6b7a31c0f18b649418d77feec9b0cb1d204204c3b"
+    },
+    "ctc-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ctc-tts.png",
+      "source_url": "https://arxiv.org/abs/2602.19574",
+      "origin_url": "https://arxiv.org/html/2602.19574v2/ctc_tts.svg",
+      "locator": "Figure 2",
+      "sha256": "bb65ed00c04555f03307ba173cce421438c21d60826cd0859301121275dd4abd"
+    },
+    "crossaccent-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/crossaccent-tts.png",
+      "source_url": "https://arxiv.org/abs/2606.25403",
+      "origin_url": "https://arxiv.org/html/2606.25403v1/Picture1.png",
+      "locator": "Figure 1",
+      "sha256": "af7f402d8427892069934ab244f10e8a39c0e1f48c8f44be6c1f998a0d288a59"
+    },
+    "bntts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/bntts.png",
+      "source_url": "https://arxiv.org/abs/2502.05729",
+      "origin_url": "https://arxiv.org/html/2502.05729v1/resources/hqtts.png",
+      "locator": "Figure 1",
+      "sha256": "7bb6baab0146899a623098aa697cd43b12c4ee9ca7cc672361d169bd20ea83ec"
+    },
+    "ov-instructtts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ov-instructtts.png",
+      "source_url": "https://arxiv.org/abs/2601.01459",
+      "origin_url": "https://arxiv.org/html/2601.01459v1/OV-InstructTTS.png",
+      "locator": "Figure 2",
+      "sha256": "b616f25bc005ccd23fa39f85e1fddc687a62a64bb0068665070a7737966d187f"
+    },
+    "magpietts-lf": {
+      "kind": "source-figure",
+      "path": "assets/architectures/magpietts-lf.png",
+      "source_url": "https://arxiv.org/abs/2606.18485",
+      "origin_url": "https://arxiv.org/html/2606.18485v1/longformdiagramwide.png",
+      "locator": "Figure 1",
+      "sha256": "865905cf9f05642ed9c23b4d3f0e73a195d4bbcc758d82bf493acd326051cc6d"
+    },
+    "ojibwe-mi-kmaq-maliseet-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ojibwe-mi-kmaq-maliseet-tts.png",
+      "source_url": "https://arxiv.org/abs/2502.02703",
+      "origin_url": "https://arxiv.org/html/2502.02703v1/throughput.svg",
+      "locator": "Figure 1",
+      "sha256": "4698e8108afbc442bc38871327e1cc1ca7eba1e130aafd63ae678121b9c17ca3"
+    },
+    "instructaudio": {
+      "kind": "source-figure",
+      "path": "assets/architectures/instructaudio.png",
+      "source_url": "https://arxiv.org/abs/2511.18487",
+      "origin_url": "https://arxiv.org/html/2511.18487v1/model.png",
+      "locator": "Figure 2",
+      "sha256": "509d5e4d2f6bb5f11ae0ef8e129c68a18edfc4bcb9deaf805899a86e23206ec5"
+    },
+    "affectron": {
+      "kind": "source-figure",
+      "path": "assets/architectures/affectron.png",
+      "source_url": "https://arxiv.org/abs/2603.14432",
+      "origin_url": "https://arxiv.org/html/2603.14432v2/250106_main_cropped.png",
+      "locator": "Figure 2",
+      "sha256": "59b4bdb421b6b50a7982ba8a5dab0dc9fb3cba667057806d8350d8c95525832d"
+    },
+    "marco-voice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/marco-voice.png",
+      "source_url": "https://arxiv.org/abs/2508.02038",
+      "origin_url": "https://arxiv.org/html/2508.02038v6/marco_vocie_fig_v2.png",
+      "locator": "Figure 1",
+      "sha256": "6bdb98ecd5acb8d2c2c907379c802ff38eba208f13ae80249bd73640e4c1d31e"
+    },
+    "batontts-batonvoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/batontts-batonvoice.png",
+      "source_url": "https://arxiv.org/abs/2509.26514",
+      "origin_url": "https://arxiv.org/html/2509.26514v1/infer.png",
+      "locator": "Figure 1",
+      "sha256": "d884693c41982be1cbf457a7094ea2191d4eca24a880a2f4a2864632736c5879"
+    },
+    "holidubber": {
+      "kind": "source-figure",
+      "path": "assets/architectures/holidubber.png",
+      "source_url": "https://arxiv.org/abs/2606.09098",
+      "origin_url": "https://arxiv.org/html/2606.09098v2/holidubber_arc.png",
+      "locator": "Figure 2",
+      "sha256": "c131b743b0b40bbc9e3f36bdcdd8f64270f4caa01dc1c3174fb6509b6d57c0ff"
+    },
+    "vevo": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vevo.png",
+      "source_url": "https://arxiv.org/abs/2502.07243",
+      "origin_url": "https://arxiv.org/html/2502.07243v1/img/vevo-pipeline.png",
+      "locator": "Figure 1",
+      "sha256": "f9d0683a14baffbc894764858dbd056592d09f89b310a1ca38908ac16e52b64b"
+    },
+    "qtts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/qtts.png",
+      "source_url": "https://arxiv.org/abs/2507.12197",
+      "origin_url": "https://arxiv.org/html/2507.12197v1/graph2.svg",
+      "locator": "Figure 2",
+      "sha256": "7b62ede6c6c376909247ab5a956b26f17345026b9c4d66ef1715509bbec96a12"
+    },
+    "tldr-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/tldr-tts.png",
+      "source_url": "https://arxiv.org/abs/2606.09019",
+      "origin_url": "https://arxiv.org/html/2606.09019v1/overview.svg",
+      "locator": "Figure 1",
+      "sha256": "0602c08de17344e2bbd7afb2cdbb1c7a92a9b1f560446db4e8c98796c075ff9d"
+    },
+    "dots-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/dots-tts.png",
+      "source_url": "https://arxiv.org/abs/2606.07080",
+      "origin_url": "https://arxiv.org/html/2606.07080v2/figure1_2.svg",
+      "locator": "Figure 1",
+      "sha256": "bd449e8c57480f24a8586dabf4a86ce080e10516b44befaffe394af46a8d838a"
+    },
+    "cat-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cat-tts.png",
+      "source_url": "https://arxiv.org/abs/2509.22062",
+      "origin_url": "https://arxiv.org/html/2509.22062v1/RQ_Transformer_Overview.svg",
+      "locator": "Figure 2",
+      "sha256": "c75b1ff7cc2395639a3134d2c4f32c095639bcaf31ce21c7100a55bbe85d20cd"
+    },
+    "voxtral-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/voxtral-tts.png",
+      "source_url": "https://arxiv.org/abs/2603.25551",
+      "origin_url": "https://arxiv.org/html/2603.25551v2/voxtral-tts.png",
+      "locator": "Figure 2",
+      "sha256": "73d8f2783bfa8179223545351fd0ad1c7ab4b5ca5844353eca5e3e91d46a64f6"
+    },
+    "ps-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ps-tts.png",
+      "source_url": "https://arxiv.org/abs/2604.09111",
+      "origin_url": "https://arxiv.org/pdf/2604.09111v4",
+      "locator": "Fig. 1 (paper page 3)",
+      "sha256": "9d8ec81eadfb8a1fe64f9633c1c1cfccc029f4414697948963528fa2ea39102e"
+    },
+    "rwkvtts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/rwkvtts.png",
+      "source_url": "https://arxiv.org/abs/2504.03289",
+      "origin_url": "https://arxiv.org/html/2504.03289v1/pipeline1.jpg",
+      "locator": "Figure 2",
+      "sha256": "9bd2a9b1f5812967029dbcd7aa7fd843b494ecdb8ba4373c7c7e0b4e3e0208cf"
+    },
+    "x2streaming-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/x2streaming-tts.png",
+      "source_url": "https://arxiv.org/abs/2608.18661",
+      "origin_url": "https://arxiv.org/html/2608.18661v1/figures/fig1_pipeline.png",
+      "locator": "Figure 1",
+      "sha256": "567d560fa97987b8e4996a27b486d14d6fa9e82a39f93b929423a4664c3e62f7"
+    },
+    "smlle": {
+      "kind": "source-figure",
+      "path": "assets/architectures/smlle.png",
+      "source_url": "https://arxiv.org/abs/2505.19669",
+      "origin_url": "https://arxiv.org/html/2505.19669v2/SMLLE_framework.svg",
+      "locator": "Figure 1",
+      "sha256": "77d607301f8f1e32db350e7ae26a0e57fa5803d2cdbea9803f2974fcb0ca0d22"
+    },
+    "emovoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/emovoice.png",
+      "source_url": "https://arxiv.org/abs/2504.12867",
+      "origin_url": "https://arxiv.org/html/2504.12867v4/emovoice2.png",
+      "locator": "Figure 1",
+      "sha256": "fd943fd929cc8b7a5aa284c41e1ae631617f5c46f677034e0e99416ccb7e8678"
+    },
+    "lanstyletts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/lanstyletts.png",
+      "source_url": "https://arxiv.org/abs/2504.08274",
+      "origin_url": "https://arxiv.org/html/2504.08274v1/stylespeech2.png",
+      "locator": "Paper figure",
+      "sha256": "95645a67d9c7a41c439150b818be8565453f3295a2ad5935a8f717be1b4feebf",
+      "origin_urls": [
+        "https://arxiv.org/html/2504.08274v1/stylespeech2.png",
+        "https://arxiv.org/html/2504.08274v1/vits.png"
+      ]
+    },
+    "proemo": {
+      "kind": "source-figure",
+      "path": "assets/architectures/proemo.png",
+      "source_url": "https://arxiv.org/abs/2501.06276",
+      "origin_url": "https://arxiv.org/html/2501.06276v1/Figures/Model_Arc_480.png",
+      "locator": "Figure 1",
+      "sha256": "0492af48b42107ab7250fde286fa4e78b8dbb37c29b6c720b7fa8de79f92849b"
+    },
+    "dragon-fm": {
+      "kind": "source-figure",
+      "path": "assets/architectures/dragon-fm.png",
+      "source_url": "https://arxiv.org/abs/2507.22746",
+      "origin_url": "https://arxiv.org/html/2507.22746v2/model2.png",
+      "locator": "Figure 1",
+      "sha256": "8a4692d88354ac4783fde6026fe77d1515c6a56150afe42073618fd01a69fc35"
+    },
+    "tinywave": {
+      "kind": "source-figure",
+      "path": "assets/architectures/tinywave.png",
+      "source_url": "https://arxiv.org/abs/2506.23670",
+      "origin_url": "https://arxiv.org/html/2506.23670v2/distillation.png",
+      "locator": "Figure 1",
+      "sha256": "bcebd5fbebe94946719cd9fa3081dc92b13d599f0a0a1d15e198a28396803c30"
+    },
+    "magic-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/magic-tts.png",
+      "source_url": "https://arxiv.org/abs/2604.21164",
+      "origin_url": "https://arxiv.org/html/2604.21164v2/method_overview.png",
+      "locator": "Figure 1",
+      "sha256": "52c1bf3af3bba7362a75f2c4a2ead08c4889182a82fc63062b6a303f75672342"
+    },
+    "continuous-token-diffusion-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/continuous-token-diffusion-tts.png",
+      "source_url": "https://arxiv.org/abs/2510.12995",
+      "origin_url": "https://arxiv.org/html/2510.12995v2/training2.png",
+      "locator": "Figure 2",
+      "sha256": "2144af4a948f943979ee8a9d368df6f1a3eb6237f73df757724a8741363d9bf0"
+    },
+    "multistage-multimodal-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/multistage-multimodal-tts.png",
+      "source_url": "https://arxiv.org/abs/2506.20945",
+      "origin_url": "https://arxiv.org/html/2506.20945v1/f1.png",
+      "locator": "Paper figure",
+      "sha256": "37d8e9e88d0bff89b54a0c6d765397f0d2dbf03fcddd84b63cf48de4236b42c7"
+    },
+    "drawspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/drawspeech.png",
+      "source_url": "https://arxiv.org/abs/2501.04256",
+      "origin_url": "https://arxiv.org/html/2501.04256v1/framework.png",
+      "locator": "Paper figure",
+      "sha256": "7a23dcb24ba4daba22fac3329de9114add32391867d2d7b4efcdd32c22e7580c"
+    },
+    "cde-styletts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cde-styletts.png",
+      "source_url": "https://arxiv.org/abs/2609.11725",
+      "origin_url": "https://arxiv.org/html/2609.11725v1/cde_styletts-Page-4.drawio-5.svg",
+      "locator": "Paper figure",
+      "sha256": "c0a0a9c8ac357efbaeaf8e2ebe3501d21f4554a0ff313e0911baf743b46829a0"
+    },
+    "nvspeech-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/nvspeech-tts.png",
+      "source_url": "https://arxiv.org/abs/2508.04195",
+      "origin_url": "https://arxiv.org/html/2508.04195v1/asr-pipeline.png",
+      "locator": "Figure 2",
+      "sha256": "9608b4f95beba672597b0a7710e461fe7b9f9e535f8e7efb4a6dd66560fee69d"
+    },
+    "emojivoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/emojivoice.png",
+      "source_url": "https://arxiv.org/abs/2506.15085",
+      "origin_url": "https://arxiv.org/html/2506.15085v2/Dessin_sans_titre-22.svg",
+      "locator": "Paper figure",
+      "sha256": "8371bf5da5cc9b731d03f11c4b7d689f16c14ffb1a1b915299ea3738a746f080"
+    },
+    "dmp-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/dmp-tts.png",
+      "source_url": "https://arxiv.org/abs/2512.09504",
+      "origin_url": "https://arxiv.org/html/2512.09504v1/Clap_TTS.drawio_2.png",
+      "locator": "Figure 1",
+      "sha256": "f0379f6dc64a4d2cfa4fe2c5b505a20dbb6ba7856a76cd52d6ee24949c957448"
+    },
+    "speechaccentllm": {
+      "kind": "source-figure",
+      "path": "assets/architectures/speechaccentllm.png",
+      "source_url": "https://arxiv.org/abs/2507.01348",
+      "origin_url": "https://arxiv.org/html/2507.01348v2/FACTTS-eps-converted-to.png",
+      "locator": "Figure 3",
+      "sha256": "ddc0fbb58deb9c43d8ba39d3bd1b1f3f1423c010bc7ba6e4af7af1bebf7742e3"
+    },
+    "dmospeech-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/dmospeech-2.png",
+      "source_url": "https://arxiv.org/abs/2507.14988",
+      "origin_url": "https://arxiv.org/html/2507.14988v1/dmospeech2.png",
+      "locator": "Figure 1",
+      "sha256": "258b2a75b6f25a001ecebcd121b2c85937185f3a1516178d3cefc97c9b66f5f2"
+    },
+    "frame-stacked-local-transformer-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/frame-stacked-local-transformer-tts.png",
+      "source_url": "https://arxiv.org/abs/2509.19592",
+      "origin_url": "https://arxiv.org/html/2509.19592v2/lt-diagram.png",
+      "locator": "Figure 1",
+      "sha256": "c7161a84ed95c95140df71d90f00581ac0c05d6e0540f82c39734f11694be76f"
+    },
+    "aligndit": {
+      "kind": "source-figure",
+      "path": "assets/architectures/aligndit.png",
+      "source_url": "https://arxiv.org/abs/2504.20629",
+      "origin_url": "https://arxiv.org/html/2504.20629v2/teaser.png",
+      "locator": "Figure 1",
+      "sha256": "d56cd4a51d1b7ad96d9ab9424a8ace0aa89f3e7c27443328fdaa8dd84b867ae4"
+    },
+    "flamed-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/flamed-tts.png",
+      "source_url": "https://arxiv.org/abs/2510.02848",
+      "origin_url": "https://arxiv.org/html/2510.02848v1/flame-tts.drawio.svg",
+      "locator": "Figure 1",
+      "sha256": "9cdc00595cf9b3a2d9da43801af4da353e4493d68da514131b1473f5ec9c57cd"
+    },
+    "fireredtts-1s": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fireredtts-1s.png",
+      "source_url": "https://arxiv.org/abs/2503.20499",
+      "origin_url": "https://arxiv.org/html/2503.20499v3/image/fireredtts1s_v2.png",
+      "locator": "Figure 1",
+      "sha256": "88c0e722d2809b0fb69399ac2281b360ed24092f3c2feba288f732c47a3f444b"
+    },
+    "syncspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/syncspeech.png",
+      "source_url": "https://arxiv.org/abs/2502.11094",
+      "origin_url": "https://arxiv.org/html/2502.11094v2/SyncSpeech.svg",
+      "locator": "Figure 1",
+      "sha256": "f2d4b1bea28819486e4708dd9ec8818b41ecda873c0b9806e7dc5c0195dfe67e"
+    },
+    "univocal": {
+      "kind": "source-figure",
+      "path": "assets/architectures/univocal.png",
+      "source_url": "https://arxiv.org/abs/2606.01677",
+      "origin_url": "https://arxiv.org/html/2606.01677v1/univocal.png",
+      "locator": "Figure 2",
+      "sha256": "fcbd6bb1a3c9ca33f08d92b3f9a21546db6d11d42d31204ef0b1b262cfb0d6a3"
+    },
+    "mpe-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mpe-tts.png",
+      "source_url": "https://arxiv.org/abs/2505.18453",
+      "origin_url": "https://arxiv.org/html/2505.18453v1/model.jpg",
+      "locator": "Figure 1",
+      "sha256": "8b7e034bfe6bfe074b90c2630e3e8248da417ebc86378885de8c9d0bf69d94f3",
+      "origin_urls": [
+        "https://arxiv.org/html/2505.18453v1/model.jpg",
+        "https://arxiv.org/html/2505.18453v1/infer.jpg"
+      ]
+    },
+    "autostyle-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/autostyle-tts.png",
+      "source_url": "https://arxiv.org/abs/2504.10309",
+      "origin_url": "https://arxiv.org/html/2504.10309v1/rag_arch.png",
+      "locator": "Paper figure",
+      "sha256": "bdc060ae33fe57d37d3b0c8b97bde65c830d24344d06bc63af0f53bcf0925958"
+    },
+    "auemochat": {
+      "kind": "source-figure",
+      "path": "assets/architectures/auemochat.png",
+      "source_url": "https://arxiv.org/abs/2607.15755",
+      "origin_url": "https://arxiv.org/html/2607.15755v2/Figs/auemochat-c.png",
+      "locator": "Figure 2",
+      "sha256": "b616942465d8f3fb4c62715e68a2b1f721cd4639a8bdf76496725dfe0b41316f"
+    },
+    "jaitts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/jaitts.png",
+      "source_url": "https://arxiv.org/abs/2604.27607",
+      "origin_url": "https://arxiv.org/html/2604.27607v2/voxcpm_architecture.png",
+      "locator": "Figure 1",
+      "sha256": "8ade136ad8485893195272e2519bf688aee7e563e3d87d08a6f6f7089b4ba923"
+    },
+    "joycent": {
+      "kind": "source-figure",
+      "path": "assets/architectures/joycent.png",
+      "source_url": "https://arxiv.org/abs/2606.16417",
+      "origin_url": "https://arxiv.org/html/2606.16417v4/overall.png",
+      "locator": "Figure 1",
+      "sha256": "de0c013c8679ba56a5af17112d46db56d6a946ac74ca19d48e7babffcce9f67c"
+    },
+    "avlm-expressive-speech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/avlm-expressive-speech.png",
+      "source_url": "https://arxiv.org/abs/2508.16188",
+      "origin_url": "https://arxiv.org/html/2508.16188v2/modality_fusion.png",
+      "locator": "Figure 2",
+      "sha256": "656f9893034eee9e6d1292114019df021a5f6649295a0db43da07c10507dab8d"
+    },
+    "cross-lingual-f5-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cross-lingual-f5-tts.png",
+      "source_url": "https://arxiv.org/abs/2509.14579",
+      "origin_url": "https://arxiv.org/html/2509.14579v4/tts.png",
+      "locator": "Figure 1",
+      "sha256": "7939b95418f51e530a4bf2a699dd493472bc46ce5ee640dfeb9647b98b6d795c"
+    },
+    "voicesculptor": {
+      "kind": "source-figure",
+      "path": "assets/architectures/voicesculptor.png",
+      "source_url": "https://arxiv.org/abs/2601.10629",
+      "origin_url": "https://arxiv.org/html/2601.10629v2/figures/llasa3b.png",
+      "locator": "Figure 1",
+      "sha256": "1fc7869b3cb85ce4ecf73529eaf922ecbf383faa04d4d9afce89eecb1810488f"
+    },
+    "unitaf": {
+      "kind": "source-figure",
+      "path": "assets/architectures/unitaf.png",
+      "source_url": "https://arxiv.org/abs/2602.15651",
+      "origin_url": "https://arxiv.org/pdf/2602.15651v1",
+      "locator": "Figure 2 (paper page 5)",
+      "sha256": "fb44136c06a59759cdc80e006834ff073af1baee3f04796867c3254ea9433e54"
+    },
+    "koel-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/koel-tts.png",
+      "source_url": "https://arxiv.org/abs/2502.05236",
+      "origin_url": "https://arxiv.org/html/2502.05236v2/ICML_Model_Diagram.svg",
+      "locator": "Figure 1",
+      "sha256": "a303ca373fef7fdeb152b365710feef2982ee5be92942b6bfa4aa10808b04046"
+    },
+    "univoice-speech-and-singing": {
+      "kind": "source-figure",
+      "path": "assets/architectures/univoice-speech-and-singing.png",
+      "source_url": "https://arxiv.org/abs/2606.05852",
+      "origin_url": "https://arxiv.org/html/2606.05852v1/architecture.svg",
+      "locator": "Figure 2",
+      "sha256": "b37bb1a7c225e78b4b9f4c2e2f94bc86a67bdf6cbe7f2a5be3d02e84ff645408"
+    },
+    "unisonate": {
+      "kind": "source-figure",
+      "path": "assets/architectures/unisonate.png",
+      "source_url": "https://arxiv.org/abs/2604.22209",
+      "origin_url": "https://arxiv.org/html/2604.22209v1/model.png",
+      "locator": "Figure 2",
+      "sha256": "4b15ac48ded8ebd1b3f4a2f52c2d4009596c9b1ee6ea442f4b90ca7635b66b26"
+    },
+    "restyle-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/restyle-tts.png",
+      "source_url": "https://arxiv.org/abs/2601.03632",
+      "origin_url": "https://arxiv.org/html/2601.03632v2/overview.png",
+      "locator": "Figure 1",
+      "sha256": "ad1ee48494459b9139355d1e470305e8badbf4e48b48754ec69d79a979b7740f"
+    },
+    "voicecraft-dub": {
+      "kind": "source-figure",
+      "path": "assets/architectures/voicecraft-dub.png",
+      "source_url": "https://arxiv.org/abs/2504.02386",
+      "origin_url": "https://arxiv.org/html/2504.02386v1/method.png",
+      "locator": "Figure 2",
+      "sha256": "6e81940f17753edc1e08758150a9ff19ffa7cc303df1223ee8e1277b0875041e"
+    },
+    "deepasmr": {
+      "kind": "source-figure",
+      "path": "assets/architectures/deepasmr.png",
+      "source_url": "https://arxiv.org/abs/2601.15596",
+      "origin_url": "https://arxiv.org/html/2601.15596v1/20260115pipelinev3.png",
+      "locator": "Paper figure",
+      "sha256": "eebf51a241e51458f7c210d6172156677a4db8354f4284cf1f8709730c9cc105"
+    },
+    "radka-css": {
+      "kind": "source-figure",
+      "path": "assets/architectures/radka-css.png",
+      "source_url": "https://arxiv.org/abs/2501.06467",
+      "origin_url": "https://arxiv.org/html/2501.06467v1/figs/RADKA-CSS-main-c.png",
+      "locator": "Figure 2",
+      "sha256": "7e9d1cb6f813602a935b27f5c5095413693fc2e3e8c4f1ea1f33209cc3290879"
+    },
+    "tibetan-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/tibetan-tts.png",
+      "source_url": "https://arxiv.org/abs/2605.02496",
+      "origin_url": "https://arxiv.org/html/2605.02496v1/pngs/tibetan-tts_model_1.png",
+      "locator": "Figure 2",
+      "sha256": "271f642e6b551a083f6f4c405705d2ac6630ef2c40ed2bb1e665d6d65c47dd4f"
+    },
+    "depflow": {
+      "kind": "source-figure",
+      "path": "assets/architectures/depflow.png",
+      "source_url": "https://arxiv.org/abs/2601.00303",
+      "origin_url": "https://arxiv.org/html/2601.00303v1/Training.png",
+      "locator": "Figure 1",
+      "sha256": "fb20d670ea0cbb47ad9ecc8764f628c92de72bafbf7f234e839c57a319d5b911"
+    },
+    "xemorag": {
+      "kind": "source-figure",
+      "path": "assets/architectures/xemorag.png",
+      "source_url": "https://arxiv.org/abs/2508.07302",
+      "origin_url": "https://arxiv.org/html/2508.07302v2/overview-0605.png",
+      "locator": "Paper figure",
+      "sha256": "7c7724dd10c20acbbc247fef6be00cd64b1aee4c4f05960c426944778150281d"
+    },
+    "meitei-mayek-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/meitei-mayek-tts.png",
+      "source_url": "https://arxiv.org/abs/2508.06870",
+      "origin_url": "https://arxiv.org/html/2508.06870v1/architecture.PNG",
+      "locator": "Paper figure",
+      "sha256": "56c2427e90de8c68f5f8d3c052993157a0e09ceb4e6aa79f97eb8032612ab52a"
+    },
+    "protodisent-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/protodisent-tts.png",
+      "source_url": "https://arxiv.org/abs/2602.08696",
+      "origin_url": "https://arxiv.org/html/2602.08696v2/Fig1.png",
+      "locator": "Figure 1",
+      "sha256": "eede01b8dac94d388196dff7c4b8f5c7caf75a36ff5ea9f2bfbb685118e18e3a"
+    },
+    "disspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/disspeech.png",
+      "source_url": "https://arxiv.org/abs/2606.21457",
+      "origin_url": "https://arxiv.org/html/2606.21457v1/overview.png",
+      "locator": "Figure 2",
+      "sha256": "aa27520ca2e35c700cbf51b7ea90a4c567cf557dee4f24fa1995d5571217c991"
+    },
+    "holitok-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/holitok-tts.png",
+      "source_url": "https://arxiv.org/abs/2605.29948",
+      "origin_url": "https://arxiv.org/html/2605.29948v3/holitok.png",
+      "locator": "Figure 1",
+      "sha256": "7882dee756220d835c416a0646b4578815464ee7dec9442e129d46d38b680c19"
+    },
+    "habibi": {
+      "kind": "source-figure",
+      "path": "assets/architectures/habibi.png",
+      "source_url": "https://arxiv.org/abs/2601.13802",
+      "origin_url": "https://arxiv.org/html/2601.13802v2/main_small.png",
+      "locator": "Figure 1",
+      "sha256": "87f8c77691d3b5232b304d82a5f98b9b1c2d7e18e44a63fa16d77410999bf7e9"
+    },
+    "bridgetts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/bridgetts.png",
+      "source_url": "https://arxiv.org/abs/2510.11646",
+      "origin_url": "https://arxiv.org/html/2510.11646v1/1_2.png",
+      "locator": "Figure 2",
+      "sha256": "4bec4547438073334e822c0533adea2b08bfa2e87140ae7307eaf2938f99f0a8"
+    },
+    "intmeanflow": {
+      "kind": "source-figure",
+      "path": "assets/architectures/intmeanflow.png",
+      "source_url": "https://arxiv.org/abs/2510.07979",
+      "origin_url": "https://arxiv.org/html/2510.07979v1/imf.svg",
+      "locator": "Figure 1",
+      "sha256": "47fc99ad68dc849dcad38d85c4fcbbbb52872d79920a3da643b88c44eee3cdae"
+    },
+    "zipvoice": {
+      "kind": "source-figure",
+      "path": "assets/architectures/zipvoice.png",
+      "source_url": "https://arxiv.org/abs/2506.13053",
+      "origin_url": "https://arxiv.org/html/2506.13053v3/training.png",
+      "locator": "Paper figure",
+      "sha256": "b63e4691ef5031152ebaf7f5618bf398ddca515bf8df2d2beff9a5da8ed9c978",
+      "origin_urls": [
+        "https://arxiv.org/html/2506.13053v3/training.png",
+        "https://arxiv.org/html/2506.13053v3/inference.png"
+      ]
+    },
+    "progressive-face-conditioned-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/progressive-face-conditioned-tts.png",
+      "source_url": "https://arxiv.org/abs/2509.07376",
+      "origin_url": "https://arxiv.org/html/2509.07376v3/architecture-v4-revised.svg",
+      "locator": "Figure 1",
+      "sha256": "6b258c153c84e7f7b46b604abf4886d480e3cb01eabeb4791188ef776bd9c1db"
+    },
+    "mixedg2p-t5": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mixedg2p-t5.png",
+      "source_url": "https://arxiv.org/abs/2509.01391",
+      "origin_url": "https://arxiv.org/html/2509.01391v1/images/ronbun_3types.png",
+      "locator": "Figure 3",
+      "sha256": "38a62355143c633554936bbcec2fd3257ad44253617f6c8e8d5d86d30391e850"
+    },
+    "fnh-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/fnh-tts.png",
+      "source_url": "https://arxiv.org/abs/2508.12001",
+      "origin_url": "https://arxiv.org/html/2508.12001v4/Overall.png",
+      "locator": "Figure 1",
+      "sha256": "cf4eaa0d2ddb920ec354d402ebbbff93384d216481a03d906aaa9fb5acd178ee"
+    },
+    "gpa": {
+      "kind": "source-figure",
+      "path": "assets/architectures/gpa.png",
+      "source_url": "https://arxiv.org/abs/2601.10770",
+      "origin_url": "https://arxiv.org/html/2601.10770v1/figures/GPA.png",
+      "locator": "Figure 1",
+      "sha256": "97770c47576ba0dc49d02dd0335e81bd8159824d0858fd279c3a31174bb4efff"
+    },
+    "mp-eld": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mp-eld.png",
+      "source_url": "https://arxiv.org/abs/2607.29363",
+      "origin_url": "https://arxiv.org/html/2607.29363v1/x2.png",
+      "locator": "Figure 2",
+      "sha256": "aa447d9170af052e894be6ae68c66ea48a39fe6544d7f2131f34dba80cf391aa"
+    },
+    "disco-speech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/disco-speech.png",
+      "source_url": "https://arxiv.org/abs/2512.13251",
+      "origin_url": "https://arxiv.org/html/2512.13251v3/img/llm.jpg",
+      "locator": "Figure 1",
+      "sha256": "676d3529ce2d190c25aef4b72cbf678fafe7d4e2c0c3fa6082d92759d6cfc518"
+    },
+    "tontaubev1": {
+      "kind": "source-figure",
+      "path": "assets/architectures/tontaubev1.png",
+      "source_url": "https://arxiv.org/abs/2609.08703",
+      "origin_url": "https://arxiv.org/html/2609.08703v1/gmos_results_figure.svg",
+      "locator": "Figure 2",
+      "sha256": "e9ea4ff733186278f37fe4fff39bdde6e38ff35629620263dd63e062d3d78436"
+    },
+    "chain-of-details-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/chain-of-details-tts.png",
+      "source_url": "https://arxiv.org/abs/2604.19330",
+      "origin_url": "https://arxiv.org/html/2604.19330v2/masked_audio_token_modeling.png",
+      "locator": "Paper figure",
+      "sha256": "ab0c9eba73399b0dbbfd24f4e3be4b36056b36db1e4922e35c503d36790118bf"
+    },
+    "unitalker": {
+      "kind": "source-figure",
+      "path": "assets/architectures/unitalker.png",
+      "source_url": "https://arxiv.org/abs/2508.04585",
+      "origin_url": "https://arxiv.org/html/2508.04585v2/model.png",
+      "locator": "Figure 2",
+      "sha256": "0585e593dc0c02b491aad35cbb6c68a9809bcd9194e1d5bddd792cf623cbc96c"
+    },
+    "finecombo-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/finecombo-tts.png",
+      "source_url": "https://arxiv.org/abs/2606.19209",
+      "origin_url": "https://arxiv.org/html/2606.19209v2/model.png",
+      "locator": "Figure 2",
+      "sha256": "87adf8fcca2a0d2a94e8d6253e836d28139f8b3a18e6d1e0da856f0a5247c418"
+    },
+    "parastyletts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/parastyletts.png",
+      "source_url": "https://arxiv.org/abs/2510.18308",
+      "origin_url": "https://arxiv.org/html/2510.18308v1/ParaStyleTTS_train.svg",
+      "locator": "Figure 1",
+      "sha256": "aa39a8025287b1e0868c6fc32c6d234e46a5517af1139fc9dd9436f2bcb39dd8",
+      "origin_urls": [
+        "https://arxiv.org/html/2510.18308v1/ParaStyleTTS_train.svg",
+        "https://arxiv.org/html/2510.18308v1/ParaStyleTTS_inference.svg"
+      ]
+    },
+    "mamtra": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mamtra.png",
+      "source_url": "https://arxiv.org/abs/2603.12342",
+      "origin_url": "https://arxiv.org/html/2603.12342v2/hybrid_distillation.svg",
+      "locator": "Figure 1",
+      "sha256": "3eef8dd968c1ed1b4df241fe5c0f8514c7c7bc389ebbd6ec10299775f30e6d86"
+    },
+    "archi-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/archi-tts.png",
+      "source_url": "https://arxiv.org/abs/2602.05207",
+      "origin_url": "https://arxiv.org/html/2602.05207v1/assets/arch23.png",
+      "locator": "Figure 1",
+      "sha256": "b572f2faf3159327f47eabf0aa0227e52d310515f624c73cb044ee2d671176aa"
+    },
+    "speechedit": {
+      "kind": "source-figure",
+      "path": "assets/architectures/speechedit.png",
+      "source_url": "https://arxiv.org/abs/2601.12480",
+      "origin_url": "https://arxiv.org/html/2601.12480v1/structure.png",
+      "locator": "Figure 1",
+      "sha256": "d5bb10ab0c960599606aa68d0902576d257cc725d10dabda401aba2d4d6bf56c"
+    },
+    "llada-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/llada-tts.png",
+      "source_url": "https://arxiv.org/abs/2603.26364",
+      "origin_url": "https://arxiv.org/html/2603.26364v1/architecture.svg",
+      "locator": "Figure 1",
+      "sha256": "96e8165d07ec10492177b8a338b4389fba15ec098939aec48f4511a883c8efd8"
+    },
+    "ectspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ectspeech.png",
+      "source_url": "https://arxiv.org/abs/2510.05984",
+      "origin_url": "https://arxiv.org/html/2510.05984v1/figure1.png",
+      "locator": "Figure 2",
+      "sha256": "d31ca46929659171afd27e7e52561f704355e5aa6cfc0255c4bc2a28966b0d04"
+    },
+    "lombard-matcha-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/lombard-matcha-tts.png",
+      "source_url": "https://arxiv.org/abs/2606.23176",
+      "origin_url": "https://arxiv.org/html/2606.23176v1/matcha_tts_arch.png",
+      "locator": "Figure 1",
+      "sha256": "3e0d87bc2735520ccdcb5259fdf5a29aa0be7bb1eb025a15df3a5b494f054f20"
+    },
+    "mars6": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mars6.png",
+      "source_url": "https://arxiv.org/abs/2501.05787",
+      "origin_url": "https://arxiv.org/html/2501.05787v1/mars6_diagram.drawio.svg",
+      "locator": "Paper figure",
+      "sha256": "9fd65c746efb540990969ca2cbf91fb1964668dd383e162fe6f3000e15449247"
+    },
+    "univoice-asr-and-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/univoice-asr-and-tts.png",
+      "source_url": "https://arxiv.org/abs/2510.04593",
+      "origin_url": "https://arxiv.org/html/2510.04593v4/univoice_new5.png",
+      "locator": "Figure 1",
+      "sha256": "66f4a6a23098dc5dd83d836e45c8e0f0d0bfd707a5d042dcbce914fef7060cbe"
+    },
+    "soulx-podcast": {
+      "kind": "source-figure",
+      "path": "assets/architectures/soulx-podcast.png",
+      "source_url": "https://arxiv.org/abs/2510.23541",
+      "origin_url": "https://arxiv.org/html/2510.23541v2/soulxpodcast_overview.svg",
+      "locator": "Figure 3",
+      "sha256": "9a5d0c624d1ff31fac2c6faec6e7fe8a661b4ed9823deb9869738b82c1e42470"
+    },
+    "ozspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ozspeech.png",
+      "source_url": "https://arxiv.org/abs/2505.12800",
+      "origin_url": "https://arxiv.org/html/2505.12800v1/overall-2.png",
+      "locator": "Figure 1",
+      "sha256": "9fe718b0325a0dfc41411a587e628d824c132034a0e9946a63760f22f49cfca3"
+    },
+    "rv-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/rv-tts.png",
+      "source_url": "https://arxiv.org/abs/2505.18972",
+      "origin_url": "https://arxiv.org/html/2505.18972v1/Fig1.png",
+      "locator": "Figure 1",
+      "sha256": "2358e204a198de919783ddd61528b146ff186e462c6fe6c9e87a9197dd71f699"
+    },
+    "mela-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/mela-tts.png",
+      "source_url": "https://arxiv.org/abs/2509.14784",
+      "origin_url": "https://arxiv.org/html/2509.14784v2/llm_diffusion.png",
+      "locator": "Figure 1",
+      "sha256": "4617d146fb5d3b9851decd8025b5a9fb0fc1abee11bd6d8989443a0ed69617e3"
+    },
+    "unison": {
+      "kind": "source-figure",
+      "path": "assets/architectures/unison.png",
+      "source_url": "https://arxiv.org/abs/2605.31530",
+      "origin_url": "https://arxiv.org/html/2605.31530v2/fig2.png",
+      "locator": "Figure 2",
+      "sha256": "ea30e3fd8e35b55a0b9f8088ac0dc536b8bd79a8e08ba71793cf99bf1c550c1b"
+    },
+    "palle": {
+      "kind": "source-figure",
+      "path": "assets/architectures/palle.png",
+      "source_url": "https://arxiv.org/abs/2504.10352",
+      "origin_url": "https://arxiv.org/html/2504.10352v3/palle_detail.png",
+      "locator": "Figure 3",
+      "sha256": "3016ff3db9560e2d5dd4f00b838769f8110c7ee7c740f279d15083636e6f8cc1"
+    },
+    "nr-lauratts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/nr-lauratts.png",
+      "source_url": "https://arxiv.org/abs/2505.13830",
+      "origin_url": "https://arxiv.org/html/2505.13830v2/nr-lauratts.svg",
+      "locator": "Figure 1",
+      "sha256": "1b34f07cd036b31d30f279e275401f3bed3d728e914a822f11c9676f1a071fea"
+    },
+    "ditar": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ditar.png",
+      "source_url": "https://arxiv.org/abs/2502.03930",
+      "origin_url": "https://arxiv.org/html/2502.03930v4/x1.png",
+      "locator": "Figure 1",
+      "sha256": "160469ff9696227a11258f1c275288534f50245b429b3c24e604552a7aa7b1e5"
+    },
+    "autosift": {
+      "kind": "source-figure",
+      "path": "assets/architectures/autosift.png",
+      "source_url": "https://arxiv.org/abs/2607.12706",
+      "origin_url": "https://arxiv.org/html/2607.12706v2/autosift_cropped.png",
+      "locator": "Figure 1",
+      "sha256": "d14374f0dce70d356a13fab508e8c1182a3d3502cc34624da791d69563a6d017"
+    },
+    "manchutts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/manchutts.png",
+      "source_url": "https://arxiv.org/abs/2512.22491",
+      "origin_url": "https://arxiv.org/html/2512.22491v1/Model.png",
+      "locator": "Paper figure",
+      "sha256": "7aa32c9add35522adee5f7ee7e0031f1d737860cd90887cc61a5024579fff902"
+    },
+    "ctrlspeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ctrlspeech.png",
+      "source_url": "https://arxiv.org/abs/2608.08362",
+      "origin_url": "https://arxiv.org/html/2608.08362v1/architecture1.png",
+      "locator": "Figure 2",
+      "sha256": "446474c286a44a21d639a96dda7acb6ef89f10959d2d05eace8126ffc7ff415d"
+    },
+    "ted-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/ted-tts.png",
+      "source_url": "https://arxiv.org/abs/2601.03170",
+      "origin_url": "https://arxiv.org/html/2601.03170v2/images/Intro.png",
+      "locator": "Figure 1",
+      "sha256": "639395578387a70cd1b901b082f4e5e806c4053c73d301d259f3400ae8b9a859"
+    },
+    "jam-flow": {
+      "kind": "source-figure",
+      "path": "assets/architectures/jam-flow.png",
+      "source_url": "https://arxiv.org/abs/2506.23552",
+      "origin_url": "https://arxiv.org/html/2506.23552v2/archi.png",
+      "locator": "Figure 3",
+      "sha256": "ba0efed115818ac9bd4ec0c57617b95554a1dd8b76f78e094c74c21deb517121"
+    },
+    "voxtream": {
+      "kind": "source-figure",
+      "path": "assets/architectures/voxtream.png",
+      "source_url": "https://arxiv.org/abs/2509.15969",
+      "origin_url": "https://arxiv.org/html/2509.15969v2/img/architecture_v4.png",
+      "locator": "Figure 1",
+      "sha256": "1885cd5debbfd55fe6e1fa41a5082597ab3e8075a8a72c986368c6c37fe58e96"
+    },
+    "daien-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/daien-tts.png",
+      "source_url": "https://arxiv.org/abs/2608.03011",
+      "origin_url": "https://arxiv.org/html/2608.03011v1/model_train.png",
+      "locator": "Paper figure",
+      "sha256": "c7498501220999de79f449dfb8131ef12532781e9056b3a8b0379fca8f480428"
+    },
+    "tada": {
+      "kind": "source-figure",
+      "path": "assets/architectures/tada.png",
+      "source_url": "https://arxiv.org/abs/2602.23068",
+      "origin_url": "https://arxiv.org/html/2602.23068v1/imgs/encdec.png",
+      "locator": "Figure 2",
+      "sha256": "36a2e9ce80e3d2654bc1e7ee4adcf4867878c0651cc7e9b44cd83b7f0e2ba3cd"
+    },
+    "masked-style-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/masked-style-tts.png",
+      "source_url": "https://arxiv.org/abs/2506.02997",
+      "origin_url": "https://arxiv.org/html/2506.02997v1/main.png",
+      "locator": "Paper figure",
+      "sha256": "2aaf88ba050172e36d6758f65478c637077ed5097ea07714838f702968587db1"
+    },
+    "sled": {
+      "kind": "source-figure",
+      "path": "assets/architectures/sled.png",
+      "source_url": "https://arxiv.org/abs/2505.13181",
+      "origin_url": "https://arxiv.org/html/2505.13181v2/stream.png",
+      "locator": "Figure 2",
+      "sha256": "df4207b3666fe3e7df3be79b90950547df2e2ccadf2c2e8781f3e37258c4c24a"
+    },
+    "tmd-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/tmd-tts.png",
+      "source_url": "https://arxiv.org/abs/2509.18060",
+      "origin_url": "https://arxiv.org/html/2509.18060v2/figures/tmd-tts.png",
+      "locator": "Figure 1",
+      "sha256": "6ca905d2894093aae97974fe1ccb141ba9f9d1c57c1c6a5d115170bd9cebcb39"
+    },
+    "le2e-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/le2e-tts.png",
+      "source_url": "https://arxiv.org/abs/2505.07701",
+      "origin_url": "https://arxiv.org/html/2505.07701v1/img/LE2E.png",
+      "locator": "Figure 1",
+      "sha256": "f6e231e85a1c6e732bdf038e23f78f1a8be23b2a94837e6889c6cd452ed9a7a1"
+    },
+    "chatterbox-flash": {
+      "kind": "source-figure",
+      "path": "assets/architectures/chatterbox-flash.png",
+      "source_url": "https://arxiv.org/abs/2605.30748",
+      "origin_url": "https://arxiv.org/html/2605.30748v3/figures/attn_mask.png",
+      "locator": "Figure 3",
+      "sha256": "78a1231ca333174600ad144cda197dddb11f2d53736d282eb010fcbabfdc66bf"
+    },
+    "s5-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/s5-tts.png",
+      "source_url": "https://arxiv.org/abs/2606.21882",
+      "origin_url": "https://arxiv.org/html/2606.21882v1/architecture_figure.png",
+      "locator": "Figure 1",
+      "sha256": "8482d0c7c3042ce400e27cc85be83e84a5227a52325137c1f2b616cd5a6f51e3"
+    },
+    "dars": {
+      "kind": "source-figure",
+      "path": "assets/architectures/dars.png",
+      "source_url": "https://arxiv.org/abs/2603.01369",
+      "origin_url": "https://arxiv.org/html/2603.01369v1/framework_v2.png",
+      "locator": "Figure 1",
+      "sha256": "b5670730f5748dbcfd0ff73d4faa117a3423b34a2ba42c34b4fda6347fe95dcc"
+    },
+    "parler-tts-hinglish-adaptation": {
+      "kind": "source-figure",
+      "path": "assets/architectures/parler-tts-hinglish-adaptation.png",
+      "source_url": "https://arxiv.org/abs/2506.16310",
+      "origin_url": "https://arxiv.org/html/2506.16310v1/Media/Model/INF.png",
+      "locator": "Figure 2",
+      "sha256": "c3831250ea4855cbea6e637e7305b614888dd2f87c25061a2f868102a4bd0b0d"
+    },
+    "auk": {
+      "kind": "source-figure",
+      "path": "assets/architectures/auk.png",
+      "source_url": "https://arxiv.org/abs/2609.08936",
+      "origin_url": "https://arxiv.org/html/2609.08936v1/model.png",
+      "locator": "Figure 4",
+      "sha256": "d7a1dabcb3fe4b325a4e7e3081d4d6d27f3fd5c5b8b0f84c576734d30170bceb"
+    },
+    "oscillatts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/oscillatts.png",
+      "source_url": "https://arxiv.org/abs/2606.25424",
+      "origin_url": "https://arxiv.org/html/2606.25424v1/OscillaTTS-new-1.png",
+      "locator": "Figure 1",
+      "sha256": "8bb6425ba38d8ddfed65d4336d6ef7827456b087aef5fcbd392832ecd7aa4b50"
+    },
+    "vclip": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vclip.png",
+      "source_url": "https://arxiv.org/abs/2601.02753",
+      "origin_url": "https://arxiv.org/html/2601.02753v1/fig-overview.png",
+      "locator": "Figure 1",
+      "sha256": "2b425ba314204c8f81d1331c1943fb562cfc561346936e736877b5278c437ab5"
+    },
+    "dialospeech": {
+      "kind": "source-figure",
+      "path": "assets/architectures/dialospeech.png",
+      "source_url": "https://arxiv.org/abs/2510.08373",
+      "origin_url": "https://arxiv.org/html/2510.08373v1/pic/diaspeech_over.png",
+      "locator": "Figure 2",
+      "sha256": "5477b97c799e23fdb074fb2e4fac53d6024144ec08af51dea5b0a7daa873c713"
+    },
+    "facespeak": {
+      "kind": "source-figure",
+      "path": "assets/architectures/facespeak.png",
+      "source_url": "https://arxiv.org/abs/2501.03181",
+      "origin_url": "https://arxiv.org/html/2501.03181v2/FaceSpeak_new.png",
+      "locator": "Figure 3",
+      "sha256": "fcd64ee5a9b2e13bf647e1c557919ad8ad0b262eda46ad102af08cf72c62b80f"
+    },
+    "luna-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/luna-tts.png",
+      "source_url": "https://arxiv.org/abs/2608.11593",
+      "origin_url": "https://arxiv.org/pdf/2608.11593v1",
+      "locator": "Figure 1 (paper page 4)",
+      "sha256": "f7957f46a7e9173abfc4fd88f563fc5e83b077bb1ebbf7134666b9c4796e9b9d"
+    },
+    "bagpiper-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/bagpiper-tts.png",
+      "source_url": "https://arxiv.org/abs/2606.22811",
+      "origin_url": "https://arxiv.org/html/2606.22811v1/cot_demo.png",
+      "locator": "Figure 1",
+      "sha256": "7701546ccab38d804261a145ead03083665a903fc5c0b5e6ddf75a4e94687a7d"
+    },
+    "bvs": {
+      "kind": "source-figure",
+      "path": "assets/architectures/bvs.png",
+      "source_url": "https://arxiv.org/abs/2509.15492",
+      "origin_url": "https://arxiv.org/html/2509.15492v1/surface.png",
+      "locator": "Figure 1",
+      "sha256": "998748758e3885c93f066608dd53967ba986ad9d54af77a476de7792292a8828"
+    },
+    "deepdubbing": {
+      "kind": "source-figure",
+      "path": "assets/architectures/deepdubbing.png",
+      "source_url": "https://arxiv.org/abs/2509.15845",
+      "origin_url": "https://arxiv.org/html/2509.15845v1/tsne_gender_by_age_subplots.png",
+      "locator": "Figure 1",
+      "sha256": "3f96d71d250d7db6f4bdb1b64c8231797db29a806ec368467f799613c893594f"
+    },
+    "agentsteertts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/agentsteertts.png",
+      "source_url": "https://arxiv.org/abs/2605.17583",
+      "origin_url": "https://arxiv.org/html/2605.17583v1/overview.png",
+      "locator": "Figure 4",
+      "sha256": "17d48cb2e4b5363d18c8040b06e9cf4bc41c8cb2c280409c95c469d7f81d8374"
+    },
+    "cosywhisper-whispsynth": {
+      "kind": "source-figure",
+      "path": "assets/architectures/cosywhisper-whispsynth.png",
+      "source_url": "https://arxiv.org/abs/2603.14853",
+      "origin_url": "https://arxiv.org/html/2603.14853v1/test3.png",
+      "locator": "Figure 2",
+      "sha256": "d062c7bed398dbb6921e1c1fbf111ffdec4fb1a36d8269b782785890ecc83346"
+    },
+    "saslm": {
+      "kind": "source-figure",
+      "path": "assets/architectures/saslm.png",
+      "source_url": "https://arxiv.org/abs/2604.11424",
+      "origin_url": "https://arxiv.org/html/2604.11424v2/framework.png",
+      "locator": "Figure 3",
+      "sha256": "f844ed3ff26dfac8721b9d0028f402ffbb6775a10d6c37ad044fd16fb567c318"
+    },
+    "freyatts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/freyatts.png",
+      "source_url": "https://arxiv.org/abs/2607.09530",
+      "origin_url": "https://arxiv.org/html/2607.09530v2/freyatts_architecture.svg",
+      "locator": "Figure 1",
+      "sha256": "3ffcf9f1f0ab7bc65bd9bd99212ef9564d01d8abe4404a5bec450458c8c7970c"
+    },
+    "rapflow-tts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/rapflow-tts.png",
+      "source_url": "https://arxiv.org/abs/2506.16741",
+      "origin_url": "https://arxiv.org/html/2506.16741v1/rap.png",
+      "locator": "Figure 1",
+      "sha256": "32e25210c049dc7d9671d65de77dc1b96b06a2eee47c32c142349f6978855984"
+    },
+    "inworld-tts-1": {
+      "kind": "source-figure",
+      "path": "assets/architectures/inworld-tts-1.png",
+      "source_url": "https://arxiv.org/abs/2507.21138",
+      "origin_url": "https://arxiv.org/html/2507.21138v1/graphics/architecture.png",
+      "locator": "Figure 1",
+      "sha256": "06fcb6fff7c99fe28220905b5f47d7e5745edd99618d075c01577b5cfa147085"
+    },
+    "vspeechlm": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vspeechlm.png",
+      "source_url": "https://arxiv.org/abs/2511.22229",
+      "origin_url": "https://arxiv.org/html/2511.22229v1/model_0809.png",
+      "locator": "Figure 2",
+      "sha256": "a4ad1587895f34d5fd06cc7fbbc324cdb4d5104bc90a29b6267dc5c88ac001d8"
+    },
+    "vocalnet-m2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/vocalnet-m2.png",
+      "source_url": "https://arxiv.org/abs/2511.10232",
+      "origin_url": "https://arxiv.org/html/2511.10232v1/VocalNet-m2-full-v2.png",
+      "locator": "Figure 1",
+      "sha256": "b8fa6bb7f7ca37ef18e6904dbc46a1bfd674ccbb4b9b616d848edc26c01c83f0"
+    },
+    "voxtream2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/voxtream2.png",
+      "source_url": "https://arxiv.org/abs/2603.13518",
+      "origin_url": "https://arxiv.org/html/2603.13518v1/architecture.svg",
+      "locator": "Figure 1",
+      "sha256": "3f58c9711e97d08565b25e510abe686e5085bfb1cbe2d7c727847f7a88fa9c31"
+    },
+    "v-cass": {
+      "kind": "source-figure",
+      "path": "assets/architectures/v-cass.png",
+      "source_url": "https://arxiv.org/abs/2506.16716",
+      "origin_url": "https://arxiv.org/html/2506.16716v1/img/pipeline.jpg",
+      "locator": "Paper figure",
+      "sha256": "4720d120f44d091729c84ee5b0f87cc6f21d2669958431111c75ce641fbeb289"
+    },
+    "covomix2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/covomix2.png",
+      "source_url": "https://arxiv.org/abs/2506.00885",
+      "origin_url": "https://arxiv.org/html/2506.00885v2/covomix2-arxiv-pipeline.png",
+      "locator": "Figure 1",
+      "sha256": "575cc9858aaeb5a0ea2b65b42931f3ead4ae7b72e596bbed1c15309c7ec56693"
+    },
+    "face-adapted-styletts-2": {
+      "kind": "source-figure",
+      "path": "assets/architectures/face-adapted-styletts-2.png",
+      "source_url": "https://arxiv.org/abs/2607.26742",
+      "origin_url": "https://arxiv.org/html/2607.26742v1/architecture.svg",
+      "locator": "Figure 1",
+      "sha256": "096050c4f75bfc4f5df185158efe38001e69243c4f5b3e71aba1de5a0594a589"
+    },
+    "pfluxtts": {
+      "kind": "source-figure",
+      "path": "assets/architectures/pfluxtts.png",
+      "source_url": "https://arxiv.org/abs/2602.04160",
+      "origin_url": "https://arxiv.org/html/2602.04160v2/raskttslast_v4.drawio.svg",
+      "locator": "Figure 1",
+      "sha256": "5365aac9bcc3f2e5c6df5f23b8db375d9181627a5aabdc73fb2805e56b29e40b"
     }
   }
 }

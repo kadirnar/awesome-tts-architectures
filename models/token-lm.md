@@ -4,77 +4,208 @@
 
 [← All models](../README.md#models)
 
-**60 models · Reviewed 2026-09-13**
+**191 models · Reviewed 2026-09-13**
 
 Primary-source figures and labeled input/output diagrams. [Figure credits](../assets/architectures/CREDITS.md).
 
 <details>
 <summary>Model index and modality key</summary>
 
-**Inputs and outputs:** T = text, S = speech, A = other audio. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
+**Inputs and outputs:** T = text, S = speech, A = other audio, I = image, V = video. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
 
 Dates refer to papers or announcements, not necessarily model releases.
 
 | Model | Source date | Input → output | Interaction |
 | --- | --- | --- | --- |
+| [Affectron](#affectron) | 2026-03-15 | T, S → S | generation |
+| [AgentSteerTTS](#agentsteertts) | 2026-05-14 | T, S → S | generation |
+| [ATRIE](#atrie) | 2026-04-21 | T → S | generation |
+| [Audiobook-CC](#audiobook-cc) | 2025-09-22 | T, S → S | generation |
+| [AuEmoChat](#auemochat) | 2026-07-17 | T, S, V → S | generation |
+| [AutoStyle-TTS](#autostyle-tts) | 2025-04-14 | T, S → S | generation |
+| [AVLM (expressive speech)](#avlm-expressive-speech) | 2025-08-22 | T, S, V → S | generation |
+| [Bagpiper-TTS](#bagpiper-tts) | 2026-06-22 | T → S | generation |
 | [Bark](#bark) | — | T → S, A | generation |
 | [BASE TTS](#base-tts) | 2024-02-12 | T, S → S | streaming |
+| [BatonTTS (BatonVoice)](#batontts-batonvoice) | 2025-09-30 | T, S → S | generation |
+| [Block-wise Mimi TTS](#block-wise-mimi-tts) | 2026-04-14 | T → S | streaming |
+| [BnTTS](#bntts) | 2025-02-09 | T, S → S | generation |
+| [BreezyVoice](#breezyvoice) | 2025-01-29 | T, S → S | generation |
+| [BridgeTTS](#bridgetts) | 2025-10-13 | T, S → S | generation |
+| [BVS](#bvs) | 2025-09-19 | T, V → S, A | generation |
+| [CAM-TTS](#cam-tts) | 2025-08-20 | T, S → S | generation |
+| [CapTalk](#captalk) | 2026-04-09 | T, S → S | generation |
+| [CaT-TTS](#cat-tts) | 2025-09-26 | T, S → S | generation |
+| [Chain-of-Details TTS](#chain-of-details-tts) | 2026-04-21 | T, S → S | generation |
+| [Chain-Talker](#chain-talker) | 2025-05-19 | T, S → S | generation |
 | [Chatterbox](#chatterbox) | — | T, S → S | generation |
+| [Chatterbox-Flash](#chatterbox-flash) | 2026-05-29 | T, S → S | streaming |
 | [ChatTTS](#chattts) | — | T → S | generation |
 | [CLaM-TTS](#clam-tts) | 2024-04-03 | T, S → S | generation |
+| [Compressed-to-fine speech LM](#compressed-to-fine-speech-lm) | 2025-05-30 | T, S → S | generation |
+| [Confucius4-TTS](#confucius4-tts) | 2026-08-12 | T, S → S | generation |
+| [Controllable masked-speech TTS](#controllable-masked-speech-tts) | 2025-02-11 | T, S, A → S | generation |
+| [CosyEdit2](#cosyedit2) | 2026-05-25 | T, S → S | generation |
 | [CosyVoice](#cosyvoice) | 2024-07-07 | T, S → S | generation |
 | [CosyVoice 2](#cosyvoice-2) | 2024-12-13 | T, S → S | streaming |
 | [CosyVoice 3](#cosyvoice-3) | 2025-05-23 | T, S → S | streaming |
+| [CosyWhisper (WhispSynth)](#cosywhisper-whispsynth) | 2026-03-16 | T, S → S | generation |
+| [CrossAccent-TTS](#crossaccent-tts) | 2026-06-24 | T, S → S | generation |
 | [CSM](#csm) | — | T, S → S | generation |
+| [CTC-TTS](#ctc-tts) | 2026-02-23 | T, S → S | streaming |
+| [DCAR](#dcar) | 2025-06-27 | T, S → S | generation |
+| [DeepASMR](#deepasmr) | 2026-01-22 | T, S → S | generation |
+| [DeepDubbing](#deepdubbing) | 2025-09-19 | T, S → S | generation |
+| [DELTA-TTS](#delta-tts) | 2026-07-05 | T, S → S | generation |
 | [Dia](#dia) | — | T, S → S | generation |
 | [Dia2](#dia2) | — | T, S → S | streaming |
+| [DialoSpeech](#dialospeech) | 2025-10-09 | T, S → S | generation |
+| [DiffCSS](#diffcss) | 2025-02-27 | T, S → S | generation |
+| [DiFlow-TTS](#diflow-tts) | 2025-09-11 | T, S → S | generation |
+| [DiFlowDubber](#diflowdubber) | 2026-03-15 | T, S, V → S | generation |
+| [DisCo-Speech](#disco-speech) | 2025-12-15 | T, S → S | generation |
+| [DisSpeech](#disspeech) | 2026-06-19 | T → S | generation |
+| [DiSTAR](#distar) | 2025-10-14 | T, S → S | generation |
+| [Dragon-FM](#dragon-fm) | 2025-07-30 | T, S → S | generation |
+| [DualDub](#dualdub) | 2025-07-14 | T, V → S | generation |
+| [DualSpeechLM](#dualspeechlm) | 2025-08-12 | T, S → S | generation |
 | [ELLA-V](#ella-v) | 2024-01-14 | T, S → S | generation |
+| [EMM-TTS](#emm-tts) | 2025-10-13 | T, S → S | generation |
+| [EmoShift](#emoshift) | 2026-01-30 | T → S | generation |
+| [EmoSSLSphere](#emosslsphere) | 2025-08-15 | T → S | generation |
+| [EmoTra-TTS](#emotra-tts) | 2026-08-24 | T, S → S | generation |
+| [EmoVoice](#emovoice) | 2025-04-17 | T → S | generation |
+| [End-to-end discrete-token TTS](#end-to-end-discrete-token-tts) | 2026-06-08 | T, S → S | generation |
+| [FacialTalker](#facialtalker) | 2026-07-27 | T, S, V → S | generation |
+| [FC-TTS](#fc-tts) | 2026-05-23 | T, S → S | generation |
 | [FireRedTTS](#fireredtts) | 2024-09-05 | T, S → S | generation |
+| [FireRedTTS-1S](#fireredtts-1s) | 2025-03-26 | T, S → S | generation |
 | [FireRedTTS-2](#fireredtts-2) | 2025-09-02 | T, S → S | streaming |
 | [Fish Audio S1 / OpenAudio S1](#openaudio-s1) | — | T, S → S | generation |
 | [Fish Audio S2](#fish-audio-s2) | 2026-03-09 | T, S → S | generation |
 | [Fish Speech](#fish-speech) | 2024-11-02 | T, S → S | generation |
+| [FlashTTS](#flashtts) | 2026-06-08 | T, S → S | streaming |
+| [FleSpeech](#flespeech) | 2025-01-08 | T, S, I → S | generation |
+| [FlexiVoice](#flexivoice) | 2026-01-08 | T, S → S | generation |
+| [Frame-stacked local Transformer TTS](#frame-stacked-local-transformer-tts) | 2025-09-23 | T, S → S | generation |
+| [GibbsTTS](#gibbstts) | 2026-05-10 | T, S → S | generation |
 | [GLM-TTS](#glm-tts) | 2025-12-16 | T, S → S | generation |
+| [GOAT-TTS](#goat-tts) | 2025-04-15 | T, S → S | generation |
+| [GPA](#gpa) | 2026-01-15 | T, S → S | generation |
 | [GPT-SoVITS](#gpt-sovits) | — | T, S → S | generation |
+| [GRAFT](#graft) | 2026-07-02 | T, S → S | generation |
+| [HD-PPT](#hd-ppt) | 2025-09-23 | T, S → S | generation |
 | [Higgs Audio v2](#higgs-audio-v2) | — | T, S → S | generation |
 | [Higgs Audio v2.5](#higgs-audio-v2-5) | 2026-01-09 | T, S → S | streaming |
 | [Higgs Audio v3 TTS](#higgs-audio-v3-tts) | — | T, S → S | streaming |
 | [IndexTTS](#indextts) | 2025-02-08 | T, S → S | generation |
 | [IndexTTS 2.5](#indextts-2-5) | 2026-01-07 | T, S → S | generation |
 | [IndexTTS2](#indextts2) | 2025-06-23 | T, S → S | generation |
+| [Inworld TTS-1](#inworld-tts-1) | 2025-07-22 | T → S | generation |
+| [JELLY](#jelly) | 2025-01-09 | T, S → S | generation |
+| [JoyVoice](#joyvoice) | 2025-12-22 | T, S → S | generation |
+| [Koel-TTS](#koel-tts) | 2025-02-07 | T, S → S | generation |
 | [Kyutai TTS (DSM)](#kyutai-tts-dsm) | 2025-09-10 | T, S → S | streaming |
+| [LatinX](#latinx) | 2025-09-06 | T, S → S | generation |
+| [LLaDA-TTS](#llada-tts) | 2026-03-27 | T, S → S | generation |
 | [Llasa](#llasa) | 2025-02-06 | T, S → S | generation |
 | [Llasa+](#llasa-plus) | 2025-08-08 | T, S → S | streaming |
+| [LLMVoX](#llmvox) | 2025-03-06 | T → S | streaming |
+| [Luna-TTS](#luna-tts) | 2026-08-12 | T, S → S | streaming |
+| [MAGIC-TTS](#magic-tts) | 2026-04-23 | T, S → S | generation |
+| [MagpieTTS-LF](#magpietts-lf) | 2026-06-16 | T, S → S | generation |
+| [Marco-Voice](#marco-voice) | 2025-08-04 | T, S → S | generation |
+| [MARS6](#mars6) | 2025-01-10 | T, S → S | generation |
+| [Masked-style TTS](#masked-style-tts) | 2025-06-03 | T, S → S | generation |
 | [MaskGCT](#maskgct) | 2024-09-01 | T, S → S | generation |
+| [MAVE](#mave) | 2025-10-06 | T, S → S | generation |
 | [Mega-TTS](#mega-tts) | 2023-06-06 | T, S → S | generation |
 | [Mega-TTS 2](#mega-tts-2) | 2023-07-14 | T, S → S | generation |
+| [MELD](#meld) | 2026-05-28 | T, S → S | generation |
+| [Metis](#metis) | 2025-02-05 | T, S → S | generation |
+| [MFCIG-CSS](#mfcig-css) | 2025-09-07 | T, S, V → S | generation |
 | [MiniMax-Speech](#minimax-speech) | 2025-05-12 | T, S → S | generation |
+| [MixedG2P-T5](#mixedg2p-t5) | 2025-09-01 | T, S → S | generation |
+| [MoE-TTS](#moe-tts) | 2025-08-15 | T → S | generation |
+| [MoonCast](#mooncast) | 2025-03-18 | T, S → S | generation |
 | [MOSS-TTS](#moss-tts) | 2026-03-18 | T, S → S | generation |
 | [MOSS-TTS-Nano](#moss-tts-nano) | — | T, S → S | streaming |
 | [MOSS-TTS-Realtime](#moss-tts-realtime) | — | T, S → S | streaming |
 | [MOSS-TTSD](#moss-ttsd) | 2026-03-20 | T, S → S | generation |
 | [MOSS-VoiceGenerator](#moss-voicegenerator) | 2026-03-30 | T → S | generation |
+| [MPE-TTS](#mpe-tts) | 2025-05-24 | T, S → S | generation |
+| [Muyan-TTS](#muyan-tts) | 2025-04-27 | T, S → S | generation |
 | [NeuTTS Air](#neutts-air) | — | T, S → S | streaming |
 | [NeuTTS Nano](#neutts-nano) | — | T, S → S | streaming |
 | [NeuTTS-2E](#neutts-2e) | — | T → S | streaming |
+| [NR-LauraTTS](#nr-lauratts) | 2025-05-20 | T, S → S | generation |
+| [NVSpeech TTS](#nvspeech-tts) | 2025-08-06 | T, S → S | generation |
 | [OmniVoice](#omnivoice) | 2026-04-01 | T, S → S | generation |
+| [OpusLM](#opuslm) | 2025-06-21 | T, S → S | generation |
 | [Orpheus TTS](#orpheus-tts) | — | T, S → S | generation |
 | [OuteTTS](#outetts) | — | T, S → S | generation |
+| [OV-InstructTTS](#ov-instructtts) | 2026-01-04 | T → S | generation |
+| [OZSpeech](#ozspeech) | 2025-05-19 | T, S → S | generation |
+| [PALLE](#palle) | 2025-04-14 | T, S → S | generation |
+| [Parallel GPT](#parallel-gpt) | 2025-08-06 | T, S → S | generation |
 | [Parler-TTS](#parler-tts) | — | T → S | generation |
+| [Parler-TTS Hinglish adaptation](#parler-tts-hinglish-adaptation) | 2025-06-19 | T → S | generation |
+| [Phoenix TTS](#phoenix-tts) | 2026-08-12 | T, S → S | generation |
+| [PilotTTS](#pilottts) | 2026-05-26 | T, S → S | generation |
+| [Prompt-Unseen-Emotion](#prompt-unseen-emotion) | 2025-06-03 | T → S | generation |
+| [PS-TTS](#ps-tts) | 2026-04-10 | T, S → S | generation |
+| [QTTS](#qtts) | 2025-07-16 | T, S → S | generation |
+| [Qwen-Audio-3.0-TTS](#qwen-audio-3-0-tts) | 2026-07-27 | T, S → S | generation |
 | [Qwen3-TTS](#qwen3-tts) | 2026-01-22 | T, S → S | streaming |
+| [RADKA-CSS](#radka-css) | 2025-01-11 | T, S → S | generation |
 | [RALL-E](#rall-e) | 2024-04-04 | T, S → S | generation |
+| [RWKVTTS](#rwkvtts) | 2025-04-04 | T, S → S | streaming |
+| [S5-TTS](#s5-tts) | 2026-06-20 | T, S → S | streaming |
+| [Sarashina2.2-TTS](#sarashina2-2-tts) | 2026-06-24 | T, S → S | generation |
 | [Seed-TTS](#seed-tts) | 2024-06-04 | T, S → S | generation |
+| [SMLLE](#smlle) | 2025-05-26 | T, S → S | generation |
+| [SoulX-Podcast](#soulx-podcast) | 2025-10-27 | T, S → S | generation |
 | [Spark-TTS](#spark-tts) | 2025-03-03 | T, S → S | generation |
 | [SPEAR-TTS](#spear-tts) | 2023-02-07 | T, S → S | generation |
+| [SpeechAccentLLM](#speechaccentllm) | 2025-07-02 | T, S → S | generation |
+| [SpeechEdit](#speechedit) | 2026-01-18 | T, S → S | generation |
 | [SpeechX](#speechx) | 2023-08-14 | T, S → S | generation |
+| [Step-Audio-EditX](#step-audio-editx) | 2025-11-05 | T, S → S | generation |
 | [Step-Audio-TTS](#step-audio-tts) | 2025-02-17 | T, S → S | generation |
+| [StepAudio 2.5 TTS](#stepaudio-2-5-tts) | 2026-05-22 | T, S → S | generation |
+| [SyncSpeech](#syncspeech) | 2025-02-16 | T, S → S | generation |
+| [TED-TTS](#ted-tts) | 2026-01-06 | T, S → S | generation |
+| [Tibetan-TTS](#tibetan-tts) | 2026-05-04 | T, S → S | generation |
+| [TinyWave](#tinywave) | 2025-06-30 | T, S → S | generation |
+| [TLDR (TTS)](#tldr-tts) | 2026-06-08 | T, S → S | generation |
+| [TontaubeV1](#tontaubev1) | 2026-09-08 | T, S → S | streaming |
 | [Tortoise TTS](#tortoise-tts) | 2023-05-12 | T, S → S | generation |
+| [TTS-Transducer](#tts-transducer) | 2025-01-10 | T, S → S | generation |
+| [UDDETTS](#uddetts) | 2025-05-15 | T → S | generation |
+| [UniTAF](#unitaf) | 2026-02-17 | T → S | generation |
+| [UniTalker](#unitalker) | 2025-08-06 | T, S, V → S | generation |
+| [UniTTS](#unitts) | 2025-05-23 | T, S → S | generation |
+| [UniVocal](#univocal) | 2026-06-01 | T, S → S | generation |
+| [V-CASS](#v-cass) | 2025-06-20 | T, V → S | generation |
 | [VALL-E](#vall-e) | 2023-01-05 | T, S → S | generation |
 | [VALL-E 2](#vall-e-2) | 2024-06-08 | T, S → S | generation |
 | [VALL-E X](#vall-e-x) | 2023-03-07 | T, S → S | generation |
 | [VALL-T](#vall-t) | 2024-01-25 | T, S → S | generation |
+| [Vevo](#vevo) | 2025-02-11 | T, S → S | generation |
+| [VocalNet-M2](#vocalnet-m2) | 2025-11-13 | T, S → S | generation |
 | [VoiceCraft](#voicecraft) | 2024-03-25 | T, S → S | generation |
+| [VoiceCraft-Dub](#voicecraft-dub) | 2025-04-03 | T, S, V → S | generation |
+| [VoiceSculptor](#voicesculptor) | 2026-01-15 | T, S → S | generation |
+| [Voxtral TTS](#voxtral-tts) | 2026-03-26 | T, S → S | generation |
+| [VoXtream](#voxtream) | 2025-09-19 | T, S → S | streaming |
+| [VoXtream2](#voxtream2) | 2026-03-13 | T, S → S | streaming |
+| [VSpeechLM](#vspeechlm) | 2025-11-27 | T, V → S | generation |
+| [WenetSpeech-Wu TTS](#wenetspeech-wu-tts) | 2026-01-16 | T, S → S | generation |
+| [WeSCon](#wescon) | 2025-09-29 | T, S → S | generation |
 | [WhisperSpeech](#whisperspeech) | — | T, S → S | generation |
+| [WordVoice](#wordvoice) | 2026-07-07 | T, S → S | generation |
+| [X2Streaming-TTS](#x2streaming-tts) | 2026-08-19 | T, S → S | streaming |
+| [XEmoRAG](#xemorag) | 2025-08-10 | T, S → S | generation |
 | [XTTS](#xtts) | 2024-06-07 | T, S → S | streaming |
 | [Zonos](#zonos) | — | T, S → S | generation |
 
@@ -82,13 +213,197 @@ Dates refer to papers or announcements, not necessarily model releases.
 
 ## Architectures
 
+<a id="affectron"></a>
+
+### Affectron
+
+VoiceCraft adaptation with structured nonverbal-vocalization conditioning.
+
+Affectron extends a verbal-speech backbone to place nonverbal vocalizations in emotionally and contextually appropriate positions. Augmented training examples and structural masking enable expressive utterances containing events such as laughter while preserving the spoken content.
+
+[Paper](https://arxiv.org/abs/2603.14432) · [GitHub](https://github.com/Choddeok/Affectron) · [Project](https://choddeok.github.io/Affectron/)
+
+![Affectron — Figure 2](../assets/architectures/affectron.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2603.14432)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="agentsteertts"></a>
+
+### AgentSteerTTS
+
+Disentangled voice controls with retrieval and feedback-guided synthesis.
+
+AgentSteerTTS separates identity and emotional-prosodic representations, then grounds compound instructions in retrieved acoustic examples. A controller combines these conditions and uses feedback to refine expressive speech while preserving the intended speaker.
+
+[Paper](https://arxiv.org/abs/2605.17583) · GitHub: no author-linked repository found
+
+![AgentSteerTTS — Figure 4](../assets/architectures/agentsteertts.png)
+
+*Figure 4 · [Source](https://arxiv.org/abs/2605.17583)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="atrie"></a>
+
+### ATRIE
+
+Persona-conditioned dual-track timbre and prosody synthesis.
+
+ATRIE converts character descriptions into separate voice-identity and dynamic prosody conditions. A compact adapter learns from a larger language-model teacher and modulates a GPT-SoVITS-based synthesizer, supporting expressive persona-driven speech generation.
+
+[Paper](https://arxiv.org/abs/2604.19055) · GitHub: no author-linked repository found
+
+![ATRIE — Figure 1](../assets/architectures/atrie.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2604.19055)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="audiobook-cc"></a>
+
+### Audiobook-CC
+
+Long-context speech generation with disentangled expressive conditioning.
+
+Audiobook-CC models context beyond individual sentences and separates style instructions from voice prompts. Distillation strengthens emotional expression, supporting multi-character narration with more consistent voices and performance across longer passages.
+
+[Paper](https://arxiv.org/abs/2509.17516) · GitHub: no author-linked repository found
+
+![Audiobook-CC — Figure 1](../assets/architectures/audiobook-cc.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2509.17516)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="auemochat"></a>
+
+### AuEmoChat
+
+Emotion-token language modeling with contextual flow rendering.
+
+AuEmoChat learns a discrete emotion representation from speech and compresses dialogue history while retaining emotionally relevant information. Its language model predicts emotion and speech tokens, which a context-conditioned flow decoder renders into expressive conversational audio.
+
+[Paper](https://arxiv.org/abs/2607.15755) · [GitHub](https://github.com/AI-S2-Lab/AuEmoChat)
+
+![AuEmoChat — Figure 2](../assets/architectures/auemochat.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2607.15755)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S, V → S · **Interaction:** generation
+
+The linked author repository is a placeholder that says code will be made public after publication.
+
+</details>
+
+<a id="autostyle-tts"></a>
+
+### AutoStyle-TTS
+
+Text-driven reference-style retrieval for expressive synthesis.
+
+AutoStyle-TTS matches the target text against a collection of expressive speech examples using learned textual embeddings. The selected recording provides style conditioning for synthesis, automatically adapting delivery to the content.
+
+[Paper](https://arxiv.org/abs/2504.10309) · [GitHub](https://github.com/Chengyuann/AutoStyle-TTS) · [Project](https://thuhcsi.github.io/icme2025-AutoStyle-TTS)
+
+![AutoStyle-TTS — Paper figure](../assets/architectures/autostyle-tts.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2504.10309)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="avlm-expressive-speech"></a>
+
+### AVLM (expressive speech)
+
+Facial-feature fusion into an expressive speech language model.
+
+This audio-visual language model adds full-face information to an expressive speech backbone. Training on emotion and dialogue tasks connects facial cues with spoken delivery, enabling speech generation that uses visual as well as acoustic conversational context.
+
+[Paper](https://arxiv.org/abs/2508.16188) · [GitHub](https://github.com/steventan0110/AVLM)
+
+![AVLM (expressive speech) — Figure 2](../assets/architectures/avlm-expressive-speech.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2508.16188)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S, V → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="bagpiper-tts"></a>
+
+### Bagpiper-TTS
+
+Rich-caption planning followed by universal speech generation.
+
+Bagpiper-TTS converts a natural-language request into a detailed speech plan containing words and delivery information. The generator follows that plan for tasks ranging from ordinary narration to multi-speaker rendering, role-play and singing.
+
+[Paper](https://arxiv.org/abs/2606.22811) · [Project](https://bagpipertts.github.io/bagpiper_tts_demo/) · GitHub: no author-linked repository found
+
+![Bagpiper-TTS — Figure 1](../assets/architectures/bagpiper-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2606.22811)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="bark"></a>
 
 ### Bark
 
 Hierarchical autoregressive audio tokens.
 
-[Repository](https://github.com/suno-ai/bark)
+[GitHub](https://github.com/suno-ai/bark)
 
 ![Bark — Input/output diagram](../assets/architectures/bark.svg)
 
@@ -128,6 +443,259 @@ Models discrete speech codes with an incremental waveform decoder.
 
 </details>
 
+<a id="batontts-batonvoice"></a>
+
+### BatonTTS (BatonVoice)
+
+Feature-controlled speech synthesis driven by structured linguistic instructions.
+
+BatonVoice interprets a user's expressive request and translates it into controls for its dedicated BatonTTS generator. Separating instruction interpretation from acoustic rendering enables more explicit feature control, including transfer to languages outside the control-training data.
+
+[Paper](https://arxiv.org/abs/2509.26514) · GitHub: no author-linked repository found
+
+![BatonTTS (BatonVoice) — Figure 1](../assets/architectures/batontts-batonvoice.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2509.26514)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="block-wise-mimi-tts"></a>
+
+### Block-wise Mimi TTS
+
+FastSpeech 2 conditioning with depth-wise Mimi codec prediction.
+
+This streaming system replaces continuous acoustic regression with direct prediction of Mimi codec layers. A modified FastSpeech 2 backbone supplies aligned features and a depth-wise decoder fills residual codebooks, producing successive speech blocks without temporal autoregression.
+
+[Paper](https://arxiv.org/abs/2604.12438) · GitHub: no author-linked repository found
+
+![Block-wise Mimi TTS — Figure 1 (paper page 10)](../assets/architectures/block-wise-mimi-tts.png)
+
+*Figure 1 (paper page 10) · [Source](https://arxiv.org/abs/2604.12438)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="bntts"></a>
+
+### BnTTS
+
+Bangla-adapted XTTS with few-shot speaker conditioning.
+
+BnTTS extends an XTTS-based multilingual pipeline to Bangla using language-specific phonetic adaptations. A small amount of target-speaker audio supports personalization, with the model designed for limited-resource speech synthesis.
+
+[Paper](https://arxiv.org/abs/2502.05729) · GitHub: no author-linked repository found
+
+![BnTTS — Figure 1](../assets/architectures/bntts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2502.05729)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="breezyvoice"></a>
+
+### BreezyVoice
+
+Taiwanese Mandarin CosyVoice adaptation with pronunciation disambiguation.
+
+BreezyVoice combines supervised speech tokens, a language model and flow-based acoustics with a pronunciation frontend. Its Taiwanese Mandarin adaptation provides explicit phonetic control for characters with multiple readings while retaining reference-based voice synthesis.
+
+[Paper](https://arxiv.org/abs/2501.17790) · [GitHub](https://github.com/mtkresearch/BreezyVoice)
+
+![BreezyVoice — Figure 1](../assets/architectures/breezyvoice.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2501.17790)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="bridgetts"></a>
+
+### BridgeTTS
+
+Sparse discrete prediction with rich continuous acoustic reconstruction.
+
+BridgeTTS uses the BridgeCode dual representation to shorten the sequence predicted by its autoregressive language model. Bridging modules reconstruct more detailed continuous acoustic features from those sparse tokens, balancing generation speed with voice fidelity.
+
+[Paper](https://arxiv.org/abs/2510.11646) · GitHub: no author-linked repository found
+
+![BridgeTTS — Figure 2](../assets/architectures/bridgetts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2510.11646)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="bvs"></a>
+
+### BVS
+
+Video-guided semantic and acoustic speech generation.
+
+Beyond Video-to-SFX predicts audio semantic tokens from visual information and phonetic cues, then refines them into acoustic tokens. The two-stage generator produces intelligible speech whose timing and environmental sound fit the supplied video.
+
+[Paper](https://arxiv.org/abs/2509.15492) · GitHub: no author-linked repository found
+
+![BVS — Figure 1](../assets/architectures/bvs.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2509.15492)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, V → S, A · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="cam-tts"></a>
+
+### CAM-TTS
+
+Context-aware memory for long-form speech language modeling.
+
+CAM-TTS retains global narrative information and retrieves local details through an updatable memory block. Prefix attention combines those memories with preceding context, guiding sentence-level synthesis across longer paragraphs.
+
+[Paper](https://arxiv.org/abs/2508.14713) · GitHub: no author-linked repository found
+
+![CAM-TTS — Figure 2](../assets/architectures/cam-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2508.14713)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="captalk"></a>
+
+### CapTalk
+
+Caption-conditioned autoregression with hierarchical variational voice control.
+
+CapTalk designs voices from descriptions for individual utterances and multi-speaker dialogue. Hierarchical conditioning separates stable speaker identity from changing turn-level delivery, while explicit planning tokens control dynamic expressive attributes.
+
+[Paper](https://arxiv.org/abs/2604.08363) · GitHub: no author-linked repository found
+
+![CapTalk — Figure 1](../assets/architectures/captalk.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2604.08363)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="cat-tts"></a>
+
+### CaT-TTS
+
+Dual-Transformer comprehension and speech rendering.
+
+CaT-TTS separates textual understanding from acoustic generation in a two-Transformer architecture. During decoding, a masked parallel inference procedure guides speech-token predictions to reduce local errors in zero-shot voice synthesis.
+
+[Paper](https://arxiv.org/abs/2509.22062) · GitHub: no author-linked repository found
+
+![CaT-TTS — Figure 2](../assets/architectures/cat-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2509.22062)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="chain-of-details-tts"></a>
+
+### Chain-of-Details TTS
+
+Shared-decoder temporal coarse-to-fine speech-token generation.
+
+Chain-of-Details TTS progressively predicts speech at increasing temporal resolutions using a shared decoder. The coarsest stage provides an implicit phonetic plan, while subsequent stages recover timing detail without a separate phoneme-duration predictor.
+
+[Paper](https://arxiv.org/abs/2604.19330) · GitHub: no author-linked repository found
+
+![Chain-of-Details TTS — Paper figure](../assets/architectures/chain-of-details-tts.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2604.19330)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="chain-talker"></a>
+
+### Chain-Talker
+
+Contextual emotion reasoning followed by semantic and acoustic rendering.
+
+Chain-Talker first derives an emotional description from dialogue history, then predicts semantic speech codes. A final rendering stage combines these plans to synthesize expressive responses whose delivery fits the conversational context.
+
+[Paper](https://arxiv.org/abs/2505.12597) · [GitHub](https://github.com/AI-S2-Lab/Chain-Talker)
+
+![Chain-Talker — Figure 2](../assets/architectures/chain-talker.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2505.12597)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="chatterbox"></a>
 
 ### Chatterbox
@@ -136,7 +704,7 @@ Speech-token LM and acoustic decoder.
 
 Chatterbox synthesizes speech from text and a voice reference, with controls for expressive delivery. Its multilingual models focus on cross-language voice consistency, while Turbo and Nano use a smaller backbone and a single-step acoustic decoder. These variants serve different narration, conversational playback and local-device requirements; their capabilities are not interchangeable.
 
-[Repository](https://github.com/resemble-ai/chatterbox)
+[GitHub](https://github.com/resemble-ai/chatterbox)
 
 ![Chatterbox — Input/output diagram](../assets/architectures/chatterbox.svg)
 
@@ -155,13 +723,36 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 
 </details>
 
+<a id="chatterbox-flash"></a>
+
+### Chatterbox-Flash
+
+Prior-calibrated block diffusion adapted from an autoregressive TTS model.
+
+Chatterbox-Flash generates speech-token blocks in parallel while keeping block-by-block streaming. Calibration against common-token priors and confidence-based stopping improve its discrete diffusion decoding after adaptation from a pretrained autoregressive synthesizer.
+
+[Paper](https://arxiv.org/abs/2605.30748) · [GitHub](https://github.com/resemble-ai/chatterbox-flash)
+
+![Chatterbox-Flash — Figure 3](../assets/architectures/chatterbox-flash.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2605.30748)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="chattts"></a>
 
 ### ChatTTS
 
 Autoregressive speech-token generation.
 
-[Repository](https://github.com/2noise/ChatTTS)
+[GitHub](https://github.com/2noise/ChatTTS)
 
 ![ChatTTS — Input/output diagram](../assets/architectures/chattts.svg)
 
@@ -196,6 +787,98 @@ Probabilistic residual quantization and multi-token LM.
 **Input → output:** T, S → S · **Interaction:** generation
 
 Predicts multiple codec tokens jointly to reduce generation cost.
+
+</details>
+
+<a id="compressed-to-fine-speech-lm"></a>
+
+### Compressed-to-fine speech LM
+
+Compressed distant context with detailed local codec-token prediction.
+
+This speech-language-model design keeps recent acoustic tokens and voice prompts at full detail while compressing distant context. The asymmetric representation reduces redundant long-sequence processing without discarding the local cues needed for pronunciation and vocal consistency.
+
+[Paper](https://arxiv.org/abs/2505.24496) · GitHub: no author-linked repository found
+
+![Compressed-to-fine speech LM — Figure 1](../assets/architectures/compressed-to-fine-speech-lm.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2505.24496)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="confucius4-tts"></a>
+
+### Confucius4-TTS
+
+Speaker-conditioned text-to-semantic LM and acoustic flow matching.
+
+Confucius4-TTS extracts voice characteristics from self-supervised speech features without requiring a transcript of the reference recording. A language model predicts semantic tokens and a flow decoder generates mel-spectrograms, enabling voice cloning within and across fourteen languages.
+
+[Paper](https://arxiv.org/abs/2608.11650) · [GitHub](https://github.com/netease-youdao/Confucius4-TTS)
+
+![Confucius4-TTS — Figure 1](../assets/architectures/confucius4-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2608.11650)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="controllable-masked-speech-tts"></a>
+
+### Controllable masked-speech TTS
+
+Dual-speaker encoders and task-conditioned masked speech prediction.
+
+This synthesizer separates reference voice information from acoustic background conditions. An explicit task control selects whether background sound is retained or removed, allowing personalized speech generation under different environmental requirements.
+
+[Paper](https://arxiv.org/abs/2502.07345) · GitHub: no author-linked repository found
+
+![Controllable masked-speech TTS — Paper figure](../assets/architectures/controllable-masked-speech-tts.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2502.07345)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S, A → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="cosyedit2"></a>
+
+### CosyEdit2
+
+CosyVoice speech generation with editing-oriented post-training.
+
+CosyEdit2 adapts a text-speech language model and acoustic decoder for consistent speech editing, then refines them with editing-specific rewards. The paper also evaluates the resulting improvement in zero-shot text-to-speech, connecting local editing consistency with reference-based synthesis.
+
+[Paper](https://arxiv.org/abs/2605.25930) · [Project](https://cjy1018.github.io/CosyEdit2) · GitHub: no author-linked repository found
+
+![CosyEdit2 — Figure 1](../assets/architectures/cosyedit2.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2605.25930)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -253,7 +936,7 @@ Scaled speech LM and post-training.
 
 CosyVoice 3 extends streaming, reference-conditioned synthesis with a tokenizer trained on several speech-understanding tasks and a reward model for post-training. It targets reliable pronunciation, speaker identity and prosody across languages, dialects and less controlled text. The research scaling experiments and the downloadable Fun-CosyVoice3 checkpoint represent different model configurations.
 
-[Paper](https://arxiv.org/abs/2505.17589) · [Repository](https://github.com/QwenAudio/CosyVoice)
+[Paper](https://arxiv.org/abs/2505.17589) · [GitHub](https://github.com/QwenAudio/CosyVoice) · [Project](https://funaudiollm.github.io/cosyvoice3)
 
 ![CosyVoice 3 — Figure 2](../assets/architectures/cosyvoice-3.png)
 
@@ -270,6 +953,52 @@ Extends coverage and control of the CosyVoice streaming synthesis line.
 
 </details>
 
+<a id="cosywhisper-whispsynth"></a>
+
+### CosyWhisper (WhispSynth)
+
+CosyVoice-based synthesis with pitch-free DDSP reconstruction.
+
+The WhispSynth generation pipeline combines a CosyVoice synthesizer with pitch-free digital signal processing to produce whispered speech. It supports multilingual whisper generation while avoiding the voiced pitch patterns of ordinary speech synthesis.
+
+[Paper](https://arxiv.org/abs/2603.14853) · [GitHub](https://github.com/tan90xx/cosywhisper)
+
+![CosyWhisper (WhispSynth) — Figure 2](../assets/architectures/cosywhisper-whispsynth.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2603.14853)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The paper links the CosyWhisper repository, but no README or packaged implementation was available for review.
+
+</details>
+
+<a id="crossaccent-tts"></a>
+
+### CrossAccent-TTS
+
+Disentangled speaker and accent conditioning with intensity control.
+
+CrossAccent-TTS separates speaker identity from accent-related information in a speech synthesis model. Weighted language embeddings control the accent subspace, allowing gradual accent changes and cross-language synthesis while retaining the reference speaker's timbre.
+
+[Paper](https://arxiv.org/abs/2606.25403) · GitHub: no author-linked repository found
+
+![CrossAccent-TTS — Figure 1](../assets/architectures/crossaccent-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2606.25403)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="csm"></a>
 
 ### CSM
@@ -278,7 +1007,7 @@ Llama backbone and Mimi-code decoder.
 
 CSM uses the text and audio of preceding speaker turns to shape the delivery of the next utterance. A Llama backbone predicts speech representations, and a smaller decoder completes Mimi audio codes. It is a contextual speech renderer: an application supplies the words to say, including any responses written by a separate language model.
 
-[Repository](https://github.com/sesameailabs/csm)
+[GitHub](https://github.com/sesameailabs/csm)
 
 ![CSM — Input/output diagram](../assets/architectures/csm.svg)
 
@@ -297,6 +1026,121 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 
 </details>
 
+<a id="ctc-tts"></a>
+
+### CTC-TTS
+
+CTC-aligned text-speech interleaving for dual-streaming synthesis.
+
+CTC-TTS uses automatically derived alignment and two-word interleaving to train an incremental speech language model. Its length-concatenated and feature-stacked variants make different trade-offs between speech quality and generation latency.
+
+[Paper](https://arxiv.org/abs/2602.19574) · [GitHub](https://github.com/thu-spmi/CTC-TTS)
+
+![CTC-TTS — Figure 2](../assets/architectures/ctc-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2602.19574)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="dcar"></a>
+
+### DCAR
+
+Dynamic chunk-wise autoregressive speech-token prediction.
+
+DCAR changes the number of acoustic tokens predicted at each autoregressive step. Adapting the chunk size to the generation state shortens sequential processing while maintaining content alignment and reference-conditioned speech quality.
+
+[Paper](https://arxiv.org/abs/2506.22023) · GitHub: no author-linked repository found
+
+![DCAR — Figure 1](../assets/architectures/dcar.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2506.22023)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="deepasmr"></a>
+
+### DeepASMR
+
+Content-style speech LM with timbre-conditioned flow reconstruction.
+
+DeepASMR separates ASMR delivery from the reference speaker's identity using discrete speech representations. A language model predicts content and style, while a flow-based acoustic decoder transfers the requested performance into the target voice.
+
+[Paper](https://arxiv.org/abs/2601.15596) · GitHub: no author-linked repository found
+
+![DeepASMR — Paper figure](../assets/architectures/deepasmr.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2601.15596)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="deepdubbing"></a>
+
+### DeepDubbing
+
+Text-to-timbre design with context-aware instruction TTS.
+
+DeepDubbing assigns voices to characters and conditions speech rendering on the surrounding script. Its voice-design and instruction-synthesis stages support multi-participant audiobook production while maintaining character identity and context-sensitive expression.
+
+[Paper](https://arxiv.org/abs/2509.15845) · [GitHub](https://github.com/TME-Lyra-Lab/DeepDubbing)
+
+![DeepDubbing — Figure 1](../assets/architectures/deepdubbing.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2509.15845)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="delta-tts"></a>
+
+### DELTA-TTS
+
+Autoregressive-to-diffusion adaptation with local acoustic convolution.
+
+DELTA-TTS converts a pretrained speech language model to parallel discrete diffusion using lightweight adaptation. Local convolution and confidence-based decoding help retain acoustic structure while the model fills speech-token positions in an order determined by prediction confidence.
+
+[Paper](https://arxiv.org/abs/2607.04140) · GitHub: no author-linked repository found
+
+![DELTA-TTS — Figure 1](../assets/architectures/delta-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2607.04140)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="dia"></a>
 
 ### Dia
@@ -305,7 +1149,7 @@ Dialogue-conditioned codec generation.
 
 Dia turns a speaker-tagged transcript into conversational audio, including supported nonverbal events such as laughter and coughing. Reference audio and its transcript can establish speaker identity and delivery. Its English checkpoint is useful for scripted exchanges and dialogue narration, with the conversation content supplied by the user rather than generated by the model.
 
-[Repository](https://github.com/nari-labs/dia)
+[GitHub](https://github.com/nari-labs/dia)
 
 ![Dia — Input/output diagram](../assets/architectures/dia.svg)
 
@@ -332,7 +1176,7 @@ Streaming dialogue TTS.
 
 Dia2 begins synthesizing before the complete script is available, allowing an application to feed words incrementally. Audio prefixes provide speaker and conversational context, while a streaming codec path reconstructs the output. The released 1B and 2B checkpoints focus on English dialogue; prefix conditioning helps keep voices consistent between generations.
 
-[Repository](https://github.com/nari-labs/dia2)
+[GitHub](https://github.com/nari-labs/dia2)
 
 ![Dia2 — Input/output diagram](../assets/architectures/dia2.svg)
 
@@ -348,6 +1192,236 @@ Starts synthesis from partial text and supports audio prefix conditioning.
 Editorial summary of documented inputs and outputs; internal architecture is not shown.
 
 **Variants:** 1B; 2B.
+
+</details>
+
+<a id="dialospeech"></a>
+
+### DialoSpeech
+
+Dual-track language modeling with chunked acoustic flow matching.
+
+DialoSpeech models two speakers on separate tracks and uses chunked flow matching for acoustic rendering. The design supports expressive scripted dialogue, including interactions whose timing is difficult to reproduce by joining independent utterances.
+
+[Paper](https://arxiv.org/abs/2510.08373) · [Project](https://tiamojames.github.io/DialoSpeech) · GitHub: no author-linked repository found
+
+![DialoSpeech — Figure 2](../assets/architectures/dialospeech.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2510.08373)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="diffcss"></a>
+
+### DiffCSS
+
+Diffusion-based contextual prosody sampling with a speech LM.
+
+DiffCSS samples prosody representations from multimodal conversational context using a diffusion model. A prosody-conditioned speech language model renders those samples, allowing several expressive deliveries that remain consistent with the same dialogue.
+
+[Paper](https://arxiv.org/abs/2502.19924) · GitHub: no author-linked repository found
+
+![DiffCSS — Paper figure](../assets/architectures/diffcss.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2502.19924)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="diflow-tts"></a>
+
+### DiFlow-TTS
+
+Deterministic content mapping with factorized discrete-flow denoising.
+
+DiFlow-TTS maps phonemes into linguistic content and generates separate prosody and acoustic token streams through discrete flow matching. Factorizing these responsibilities supports compact zero-shot synthesis with fewer sequential generation steps.
+
+[Paper](https://arxiv.org/abs/2509.09631) · [GitHub](https://github.com/Fsoft-AIC/DiFlowTTS)
+
+![DiFlow-TTS — Figure 2](../assets/architectures/diflow-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2509.09631)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="diflowdubber"></a>
+
+### DiFlowDubber
+
+Factorized discrete-flow synthesis with audiovisual synchronization.
+
+DiFlowDubber first learns linguistic content and separate prosodic-acoustic tokens through a discrete-flow TTS model. A subsequent video-dubbing stage aligns those representations to visual timing, connecting voice generation with synchronized lip movements.
+
+[Paper](https://arxiv.org/abs/2603.14267) · [GitHub](https://github.com/Fsoft-AIC/DiFlowDubber) · [Project](https://nngocson2002.github.io/projects/diflowdubber)
+
+![DiFlowDubber — Figure 2](../assets/architectures/diflowdubber.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2603.14267)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S, V → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="disco-speech"></a>
+
+### DisCo-Speech
+
+Disentangled content-prosody tokens with a separate timbre condition.
+
+DisCo-Speech learns a codec that separates content, delivery and speaker identity. A language model predicts combined content-prosody tokens while the decoder receives a separate timbre representation, enabling reference cloning with independently controllable vocal attributes.
+
+[Paper](https://arxiv.org/abs/2512.13251) · [GitHub](https://github.com/disco-speech/DisCo-Speech-main) · [Project](https://disco-speech.github.io/DisCo-demo/)
+
+![DisCo-Speech — Figure 1](../assets/architectures/disco-speech.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2512.13251)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="disspeech"></a>
+
+### DisSpeech
+
+Masked semantic-token prediction with explicit stuttering labels.
+
+DisSpeech maps Mandarin text and marked stuttering events to semantic speech tokens without temporal autoregression. Pitch and energy modeling guide acoustic reconstruction, enabling controlled repetitions and other disfluencies for speech synthesis and recognition-data augmentation.
+
+[Paper](https://arxiv.org/abs/2606.21457) · GitHub: no author-linked repository found
+
+![DisSpeech — Figure 2](../assets/architectures/disspeech.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2606.21457)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="distar"></a>
+
+### DiSTAR
+
+Autoregressive codec patches refined by masked discrete diffusion.
+
+DiSTAR first drafts blocks of residual-quantized speech tokens with a language model. A masked diffusion decoder then fills acoustic detail within each block, combining temporal planning and parallel refinement entirely in discrete codec space.
+
+[Paper](https://arxiv.org/abs/2510.12210) · GitHub: no author-linked repository found
+
+![DiSTAR — Figure 1](../assets/architectures/distar.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2510.12210)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="dragon-fm"></a>
+
+### Dragon-FM
+
+Chunk-autoregressive flow matching over compact codec representations.
+
+Dragon-FM predicts successive speech chunks autoregressively while refining the tokens inside each chunk with bidirectional flow matching. Compact acoustic codes and cross-chunk caching reduce generation overhead and support longer content such as podcasts.
+
+[Paper](https://arxiv.org/abs/2507.22746) · [Project](https://cognitivespeech.github.io/dragon-fm) · GitHub: no author-linked repository found
+
+![Dragon-FM — Figure 1](../assets/architectures/dragon-fm.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2507.22746)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="dualdub"></a>
+
+### DualDub
+
+Multimodal alignment with separate speech and background-audio heads.
+
+DualDub generates spoken dialogue and background sound together from video and textual conditions. A cross-modal aligner coordinates the two decoding heads, targeting temporally synchronized soundtracks rather than speech rendered in isolation.
+
+[Paper](https://arxiv.org/abs/2507.10109) · GitHub: no author-linked repository found
+
+![DualDub — Figure 2](../assets/architectures/dualdub.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2507.10109)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, V → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="dualspeechlm"></a>
+
+### DualSpeechLM
+
+Different input and output speech representations in one language model.
+
+DualSpeechLM uses understanding-oriented speech tokens as input and acoustic codec tokens for generation. Semantic supervision and staged conditioning coordinate the two representations, supporting speech synthesis within a unified understanding-and-generation architecture.
+
+[Paper](https://arxiv.org/abs/2508.08961) · GitHub: no author-linked repository found
+
+![DualSpeechLM — Figure 3](../assets/architectures/dualspeechlm.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2508.08961)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -372,6 +1446,190 @@ Interleaves phonemes and acoustic codes to stabilize autoregressive synthesis.
 
 </details>
 
+<a id="emm-tts"></a>
+
+### EMM-TTS
+
+Perturbed speech representations with separate emotion and speaker stages.
+
+EMM-TTS separates emotional content modeling from speaker-specific acoustic generation. Speaker-consistency objectives and adaptive normalization help transfer emotion across languages while retaining the reference speaker's timbre.
+
+[Paper](https://arxiv.org/abs/2510.11124) · GitHub: no author-linked repository found
+
+![EMM-TTS — Figure 2](../assets/architectures/emm-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2510.11124)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="emoshift"></a>
+
+### EmoShift
+
+Learned emotion steering in a speech model's output embeddings.
+
+EmoShift adds a lightweight layer that learns emotion-dependent changes to a TTS model's hidden representation. The controls adjust expressive delivery and emotion intensity while leaving most of the underlying synthesis backbone intact.
+
+[Paper](https://arxiv.org/abs/2601.22873) · GitHub: no author-linked repository found
+
+![EmoShift — Figure 2](../assets/architectures/emoshift.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2601.22873)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="emosslsphere"></a>
+
+### EmoSSLSphere
+
+Spherical emotion vectors and self-supervised discrete speech tokens.
+
+EmoSSLSphere combines an emotion representation constrained to a sphere with discrete units derived from self-supervised speech features. The model synthesizes emotional speech across languages while organizing expressive controls independently of the textual content.
+
+[Paper](https://arxiv.org/abs/2508.11273) · GitHub: no author-linked repository found
+
+![EmoSSLSphere — Figure 2](../assets/architectures/emosslsphere.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2508.11273)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="emotra-tts"></a>
+
+### EmoTra-TTS
+
+Language model and flow decoder with time-varying emotion conditioning.
+
+EmoTra-TTS introduces frame-level valence, arousal and dominance controls into both prosodic planning and acoustic decoding. Synthetic transition examples teach the model to move between emotions within an utterance while keeping its wording and speaker identity consistent.
+
+[Paper](https://arxiv.org/abs/2608.23791) · [GitHub](https://github.com/Liu-Tianchi/EmoTra-TTS) · [Project](https://liu-tianchi.github.io/EmoTra_DemoPage/)
+
+![EmoTra-TTS — Figure 2](../assets/architectures/emotra-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2608.23791)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="emovoice"></a>
+
+### EmoVoice
+
+Instruction-conditioned emotional speech LM with optional phoneme prediction.
+
+EmoVoice interprets free-form textual descriptions of emotional delivery. Its phoneme-boost variant predicts phonetic and acoustic information together to improve content consistency while retaining expressive style control.
+
+[Paper](https://arxiv.org/abs/2504.12867) · [GitHub](https://github.com/yanghaha0908/EmoVoice)
+
+![EmoVoice — Figure 1](../assets/architectures/emovoice.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2504.12867)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="end-to-end-discrete-token-tts"></a>
+
+### End-to-end discrete-token TTS
+
+Joint optimization of speech tokenizer, LM, flow decoder and reward model.
+
+This system trains the discrete speech representation together with the language and acoustic models that consume it. Reconstruction and recognition feedback also update token prediction, reducing mismatches between separately trained components in reference-conditioned speech synthesis.
+
+[Paper](https://arxiv.org/abs/2606.09234) · GitHub: no author-linked repository found
+
+![End-to-end discrete-token TTS — Figure 1](../assets/architectures/end-to-end-discrete-token-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2606.09234)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="facialtalker"></a>
+
+### FacialTalker
+
+Facial-expression tokens and conversational speech language modeling.
+
+FacialTalker quantizes facial action information and combines it with text and speech history in a conversational synthesizer. Joint preference training over visual and speech tokens helps the generated delivery reflect the interlocutor's facial expression and dialogue context.
+
+[Paper](https://arxiv.org/abs/2607.24430) · [GitHub](https://github.com/walker-hyf/FacialTalker)
+
+![FacialTalker — Figure 2](../assets/architectures/facialtalker.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2607.24430)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S, V → S · **Interaction:** generation
+
+The author repository currently lists dataset and processing releases as TODO; a synthesis implementation is not documented in its README.
+
+</details>
+
+<a id="fc-tts"></a>
+
+### FC-TTS
+
+Separate reference representations for speech style and timbre.
+
+FC-TTS conditions generation on two recordings, one supplying delivery style and the other speaker identity. Specialized representation processing and auxiliary training objectives aim to prevent either condition from leaking unwanted attributes into the synthesized voice.
+
+[Paper](https://arxiv.org/abs/2605.24618) · GitHub: no author-linked repository found
+
+![FC-TTS — Figure 1](../assets/architectures/fc-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2605.24618)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="fireredtts"></a>
 
 ### FireRedTTS
@@ -393,6 +1651,29 @@ Foundation TTS system for expressive and reference-conditioned speech.
 
 </details>
 
+<a id="fireredtts-1s"></a>
+
+### FireRedTTS-1S
+
+Streaming semantic speech generation with alternative acoustic decoders.
+
+FireRedTTS-1S extends the FireRed synthesis line with incremental acoustic decoding. Its chunked flow-matching and frame-autoregressive multi-stream decoder options provide different trade-offs between initial latency and sustained generation speed.
+
+[Paper](https://arxiv.org/abs/2503.20499) · GitHub: no author-linked repository found
+
+![FireRedTTS-1S — Figure 1](../assets/architectures/fireredtts-1s.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2503.20499)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="fireredtts-2"></a>
 
 ### FireRedTTS-2
@@ -401,7 +1682,7 @@ Low-rate streaming codec and dialogue LM.
 
 FireRedTTS-2 models chronological sequences of speaker-labeled text and speech using a large Transformer plus a smaller codebook decoder. A low-rate streaming tokenizer reduces the number of audio steps. It targets long conversations and podcasts where speaker changes, turn-specific delivery and continuity across utterances matter.
 
-[Paper](https://arxiv.org/abs/2509.02020)
+[Paper](https://arxiv.org/abs/2509.02020) · [GitHub](https://github.com/FireRedTeam/FireRedTTS2)
 
 ![FireRedTTS-2 — Figure 1](../assets/architectures/fireredtts-2.png)
 
@@ -451,7 +1732,7 @@ Dual-autoregressive speech modeling.
 
 Fish Audio S2 extends the Fish speech-model line with natural-language delivery instructions and multi-speaker, multi-turn synthesis. Its training pipeline uses speech descriptions, quality assessment and reward modeling to improve controllability. The released inference stack supports streaming, making the model relevant to both scripted audio production and incremental spoken responses.
 
-[Paper](https://arxiv.org/abs/2603.08823) · [Repository](https://github.com/fishaudio/fish-speech)
+[Paper](https://arxiv.org/abs/2603.08823) · [GitHub](https://github.com/fishaudio/fish-speech)
 
 ![Fish Audio S2 — Figure 2](../assets/architectures/fish-audio-s2.png)
 
@@ -474,7 +1755,7 @@ Instruction-controlled multi-speaker, multi-turn speech synthesis.
 
 Dual-autoregressive slow/fast transformers.
 
-[Paper](https://arxiv.org/abs/2411.01156) · [Repository](https://github.com/fishaudio/fish-speech)
+[Paper](https://arxiv.org/abs/2411.01156) · [GitHub](https://github.com/fishaudio/fish-speech)
 
 ![Fish Speech — Figure 2](../assets/architectures/fish-speech.png)
 
@@ -491,6 +1772,121 @@ Separates semantic sequence modeling from grouped acoustic-token prediction.
 
 </details>
 
+<a id="flashtts"></a>
+
+### FlashTTS
+
+Lagged streaming tracks with multi-token prediction and mean-flow decoding.
+
+FlashTTS processes incoming text and speech context on staggered tracks so synthesis can begin before sentence completion. Multi-token prediction accelerates the language model, while a distilled acoustic decoder reduces waveform-generation delay.
+
+[Paper](https://arxiv.org/abs/2606.09141) · [GitHub](https://github.com/ASLP-lab/FlashTTS) · [Project](https://aslp-lab.github.io/flashtts_demo)
+
+![FlashTTS — Figure 1](../assets/architectures/flashtts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2606.09141)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="flespeech"></a>
+
+### FleSpeech
+
+Multistage synthesis with a shared multimodal prompt encoder.
+
+FleSpeech unifies text, voice recordings and visual prompts into a common conditioning representation. Its multistage generator uses those controls to manipulate voice and delivery attributes flexibly rather than requiring one fixed prompt modality.
+
+[Paper](https://arxiv.org/abs/2501.04644) · [Project](https://kkksuper.github.io/FleSpeech/) · GitHub: no author-linked repository found
+
+![FleSpeech — Figure 2](../assets/architectures/flespeech.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2501.04644)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S, I → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="flexivoice"></a>
+
+### FlexiVoice
+
+Speech language modeling with independently trained style and timbre control.
+
+FlexiVoice accepts an optional style instruction and an optional reference voice alongside the target text. Progressive preference training teaches the model to follow both conditions while reducing unwanted coupling between wording, speaker identity and delivery.
+
+[Paper](https://arxiv.org/abs/2601.04656) · [Project](https://flexi-voice.github.io) · GitHub: no author-linked repository found
+
+![FlexiVoice — Figure 1](../assets/architectures/flexivoice.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2601.04656)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="frame-stacked-local-transformer-tts"></a>
+
+### Frame-stacked local Transformer TTS
+
+Hierarchical multi-codebook generation with stacked frames.
+
+This architecture lets a global language model predict several speech frames at a time and delegates their codec entries to a smaller local Transformer. The paper compares sequential local decoding with iterative masked prediction, showing how frame stacking changes the trade-off between synthesis throughput and acoustic fidelity.
+
+[Paper](https://arxiv.org/abs/2509.19592) · GitHub: no author-linked repository found
+
+![Frame-stacked local Transformer TTS — Figure 1](../assets/architectures/frame-stacked-local-transformer-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2509.19592)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="gibbstts"></a>
+
+### GibbsTTS
+
+Metric-induced discrete flow matching with corrected transition scheduling.
+
+GibbsTTS generates discrete speech tokens through a continuous-time jump process. Metric-aware transition scheduling and a finite-step correction improve how token states evolve, supporting zero-shot voice synthesis with discrete flow matching.
+
+[Paper](https://arxiv.org/abs/2605.09386) · [GitHub](https://github.com/ydqmkkx/GibbsTTS) · [Project](https://ydqmkkx.github.io/GibbsTTSProject)
+
+![GibbsTTS — Figure 1](../assets/architectures/gibbstts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2605.09386)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="glm-tts"></a>
 
 ### GLM-TTS
@@ -499,7 +1895,7 @@ Autoregressive token model and diffusion decoder.
 
 GLM-TTS first predicts speech tokens autoregressively, then converts them into audio with a diffusion decoder. Pitch-aware tokenization and multi-reward reinforcement learning target pronunciation, speaker similarity and expression. Hybrid phoneme/text input and LoRA voice adaptation provide controls for applications that need repeatable pronunciation and customized voices.
 
-[Paper](https://arxiv.org/abs/2512.14291) · [Repository](https://github.com/zai-org/GLM-TTS)
+[Paper](https://arxiv.org/abs/2512.14291) · [GitHub](https://github.com/zai-org/GLM-TTS)
 
 ![GLM-TTS — Figure 1](../assets/architectures/glm-tts.png)
 
@@ -514,6 +1910,52 @@ Post-training improves controllable pronunciation, speaker similarity and prosod
 
 </details>
 
+<a id="goat-tts"></a>
+
+### GOAT-TTS
+
+Separate modality-alignment and speech-generation language-model branches.
+
+GOAT-TTS encodes continuous voice information in one branch and predicts speech tokens in another. Partial language-model adaptation preserves textual knowledge, while multi-token prediction supports streaming synthesis with reference-based paralinguistic conditioning.
+
+[Paper](https://arxiv.org/abs/2504.12339) · GitHub: no author-linked repository found
+
+![GOAT-TTS — Figure 1](../assets/architectures/goat-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2504.12339)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="gpa"></a>
+
+### GPA
+
+Unified autoregressive codec-language modeling across speech tasks.
+
+General-Purpose Audio uses one autoregressive backbone to predict discrete speech tokens across synthesis, recognition and conversion tasks. Its TTS path combines target text with voice context, with shared multitask training and scalable inference.
+
+[Paper](https://arxiv.org/abs/2601.10770) · [GitHub](https://github.com/AutoArk/GPA)
+
+![GPA — Figure 1](../assets/architectures/gpa.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2601.10770)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="gpt-sovits"></a>
 
 ### GPT-SoVITS
@@ -522,7 +1964,7 @@ Text-to-semantic GPT and speech decoder.
 
 GPT-SoVITS couples text-to-semantic token prediction with a reference-conditioned speech decoder. Its 2025 V3, V4 and V2 Pro releases extend a workflow that supports both zero-shot synthesis and voice adaptation from a small training set. The surrounding WebUI helps prepare data, while recognition and source-separation utilities remain separate components.
 
-[Repository](https://github.com/RVC-Boss/GPT-SoVITS) · [Docs](https://github.com/RVC-Boss/GPT-SoVITS/blob/main/docs/en/Changelog_EN.md)
+[GitHub](https://github.com/RVC-Boss/GPT-SoVITS) · [Docs](https://github.com/RVC-Boss/GPT-SoVITS/blob/main/docs/en/Changelog_EN.md)
 
 ![GPT-SoVITS — Input/output diagram](../assets/architectures/gpt-sovits.svg)
 
@@ -538,6 +1980,52 @@ Few-shot and zero-shot synthesis using reference audio; the WebUI's separate ASR
 Editorial summary of documented inputs and outputs; internal architecture is not shown.
 
 **Variants:** v1; v2; v3; v4; v2 Pro; v2 ProPlus.
+
+</details>
+
+<a id="graft"></a>
+
+### GRAFT
+
+Word-local reference-code conditioning for pronunciation control.
+
+GRAFT attaches codec tokens from a spoken word example to that word's location in the text prompt. Separate target-speaker conditioning allows the pronunciation hint to come from another voice while the synthesized sentence retains the desired speaker.
+
+[Paper](https://arxiv.org/abs/2607.02633) · GitHub: no author-linked repository found
+
+![GRAFT — Paper figure](../assets/architectures/graft.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2607.02633)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="hd-ppt"></a>
+
+### HD-PPT
+
+Hierarchical prediction of content, style and acoustic tokens.
+
+HD-PPT learns speech codes that distinguish spoken content from instruction-related preferences. A language model predicts semantic information, expressive style and acoustic detail in sequence, improving the mapping from natural-language requests to controllable speech.
+
+[Paper](https://arxiv.org/abs/2509.19001) · GitHub: no author-linked repository found
+
+![HD-PPT — Figure 1](../assets/architectures/hd-ppt.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2509.19001)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -626,7 +2114,7 @@ Autoregressive acoustic generation.
 
 IndexTTS adapts the XTTS/Tortoise approach with a Conformer reference encoder and a BigVGAN2 speech decoder. Hybrid character/pinyin input gives explicit control over difficult Chinese pronunciations. Its central use case is zero-shot voice cloning with predictable text rendering, including content that benefits from pronunciation correction.
 
-[Paper](https://arxiv.org/abs/2502.05512)
+[Paper](https://arxiv.org/abs/2502.05512) · [GitHub](https://github.com/index-tts/index-tts) · [Project](https://index-tts.github.io)
 
 ![IndexTTS — Figure 1](../assets/architectures/indextts.png)
 
@@ -651,7 +2139,7 @@ Text-to-semantic LM and non-AR acoustic decoder.
 
 IndexTTS 2.5 shortens semantic sequences with a lower-rate codec and replaces the acoustic module's backbone with a Zipformer design. Multilingual training strategies and reinforcement learning extend pronunciation and emotion transfer across languages. It retains reference-based voice conditioning while reducing the cost of semantic and acoustic generation.
 
-[Paper](https://arxiv.org/abs/2601.03888)
+[Paper](https://arxiv.org/abs/2601.03888) · [GitHub](https://github.com/index-tts/index-tts)
 
 ![IndexTTS 2.5 — Figure 1](../assets/architectures/indextts-2-5.png)
 
@@ -676,7 +2164,7 @@ Duration-controlled autoregressive synthesis.
 
 IndexTTS2 separates speaker identity from emotional style so that different references can control timbre and delivery. Its autoregressive formulation also supports explicit output-token budgeting for duration control, alongside unconstrained generation. These mechanisms are intended for expressive speech and timing-sensitive work such as dubbing; availability of controls should be checked in the chosen implementation.
 
-[Paper](https://arxiv.org/abs/2506.21619)
+[Paper](https://arxiv.org/abs/2506.21619) · [GitHub](https://github.com/index-tts/index-tts)
 
 ![IndexTTS2 — Figure 1](../assets/architectures/indextts2.png)
 
@@ -693,6 +2181,98 @@ Separates emotion and timbre control and adds explicit duration conditioning.
 
 </details>
 
+<a id="inworld-tts-1"></a>
+
+### Inworld TTS-1
+
+Autoregressive Transformer speech synthesis with expressive markup.
+
+Inworld TTS-1 and TTS-1-Max are multilingual autoregressive synthesizers designed for low-latency speech output. Textual audio markup controls emotions and nonverbal vocalizations, with model variants offering different capacity and inference-cost trade-offs.
+
+[Paper](https://arxiv.org/abs/2507.21138) · [GitHub](https://github.com/inworld-ai/tts)
+
+![Inworld TTS-1 — Figure 1](../assets/architectures/inworld-tts-1.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2507.21138)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="jelly"></a>
+
+### JELLY
+
+Emotion-aware speech encoding and context-specific language-model adapters.
+
+JELLY combines an emotion-aware Q-Former with several partially adapted language-model modules. Joint emotion recognition and contextual reasoning guide a speech synthesizer toward responses whose delivery matches the conversation.
+
+[Paper](https://arxiv.org/abs/2501.04904) · [GitHub](https://github.com/jh-cha-prml/JELLY) · [Project](https://jh-cha-prml.github.io/JELLY)
+
+![JELLY — Paper figure](../assets/architectures/jelly.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2501.04904)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="joyvoice"></a>
+
+### JoyVoice
+
+End-to-end autoregressive planning with dynamic-chunk diffusion decoding.
+
+JoyVoice conditions long-form speech on speaker-labeled text and shared conversational context. Autoregressive hidden states feed an acoustic diffusion decoder, allowing multiple speakers, changing expression and more flexible turn boundaries within one synthesis system.
+
+[Paper](https://arxiv.org/abs/2512.19090) · [Project](https://jea-speech.github.io/JoyVoice) · GitHub: no author-linked repository found
+
+![JoyVoice — Figure 2](../assets/architectures/joyvoice.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2512.19090)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="koel-tts"></a>
+
+### Koel-TTS
+
+Encoder-decoder codec TTS with reference guidance and preference training.
+
+Koel-TTS explores several ways to condition a Transformer synthesizer on text and reference audio. Automatic speech-recognition and speaker-verification feedback, together with classifier-free guidance, improve adherence to the requested words and voice.
+
+[Paper](https://arxiv.org/abs/2502.05236) · [Project](https://koeltts.github.io/) · GitHub: no author-linked repository found
+
+![Koel-TTS — Figure 1](../assets/architectures/koel-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2502.05236)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="kyutai-tts-dsm"></a>
 
 ### Kyutai TTS (DSM)
@@ -701,7 +2281,7 @@ Delayed Streams Modeling.
 
 Kyutai TTS treats text and speech as aligned streams separated by a controlled delay. A decoder-only language model can therefore emit audio as text arrives, instead of waiting for a complete utterance. This formulation supports incremental synthesis for voice interfaces and long streams, with speaker conditioning supplied through the TTS implementation.
 
-[Paper](https://arxiv.org/abs/2509.08753) · [Repository](https://github.com/kyutai-labs/delayed-streams-modeling)
+[Paper](https://arxiv.org/abs/2509.08753) · [GitHub](https://github.com/kyutai-labs/delayed-streams-modeling)
 
 ![Kyutai TTS (DSM) — Figure 1](../assets/architectures/kyutai-tts-dsm.png)
 
@@ -718,6 +2298,52 @@ Aligns text and audio streams with controlled delays for incremental synthesis.
 
 </details>
 
+<a id="latinx"></a>
+
+### LatinX
+
+Multilingual decoder-only codec TTS with preference alignment.
+
+LatinX uses staged text-to-audio training, voice-cloning adaptation and automatic preference alignment. The resulting multilingual Transformer renders text in the source speaker's voice, supporting the synthesis stage of cross-language speech translation.
+
+[Paper](https://arxiv.org/abs/2509.05863) · [Project](https://seu-usuario.github.io/latinx-demo) · GitHub: no author-linked repository found
+
+![LatinX — Figure 1](../assets/architectures/latinx.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2509.05863)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="llada-tts"></a>
+
+### LLaDA-TTS
+
+Masked diffusion replacing autoregressive speech-token prediction.
+
+LLaDA-TTS adapts a speech language model to fill masked token sequences in parallel. Its bidirectional generation also supports inserting, replacing or deleting spoken words, combining reference-based TTS and speech editing through the same model.
+
+[Paper](https://arxiv.org/abs/2603.26364) · GitHub: no author-linked repository found
+
+![LLaDA-TTS — Figure 1](../assets/architectures/llada-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2603.26364)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="llasa"></a>
 
 ### Llasa
@@ -726,11 +2352,11 @@ Single-codebook codec and Llama.
 
 Llasa maps text and an optional speech prompt to a single stream of codec tokens using a Llama-style Transformer. The simple representation makes standard language-model scaling and sampling techniques applicable to synthesis. Its research also explores speech-model verifiers that select samples for content accuracy, voice consistency or emotional expression.
 
-[Paper](https://arxiv.org/abs/2502.04128)
+[Paper](https://arxiv.org/abs/2502.04128) · [GitHub](https://github.com/zhenye234/LLaSA_training) · [Project](https://llasatts.github.io/llasatts/)
 
-![Llasa — Input/output diagram](../assets/architectures/llasa.svg)
+![Llasa — Figure 2](../assets/architectures/llasa.png)
 
-*Input/output diagram · [Source](https://arxiv.org/abs/2502.04128)*
+*Figure 2 · [Source](https://arxiv.org/abs/2502.04128)*
 
 <details>
 <summary>Details</summary>
@@ -738,8 +2364,6 @@ Llasa maps text and an optional speech prompt to a single stream of codec tokens
 **Input → output:** T, S → S · **Interaction:** generation
 
 Uses a single Transformer for language-model-based speech synthesis.
-
-Editorial summary of documented inputs and outputs; internal architecture is not shown.
 
 **Variants:** 1B; 3B; 8B.
 
@@ -753,7 +2377,7 @@ Llasa with multi-token prediction.
 
 Llasa+ adds multi-token prediction modules to a frozen Llasa backbone and checks their proposals with that backbone. A causal codec decoder turns accepted tokens into streaming audio. The resulting design addresses autoregressive latency while retaining the original speech model, making it relevant to systems that need incremental playback without retraining an entire backbone.
 
-[Paper](https://arxiv.org/abs/2508.06262)
+[Paper](https://arxiv.org/abs/2508.06262) · [GitHub](https://github.com/ASLP-lab/LLaSA_Plus)
 
 ![Llasa+ — Figure 1](../assets/architectures/llasa-plus.png)
 
@@ -765,6 +2389,169 @@ Llasa+ adds multi-token prediction modules to a frozen Llasa backbone and checks
 **Input → output:** T, S → S · **Interaction:** streaming
 
 Adds acceleration modules and streaming synthesis to the Llasa backbone.
+
+</details>
+
+<a id="llmvox"></a>
+
+### LLMVoX
+
+Compact autoregressive TTS with independent token-stream queues.
+
+LLMVoX connects to an upstream language model through a streaming queue interface. Its small speech generator renders incoming text incrementally, allowing long conversations without tightly coupling the synthesizer to one particular language-model backbone.
+
+[Paper](https://arxiv.org/abs/2503.04724) · [GitHub](https://github.com/mbzuai-oryx/LLMVoX) · [Project](https://mbzuai-oryx.github.io/LLMVoX)
+
+![LLMVoX — Figure 2](../assets/architectures/llmvox.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2503.04724)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="luna-tts"></a>
+
+### Luna-TTS
+
+Discrete diffusion language modeling with parallel and block-causal variants.
+
+Luna-TTS adapts an autoregressive text backbone into a speech diffusion language model. Its parallel and Realtime variants share a tokenizer and training lineage; Realtime predicts successive codec blocks while denoising each block in parallel for incremental audio delivery.
+
+[Paper](https://arxiv.org/abs/2608.11593) · [Project](https://vuilabs-ai.github.io/luna-tts) · GitHub: no author-linked repository found
+
+![Luna-TTS — Figure 1 (paper page 4)](../assets/architectures/luna-tts.png)
+
+*Figure 1 (paper page 4) · [Source](https://arxiv.org/abs/2608.11593)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+**Variants:** Luna-TTS (parallel); Luna-TTS-Realtime.
+
+</details>
+
+<a id="magic-tts"></a>
+
+### MAGIC-TTS
+
+Token-level duration conditioning with explicit local pause control.
+
+MAGIC-TTS exposes timing controls for selected speech tokens and pauses. Training includes incomplete control signals so the model can follow local edits where provided and infer natural timing elsewhere, supporting precise pacing without requiring every segment to be specified.
+
+[Paper](https://arxiv.org/abs/2604.21164) · [GitHub](https://github.com/yongaifadian1/MAGIC-TTS)
+
+![MAGIC-TTS — Figure 1](../assets/architectures/magic-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2604.21164)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="magpietts-lf"></a>
+
+### MagpieTTS-LF
+
+Stateful long-form codec synthesis with soft alignment priors.
+
+MagpieTTS-LF extends MagpieTTS at inference time by retaining acoustic and textual context across sentence boundaries. Soft alignment priors and history-aware encoding support coherent longer narration without retraining the synthesizer on long recordings.
+
+[Paper](https://arxiv.org/abs/2606.18485) · GitHub: no author-linked repository found
+
+![MagpieTTS-LF — Figure 1](../assets/architectures/magpietts-lf.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2606.18485)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="marco-voice"></a>
+
+### Marco-Voice
+
+Contrastively disentangled speaker and emotion speech generation.
+
+Marco-Voice learns separate speaker and emotion representations using contrastive training. Rotating the emotional representation provides smooth expressive control while preserving the reference voice across different delivery styles.
+
+[Paper](https://arxiv.org/abs/2508.02038) · [GitHub](https://github.com/AIDC-AI/Marco-Voice)
+
+![Marco-Voice — Figure 1](../assets/architectures/marco-voice.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2508.02038)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="mars6"></a>
+
+### MARS6
+
+Hierarchical-codec encoder-decoder Transformer.
+
+MARS6 encodes text and a speaker representation before generating hierarchical acoustic codes. Its compact encoder-decoder design targets expressive speech and reference-voice cloning with reduced inference cost.
+
+[Paper](https://arxiv.org/abs/2501.05787) · [GitHub](https://github.com/Camb-ai/mars6-turbo) · [Project](https://camb-ai.github.io/mars6-turbo/)
+
+![MARS6 — Paper figure](../assets/architectures/mars6.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2501.05787)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The author repository is named mars6-turbo; its README presents the MARS6 paper and hierarchical codec model.
+
+</details>
+
+<a id="masked-style-tts"></a>
+
+### Masked-style TTS
+
+Two-stage language modeling over style-rich and acoustic codes.
+
+This controllable system first predicts a masked-autoencoder-derived speech style representation from text and controls. A second model generates codec tokens, allowing speaker characteristics and expressive attributes to be specified separately during synthesis.
+
+[Paper](https://arxiv.org/abs/2506.02997) · GitHub: no author-linked repository found
+
+![Masked-style TTS — Paper figure](../assets/architectures/masked-style-tts.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2506.02997)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -786,6 +2573,29 @@ Masked generative codec transformers.
 **Input → output:** T, S → S · **Interaction:** generation
 
 Non-autoregressive token language modeling without explicit text-speech alignment.
+
+</details>
+
+<a id="mave"></a>
+
+### MAVE
+
+Cross-attentive Mamba autoregression for codec speech synthesis.
+
+MAVE combines a state-space backbone with cross-attention to generate speech conditioned on text and acoustic context. It supports zero-shot voice synthesis and editing while reducing the attention-memory requirements of a comparable Transformer-based codec model.
+
+[Paper](https://arxiv.org/abs/2510.04738) · GitHub: no author-linked repository found
+
+![MAVE — Figure 1](../assets/architectures/mave.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2510.04738)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -831,6 +2641,75 @@ Improves prompt utilization and transfer of speaking style.
 
 </details>
 
+<a id="meld"></a>
+
+### MELD
+
+Jointly trained discrete mel latents and autoregressive speech modeling.
+
+MELD learns discrete latent variables from mel-spectrograms jointly with its speech language model. This shared optimization supports zero-shot synthesis and recognition while addressing omissions and excessive silence associated with less coordinated acoustic representations.
+
+[Paper](https://arxiv.org/abs/2605.29859) · GitHub: no author-linked repository found
+
+![MELD — Figures 1–2 (paper page 2; panels assembled)](../assets/architectures/meld.png)
+
+*Figures 1–2 (paper page 2; panels assembled) · [Source](https://arxiv.org/abs/2605.29859)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="metis"></a>
+
+### Metis
+
+Masked generative pretraining over semantic and acoustic speech codes.
+
+Metis pretrains on unlabeled speech before adapting to task-specific conditions such as text. Self-supervised semantic tokens and acoustic codes support a shared foundation for reference-based TTS, conversion and other speech-generation tasks.
+
+[Paper](https://arxiv.org/abs/2502.03128) · [GitHub](https://github.com/open-mmlab/Amphion) · [Project](https://metis-demo.github.io/)
+
+![Metis — Paper figure](../assets/architectures/metis.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2502.03128)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="mfcig-css"></a>
+
+### MFCIG-CSS
+
+Semantic and prosodic interaction graphs for conversational TTS.
+
+MFCIG-CSS represents dialogue history through separate graphs of meaning and vocal expression. Fine-grained multimodal interactions condition the speech synthesizer, helping each scripted response fit the surrounding conversation.
+
+[Paper](https://arxiv.org/abs/2509.06074) · [GitHub](https://github.com/AI-S2-Lab/MFCIG-CSS)
+
+![MFCIG-CSS — Figure 1](../assets/architectures/mfcig-css.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2509.06074)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S, V → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="minimax-speech"></a>
 
 ### MiniMax-Speech
@@ -839,7 +2718,7 @@ Autoregressive Transformer and Flow-VAE.
 
 MiniMax-Speech extracts speaker characteristics directly from reference audio without requiring its transcript, then generates speech with an autoregressive Transformer and Flow-VAE. The research emphasizes multilingual zero-shot cloning and expressive delivery. Additional adaptation mechanisms support emotion control, description-based voice creation and more specialized voice cloning without replacing the base model.
 
-[Paper](https://arxiv.org/abs/2505.07916)
+[Paper](https://arxiv.org/abs/2505.07916) · GitHub: no author-linked repository found
 
 ![MiniMax-Speech — Figure 1](../assets/architectures/minimax-speech.png)
 
@@ -856,6 +2735,75 @@ Learnable speaker conditioning supports expressive multilingual TTS.
 
 </details>
 
+<a id="mixedg2p-t5"></a>
+
+### MixedG2P-T5
+
+Speech-derived discrete units with T5-based mixed-script synthesis.
+
+MixedG2P-T5 learns acoustic units from speech and uses a language-model synthesis path for text containing mixed scripts. It reduces dependence on manually designed grapheme-to-phoneme rules while retaining accent and intonation information in the speech representation.
+
+[Paper](https://arxiv.org/abs/2509.01391) · GitHub: no author-linked repository found
+
+![MixedG2P-T5 — Figure 3](../assets/architectures/mixedg2p-t5.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2509.01391)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="moe-tts"></a>
+
+### MoE-TTS
+
+Description-conditioned speech generation with modality-specific experts.
+
+MoE-TTS augments a frozen text language model with speech-specific expert parameters. Retaining the original language knowledge helps the synthesizer interpret unfamiliar style descriptions while learning the acoustic generation task.
+
+[Paper](https://arxiv.org/abs/2508.11326) · GitHub: no author-linked repository found
+
+![MoE-TTS — Figure 1](../assets/architectures/moe-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2508.11326)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="mooncast"></a>
+
+### MoonCast
+
+Podcast-oriented long-form speech synthesis with contextual voice conditioning.
+
+MoonCast combines podcast script preparation with a synthesizer trained for longer, spontaneous-sounding delivery. Voice references allow unseen speakers to render the resulting conversation, while discourse-level context supports more natural transitions than isolated sentence synthesis.
+
+[Paper](https://arxiv.org/abs/2503.14345) · [GitHub](https://github.com/jzq2000/MoonCast) · [Project](https://mooncastdemo.github.io)
+
+![MoonCast — Figure 1](../assets/architectures/mooncast.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2503.14345)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="moss-tts"></a>
 
 ### MOSS-TTS
@@ -864,7 +2812,7 @@ Delay-pattern LM and local Transformer alternatives.
 
 MOSS-TTS offers two generators over a shared discrete audio representation: a delay-pattern model and a model with a frame-local Transformer. They balance long-context control against efficient codebook prediction and speaker preservation. The family supports reference-conditioned synthesis, pronunciation and duration controls, with later checkpoints extending language handling and explicit pauses.
 
-[Paper](https://arxiv.org/abs/2603.18090) · [Repository](https://github.com/OpenMOSS/MOSS-TTS)
+[Paper](https://arxiv.org/abs/2603.18090) · [GitHub](https://github.com/OpenMOSS/MOSS-TTS)
 
 ![MOSS-TTS — Figure 2, PDF p. 8](../assets/architectures/moss-tts.png)
 
@@ -889,7 +2837,7 @@ Compact speech language model.
 
 MOSS-TTS-Nano packages multilingual voice cloning into a roughly 100M-parameter speech generator with a compact audio tokenizer. Streaming output and an ONNX inference path make it relevant to CPU-based readers and local applications. Its published performance depends on the runtime and hardware, and the tokenizer is a separate part of the deployment footprint.
 
-[Repository 1](https://github.com/OpenMOSS/MOSS-TTS) · [Repository 2](https://github.com/OpenMOSS/MOSS-TTS-Nano)
+[GitHub 1](https://github.com/OpenMOSS/MOSS-TTS) · [GitHub 2](https://github.com/OpenMOSS/MOSS-TTS-Nano)
 
 ![MOSS-TTS-Nano — Official architecture diagram](../assets/architectures/moss-tts-nano.png)
 
@@ -914,7 +2862,7 @@ Streaming autoregressive speech generator.
 
 MOSS-TTS-Realtime uses a Qwen3-derived backbone for linguistic context and a smaller local Transformer to predict audio codebooks. Text and speech tokens are handled at different levels so the system can accept text and emit audio incrementally. It targets low-latency spoken responses while preserving context across the generated utterance.
 
-[Repository](https://github.com/OpenMOSS/MOSS-TTS) · [Docs](https://github.com/OpenMOSS/MOSS-TTS/blob/main/moss_tts_realtime/README.md)
+[GitHub](https://github.com/OpenMOSS/MOSS-TTS) · [Docs](https://github.com/OpenMOSS/MOSS-TTS/blob/main/moss_tts_realtime/README.md)
 
 ![MOSS-TTS-Realtime — Input/output diagram](../assets/architectures/moss-tts-realtime.svg)
 
@@ -941,7 +2889,7 @@ Long-context dialogue speech LM.
 
 MOSS-TTSD turns a dialogue script with explicit speaker tags into a continuous multi-party recording. Long-context modeling helps maintain speaker identity, turn assignment and acoustic continuity, while short references can define voices. It is designed for podcasts, commentary and other scripted conversations; the source paper evaluates dialogue-specific consistency as well as intelligibility.
 
-[Paper](https://arxiv.org/abs/2603.19739)
+[Paper](https://arxiv.org/abs/2603.19739) · [GitHub](https://github.com/OpenMOSS/MOSS-TTSD)
 
 ![MOSS-TTSD — Figure 2, PDF p. 4](../assets/architectures/moss-ttsd.png)
 
@@ -964,7 +2912,7 @@ Instruction-conditioned voice generation.
 
 MOSS-VoiceGenerator creates a speaking voice from a natural-language description rather than requiring an example speaker recording. Training on expressive cinematic speech exposes it to varied delivery and acoustic conditions. The model is intended for character design, storytelling and role-based narration where the desired voice must be specified in words.
 
-[Paper](https://arxiv.org/abs/2603.28086)
+[Paper](https://arxiv.org/abs/2603.28086) · [GitHub](https://github.com/OpenMOSS/MOSS-TTS)
 
 ![MOSS-VoiceGenerator — Figure 1](../assets/architectures/moss-voicegenerator.png)
 
@@ -979,6 +2927,52 @@ Creates speaking voices from natural-language descriptions.
 
 </details>
 
+<a id="mpe-tts"></a>
+
+### MPE-TTS
+
+Multimodal emotion prompting with predicted prosody.
+
+MPE-TTS combines reference speech and textual prompts to specify an unseen speaker and the desired emotion. A prosody predictor and emotion-consistency objective carry those controls into the synthesized acoustic performance.
+
+[Paper](https://arxiv.org/abs/2505.18453) · GitHub: no author-linked repository found
+
+![MPE-TTS — Figure 1](../assets/architectures/mpe-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2505.18453)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="muyan-tts"></a>
+
+### Muyan-TTS
+
+Podcast-trained autoregressive zero-shot speech generation.
+
+Muyan-TTS trains a speech language model on a large podcast collection for expressive reference-based synthesis. The release documents data preparation, training and optimized inference, with an emphasis on reproducible podcast-style voice generation.
+
+[Paper](https://arxiv.org/abs/2504.19146) · [GitHub](https://github.com/MYZY-AI/Muyan-TTS)
+
+![Muyan-TTS — Figure 1](../assets/architectures/muyan-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2504.19146)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="neutts-air"></a>
 
 ### NeuTTS Air
@@ -987,7 +2981,7 @@ Compact language-model backbone and single-codebook NeuCodec.
 
 NeuTTS Air pairs a phoneme-conditioned language model with NeuCodec to synthesize a reference voice locally. Quantized GGUF backbones support incremental generation through the documented streaming backend. It targets embedded and desktop voice applications, with the codec's compute and memory requirements considered alongside those of the language-model backbone.
 
-[Repository](https://github.com/neuphonic/neutts)
+[GitHub](https://github.com/neuphonic/neutts)
 
 ![NeuTTS Air — Input/output diagram](../assets/architectures/neutts-air.svg)
 
@@ -1014,7 +3008,7 @@ Smaller speech language model with NeuCodec decoding.
 
 NeuTTS Nano reduces the speech-model backbone while retaining phoneme conditioning, reference-based cloning and NeuCodec reconstruction. Its English, German, French and Spanish models share a design but use separate language-specific checkpoints. Quantized variants support compact local deployments, and streaming depends on the selected inference backend.
 
-[Repository](https://github.com/neuphonic/neutts)
+[GitHub](https://github.com/neuphonic/neutts)
 
 ![NeuTTS Nano — Input/output diagram](../assets/architectures/neutts-nano.svg)
 
@@ -1041,7 +3035,7 @@ Text-input speech language model with emotion control.
 
 NeuTTS-2E accepts text directly and adds explicit emotional delivery to the NeuTTS language-model-and-codec pipeline. The released configuration supplies four fixed speaker presets instead of arbitrary reference-based cloning. It is intended for compact expressive speech applications, with streaming available through the documented GGUF inference path.
 
-[Repository](https://github.com/neuphonic/neutts)
+[GitHub](https://github.com/neuphonic/neutts)
 
 ![NeuTTS-2E — Input/output diagram](../assets/architectures/neutts-2e.svg)
 
@@ -1060,6 +3054,52 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 
 </details>
 
+<a id="nr-lauratts"></a>
+
+### NR-LauraTTS
+
+Codec-token denoising before reference-conditioned LauraTTS generation.
+
+NR-LauraTTS cleans the discrete representation of a noisy voice prompt before passing it to LauraTTS. Token prediction and embedding refinement reduce background contamination, supporting reference cloning when the available recording is acoustically imperfect.
+
+[Paper](https://arxiv.org/abs/2505.13830) · [GitHub](https://github.com/yxlu-0102/NR-LauraTTS) · [Project](https://yxlu-0102.github.io/NR-LauraTTS)
+
+![NR-LauraTTS — Figure 1](../assets/architectures/nr-lauratts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2505.13830)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="nvspeech-tts"></a>
+
+### NVSpeech TTS
+
+Inline paralinguistic-token conditioning for controllable synthesis.
+
+The NVSpeech pipeline includes a TTS model that renders text with explicitly marked nonverbal events. Word-level annotations connect ordinary speech with vocalizations such as laughter, providing a shared representation for recognition and controllable audio generation.
+
+[Paper](https://arxiv.org/abs/2508.04195) · [Project](https://nvspeech170k.github.io/) · GitHub: no author-linked repository found
+
+![NVSpeech TTS — Figure 2](../assets/architectures/nvspeech-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2508.04195)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="omnivoice"></a>
 
 ### OmniVoice
@@ -1068,7 +3108,7 @@ Discrete diffusion language model.
 
 OmniVoice predicts multiple acoustic codebooks directly from text using a masked, non-autoregressive diffusion language model. Random masking across codebooks and initialization from a pretrained language model support multilingual generation without a separate text-to-semantic stage. It focuses on broad-language zero-shot synthesis and voice conditioning, rather than visual or general-purpose omni interaction.
 
-[Paper](https://arxiv.org/abs/2604.00688) · [Repository](https://github.com/k2-fsa/OmniVoice)
+[Paper](https://arxiv.org/abs/2604.00688) · [GitHub](https://github.com/k2-fsa/OmniVoice)
 
 ![OmniVoice — Figure 1](../assets/architectures/omnivoice.png)
 
@@ -1083,6 +3123,29 @@ Omnilingual TTS over multiple acoustic codebooks; its name does not imply vision
 
 </details>
 
+<a id="opuslm"></a>
+
+### OpusLM
+
+Decoder-only models with interleaved text and multi-stream speech codes.
+
+OpusLM extends text language models through speech-text pretraining on public data. Its interleaved representation supports speech recognition, text-conditioned synthesis and textual continuation within a transparent family of shared backbones.
+
+[Paper](https://arxiv.org/abs/2506.17611) · GitHub: no author-linked repository found
+
+![OpusLM — Figure 1](../assets/architectures/opuslm.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2506.17611)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="orpheus-tts"></a>
 
 ### Orpheus TTS
@@ -1091,7 +3154,7 @@ Llama-based codec language model.
 
 Orpheus TTS repurposes a Llama-family language model to generate speech codec tokens from text. Emotion tags and speaker conditioning guide expressive delivery, while the project supplies inference and adaptation workflows. English releases and multilingual previews have different coverage, so a checkpoint's documented capabilities matter when selecting it for narration or a voice application.
 
-[Repository](https://github.com/canopyai/Orpheus-TTS)
+[GitHub](https://github.com/canopyai/Orpheus-TTS)
 
 ![Orpheus TTS — Input/output diagram](../assets/architectures/orpheus-tts.svg)
 
@@ -1118,7 +3181,7 @@ Decoder-only speech-token LM.
 
 OuteTTS represents speech in a form that can be generated by a decoder-only language model and reconstructed by an audio decoder. A speaker reference guides vocal identity, style and accent. Its 1.0 line supports standard LLM serving backends, but generation settings and repetition handling need to follow the matching model implementation.
 
-[Repository](https://github.com/edwko/OuteTTS)
+[GitHub](https://github.com/edwko/OuteTTS)
 
 ![OuteTTS — Input/output diagram](../assets/architectures/outetts.svg)
 
@@ -1137,13 +3200,105 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 
 </details>
 
+<a id="ov-instructtts"></a>
+
+### OV-InstructTTS
+
+Reasoning-guided speech synthesis from open-vocabulary style instructions.
+
+OV-InstructTTS interprets voice and delivery descriptions beyond a fixed inventory of style labels. Its reasoning-based conditioning connects broader textual requests with expressive speech generation, supported by a dedicated instruction-speech dataset.
+
+[Paper](https://arxiv.org/abs/2601.01459) · [GitHub](https://github.com/y-ren16/OV-InstructTTS)
+
+![OV-InstructTTS — Figure 2](../assets/architectures/ov-instructtts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2601.01459)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="ozspeech"></a>
+
+### OZSpeech
+
+Learned-prior one-step flow generation over factorized speech codes.
+
+OZSpeech generates disentangled speech components with a flow model conditioned on a learned prior. The design targets single-step zero-shot synthesis while separately modeling content, prosody and speaker-related information from the voice prompt.
+
+[Paper](https://arxiv.org/abs/2505.12800) · [GitHub](https://github.com/ozspeech/OZSpeech) · [Project](https://ozspeech.github.io/OZSpeech_Web/)
+
+![OZSpeech — Figure 1](../assets/architectures/ozspeech.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2505.12800)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="palle"></a>
+
+### PALLE
+
+Pseudo-autoregressive span generation followed by parallel refinement.
+
+PALLE generates variable-length speech spans at fixed decoding steps, combining temporal planning with parallel token prediction. A second non-autoregressive stage refines the initial sequence, supporting efficient zero-shot synthesis.
+
+[Paper](https://arxiv.org/abs/2504.10352) · GitHub: no author-linked repository found
+
+![PALLE — Figure 3](../assets/architectures/palle.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2504.10352)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="parallel-gpt"></a>
+
+### Parallel GPT
+
+Autoregressive general tokens with parallel coupled acoustic refinement.
+
+Parallel GPT divides speech generation between a general autoregressive predictor and a non-autoregressive detail model. The parallel refinement stage conditions on the initial tokens, balancing independence and interaction between semantic and acoustic information.
+
+[Paper](https://arxiv.org/abs/2508.04141) · GitHub: no author-linked repository found
+
+![Parallel GPT — Paper figure](../assets/architectures/parallel-gpt.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2508.04141)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="parler-tts"></a>
 
 ### Parler-TTS
 
 Description-conditioned codec language model.
 
-[Repository](https://github.com/huggingface/parler-tts) · [Paper](https://arxiv.org/abs/2402.01912)
+[GitHub](https://github.com/huggingface/parler-tts) · [Paper](https://arxiv.org/abs/2402.01912)
 
 ![Parler-TTS — Figure 1](../assets/architectures/parler-tts.png)
 
@@ -1160,6 +3315,167 @@ Uses text descriptions of the speaker and delivery to guide synthesis.
 
 </details>
 
+<a id="parler-tts-hinglish-adaptation"></a>
+
+### Parler-TTS Hinglish adaptation
+
+Accent-aware Parler-TTS with phoneme alignment and emotion conditioning.
+
+This Parler-TTS extension introduces language-specific phonetic alignment and emotion embeddings for Hindi and Indian English. Its conditioning targets code-switched utterances whose accent and emotional delivery change coherently across language boundaries.
+
+[Paper](https://arxiv.org/abs/2506.16310) · [GitHub](https://github.com/En1gma02/Parler-TTS-Hinglish-Accent-Emotions)
+
+![Parler-TTS Hinglish adaptation — Figure 2](../assets/architectures/parler-tts-hinglish-adaptation.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2506.16310)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="phoenix-tts"></a>
+
+### Phoenix TTS
+
+Jointly learned speech tokens with an autoregressive LM and flow decoder.
+
+Phoenix TTS aligns its speech tokenizer with the downstream flow-matching acoustic decoder during training. An autoregressive language model predicts the resulting discrete representation, supporting text-to-speech and voice conversion without separating token design from acoustic reconstruction.
+
+[Paper](https://arxiv.org/abs/2608.11737) · GitHub: no author-linked repository found
+
+![Phoenix TTS — Figure 2](../assets/architectures/phoenix-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2608.11737)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="pilottts"></a>
+
+### PilotTTS
+
+Compact autoregression with Q-Former speaker and style conditioning.
+
+PilotTTS uses paired recordings and Q-Former conditioning to separate a speaker's identity from delivery style. The model supports reference cloning, emotional and nonverbal expression, and Chinese dialect synthesis within a shared autoregressive pipeline.
+
+[Paper](https://arxiv.org/abs/2605.27258) · [GitHub](https://github.com/AMAPVOICE/PilotTTS)
+
+![PilotTTS — Figure 3](../assets/architectures/pilottts.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2605.27258)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="prompt-unseen-emotion"></a>
+
+### Prompt-Unseen-Emotion
+
+Prompt-conditioned language-model TTS with mixed-emotion weighting.
+
+Prompt-Unseen-Emotion learns the relationship between emotion descriptions and speech using a language-model synthesis backbone. Weighted combinations of known emotions and contextual language knowledge allow expressive delivery outside the original categorical training labels.
+
+[Paper](https://arxiv.org/abs/2506.02742) · GitHub: no author-linked repository found
+
+![Prompt-Unseen-Emotion — Paper figure](../assets/architectures/prompt-unseen-emotion.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2506.02742)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="ps-tts"></a>
+
+### PS-TTS
+
+Phonetic alignment and translation-conditioned dubbing synthesis.
+
+PS-TTS uses vowel-based alignment to coordinate the timing and phonetic structure of dubbed speech. Its PS-Comet variant also considers semantic preservation when choosing translated text, connecting translation choices with a TTS rendering stage.
+
+[Paper](https://arxiv.org/abs/2604.09111) · GitHub: no author-linked repository found
+
+![PS-TTS — Fig. 1 (paper page 3)](../assets/architectures/ps-tts.png)
+
+*Fig. 1 (paper page 3) · [Source](https://arxiv.org/abs/2604.09111)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="qtts"></a>
+
+### QTTS
+
+Hierarchical or delayed multi-codebook autoregressive synthesis.
+
+QTTS predicts residual speech codes produced by its QDAC tokenizer. Hierarchical parallel and delayed multihead variants organize codebook dependencies differently, offering alternative balances between acoustic detail and sequential decoding cost.
+
+[Paper](https://arxiv.org/abs/2507.12197) · GitHub: no author-linked repository found
+
+![QTTS — Figure 2](../assets/architectures/qtts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2507.12197)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="qwen-audio-3-0-tts"></a>
+
+### Qwen-Audio-3.0-TTS
+
+Low-rate speech LM with a flow-matching acoustic decoder.
+
+Qwen-Audio-3.0-TTS combines compact semantic speech tokens with progressively trained language and acoustic models. Natural-language instructions and inline tags control delivery, while multilingual reference conditioning supports voice cloning and longer speech generation under varied recording conditions.
+
+[Paper](https://arxiv.org/abs/2607.23938) · [Project](https://qwenaudio.github.io/FunAudioLLM.github.io/qwen-audio-3.0-tts/) · GitHub: no author-linked repository found
+
+![Qwen-Audio-3.0-TTS — Figure 3](../assets/architectures/qwen-audio-3-0-tts.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2607.23938)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="qwen3-tts"></a>
 
 ### Qwen3-TTS
@@ -1168,7 +3484,7 @@ Dual-track speech language model.
 
 Qwen3-TTS combines a dual-track speech language model with tokenizers designed for compact streaming audio. The released 12Hz line separates Base voice cloning, CustomVoice preset-speaker control and VoiceDesign creation from descriptions. These variants support different conditioning interfaces, allowing applications to choose between reproducing a reference voice and directing a new voice through text.
 
-[Paper](https://arxiv.org/abs/2601.15621) · [Repository](https://github.com/QwenLM/Qwen3-TTS)
+[Paper](https://arxiv.org/abs/2601.15621) · [GitHub](https://github.com/QwenLM/Qwen3-TTS)
 
 ![Qwen3-TTS — Figure 3](../assets/architectures/qwen3-tts.png)
 
@@ -1182,6 +3498,29 @@ Qwen3-TTS combines a dual-track speech language model with tokenizers designed f
 Family offers voice cloning, preset voices and description-driven voice creation; input conditioning depends on variant.
 
 **Variants:** 0.6B; 1.7B; Base; CustomVoice; VoiceDesign; 12Hz/25Hz tokenizers.
+
+</details>
+
+<a id="radka-css"></a>
+
+### RADKA-CSS
+
+Retrieved dialogue knowledge with multigranularity style graphs.
+
+RADKA-CSS retrieves dialogue examples related to the current conversation in both meaning and delivery. A graph-based aggregation mechanism combines their style information with current context, conditioning expressive conversational speech synthesis.
+
+[Paper](https://arxiv.org/abs/2501.06467) · [GitHub](https://github.com/Coder-jzq/RADKA-CSS) · [Project](https://coder-jzq.github.io/RADKA-CSS-Website/index.html#case-study)
+
+![RADKA-CSS — Figure 2](../assets/architectures/radka-css.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2501.06467)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -1203,6 +3542,75 @@ Prosody-guided codec language modeling.
 **Input → output:** T, S → S · **Interaction:** generation
 
 Predicts pitch and duration as intermediate conditions for speech synthesis.
+
+</details>
+
+<a id="rwkvtts"></a>
+
+### RWKVTTS
+
+RWKV-7 recurrent speech-token generation.
+
+RWKVTTS uses the recurrent RWKV-7 architecture for speech synthesis in place of a conventional Transformer backbone. Its token-generation path targets efficient streaming and reduced state-management cost while conditioning audio on the supplied text.
+
+[Paper](https://arxiv.org/abs/2504.03289) · [GitHub](https://github.com/yynil/RWKVTTS)
+
+![RWKVTTS — Figure 2](../assets/architectures/rwkvtts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2504.03289)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="s5-tts"></a>
+
+### S5-TTS
+
+Streaming encoder-decoder TTS with monotonic alignment and lookahead masks.
+
+S5-TTS adapts T5-TTS for word-by-word synthesis using limited future text. Lookahead-aware masks, convolutional auxiliary attention and distillation let the model start speaking before the complete sentence is available while retaining voice conditioning and alignment.
+
+[Paper](https://arxiv.org/abs/2606.21882) · GitHub: no author-linked repository found
+
+![S5-TTS — Figure 1](../assets/architectures/s5-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2606.21882)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="sarashina2-2-tts"></a>
+
+### Sarashina2.2-TTS
+
+Semantic speech LM followed by flow matching and vocoding.
+
+Sarashina2.2-TTS emphasizes reliable Japanese pronunciation, including characters with several possible readings. Its semantic language model and acoustic flow decoder use reference speech for voice conditioning, with balanced multilingual training to reduce dependence on the reference language.
+
+[Paper](https://arxiv.org/abs/2606.25369) · [GitHub](https://github.com/sbintuitions/sarashina2.2-tts)
+
+![Sarashina2.2-TTS — Figure 1](../assets/architectures/sarashina2-2-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2606.25369)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -1229,6 +3637,52 @@ Research family with controllable synthesis and speaker prompting.
 
 </details>
 
+<a id="smlle"></a>
+
+### SMLLE
+
+Streaming text-to-semantic transduction with autoregressive acoustics.
+
+SMLLE uses a transducer to align incoming text with semantic speech tokens and duration information. A separate autoregressive stage generates acoustic frames, with controlled access to future text stabilizing incremental synthesis.
+
+[Paper](https://arxiv.org/abs/2505.19669) · [Project](https://shy-98.github.io/SMLLE_demo_page/) · GitHub: no author-linked repository found
+
+![SMLLE — Figure 1](../assets/architectures/smlle.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2505.19669)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="soulx-podcast"></a>
+
+### SoulX-Podcast
+
+Long-context multi-speaker speech language modeling.
+
+SoulX-Podcast synthesizes conversational scripts with reference voices, dialect choices and nonverbal expression. Its long-form training targets consistent speaker identity and natural transitions across turns, while also supporting ordinary single-speaker TTS.
+
+[Paper](https://arxiv.org/abs/2510.23541) · [GitHub](https://github.com/Soul-AILab/SoulX-Podcast) · [Project](https://soul-ailab.github.io/soulx-podcast/)
+
+![SoulX-Podcast — Figure 3](../assets/architectures/soulx-podcast.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2510.23541)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="spark-tts"></a>
 
 ### Spark-TTS
@@ -1237,7 +3691,7 @@ Qwen2.5 and single-stream BiCodec.
 
 Spark-TTS uses BiCodec to separate changing linguistic content from global speaker attributes, then predicts these tokens with a Qwen2.5 backbone. That separation supports both reference-based cloning and direct control of attributes such as speaking rate and pitch. It is useful for controllable speech generation where a reference recording alone is insufficient to specify the desired delivery.
 
-[Paper](https://arxiv.org/abs/2503.01710) · [Repository](https://github.com/SparkAudio/Spark-TTS)
+[Paper](https://arxiv.org/abs/2503.01710) · [GitHub](https://github.com/SparkAudio/Spark-TTS)
 
 ![Spark-TTS — Figure 3](../assets/architectures/spark-tts.png)
 
@@ -1275,6 +3729,52 @@ Separates reading and speaking to reduce paired-data requirements.
 
 </details>
 
+<a id="speechaccentllm"></a>
+
+### SpeechAccentLLM
+
+Shared accent conversion and TTS over CTC-aligned speech codes.
+
+SpeechAccentLLM uses a content tokenizer trained with transcription alignment and jointly learns accent conversion and synthesis. A reconstruction refinement stage improves generated speech while separating accent-related changes from the target speaker's identity.
+
+[Paper](https://arxiv.org/abs/2507.01348) · GitHub: no author-linked repository found
+
+![SpeechAccentLLM — Figure 3](../assets/architectures/speechaccentllm.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2507.01348)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="speechedit"></a>
+
+### SpeechEdit
+
+Instruction-conditioned codec LM for selective speech attributes.
+
+SpeechEdit combines text, instruction tokens and reference audio in a shared codec-language-model sequence. Paired examples that differ in selected attributes teach localized changes while retaining other aspects of the reference voice and delivery.
+
+[Paper](https://arxiv.org/abs/2601.12480) · [Project](https://speech-editing.github.io/speech-editing/) · GitHub: no author-linked repository found
+
+![SpeechEdit — Figure 1](../assets/architectures/speechedit.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2601.12480)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="speechx"></a>
 
 ### SpeechX
@@ -1296,6 +3796,29 @@ This card covers the text-to-speech path. The broader codec language model also 
 
 </details>
 
+<a id="step-audio-editx"></a>
+
+### Step-Audio-EditX
+
+Speech language modeling for zero-shot TTS and iterative expressive editing.
+
+Step-Audio-EditX supports reference-based synthesis and repeated edits to emotion, speaking style or nonverbal delivery. Training on deliberately contrasting synthetic examples teaches the model to follow expressive changes without a separate attribute-embedding module.
+
+[Paper](https://arxiv.org/abs/2511.03601) · [GitHub](https://github.com/stepfun-ai/Step-Audio-EditX)
+
+![Step-Audio-EditX — Figure 2](../assets/architectures/step-audio-editx.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2511.03601)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="step-audio-tts"></a>
 
 ### Step-Audio-TTS
@@ -1304,7 +3827,7 @@ Speech-token language model.
 
 Step-Audio-TTS is the compact synthesis component produced through the broader Step-Audio speech-data and distillation pipeline. Text and voice conditioning drive speech-token generation, while the released workflow exposes delivery controls. The TTS checkpoint is used to render supplied content; reasoning, tool use and dialogue management belong to other components of the system.
 
-[Paper](https://arxiv.org/abs/2502.11946) · [Repository](https://github.com/stepfun-ai/Step-Audio)
+[Paper](https://arxiv.org/abs/2502.11946) · [GitHub](https://github.com/stepfun-ai/Step-Audio)
 
 ![Step-Audio-TTS — Figure 2](../assets/architectures/step-audio-tts.png)
 
@@ -1321,13 +3844,174 @@ Dedicated synthesizer distributed with Step-Audio; separate from Step-Audio-Chat
 
 </details>
 
+<a id="stepaudio-2-5-tts"></a>
+
+### StepAudio 2.5 TTS
+
+Shared audio-language backbone with a dedicated expressive synthesis mode.
+
+The TTS mode of StepAudio 2.5 uses a shared speech-language foundation with synthesis-specific decoding and preference training. Rich contextual supervision and feedback target controllable expression; this card describes its speech-rendering path within the broader system.
+
+[Paper](https://arxiv.org/abs/2605.23463) · GitHub: no author-linked repository found
+
+![StepAudio 2.5 TTS — Figure 1](../assets/architectures/stepaudio-2-5-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2605.23463)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="syncspeech"></a>
+
+### SyncSpeech
+
+Temporal masked Transformer combining ordered and parallel generation.
+
+SyncSpeech uses a temporal masking scheme to coordinate sequential speech structure with parallel token decoding. This hybrid organization targets faster first audio and higher throughput while retaining reference-conditioned synthesis quality.
+
+[Paper](https://arxiv.org/abs/2502.11094) · [Project](https://SyncSpeech.github.io/) · GitHub: no author-linked repository found
+
+![SyncSpeech — Figure 1](../assets/architectures/syncspeech.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2502.11094)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="ted-tts"></a>
+
+### TED-TTS
+
+Segment-aware inference control for emotion and duration.
+
+TED-TTS modifies conditioning and decoding in a pretrained zero-shot synthesizer to control different parts of an utterance. Segment-specific emotion masks and duration steering support local changes while coordinating transitions and the overall stopping point.
+
+[Paper](https://arxiv.org/abs/2601.03170) · [GitHub](https://github.com/Simon-leong/TED-TTS)
+
+![TED-TTS — Figure 1](../assets/architectures/ted-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2601.03170)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="tibetan-tts"></a>
+
+### Tibetan-TTS
+
+Tibetan-adapted large speech synthesis model.
+
+Tibetan-TTS adapts a large speech generator through language-specific text representation, tokenizer changes and cross-language training. Its data preparation and quality enhancement target scarce Tibetan recordings and the differences between written forms and spoken pronunciation.
+
+[Paper](https://arxiv.org/abs/2605.02496) · GitHub: no author-linked repository found
+
+![Tibetan-TTS — Figure 2](../assets/architectures/tibetan-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2605.02496)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="tinywave"></a>
+
+### TinyWave
+
+Distilled interleaved speech-text language modeling.
+
+TinyWave is a family of compact models trained for mixed text-speech continuation and speech generation from phonetic or expressive tokens. Distillation transfers capabilities into smaller backbones, supporting controllable audio rendering alongside broader speech-language tasks.
+
+[Paper](https://arxiv.org/abs/2506.23670) · [GitHub](https://github.com/mohammadmahdinoori/TinyWave) · [Project](https://mohammadmahdinoori.github.io/tinywave-landing/)
+
+![TinyWave — Figure 1](../assets/architectures/tinywave.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2506.23670)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The paper links the TinyWave repository, but no README was available in the reviewed main or master branches.
+
+</details>
+
+<a id="tldr-tts"></a>
+
+### TLDR (TTS)
+
+Compressed codec patches with speaker-conditioned token reconstruction.
+
+TLDR groups consecutive speech tokens into learned patches and adapts a pretrained speech language model to predict the shorter sequence. A speaker-conditioned extractor reconstructs the detailed codec tokens, reducing sequential decoding and attention-cache use.
+
+[Paper](https://arxiv.org/abs/2606.09019) · GitHub: no author-linked repository found
+
+![TLDR (TTS) — Figure 1](../assets/architectures/tldr-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2606.09019)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="tontaubev1"></a>
+
+### TontaubeV1
+
+Hierarchical codec prediction with bounded streaming context.
+
+TontaubeV1 assigns a large Transformer to semantic speech tokens and smaller Transformers to successive acoustic refinements. Character-level text, synchronized position markers and a causal waveform reconstruction path support long recordings and streaming voice cloning, primarily in English and German.
+
+[Paper](https://arxiv.org/abs/2609.08703) · [GitHub](https://github.com/craitech/tontaube)
+
+![TontaubeV1 — Figure 2](../assets/architectures/tontaubev1.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2609.08703)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="tortoise-tts"></a>
 
 ### Tortoise TTS
 
 Autoregressive transformer and diffusion decoder.
 
-[Paper](https://arxiv.org/abs/2305.07243) · [Repository](https://github.com/neonbjb/tortoise-tts)
+[Paper](https://arxiv.org/abs/2305.07243) · [GitHub](https://github.com/neonbjb/tortoise-tts)
 
 ![Tortoise TTS — Figure 1](../assets/architectures/tortoise-tts.png)
 
@@ -1339,6 +4023,167 @@ Autoregressive transformer and diffusion decoder.
 **Input → output:** T, S → S · **Interaction:** generation
 
 Reference-conditioned synthesis from a scaled generative speech pipeline.
+
+</details>
+
+<a id="tts-transducer"></a>
+
+### TTS-Transducer
+
+Neural transduction for monotonic text-to-codec alignment.
+
+TTS-Transducer learns an ordered mapping from tokenized text to the first speech codebook with a neural transducer. Subsequent acoustic-code generation reconstructs the waveform, combining explicit monotonic alignment with reference-conditioned speech synthesis.
+
+[Paper](https://arxiv.org/abs/2501.06320) · [Project](https://tts-transducer.github.io) · GitHub: no author-linked repository found
+
+![TTS-Transducer — Paper figure](../assets/architectures/tts-transducer.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2501.06320)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="uddetts"></a>
+
+### UDDETTS
+
+Unified categorical and continuous emotion conditioning in a speech LM.
+
+UDDETTS combines named emotion labels with continuous affect dimensions in one TTS model. A semi-supervised training scheme uses differently annotated speech collections, enabling more flexible emotion control than a fixed list of categories alone.
+
+[Paper](https://arxiv.org/abs/2505.10599) · GitHub: no author-linked repository found
+
+![UDDETTS — Figure 1](../assets/architectures/uddetts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2505.10599)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="unitaf"></a>
+
+### UniTAF
+
+Joint TTS and facial-animation modeling with shared intermediate features.
+
+UniTAF connects a text-to-speech model with a facial-animation model through internal representations. The joint architecture explores consistent emotional expression across generated audio and facial movement, focusing on the feasibility of feature sharing rather than claiming a production-quality avatar system. The authors withdrew the paper in March 2026 because some reported results require verification.
+
+[Paper](https://arxiv.org/abs/2602.15651) · [GitHub](https://github.com/GoldenFishes/UniTAF)
+
+![UniTAF — Figure 2 (paper page 5)](../assets/architectures/unitaf.png)
+
+*Figure 2 (paper page 5) · [Source](https://arxiv.org/abs/2602.15651)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The authors withdrew the paper on 2026-03-03, citing results that require further verification. The figure is taken from the original v1 submission, not the withdrawn v2 notice.
+
+</details>
+
+<a id="unitalker"></a>
+
+### UniTalker
+
+Joint conversational speech and facial-token generation.
+
+UniTalker predicts emotional context before generating speech and face-motion tokens. A facial codec and synchronized decoding coordinate expression, wording and duration, allowing a scripted conversational response to be rendered as both voice and facial animation.
+
+[Paper](https://arxiv.org/abs/2508.04585) · [GitHub](https://github.com/AI-S2-Lab/UniTalker)
+
+![UniTalker — Figure 2](../assets/architectures/unitalker.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2508.04585)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S, V → S · **Interaction:** generation
+
+The author-linked GitHub repository has no README available in the reviewed main or master branches.
+
+</details>
+
+<a id="unitts"></a>
+
+### UniTTS
+
+Single-codebook acoustic language modeling with DistilCodec.
+
+UniTTS predicts the dense single-stream representation learned by DistilCodec from a multicodebook teacher. Keeping acoustic and semantic information together provides its language model with a unified target for reference-conditioned text-to-speech.
+
+[Paper](https://arxiv.org/abs/2505.17426) · [GitHub](https://github.com/IDEA-Emdoor-Lab/UniTTS)
+
+![UniTTS — Figure 1](../assets/architectures/unitts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2505.17426)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="univocal"></a>
+
+### UniVocal
+
+Joint semantic and pitch-token planning for speech-singing synthesis.
+
+UniVocal learns when text should be spoken or sung and can move between these modes within one sequence. Its language model predicts refined pitch and semantic tokens before acoustic reconstruction, with optional descriptions and voice references controlling the performance.
+
+[Paper](https://arxiv.org/abs/2606.01677) · [GitHub](https://github.com/FunAudioLLM/FunResearch) · [Project](https://project-univocal-demo.github.io/demo/)
+
+![UniVocal — Figure 2](../assets/architectures/univocal.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2606.01677)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="v-cass"></a>
+
+### V-CASS
+
+Visual-context interpretation conditioning expressive speech rendering.
+
+V-CASS extracts paralinguistic cues from video with a vision-language model and passes them to an expressive speech generator. It renders supplied content in a style suited to the scene, supporting more informative audio descriptions of visual media.
+
+[Paper](https://arxiv.org/abs/2506.16716) · GitHub: no author-linked repository found
+
+![V-CASS — Paper figure](../assets/architectures/v-cass.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2506.16716)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, V → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -1426,13 +4271,59 @@ Adds monotonic generation constraints to prompt-based speech synthesis.
 
 </details>
 
+<a id="vevo"></a>
+
+### Vevo
+
+Content-style token prediction with separate timbre-conditioned acoustics.
+
+Vevo progressively separates linguistic content, delivery style and speaker identity from speech through self-supervised learning. Its generation path can use text or speech content, enabling zero-shot TTS with independent control over reference timbre and style.
+
+[Paper](https://arxiv.org/abs/2502.07243) · [GitHub](https://github.com/open-mmlab/Amphion)
+
+![Vevo — Figure 1](../assets/architectures/vevo.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2502.07243)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="vocalnet-m2"></a>
+
+### VocalNet-M2
+
+Multi-codebook speech generation with multi-token prediction.
+
+VocalNet-M2 directly predicts multiple codec streams from a speech-language backbone. Its talker combines multi-codebook representations and multi-token decoding to reduce latency, avoiding a separate flow-matching stage for acoustic reconstruction.
+
+[Paper](https://arxiv.org/abs/2511.10232) · GitHub: no author-linked repository found
+
+![VocalNet-M2 — Figure 1](../assets/architectures/vocalnet-m2.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2511.10232)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="voicecraft"></a>
 
 ### VoiceCraft
 
 Token-infilling codec language model.
 
-[Paper](https://arxiv.org/abs/2403.16973) · [Repository](https://github.com/jasonppy/VoiceCraft)
+[Paper](https://arxiv.org/abs/2403.16973) · [GitHub](https://github.com/jasonppy/VoiceCraft)
 
 ![VoiceCraft — Figure 2](../assets/architectures/voicecraft.png)
 
@@ -1449,13 +4340,197 @@ Supports both speech editing and reference-conditioned TTS.
 
 </details>
 
+<a id="voicecraft-dub"></a>
+
+### VoiceCraft-Dub
+
+Video-conditioned neural codec language modeling for dubbing.
+
+VoiceCraft-Dub extends text-conditioned codec synthesis with facial information from video. The added visual conditions coordinate speech timing and expression with the visible speaker while preserving the voice and natural prosody.
+
+[Paper](https://arxiv.org/abs/2504.02386) · [GitHub](https://github.com/kaist-ami/voicecraft-dub)
+
+![VoiceCraft-Dub — Figure 2](../assets/architectures/voicecraft-dub.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2504.02386)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S, V → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="voicesculptor"></a>
+
+### VoiceSculptor
+
+Instruction-based voice design followed by reference cloning.
+
+VoiceSculptor first creates a voice matching a natural-language description, then renders an audio prompt for a cloning model. This two-part pipeline supports designing a new timbre and consistently using it to synthesize further text.
+
+[Paper](https://arxiv.org/abs/2601.10629) · [GitHub](https://github.com/ASLP-lab/VoiceSculptor) · [Project](https://hujingbin1.github.io/VoiceSculptor-Demo)
+
+![VoiceSculptor — Figure 1](../assets/architectures/voicesculptor.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2601.10629)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="voxtral-tts"></a>
+
+### Voxtral TTS
+
+Autoregressive semantic speech tokens with acoustic flow matching.
+
+Voxtral TTS conditions multilingual speech on a short voice recording. Its hybrid decoder predicts semantic tokens sequentially and acoustic information through flow matching, supporting expressive reference cloning across languages.
+
+[Paper](https://arxiv.org/abs/2603.25551) · GitHub: no author-linked repository found
+
+![Voxtral TTS — Figure 2](../assets/architectures/voxtral-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2603.25551)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="voxtream"></a>
+
+### VoXtream
+
+Incremental phoneme, temporal and depth Transformers.
+
+VoXtream begins synthesis from the first available words using a streaming phoneme encoder. A temporal model predicts semantic and duration information, while a depth Transformer generates codec detail, enabling low-delay reference voice cloning.
+
+[Paper](https://arxiv.org/abs/2509.15969) · [GitHub](https://github.com/herimor/voxtream) · [Project](https://herimor.github.io/voxtream)
+
+![VoXtream — Figure 1](../assets/architectures/voxtream.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2509.15969)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="voxtream2"></a>
+
+### VoXtream2
+
+Full-stream autoregressive speech with dynamic duration-state control.
+
+VoXtream2 consumes text incrementally while allowing the speaking rate to change during the utterance. Guidance over conditioning signals and a distribution-matching mechanism for duration states support reference cloning with responsive, locally adjustable pacing.
+
+[Paper](https://arxiv.org/abs/2603.13518) · [GitHub](https://github.com/herimor/voxtream) · [Project](https://herimor.github.io/voxtream2/)
+
+![VoXtream2 — Figure 1](../assets/architectures/voxtream2.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2603.13518)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="vspeechlm"></a>
+
+### VSpeechLM
+
+Video-aligned phoneme expansion with speech-language-model decoding.
+
+VSpeechLM aligns video timing with a text transcript before generating speech tokens. Its phoneme expansion and acoustic decoders support intelligible speech whose timing matches the visible speaker, targeting visual TTS and dubbing.
+
+[Paper](https://arxiv.org/abs/2511.22229) · GitHub: no author-linked repository found
+
+![VSpeechLM — Figure 2](../assets/architectures/vspeechlm.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2511.22229)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, V → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="wenetspeech-wu-tts"></a>
+
+### WenetSpeech-Wu TTS
+
+Wu-dialect speech synthesis and instruction-conditioned model releases.
+
+The WenetSpeech-Wu release includes TTS models trained on a curated Wu Chinese speech collection. Its synthesis paths cover ordinary and instruction-conditioned generation, alongside separate recognition and translation resources described in the same paper.
+
+[Paper](https://arxiv.org/abs/2601.11027) · [GitHub](https://github.com/ASLP-lab/WenetSpeech-Wu-Repo)
+
+![WenetSpeech-Wu TTS — Figure 1](../assets/architectures/wenetspeech-wu-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2601.11027)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="wescon"></a>
+
+### WeSCon
+
+Word-level emotion and rate control through self-trained synthesis.
+
+WeSCon creates training examples with local changes in emotion and speaking speed from a pretrained zero-shot TTS model. Transition smoothing and dynamic rate control help the adapted synthesizer deliver different parts of one sentence with distinct expression.
+
+[Paper](https://arxiv.org/abs/2509.24629) · [Project](https://wangtianrui.github.io/wescon/) · GitHub: no author-linked repository found
+
+![WeSCon — Figure 2](../assets/architectures/wescon.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2509.24629)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="whisperspeech"></a>
 
 ### WhisperSpeech
 
 Text-to-semantic and semantic-to-acoustic token models.
 
-[Repository](https://github.com/WhisperSpeech/WhisperSpeech)
+[GitHub](https://github.com/WhisperSpeech/WhisperSpeech)
 
 ![WhisperSpeech — Input/output diagram](../assets/architectures/whisperspeech.svg)
 
@@ -1469,6 +4544,75 @@ Text-to-semantic and semantic-to-acoustic token models.
 Builds semantic units from Whisper and predicts acoustic tokens for waveform decoding. Voice references condition synthesis; this is separate from Whisper ASR.
 
 Editorial summary of documented inputs and outputs; internal architecture is not shown.
+
+</details>
+
+<a id="wordvoice"></a>
+
+### WordVoice
+
+Explicit word-level acoustic planning with bound speech tokens.
+
+WordVoice associates controllable acoustic attributes with individual words before rendering their speech. Users can accept the language model's predicted delivery or override selected local attributes, enabling detailed expressive adjustments within a single utterance.
+
+[Paper](https://arxiv.org/abs/2607.06461) · [GitHub](https://github.com/XXH333/WordVoice-main) · [Project](https://xxh333.github.io/wordvoice-demo/)
+
+![WordVoice — Figure 3](../assets/architectures/wordvoice.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2607.06461)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="x2streaming-tts"></a>
+
+### X2Streaming-TTS
+
+Causal streaming codec TTS with speech-state inheritance.
+
+X2Streaming-TTS consumes text as it arrives and retains speech-generation state across successive segments. A frontend delays ambiguous text until its pronunciation can be decided, while the talker and waveform decoder produce incremental audio with bounded context.
+
+[Paper](https://arxiv.org/abs/2608.18661) · [GitHub](https://github.com/X-Square-Robot/X2Streaming-TTS)
+
+![X2Streaming-TTS — Figure 1](../assets/architectures/x2streaming-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2608.18661)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="xemorag"></a>
+
+### XEmoRAG
+
+Retrieved emotional references for cross-language speech synthesis.
+
+XEmoRAG retrieves speech examples to guide emotion transfer from Chinese to Thai without parallel emotional recordings. Its language-model TTS path exposes intensity control while balancing the reference speaker's timbre with target-language pronunciation.
+
+[Paper](https://arxiv.org/abs/2508.07302) · GitHub: no author-linked repository found
+
+![XEmoRAG — Paper figure](../assets/architectures/xemorag.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2508.07302)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -1503,7 +4647,7 @@ Transformer or hybrid backbone with codec prediction.
 
 Zonos phonemizes text and predicts DAC codec tokens with either a Transformer or a hybrid backbone. Speaker embeddings and audio prefixes condition the voice, alongside explicit controls for rate, pitch variation and emotion. Its v0.1 variants provide alternative architectures for expressive multilingual synthesis and reference-based cloning.
 
-[Repository](https://github.com/Zyphra/Zonos)
+[GitHub](https://github.com/Zyphra/Zonos)
 
 ![Zonos — Official architecture diagram](../assets/architectures/zonos.png)
 

@@ -4,28 +4,473 @@
 
 [← All models](../README.md#models)
 
-**5 models · Reviewed 2026-09-13**
+**32 models · Reviewed 2026-09-13**
 
 Primary-source figures and labeled input/output diagrams. [Figure credits](../assets/architectures/CREDITS.md).
 
 <details>
 <summary>Model index and modality key</summary>
 
-**Inputs and outputs:** T = text, S = speech, A = other audio. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
+**Inputs and outputs:** T = text, S = speech, A = other audio, I = image, V = video. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
 
 Dates refer to papers or announcements, not necessarily model releases.
 
 | Model | Source date | Input → output | Interaction |
 | --- | --- | --- | --- |
+| [BELLE](#belle) | 2025-10-28 | T, S → S | generation |
+| [Borderless Long Speech Synthesis](#borderless-long-speech-synthesis) | 2026-03-20 | T, S → S | generation |
+| [CLEAR](#clear) | 2025-08-26 | T, S → S | generation |
+| [Continuous-token diffusion TTS](#continuous-token-diffusion-tts) | 2025-10-14 | T, S → S | generation |
+| [CtrlSpeech](#ctrlspeech) | 2026-08-08 | T, S → S | generation |
+| [CuteTTS](#cutetts) | 2026-08-09 | T, S → S | streaming |
+| [DiTAR](#ditar) | 2025-02-06 | T, S → S | generation |
+| [dots.tts](#dots-tts) | 2026-06-05 | T, S → S | streaming |
+| [FELLE](#felle) | 2025-02-16 | T, S → S | generation |
+| [FireRedAudio](#fireredaudio) | 2026-08-25 | T, S → S, A | generation |
+| [FireRedTTS3](#fireredtts3) | 2026-08-18 | T, S → S | generation |
+| [HoliDubber](#holidubber) | 2026-06-08 | T, V → S | generation |
+| [HoliTok (TTS)](#holitok-tts) | 2026-05-28 | T, S → S | generation |
+| [JaiTTS](#jaitts) | 2026-04-30 | T, S → S | generation |
+| [Mel-LLM (TTS)](#mel-llm-tts) | 2026-06-08 | T → S | generation |
+| [MELA-TTS](#mela-tts) | 2025-09-18 | T, S → S | generation |
+| [MiDashengLM-Gen](#midashenglm-gen) | 2026-08-12 | T → S, A | generation |
+| [MP-ELD](#mp-eld) | 2026-07-31 | T, S → S | generation |
 | [Pocket TTS](#pocket-tts) | — | T, S → S | streaming |
+| [SASLM](#saslm) | 2026-04-13 | T, S → S | generation |
+| [SemaVoice](#semavoice) | 2026-05-16 | T, S → S | generation |
+| [SemBridge](#sembridge) | 2026-08-07 | T, S → S | generation |
+| [SLED](#sled) | 2025-05-19 | T, S → S | streaming |
+| [SpeakStream](#speakstream) | 2025-05-25 | T, S → S | generation |
+| [Stochastic-alignment continuous TTS](#stochastic-alignment-continuous-tts) | 2025-02-03 | T, S → S | generation |
+| [StreamMel](#streammel) | 2025-06-14 | T, S → S | generation |
+| [TADA](#tada) | 2026-02-26 | T, S → S | generation |
 | [VibeVoice](#vibevoice) | 2025-08-26 | T, S → S | generation |
 | [VibeVoice-Realtime](#vibevoice-realtime) | — | T → S | streaming |
+| [VoiceChat-TTS](#voicechat-tts) | 2026-08-13 | T → S | generation |
 | [VoxCPM](#voxcpm) | 2025-09-29 | T, S → S | streaming |
 | [VoxCPM2](#voxcpm2) | 2026-06-05 | T, S → S | streaming |
 
 </details>
 
 ## Architectures
+
+<a id="belle"></a>
+
+### BELLE
+
+Bayesian continuous speech modeling with learned predictive variance.
+
+BELLE predicts both speech values and their uncertainty in a continuous autoregressive synthesizer. Multiple synthetic renditions of the same text provide training support for the variance estimate, enabling richer acoustic distributions without adding an iterative inference stage.
+
+[Paper](https://arxiv.org/abs/2510.24372) · [GitHub](https://github.com/OpenTSLab/BELLE) · [Project](https://belletts.github.io/Belle/)
+
+![BELLE — Figure 1](../assets/architectures/belle.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2510.24372)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="borderless-long-speech-synthesis"></a>
+
+### Borderless Long Speech Synthesis
+
+Continuous-token synthesis with hierarchical textual control.
+
+This system organizes speech instructions at global, sentence and token levels to guide extended recordings. A continuous-token backbone uses explicit planning and condition dropout to combine voice design, multi-speaker rendering and changing acoustic or emotional context.
+
+[Paper](https://arxiv.org/abs/2603.19798) · GitHub: no author-linked repository found
+
+![Borderless Long Speech Synthesis — Input/output diagram](../assets/architectures/borderless-long-speech-synthesis.svg)
+
+*Input/output diagram · [Source](https://arxiv.org/abs/2603.19798)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+Editorial summary of documented inputs and outputs; internal architecture is not shown.
+
+</details>
+
+<a id="clear"></a>
+
+### CLEAR
+
+Streaming autoregression over continuous acoustic latents.
+
+CLEAR models speech directly in a continuous latent space, avoiding discrete codec-token prediction. Its zero-shot generator combines reference-voice conditioning with incremental audio production, targeting a balance between naturalness and response latency.
+
+[Paper](https://arxiv.org/abs/2508.19098) · GitHub: no author-linked repository found
+
+![CLEAR — Figure 1](../assets/architectures/clear.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2508.19098)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="continuous-token-diffusion-tts"></a>
+
+### Continuous-token diffusion TTS
+
+Dual language and diffusion heads for continuous speech generation.
+
+This model combines a language head that predicts boundaries with a diffusion head that generates continuous acoustic frames. Masked and staged training stabilize speaker-reference conditioning, providing a text-to-speech path within a multimodal language-model architecture.
+
+[Paper](https://arxiv.org/abs/2510.12995) · GitHub: no author-linked repository found
+
+![Continuous-token diffusion TTS — Figure 2](../assets/architectures/continuous-token-diffusion-tts.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2510.12995)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="ctrlspeech"></a>
+
+### CtrlSpeech
+
+DiTAR synthesis with global voice and phoneme-level prosody controls.
+
+CtrlSpeech adds local pitch, loudness and duration conditioning to a patch-autoregressive diffusion synthesizer. A separate global speaker condition preserves the reference voice while users modify the delivery of individual words or phonemes.
+
+[Paper](https://arxiv.org/abs/2608.08362) · [GitHub](https://github.com/zszheng147/ctrlspeech)
+
+![CtrlSpeech — Figure 2](../assets/architectures/ctrlspeech.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2608.08362)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="cutetts"></a>
+
+### CuteTTS
+
+Patch-autoregressive continuous latents with a flow-matching head.
+
+CuteTTS combines a causal audio VAE, an autoregressive patch model and an explicitly speaker-conditioned flow head. Generating patches rather than individual frames reduces sequential work; a distilled variant targets faster streaming while preserving reference-voice synthesis.
+
+[Paper](https://arxiv.org/abs/2608.08638) · [GitHub](https://github.com/OPPO-Mente-Lab/CuteTTS)
+
+![CuteTTS — Figure 1](../assets/architectures/cutetts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2608.08638)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="ditar"></a>
+
+### DiTAR
+
+Patch-autoregressive language modeling with local diffusion Transformers.
+
+DiTAR predicts a sequence of compressed acoustic patches using a language model, then generates each patch's detail through diffusion. Separating global temporal planning from local reconstruction supports zero-shot speech synthesis with controllable sampling diversity.
+
+[Paper](https://arxiv.org/abs/2502.03930) · [Project](https://spicyresearch.github.io/ditar/) · GitHub: no author-linked repository found
+
+![DiTAR — Figure 1](../assets/architectures/ditar.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2502.03930)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="dots-tts"></a>
+
+### dots.tts
+
+Continuous autoregressive speech modeling with a distilled flow head.
+
+dots.tts predicts continuous acoustic representations from multilingual text and voice references. Its flow-matching output head supports both audio streaming and streaming text input; guidance-aware distillation reduces the work needed to generate each audio packet.
+
+[Paper](https://arxiv.org/abs/2606.07080) · [GitHub](https://github.com/studio-dots-ai/dots.tts) · [Project](https://studio-dots-ai.github.io/dots.tts-demo/)
+
+![dots.tts — Figure 1](../assets/architectures/dots-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2606.07080)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="felle"></a>
+
+### FELLE
+
+Token-wise coarse-to-fine flow matching with continuous autoregression.
+
+FELLE generates continuous acoustic frames sequentially, using the preceding frame to shape the next flow-matching prior. A coarse-to-fine acoustic head refines each prediction, supporting reference-conditioned speech without discrete speech-token classification.
+
+[Paper](https://arxiv.org/abs/2502.11128) · GitHub: no author-linked repository found
+
+![FELLE — Figure 1](../assets/architectures/felle.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2502.11128)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="fireredaudio"></a>
+
+### FireRedAudio
+
+Shared language model with separate continuous speech pathways.
+
+FireRedAudio uses different acoustic encoders for understanding audio and conditioning speech generation. Its shared language model drives a flow-matching decoder over continuous RedAE latents, supporting voice cloning, instruction-controlled synthesis and speech editing within the broader audio model.
+
+[Paper](https://arxiv.org/abs/2608.24168) · [GitHub](https://github.com/FireRedTeam/FireRedAudio)
+
+![FireRedAudio — Figure 1](../assets/architectures/fireredaudio.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2608.24168)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S, A · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="fireredtts3"></a>
+
+### FireRedTTS3
+
+Semantic-enriched continuous representations with autoregressive generation.
+
+FireRedTTS3 uses a semantically supervised audio autoencoder to make continuous speech representations easier to predict. The Base variant provides multilingual reference cloning; the Instruct variant adds natural-language voice design and editing of spoken content or acoustic attributes.
+
+[Paper](https://arxiv.org/abs/2608.17492) · [GitHub](https://github.com/FireRedTeam/FireRedTTS3)
+
+![FireRedTTS3 — Figure 1](../assets/architectures/fireredtts3.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2608.17492)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+**Variants:** Base; Instruct.
+
+</details>
+
+<a id="holidubber"></a>
+
+### HoliDubber
+
+Patch-autoregressive audiovisual fusion with local diffusion decoding.
+
+HoliDubber conditions audio generation on video and a text prompt describing speech and sound effects. A causal model plans successive latent patches and a local diffusion Transformer generates their detail, supporting synchronized dubbing within complex acoustic scenes.
+
+[Paper](https://arxiv.org/abs/2606.09098) · [Project](https://holidubber.github.io) · GitHub: no author-linked repository found
+
+![HoliDubber — Figure 2](../assets/architectures/holidubber.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2606.09098)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, V → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="holitok-tts"></a>
+
+### HoliTok (TTS)
+
+Holistic continuous speech latents with shared autoregressive-diffusion modeling.
+
+HoliTok combines linguistic and acoustic information in a continuous representation designed for both understanding and generation. Its downstream autoregressive model and diffusion decoder demonstrate a text-to-speech path using the same latents employed for recognition.
+
+[Paper](https://arxiv.org/abs/2605.29948) · [GitHub](https://github.com/bovod-sjtu/HoliTok)
+
+![HoliTok (TTS) — Figure 1](../assets/architectures/holitok-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2605.29948)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="jaitts"></a>
+
+### JaiTTS
+
+Thai-adapted VoxCPM continuous autoregressive synthesis.
+
+JaiTTS continually trains a VoxCPM-derived synthesizer on Thai-centered speech data. Its semantic planning, residual acoustic modeling and local diffusion decoding retain reference-based voice cloning while targeting fluent Thai pronunciation and delivery.
+
+[Paper](https://arxiv.org/abs/2604.27607) · [GitHub](https://github.com/JTS-AI-Team/JaiTTS)
+
+![JaiTTS — Figure 1](../assets/architectures/jaitts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2604.27607)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="mel-llm-tts"></a>
+
+### Mel-LLM (TTS)
+
+Direct mel-patch language modeling with a next-token VAE decoder.
+
+The synthesis experiment in Mel-LLM extends a language model to predict mel-based acoustic information directly. Its next-token VAE decoder demonstrates a text-to-speech path within an otherwise understanding-focused model; the paper presents this as a proof of concept with quality limitations.
+
+[Paper](https://arxiv.org/abs/2606.10231) · GitHub: no author-linked repository found
+
+![Mel-LLM (TTS) — Fig. 1 (paper page 2)](../assets/architectures/mel-llm-tts.png)
+
+*Fig. 1 (paper page 2) · [Source](https://arxiv.org/abs/2606.10231)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="mela-tts"></a>
+
+### MELA-TTS
+
+Autoregressive mel generation with diffusion and semantic alignment.
+
+MELA-TTS predicts continuous mel-spectrogram frames from text and speaker conditions. A training-time alignment module connects the decoder to recognition-derived semantic features, helping the joint Transformer-diffusion model retain linguistic structure without discrete speech tokenization.
+
+[Paper](https://arxiv.org/abs/2509.14784) · GitHub: no author-linked repository found
+
+![MELA-TTS — Figure 1](../assets/architectures/mela-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2509.14784)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="midashenglm-gen"></a>
+
+### MiDashengLM-Gen
+
+Language-model-driven autoregressive flow matching for mixed audio.
+
+MiDashengLM-Gen trains a language model together with a conditional flow-matching output head to generate variable-length audio. Its text conditioning supports scenes containing intelligible speech alongside music or other sounds, with generation performed over continuous audio representations.
+
+[Paper](https://arxiv.org/abs/2608.11804) · [GitHub](https://github.com/xiaomi-research/midashenglm-gen) · [Project](https://xingws.github.io/midashenglm-gen-demo/)
+
+![MiDashengLM-Gen — Paper figure](../assets/architectures/midashenglm-gen.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2608.11804)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S, A · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="mp-eld"></a>
+
+### MP-ELD
+
+Multi-path continuous autoregression with residual flow guidance.
+
+MP-ELD predicts low-rate continuous speech tokens through several information paths with separate local encoders. A flow decoder combines their predictions, while the accompanying Locodec representation is designed to limit accumulated errors during long speech generation.
+
+[Paper](https://arxiv.org/abs/2607.29363) · GitHub: no author-linked repository found
+
+![MP-ELD — Figure 2](../assets/architectures/mp-eld.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2607.29363)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
 
 <a id="pocket-tts"></a>
 
@@ -35,7 +480,7 @@ Continuous autoregressive FlowLM.
 
 Pocket TTS uses continuous autoregressive speech modeling with a flow-based output mechanism, avoiding long sequences of discrete acoustic codebooks. It combines a small language-model backbone with streaming audio reconstruction and reusable voice conditioning. The project targets CPU-based speech synthesis; language-specific models and runtime choices affect its speed and voice behavior.
 
-[Repository](https://github.com/kyutai-labs/pocket-tts) · [Paper](https://arxiv.org/abs/2509.06926)
+[GitHub](https://github.com/kyutai-labs/pocket-tts) · [Paper](https://arxiv.org/abs/2509.06926)
 
 ![Pocket TTS — Figure 1](../assets/architectures/pocket-tts.png)
 
@@ -49,6 +494,190 @@ Pocket TTS uses continuous autoregressive speech modeling with a flow-based outp
 Small streaming synthesizer derived from continuous audio language modeling.
 
 **Variants:** 100M.
+
+</details>
+
+<a id="saslm"></a>
+
+### SASLM
+
+Speech language modeling with latent intent and acoustic feedback.
+
+SASLM derives expressive intent from its own evolving semantic states through an information bottleneck. Acoustic feedback aligns generated speech with that intent, reducing the need for externally supplied emotion labels in context-sensitive speech rendering.
+
+[Paper](https://arxiv.org/abs/2604.11424) · [GitHub](https://github.com/wangkevin02/SASLM) · [Project](https://wangkevin02.github.io/SASLM/)
+
+![SASLM — Figure 3](../assets/architectures/saslm.png)
+
+*Figure 3 · [Source](https://arxiv.org/abs/2604.11424)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="semavoice"></a>
+
+### SemaVoice
+
+Semantic-aligned continuous autoregression with next-patch diffusion.
+
+SemaVoice organizes its audio VAE latents using guidance from speech foundation-model representations. A continuous autoregressive backbone and patch-level diffusion head then synthesize reference-conditioned speech with greater emphasis on linguistic coherence.
+
+[Paper](https://arxiv.org/abs/2605.16964) · GitHub: no author-linked repository found
+
+![SemaVoice — Figure 1](../assets/architectures/semavoice.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2605.16964)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="sembridge"></a>
+
+### SemBridge
+
+Semantic-anchored continuous autoregression with an aligned acoustic VAE.
+
+SemBridge uses discrete semantic targets during training to organize both acoustic latents and language-model hidden states. The resulting continuous generator supports zero-shot speech synthesis with stronger content alignment, without needing to generate the auxiliary semantic tokens during inference.
+
+[Paper](https://arxiv.org/abs/2608.07462) · [GitHub](https://github.com/ASLP-lab/SemBridge)
+
+![SemBridge — Figure 1](../assets/architectures/sembridge.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2608.07462)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="sled"></a>
+
+### SLED
+
+Continuous-latent autoregressive speech modeling with energy distance.
+
+SLED learns the conditional distribution of acoustic latents using an energy-distance objective rather than discrete token classification. Its autoregressive generator samples continuous speech representations, simplifying synthesis while retaining acoustic detail.
+
+[Paper](https://arxiv.org/abs/2505.13181) · [GitHub](https://github.com/ictnlp/SLED-TTS)
+
+![SLED — Figure 2](../assets/architectures/sled.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2505.13181)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** streaming
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="speakstream"></a>
+
+### SpeakStream
+
+Decoder-only streaming synthesis from interleaved text and audio.
+
+SpeakStream trains on text interleaved with corresponding speech and generates audio as new text becomes available. The synthesis module remains compatible with an upstream text-streaming language model, supporting responsive conversational playback.
+
+[Paper](https://arxiv.org/abs/2505.19206) · [Project](https://apple.github.io/speakstream-demo) · GitHub: no author-linked repository found
+
+![SpeakStream — Paper figure](../assets/architectures/speakstream.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2505.19206)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="stochastic-alignment-continuous-tts"></a>
+
+### Stochastic-alignment continuous TTS
+
+VAE latents with Gaussian-mixture autoregression and monotonic alignment.
+
+This synthesizer predicts continuous speech latents using a Gaussian-mixture conditional distribution. A stochastic monotonic alignment mechanism keeps the acoustic sequence ordered against the text, offering an alternative to autoregressive discrete-codec modeling.
+
+[Paper](https://arxiv.org/abs/2502.01084) · GitHub: no author-linked repository found
+
+![Stochastic-alignment continuous TTS — Figure 1](../assets/architectures/stochastic-alignment-continuous-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2502.01084)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="streammel"></a>
+
+### StreamMel
+
+Interleaved text and continuous mel-frame autoregression.
+
+StreamMel alternates text tokens with continuous acoustic frames in one streaming synthesis model. This organization lets incoming text guide speech immediately while retaining reference-voice information across the generated audio stream.
+
+[Paper](https://arxiv.org/abs/2506.12570) · GitHub: no author-linked repository found
+
+![StreamMel — Paper figure](../assets/architectures/streammel.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2506.12570)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="tada"></a>
+
+### TADA
+
+Text-acoustic dual alignment with continuous autoregressive flow generation.
+
+TADA aligns text tokens one-to-one with continuous acoustic units. A language model with a flow-matching head predicts these synchronized representations, reducing the ambiguity of text-speech alignment during reference-conditioned synthesis.
+
+[Paper](https://arxiv.org/abs/2602.23068) · [GitHub](https://github.com/HumeAI/tada)
+
+![TADA — Figure 2](../assets/architectures/tada.png)
+
+*Figure 2 · [Source](https://arxiv.org/abs/2602.23068)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
 </details>
 
@@ -85,7 +714,7 @@ Streaming next-token diffusion.
 
 VibeVoice-Realtime interleaves incoming text chunks with diffusion-based acoustic generation so playback can begin while more text is arriving. The smaller 0.5B design keeps the acoustic tokenizer and removes the semantic tokenizer used by the longer-form model. It focuses on single-speaker streaming, with preset voice embeddings and experimental language coverage documented separately.
 
-[Repository](https://github.com/microsoft/VibeVoice) · [Docs](https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-realtime-0.5b.md)
+[GitHub](https://github.com/microsoft/VibeVoice) · [Docs](https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-realtime-0.5b.md)
 
 ![VibeVoice-Realtime — Official architecture diagram](../assets/architectures/vibevoice-realtime.png)
 
@@ -102,6 +731,29 @@ Incremental text-to-speech member of the VibeVoice family.
 
 </details>
 
+<a id="voicechat-tts"></a>
+
+### VoiceChat-TTS
+
+Continuous autoregressive synthesis driven by streaming text tokens.
+
+VoiceChat-TTS generates speech directly from an incoming language-model text stream. Control tokens allow interruptions and silence, and generation can resume without discarding the attention cache, making the synthesizer suitable for interactive agent playback.
+
+[Paper](https://arxiv.org/abs/2608.13831) · GitHub: no author-linked repository found
+
+![VoiceChat-TTS — Figure 1](../assets/architectures/voicechat-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2608.13831)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
 <a id="voxcpm"></a>
 
 ### VoxCPM
@@ -110,7 +762,7 @@ Hierarchical semantic/acoustic LM and diffusion.
 
 VoxCPM divides synthesis into semantic/prosodic planning and residual acoustic modeling, then uses a local diffusion decoder to produce continuous speech latents. These components are trained together without an external discrete speech tokenizer. Reference conditioning supports voice cloning, while text context helps determine the rhythm and expressive shape of the generated utterance.
 
-[Paper](https://arxiv.org/abs/2509.24650)
+[Paper](https://arxiv.org/abs/2509.24650) · [GitHub](https://github.com/OpenBMB/VoxCPM) · [Project](https://openbmb.github.io/VoxCPM-demopage/)
 
 ![VoxCPM — Figure 1](../assets/architectures/voxcpm.png)
 
@@ -135,7 +787,7 @@ Hierarchical diffusion-autoregressive model.
 
 VoxCPM2 expands the same hierarchical approach to multilingual synthesis, voice design and style-controlled cloning within one backbone. An asymmetric AudioVAE encodes lower-rate audio and reconstructs higher-rate output, while a unified input sequence expresses the different generation tasks. It serves applications that need both reference-based voices and description-driven control from one model family.
 
-[Paper](https://arxiv.org/abs/2606.06928) · [Repository](https://github.com/OpenBMB/VoxCPM)
+[Paper](https://arxiv.org/abs/2606.06928) · [GitHub](https://github.com/OpenBMB/VoxCPM) · [Project](https://openbmb.github.io/voxcpm2-demopage/)
 
 ![VoxCPM2 — Figure 1](../assets/architectures/voxcpm2.png)
 

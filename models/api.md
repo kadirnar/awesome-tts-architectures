@@ -11,7 +11,7 @@ Primary-source figures and labeled input/output diagrams. [Figure credits](../as
 <details>
 <summary>Model index and modality key</summary>
 
-**Inputs and outputs:** T = text, S = speech, A = other audio. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
+**Inputs and outputs:** T = text, S = speech, A = other audio, I = image, V = video. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
 
 Dates refer to papers or announcements, not necessarily model releases.
 

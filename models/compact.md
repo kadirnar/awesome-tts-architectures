@@ -4,28 +4,80 @@
 
 [← All models](../README.md#models)
 
-**5 models · Reviewed 2026-09-13**
+**11 models · Reviewed 2026-09-13**
 
 Primary-source figures and labeled input/output diagrams. [Figure credits](../assets/architectures/CREDITS.md).
 
 <details>
 <summary>Model index and modality key</summary>
 
-**Inputs and outputs:** T = text, S = speech, A = other audio. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
+**Inputs and outputs:** T = text, S = speech, A = other audio, I = image, V = video. Speech input usually means an optional voice or prosody reference. For acoustic models, output includes the accompanying waveform synthesizer. See the [methodology](../docs/methodology.md#modalities-and-interaction).
 
 Dates refer to papers or announcements, not necessarily model releases.
 
 | Model | Source date | Input → output | Interaction |
 | --- | --- | --- | --- |
+| [BitTTS](#bittts) | 2025-06-04 | T → S | generation |
+| [Compact neural accessibility TTS](#compact-neural-accessibility-tts) | 2025-01-28 | T → S | generation |
 | [KittenTTS](#kitten-tts) | — | T → S | generation |
 | [Kokoro](#kokoro) | — | T → S | generation |
-| [Supertonic](#supertonic) | — | T → S | generation |
+| [LE2E-TTS](#le2e-tts) | 2025-05-12 | T → S | generation |
+| [Self-distilled zero-shot TTS](#self-distilled-zero-shot-tts) | 2025-01-15 | T, S → S | generation |
+| [SlimSpeech](#slimspeech) | 2025-04-10 | T, S → S | generation |
+| [StellarTTS](#stellartts) | 2026-07-22 | T, S → S | generation |
+| [Supertonic](#supertonic) | 2025-03-29 | T, S → S | generation |
 | [Supertonic 2](#supertonic-2) | — | T → S | generation |
 | [Supertonic 3](#supertonic-3) | — | T → S | generation |
 
 </details>
 
 ## Architectures
+
+<a id="bittts"></a>
+
+### BitTTS
+
+Quantization-aware compact TTS with shared weight indexing.
+
+BitTTS reduces storage and computation through extremely low-bit trained weights and indexed parameter sharing. It targets speech generation on constrained devices, preserving a full synthesis path while shrinking the model representation.
+
+[Paper](https://arxiv.org/abs/2506.03515) · GitHub: no author-linked repository found
+
+![BitTTS — Figure 1](../assets/architectures/bittts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2506.03515)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="compact-neural-accessibility-tts"></a>
+
+### Compact neural accessibility TTS
+
+Parameter-shared acoustic frontend with a subscale WaveRNN backend.
+
+This compact synthesis system combines a shared-parameter text frontend with an efficient recurrent waveform generator. It targets responsive accessibility voices on low-power devices, where small storage requirements and immediate playback matter alongside naturalness.
+
+[Paper](https://arxiv.org/abs/2501.17332) · GitHub: no author-linked repository found
+
+![Compact neural accessibility TTS — Figure 1](../assets/architectures/compact-neural-accessibility-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2501.17332)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
 
 <a id="kitten-tts"></a>
 
@@ -35,7 +87,7 @@ Compact neural speech synthesis with ONNX inference.
 
 KittenTTS provides small ONNX speech models with built-in voices and adjustable playback speed. The Mini, Micro and Nano releases offer different size and inference tradeoffs for CPU-oriented applications. The official README documents usage more fully than internal acoustic design, so the catalog presents it as a compact synthesis family without asserting an undisclosed architecture.
 
-[Repository](https://github.com/KittenML/KittenTTS)
+[GitHub](https://github.com/KittenML/KittenTTS)
 
 ![KittenTTS — Input/output diagram](../assets/architectures/kitten-tts.svg)
 
@@ -81,28 +133,120 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 
 </details>
 
-<a id="supertonic"></a>
+<a id="le2e-tts"></a>
 
-### Supertonic
+### LE2E-TTS
 
-Compact speech synthesis with iterative ONNX inference.
+Joint lightweight acoustic and waveform synthesis.
 
-The original Supertonic release provides English speech synthesis through a compact ONNX pipeline and supplied voice-style assets. It is designed to run on the user's device and exposes inference controls without requiring a cloud speech call. The public release is centered on preset voices; its model card does not fully specify the internal architecture.
+LE2E-TTS trains a compact text-to-waveform pipeline end to end rather than separately optimizing acoustic and waveform stages. It targets local devices where model size, response time and compute cost constrain deployment.
 
-[Model card](https://huggingface.co/Supertone/supertonic)
+[Paper](https://arxiv.org/abs/2505.07701) · GitHub: no author-linked repository found
 
-![Supertonic — Input/output diagram](../assets/architectures/supertonic.svg)
+![LE2E-TTS — Figure 1](../assets/architectures/le2e-tts.png)
 
-*Input/output diagram · [Source](https://huggingface.co/Supertone/supertonic)*
+*Figure 1 · [Source](https://arxiv.org/abs/2505.07701)*
 
 <details>
 <summary>Details</summary>
 
 **Input → output:** T → S · **Interaction:** generation
 
-The first open-weight release provides English preset-voice synthesis on local devices. Internal architecture is only partially described in the model card.
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
 
-Editorial summary of documented inputs and outputs; internal architecture is not shown.
+</details>
+
+<a id="self-distilled-zero-shot-tts"></a>
+
+### Self-distilled zero-shot TTS
+
+Lightweight content-speaker disentanglement through self-distillation.
+
+This zero-shot synthesizer learns linguistic content and reference-speaker attributes through separate representations. Two-stage self-distillation creates aligned examples that strengthen their separation, targeting stable voice cloning with a small inference footprint.
+
+[Paper](https://arxiv.org/abs/2501.08566) · GitHub: no author-linked repository found
+
+![Self-distilled zero-shot TTS — Figure 1](../assets/architectures/self-distilled-zero-shot-tts.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2501.08566)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="slimspeech"></a>
+
+### SlimSpeech
+
+Distilled compact rectified-flow speech synthesis.
+
+SlimSpeech reduces the parameter count of a rectified-flow TTS model and transfers knowledge into a lightweight generator. It targets efficient reference-conditioned speech synthesis while retaining the acoustic quality of a larger teacher.
+
+[Paper](https://arxiv.org/abs/2504.07776) · GitHub: no author-linked repository found
+
+![SlimSpeech — Paper figure](../assets/architectures/slimspeech.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2504.07776)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="stellartts"></a>
+
+### StellarTTS
+
+Sparse temporal conditioning and masked codec-token generation.
+
+StellarTTS encodes phoneme timing sparsely and uses a lightweight masked Transformer to generate speech tokens in parallel. A semantic-aware codec supports waveform reconstruction, while explicit timing representations provide control over pronunciation, duration and prosody.
+
+[Paper](https://arxiv.org/abs/2607.19859) · [Project](https://stellartts.github.io/) · GitHub: no author-linked repository found
+
+![StellarTTS — Paper figure](../assets/architectures/stellartts.png)
+
+*Paper figure · [Source](https://arxiv.org/abs/2607.19859)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The first-submission date refers to the linked research paper. Reference and control options depend on the synthesis setting described there.
+
+</details>
+
+<a id="supertonic"></a>
+
+### Supertonic
+
+Compact latent flow matching with a speech autoencoder and duration predictor.
+
+The SupertonicTTS research system compresses speech into continuous latents and predicts them from character-level text with flow matching. ConvNeXt blocks, temporal compression and a separate duration predictor keep synthesis compact. The later Supertonic ONNX release exposes preset voice-style assets; its packaged configurations should not be equated with the paper's 44M-parameter research model.
+
+[Model card](https://huggingface.co/Supertone/supertonic) · [Paper](https://arxiv.org/abs/2503.23108) · [GitHub](https://github.com/supertone-inc/supertonic) · [Project](https://supertonictts.github.io/)
+
+![Supertonic — Figure 1](../assets/architectures/supertonic.png)
+
+*Figure 1 · [Source](https://arxiv.org/abs/2503.23108)*
+
+<details>
+<summary>Details</summary>
+
+**Input → output:** T, S → S · **Interaction:** generation
+
+The paper supports reference-conditioned synthesis, while the original open-weight ONNX release provides preset English voices. The source date is the research paper's first submission, not the ONNX release date.
+
+**Variants:** SupertonicTTS research model; Supertonic ONNX release.
 
 </details>
 
