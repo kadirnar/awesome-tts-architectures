@@ -4,7 +4,6 @@
 import argparse
 from collections import Counter
 from datetime import date
-from html import escape
 import json
 from pathlib import Path
 import re
@@ -177,36 +176,35 @@ def render_readme(catalog, figures):
         "# Awesome TTS Architectures [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)", "", GENERATED, "",
         "A visual catalog of text-to-speech models, from Tacotron to speech language models. Diagrams, primary sources and short notes for every entry.", "",
         f'**{len(models)} models and families · Reviewed {catalog["as_of"]}**', "",
-        "[Models](#models) · [Architectures](#architectures) · [2025+ TTS-arxiv-daily collection](docs/tts-arxiv-daily.md) · [Descriptions](docs/model-descriptions.md) · [Timeline](docs/timeline.md) · [Methodology](docs/methodology.md) · [Contribute](CONTRIBUTING.md)", "",
+        "[Model list](#models) · [All diagrams](#model-figures) · [2025+ TTS-arxiv-daily collection](docs/tts-arxiv-daily.md) · [Descriptions](docs/model-descriptions.md) · [Timeline](docs/timeline.md) · [Methodology](docs/methodology.md) · [Contribute](CONTRIBUTING.md)", "",
         "The [TTS-arxiv-daily collection](docs/tts-arxiv-daily.md) covers the source list's TTS systems with first paper submissions from **January 1, 2025** onward. Every included family has an image, a description, paper links and an explicit GitHub availability status. The complete screening record is available as [JSON](data/tts-arxiv-daily.json).", "",
-        "## Architectures", "",
-        "| VAE · VITS | Flow matching · F5-TTS |", "| --- | --- |",
-        f'| [![VITS architecture]({figures["vits"]["path"]})](models/flow-vae.md#vits) | [![F5-TTS architecture]({figures["f5-tts"]["path"]})](models/diffusion.md#f5-tts) |', "",
         "| Collection | Models |", "| --- | ---: |",
     ]
     for key, (title, filename, _) in CATEGORIES.items():
         lines.append(f"| [{title}](models/{filename}) | {counts[key]} |")
     lines += [
-        "", "Figures are credited to their sources. Editorial input/output diagrams are labeled. [Credits](assets/architectures/CREDITS.md).", "",
-        "## Models", "",
-        "Every model has an image below. Select a preview or model name for the full figure, description and primary sources.", "",
+        "", "## Models", "",
         "T: text · S: speech or voice reference · A: other audio · I: image · V: video. [Scope and labels](docs/methodology.md#modalities-and-interaction).", "",
-        "| Image | Model | Group | Input → output |", "| --- | --- | --- | --- |",
+        "<details>", f"<summary>Alphabetical model list · {len(models)} entries</summary>", "",
+        "| Model | Group | Input → output |", "| --- | --- | --- |",
+    ]
+    for m in models:
+        lines.append(f'| [{cell(m["name"])}](#{m["id"]}) | {CATEGORIES[m["category"]][2]} | {io(m)} |')
+    lines += [
+        "", "</details>", "", '<a id="architectures"></a>', "", "## Model figures", "",
+        "Figures are credited to their sources. Editorial input/output diagrams are labeled. [Credits](assets/architectures/CREDITS.md).", "",
     ]
     for m in models:
         figure = figures[m["id"]]
-        visual_type = "Editorial input/output diagram" if figure["kind"] == "io-diagram" else "Source figure"
-        alt = escape(cell(f'{m["name"]} — {visual_type}'))
-        preview_width = 280
-        if figure["kind"] == "source-figure":
-            with (ROOT / figure["path"]).open("rb") as asset:
-                header = asset.read(24)
-            width, height = int.from_bytes(header[16:20], "big"), int.from_bytes(header[20:24], "big")
-            preview_width = min(preview_width, round(240 * width / height))
-        preview = f'<a href="{link(m)}"><img src="{figure["path"]}" alt="{alt}" width="{preview_width}"></a>'
-        if figure["kind"] == "io-diagram":
-            preview += "<br><sub>Editorial input/output diagram</sub>"
-        lines.append(f'| {preview} | [{cell(m["name"])}]({link(m)}) | {CATEGORIES[m["category"]][2]} | {io(m)} |')
+        visual_type = "Editorial input/output diagram" if figure["kind"] == "io-diagram" else figure["locator"]
+        description = m.get("description") or m["architecture"].rstrip(".") + "."
+        lines += [
+            f'<a id="{m["id"]}"></a>', "", f'### {m["name"]}', "",
+            description, "",
+            f'{sources(m)} · [Details]({link(m)})', "",
+            f'![{cell(m["name"])} — {visual_type}]({figure["path"]})', "",
+            f'*{visual_type} · [Source]({figure["source_url"]})*', "",
+        ]
     lines += [
         "", "---", "",
         "[JSON catalog](data/models.json) · [Apache 2.0](LICENSE) · [Third-party figure notice](assets/architectures/FIGURE_NOTICE.md)", "",

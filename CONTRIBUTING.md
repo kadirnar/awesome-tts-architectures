@@ -13,9 +13,9 @@ Add a named TTS model or a distinct architecture release with a paper, official 
 
 The generator uses only the Python standard library. It checks metadata, duplicate entries, dates, asset checksums, local links, anchors and generated-file consistency. Inspect new figures and rendered Markdown before sharing changes.
 
-The optional `description` field appears on the architecture card and in [model descriptions](docs/model-descriptions.md). Keep it out of the README model table so the main index stays compact.
+The optional `description` field appears on the README model card, the category architecture card and in [model descriptions](docs/model-descriptions.md). README cards use the architecture sentence when no separate description is provided. Keep descriptions out of the collapsible alphabetical index.
 
-Every model must have a visible image in the README index and its architecture card. Description entries also display the full figure. The generator adds these images from the figure manifest; keep editorial diagrams labeled wherever they appear.
+Every model must have a visible full-size image below its heading, description and source links in the README, as well as in its category architecture card. Description entries also display the full figure. The generator adds these images from the figure manifest; keep editorial diagrams labeled wherever they appear.
 
 The [TTS-arxiv-daily collection](docs/tts-arxiv-daily.md) also requires a `description` and `github_status` (`author-linked` or `not-found`) for every included family. Keep its complete [screening ledger](data/tts-arxiv-daily.json) in sync when correcting an imported record. New imports require a first paper submission from 2025 onward; an older paper's later revision does not qualify. Record author-link evidence for GitHub sources, describe placeholders and data-only repositories, and preserve withdrawal or replacement notices. The generator checks row coverage, paper-to-model mappings, the date threshold, descriptions, images and GitHub status consistency.
 
