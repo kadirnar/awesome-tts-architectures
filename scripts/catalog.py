@@ -4,6 +4,7 @@
 import argparse
 from collections import Counter
 from datetime import date
+from html import escape
 import json
 from pathlib import Path
 import re
@@ -188,11 +189,24 @@ def render_readme(catalog, figures):
     lines += [
         "", "Figures are credited to their sources. Editorial input/output diagrams are labeled. [Credits](assets/architectures/CREDITS.md).", "",
         "## Models", "",
+        "Every model has an image below. Select a preview or model name for the full figure, description and primary sources.", "",
         "T: text · S: speech or voice reference · A: other audio · I: image · V: video. [Scope and labels](docs/methodology.md#modalities-and-interaction).", "",
-        "| Model | Group | Input → output |", "| --- | --- | --- |",
+        "| Image | Model | Group | Input → output |", "| --- | --- | --- | --- |",
     ]
     for m in models:
-        lines.append(f'| [{cell(m["name"])}]({link(m)}) | {CATEGORIES[m["category"]][2]} | {io(m)} |')
+        figure = figures[m["id"]]
+        visual_type = "Editorial input/output diagram" if figure["kind"] == "io-diagram" else "Source figure"
+        alt = escape(cell(f'{m["name"]} — {visual_type}'))
+        preview_width = 280
+        if figure["kind"] == "source-figure":
+            with (ROOT / figure["path"]).open("rb") as asset:
+                header = asset.read(24)
+            width, height = int.from_bytes(header[16:20], "big"), int.from_bytes(header[20:24], "big")
+            preview_width = min(preview_width, round(240 * width / height))
+        preview = f'<a href="{link(m)}"><img src="{figure["path"]}" alt="{alt}" width="{preview_width}"></a>'
+        if figure["kind"] == "io-diagram":
+            preview += "<br><sub>Editorial input/output diagram</sub>"
+        lines.append(f'| {preview} | [{cell(m["name"])}]({link(m)}) | {CATEGORIES[m["category"]][2]} | {io(m)} |')
     lines += [
         "", "---", "",
         "[JSON catalog](data/models.json) · [Apache 2.0](LICENSE) · [Third-party figure notice](assets/architectures/FIGURE_NOTICE.md)", "",
@@ -200,22 +214,26 @@ def render_readme(catalog, figures):
     return "\n".join(lines)
 
 
-def render_descriptions(catalog):
+def render_descriptions(catalog, figures):
     models = sorted_models([m for m in catalog["models"] if m.get("description")])
     lines = [
         "# TTS model descriptions · 2025–2026", "", GENERATED, "",
         "[← All models](../README.md#models)", "",
         f'**{len(models)} model families and releases · Reviewed {catalog["as_of"]}**', "",
-        "Short explanations of the catalog's 2025–2026 models and family updates, including later releases of older paper families. Each entry links to its architecture image and primary sources. Verified source dates are listed in the [timeline](timeline.md); undated records remain undated.", "",
+        "Short explanations of the catalog's 2025–2026 models and family updates, including later releases of older paper families. Each entry includes an image and links to primary sources. Editorial input/output diagrams are labeled. Verified source dates are listed in the [timeline](timeline.md); undated records remain undated.", "",
         "<details>", "<summary>Model index</summary>", "",
     ]
     lines += [f'- [{m["name"]}](#{m["id"]})' for m in models]
     lines += ["", "</details>", "", "## Descriptions", ""]
     for m in models:
+        figure = figures[m["id"]]
+        visual_type = "Editorial input/output diagram" if figure["kind"] == "io-diagram" else figure["locator"]
         lines += [
             f'<a id="{m["id"]}"></a>', "", f'### {m["name"]}', "",
             m["description"], "",
             f'[Architecture and figure]({link(m, "../")}) · {sources(m)}', "",
+            f'![{cell(m["name"])} — {visual_type}](../{figure["path"]})', "",
+            f'*{visual_type} · [Source]({figure["source_url"]})*', "",
         ]
     return "\n".join(lines).rstrip() + "\n"
 
@@ -276,7 +294,7 @@ def main():
         validate_daily(daily, catalog, figures)
         outputs = {
             ROOT / "README.md": render_readme(catalog, figures),
-            ROOT / "docs/model-descriptions.md": render_descriptions(catalog),
+            ROOT / "docs/model-descriptions.md": render_descriptions(catalog, figures),
             ROOT / "docs/timeline.md": render_timeline(catalog),
             ROOT / "docs/tts-arxiv-daily.md": render_daily(daily, catalog, figures, link, sources),
             ROOT / "assets/architectures/CREDITS.md": render_credits(models, manifest),

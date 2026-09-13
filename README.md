@@ -32,390 +32,392 @@ Figures are credited to their sources. Editorial input/output diagrams are label
 
 ## Models
 
+Every model has an image below. Select a preview or model name for the full figure, description and primary sources.
+
 T: text · S: speech or voice reference · A: other audio · I: image · V: video. [Scope and labels](docs/methodology.md#modalities-and-interaction).
 
-| Model | Group | Input → output |
-| --- | --- | --- |
-| [A2TTS](models/diffusion.md#a2tts) | Diffusion / flow | T, S → S |
-| [Affectron](models/token-lm.md#affectron) | Token LM | T, S → S |
-| [AgentSteerTTS](models/token-lm.md#agentsteertts) | Token LM | T, S → S |
-| [AlignDiT](models/diffusion.md#aligndit) | Diffusion / flow | T, S, V → S |
-| [AMNet](models/parallel.md#amnet) | Parallel | T → S |
-| [ARCHI-TTS](models/diffusion.md#archi-tts) | Diffusion / flow | T, S → S |
-| [ATRIE](models/token-lm.md#atrie) | Token LM | T → S |
-| [Audiobook-CC](models/token-lm.md#audiobook-cc) | Token LM | T, S → S |
-| [AuEmoChat](models/token-lm.md#auemochat) | Token LM | T, S, V → S |
-| [AuK](models/diffusion.md#auk) | Diffusion / flow | T, S → S, A |
-| [Authentic-Dubber](models/diffusion.md#authentic-dubber) | Diffusion / flow | T, S, V → S |
-| [AutoSIFT](models/diffusion.md#autosift) | Diffusion / flow | T, S → S |
-| [AutoStyle-TTS](models/token-lm.md#autostyle-tts) | Token LM | T, S → S |
-| [AVLM (expressive speech)](models/token-lm.md#avlm-expressive-speech) | Token LM | T, S, V → S |
-| [Bagpiper-TTS](models/token-lm.md#bagpiper-tts) | Token LM | T → S |
-| [BareWave](models/diffusion.md#barewave) | Diffusion / flow | T, S → S |
-| [Bark](models/token-lm.md#bark) | Token LM | T → S, A |
-| [BASE TTS](models/token-lm.md#base-tts) | Token LM | T, S → S |
-| [BatonTTS (BatonVoice)](models/token-lm.md#batontts-batonvoice) | Token LM | T, S → S |
-| [BELLE](models/continuous-lm.md#belle) | Continuous LM | T, S → S |
-| [BitTTS](models/compact.md#bittts) | Compact | T → S |
-| [Block-wise Mimi TTS](models/token-lm.md#block-wise-mimi-tts) | Token LM | T → S |
-| [BnTTS](models/token-lm.md#bntts) | Token LM | T, S → S |
-| [Bolbosh](models/diffusion.md#bolbosh) | Diffusion / flow | T → S |
-| [Borderless Long Speech Synthesis](models/continuous-lm.md#borderless-long-speech-synthesis) | Continuous LM | T, S → S |
-| [BreezyVoice](models/token-lm.md#breezyvoice) | Token LM | T, S → S |
-| [BridgeTTS](models/token-lm.md#bridgetts) | Token LM | T, S → S |
-| [BVS](models/token-lm.md#bvs) | Token LM | T, V → S, A |
-| [CAM-TTS](models/token-lm.md#cam-tts) | Token LM | T, S → S |
-| [CapTalk](models/token-lm.md#captalk) | Token LM | T, S → S |
-| [CAST-TTS](models/diffusion.md#cast-tts) | Diffusion / flow | T, S → S |
-| [CaT-TTS](models/token-lm.md#cat-tts) | Token LM | T, S → S |
-| [Causal-prosody FastSpeech 2](models/parallel.md#causal-prosody-fastspeech-2) | Parallel | T → S |
-| [CDE-StyleTTS](models/diffusion.md#cde-styletts) | Diffusion / flow | T, S → S |
-| [Chain-of-Details TTS](models/token-lm.md#chain-of-details-tts) | Token LM | T, S → S |
-| [Chain-Talker](models/token-lm.md#chain-talker) | Token LM | T, S → S |
-| [Chatterbox](models/token-lm.md#chatterbox) | Token LM | T, S → S |
-| [Chatterbox-Flash](models/token-lm.md#chatterbox-flash) | Token LM | T, S → S |
-| [ChatTTS](models/token-lm.md#chattts) | Token LM | T → S |
-| [CLaM-TTS](models/token-lm.md#clam-tts) | Token LM | T, S → S |
-| [CLEAR](models/continuous-lm.md#clear) | Continuous LM | T, S → S |
-| [Clip-TTS](models/parallel.md#clip-tts) | Parallel | T → S |
-| [Compact neural accessibility TTS](models/compact.md#compact-neural-accessibility-tts) | Compact | T → S |
-| [Compressed-to-fine speech LM](models/token-lm.md#compressed-to-fine-speech-lm) | Token LM | T, S → S |
-| [Confucius4-TTS](models/token-lm.md#confucius4-tts) | Token LM | T, S → S |
-| [Continuous-token diffusion TTS](models/continuous-lm.md#continuous-token-diffusion-tts) | Continuous LM | T, S → S |
-| [Controllable masked-speech TTS](models/token-lm.md#controllable-masked-speech-tts) | Token LM | T, S, A → S |
-| [CookVoice](models/diffusion.md#cookvoice) | Diffusion / flow | T, S → S |
-| [CosyEdit2](models/token-lm.md#cosyedit2) | Token LM | T, S → S |
-| [CoSyncDiT](models/diffusion.md#cosyncdit) | Diffusion / flow | T, S, V → S |
-| [CosyVoice](models/token-lm.md#cosyvoice) | Token LM | T, S → S |
-| [CosyVoice 2](models/token-lm.md#cosyvoice-2) | Token LM | T, S → S |
-| [CosyVoice 3](models/token-lm.md#cosyvoice-3) | Token LM | T, S → S |
-| [CosyWhisper (WhispSynth)](models/token-lm.md#cosywhisper-whispsynth) | Token LM | T, S → S |
-| [CoVoMix2](models/diffusion.md#covomix2) | Diffusion / flow | T, S → S |
-| [Cross-Lingual F5-TTS](models/diffusion.md#cross-lingual-f5-tts) | Diffusion / flow | T, S → S |
-| [CrossAccent-TTS](models/token-lm.md#crossaccent-tts) | Token LM | T, S → S |
-| [CSM](models/token-lm.md#csm) | Token LM | T, S → S |
-| [CTC-TTS](models/token-lm.md#ctc-tts) | Token LM | T, S → S |
-| [CtrlSpeech](models/continuous-lm.md#ctrlspeech) | Continuous LM | T, S → S |
-| [CuteTTS](models/continuous-lm.md#cutetts) | Continuous LM | T, S → S |
-| [DAIEN-TTS](models/diffusion.md#daien-tts) | Diffusion / flow | T, S, A → S |
-| [DARS](models/diffusion.md#dars) | Diffusion / flow | T → S |
-| [DCAR](models/token-lm.md#dcar) | Token LM | T, S → S |
-| [Deep Voice](models/autoregressive.md#deep-voice) | Autoregressive | T → S |
-| [Deep Voice 2](models/autoregressive.md#deep-voice-2) | Autoregressive | T → S |
-| [Deep Voice 3](models/autoregressive.md#deep-voice-3) | Autoregressive | T → S |
-| [DeepASMR](models/token-lm.md#deepasmr) | Token LM | T, S → S |
-| [DeepDubber-V1](models/diffusion.md#deepdubber-v1) | Diffusion / flow | T, V → S |
-| [DeepDubbing](models/token-lm.md#deepdubbing) | Token LM | T, S → S |
-| [DelightfulTTS](models/parallel.md#delightfultts) | Parallel | T → S |
-| [DELTA-TTS](models/token-lm.md#delta-tts) | Token LM | T, S → S |
-| [DepFlow](models/diffusion.md#depflow) | Diffusion / flow | T, S → S |
-| [Dia](models/token-lm.md#dia) | Token LM | T, S → S |
-| [Dia2](models/token-lm.md#dia2) | Token LM | T, S → S |
-| [DialoSpeech](models/token-lm.md#dialospeech) | Token LM | T, S → S |
-| [DiEmo-TTS](models/parallel.md#diemo-tts) | Parallel | T, S → S |
-| [Diff-TTS](models/diffusion.md#diff-tts) | Diffusion / flow | T → S |
-| [DiffCSS](models/token-lm.md#diffcss) | Token LM | T, S → S |
-| [DiFlow-TTS](models/token-lm.md#diflow-tts) | Token LM | T, S → S |
-| [DiFlowDubber](models/token-lm.md#diflowdubber) | Token LM | T, S, V → S |
-| [DisCo-Speech](models/token-lm.md#disco-speech) | Token LM | T, S → S |
-| [DisSpeech](models/token-lm.md#disspeech) | Token LM | T → S |
-| [DiSTAR](models/token-lm.md#distar) | Token LM | T, S → S |
-| [DiTAR](models/continuous-lm.md#ditar) | Continuous LM | T, S → S |
-| [DiTTo-TTS](models/diffusion.md#ditto-tts) | Diffusion / flow | T, S → S |
-| [DMOSpeech 2](models/diffusion.md#dmospeech-2) | Diffusion / flow | T, S → S |
-| [DMP-TTS](models/diffusion.md#dmp-tts) | Diffusion / flow | T, S → S |
-| [dots.tts](models/continuous-lm.md#dots-tts) | Continuous LM | T, S → S |
-| [Dragon-FM](models/token-lm.md#dragon-fm) | Token LM | T, S → S |
-| [DrawSpeech](models/diffusion.md#drawspeech) | Diffusion / flow | T, I → S |
-| [DS-TTS](models/diffusion.md#ds-tts) | Diffusion / flow | T, S → S |
-| [DualDub](models/token-lm.md#dualdub) | Token LM | T, V → S |
-| [DualSpeechLM](models/token-lm.md#dualspeechlm) | Token LM | T, S → S |
-| [E2 TTS](models/diffusion.md#e2-tts) | Diffusion / flow | T, S → S |
-| [ECTSpeech](models/diffusion.md#ectspeech) | Diffusion / flow | T, S → S |
-| [ELLA-V](models/token-lm.md#ella-v) | Token LM | T, S → S |
-| [EME-TTS](models/parallel.md#eme-tts) | Parallel | T → S |
-| [EMM-TTS](models/token-lm.md#emm-tts) | Token LM | T, S → S |
-| [EmojiVoice](models/diffusion.md#emojivoice) | Diffusion / flow | T → S |
-| [EmoShift](models/token-lm.md#emoshift) | Token LM | T → S |
-| [EmoSSLSphere](models/token-lm.md#emosslsphere) | Token LM | T → S |
-| [EmoSteer-TTS](models/diffusion.md#emosteer-tts) | Diffusion / flow | T, S → S |
-| [Emotion-timbre disentangled TTS](models/parallel.md#emotion-timbre-disentangled-tts) | Parallel | T, S → S |
-| [EmotiVoice](models/parallel.md#emotivoice) | Parallel | T → S |
-| [EmoTra-TTS](models/token-lm.md#emotra-tts) | Token LM | T, S → S |
-| [EmoVoice](models/token-lm.md#emovoice) | Token LM | T → S |
-| [End-to-end discrete-token TTS](models/token-lm.md#end-to-end-discrete-token-tts) | Token LM | T, S → S |
-| [F5-TTS](models/diffusion.md#f5-tts) | Diffusion / flow | T, S → S |
-| [F5R-TTS](models/diffusion.md#f5r-tts) | Diffusion / flow | T, S → S |
-| [Face-adapted StyleTTS 2](models/diffusion.md#face-adapted-styletts-2) | Diffusion / flow | T, I → S |
-| [FaceSpeak](models/diffusion.md#facespeak) | Diffusion / flow | T, I → S |
-| [FacialTalker](models/token-lm.md#facialtalker) | Token LM | T, S, V → S |
-| [FastPitch](models/parallel.md#fastpitch) | Parallel | T → S |
-| [FastSpeech](models/parallel.md#fastspeech) | Parallel | T → S |
-| [FastSpeech 2](models/parallel.md#fastspeech-2) | Parallel | T → S |
-| [FC-TTS](models/token-lm.md#fc-tts) | Token LM | T, S → S |
-| [FELLE](models/continuous-lm.md#felle) | Continuous LM | T, S → S |
-| [FineCombo-TTS](models/diffusion.md#finecombo-tts) | Diffusion / flow | T, S → S |
-| [FireRedAudio](models/continuous-lm.md#fireredaudio) | Continuous LM | T, S → S, A |
-| [FireRedTTS](models/token-lm.md#fireredtts) | Token LM | T, S → S |
-| [FireRedTTS-1S](models/token-lm.md#fireredtts-1s) | Token LM | T, S → S |
-| [FireRedTTS-2](models/token-lm.md#fireredtts-2) | Token LM | T, S → S |
-| [FireRedTTS3](models/continuous-lm.md#fireredtts3) | Continuous LM | T, S → S |
-| [Fish Audio S1 / OpenAudio S1](models/token-lm.md#openaudio-s1) | Token LM | T, S → S |
-| [Fish Audio S2](models/token-lm.md#fish-audio-s2) | Token LM | T, S → S |
-| [Fish Speech](models/token-lm.md#fish-speech) | Token LM | T, S → S |
-| [Flamed-TTS](models/diffusion.md#flamed-tts) | Diffusion / flow | T, S → S |
-| [FlashTTS](models/token-lm.md#flashtts) | Token LM | T, S → S |
-| [FleSpeech](models/token-lm.md#flespeech) | Token LM | T, S, I → S |
-| [FlexiVoice](models/token-lm.md#flexivoice) | Token LM | T, S → S |
-| [FlexSpeech](models/diffusion.md#flexspeech) | Diffusion / flow | T, S → S |
-| [Flowtron](models/flow-vae.md#flowtron) | Flow / VAE | T, S → S |
-| [FNH-TTS](models/flow-vae.md#fnh-tts) | Flow / VAE | T, S → S |
-| [Frame-stacked local Transformer TTS](models/token-lm.md#frame-stacked-local-transformer-tts) | Token LM | T, S → S |
-| [FreyaTTS](models/diffusion.md#freyatts) | Diffusion / flow | T → S |
-| [Gemini 2.5 TTS](models/api.md#gemini-2-5-tts) | API | T → S |
-| [Gemini 3.1 Flash TTS](models/api.md#gemini-3-1-flash-tts) | API | T → S |
-| [GibbsTTS](models/token-lm.md#gibbstts) | Token LM | T, S → S |
-| [GLM-TTS](models/token-lm.md#glm-tts) | Token LM | T, S → S |
-| [Glow-TTS](models/flow-vae.md#glow-tts) | Flow / VAE | T → S |
-| [GOAT-TTS](models/token-lm.md#goat-tts) | Token LM | T, S → S |
-| [GPA](models/token-lm.md#gpa) | Token LM | T, S → S |
-| [GPT-4o Mini TTS](models/api.md#gpt-4o-mini-tts) | API | T → S |
-| [GPT-SoVITS](models/token-lm.md#gpt-sovits) | Token LM | T, S → S |
-| [Grad-TTS](models/diffusion.md#grad-tts) | Diffusion / flow | T → S |
-| [GRAFT](models/token-lm.md#graft) | Token LM | T, S → S |
-| [GSA-TTS](models/parallel.md#gsa-tts) | Parallel | T, S → S |
-| [GST-Tacotron](models/autoregressive.md#gst-tacotron) | Autoregressive | T, S → S |
-| [Habibi](models/diffusion.md#habibi) | Diffusion / flow | T, S → S |
-| [HD-PPT](models/token-lm.md#hd-ppt) | Token LM | T, S → S |
-| [Higgs Audio v2](models/token-lm.md#higgs-audio-v2) | Token LM | T, S → S |
-| [Higgs Audio v2.5](models/token-lm.md#higgs-audio-v2-5) | Token LM | T, S → S |
-| [Higgs Audio v3 TTS](models/token-lm.md#higgs-audio-v3-tts) | Token LM | T, S → S |
-| [HiStyle](models/diffusion.md#histyle) | Diffusion / flow | T → S |
-| [HoliDubber](models/continuous-lm.md#holidubber) | Continuous LM | T, V → S |
-| [HoliTok (TTS)](models/continuous-lm.md#holitok-tts) | Continuous LM | T, S → S |
-| [Hume Octave TTS](models/api.md#hume-octave-tts) | API | T, S → S |
-| [ImmersiveTTS](models/diffusion.md#immersivetts) | Diffusion / flow | T, S, A → S, A |
-| [IndexTTS](models/token-lm.md#indextts) | Token LM | T, S → S |
-| [IndexTTS 2.5](models/token-lm.md#indextts-2-5) | Token LM | T, S → S |
-| [IndexTTS2](models/token-lm.md#indextts2) | Token LM | T, S → S |
-| [InstructAudio](models/diffusion.md#instructaudio) | Diffusion / flow | T → S |
-| [IntMeanFlow](models/diffusion.md#intmeanflow) | Diffusion / flow | T, S → S |
-| [Inworld TTS-1](models/token-lm.md#inworld-tts-1) | Token LM | T → S |
-| [JaiTTS](models/continuous-lm.md#jaitts) | Continuous LM | T, S → S |
-| [JAM-Flow](models/diffusion.md#jam-flow) | Diffusion / flow | T, S, V → S |
-| [JELLY](models/token-lm.md#jelly) | Token LM | T, S → S |
-| [JETS](models/parallel.md#jets) | Parallel | T → S |
-| [Joint non-autoregressive STT-TTS](models/parallel.md#joint-non-autoregressive-stt-tts) | Parallel | T → S |
-| [Joycent](models/diffusion.md#joycent) | Diffusion / flow | T, S → S |
-| [JoyVoice](models/token-lm.md#joyvoice) | Token LM | T, S → S |
-| [KABURI-TTS](models/diffusion.md#kaburi-tts) | Diffusion / flow | T → S |
-| [KittenTTS](models/compact.md#kitten-tts) | Compact | T → S |
-| [Koel-TTS](models/token-lm.md#koel-tts) | Token LM | T, S → S |
-| [Kokoro](models/compact.md#kokoro) | Compact | T → S |
-| [Kyutai TTS (DSM)](models/token-lm.md#kyutai-tts-dsm) | Token LM | T, S → S |
-| [LanStyleTTS](models/parallel.md#lanstyletts) | Parallel | T, S → S |
-| [LatinX](models/token-lm.md#latinx) | Token LM | T, S → S |
-| [LE2E-TTS](models/compact.md#le2e-tts) | Compact | T → S |
-| [LightSpeech](models/parallel.md#lightspeech) | Parallel | T → S |
-| [LLaDA-TTS](models/token-lm.md#llada-tts) | Token LM | T, S → S |
-| [Llasa](models/token-lm.md#llasa) | Token LM | T, S → S |
-| [Llasa+](models/token-lm.md#llasa-plus) | Token LM | T, S → S |
-| [LLMVoX](models/token-lm.md#llmvox) | Token LM | T → S |
-| [Lombard Matcha-TTS](models/diffusion.md#lombard-matcha-tts) | Diffusion / flow | T → S |
-| [LongCat-AudioDiT](models/diffusion.md#longcat-audiodit) | Diffusion / flow | T, S → S |
-| [LoRP-TTS](models/diffusion.md#lorp-tts) | Diffusion / flow | T, S → S |
-| [Luna-TTS](models/token-lm.md#luna-tts) | Token LM | T, S → S |
-| [M3-TTS](models/diffusion.md#m3-tts) | Diffusion / flow | T, S → S |
-| [MAGIC-TTS](models/token-lm.md#magic-tts) | Token LM | T, S → S |
-| [MagpieTTS-LF](models/token-lm.md#magpietts-lf) | Token LM | T, S → S |
-| [MambaVoiceCloning](models/diffusion.md#mambavoicecloning) | Diffusion / flow | T, S → S |
-| [MamTra](models/diffusion.md#mamtra) | Diffusion / flow | T, S → S |
-| [ManchuTTS](models/diffusion.md#manchutts) | Diffusion / flow | T → S |
-| [Marco-Voice](models/token-lm.md#marco-voice) | Token LM | T, S → S |
-| [MARS6](models/token-lm.md#mars6) | Token LM | T, S → S |
-| [Masked-style TTS](models/token-lm.md#masked-style-tts) | Token LM | T, S → S |
-| [MaskGCT](models/token-lm.md#maskgct) | Token LM | T, S → S |
-| [Matcha-TTS](models/diffusion.md#matcha-tts) | Diffusion / flow | T → S |
-| [MAVE](models/token-lm.md#mave) | Token LM | T, S → S |
-| [Mega-TTS](models/token-lm.md#mega-tts) | Token LM | T, S → S |
-| [Mega-TTS 2](models/token-lm.md#mega-tts-2) | Token LM | T, S → S |
-| [MegaTTS 3](models/diffusion.md#mega-tts-3) | Diffusion / flow | T, S → S |
-| [Meitei Mayek TTS](models/autoregressive.md#meitei-mayek-tts) | Autoregressive | T → S |
-| [Mel-LLM (TTS)](models/continuous-lm.md#mel-llm-tts) | Continuous LM | T → S |
-| [MELA-TTS](models/continuous-lm.md#mela-tts) | Continuous LM | T, S → S |
-| [MELD](models/token-lm.md#meld) | Token LM | T, S → S |
-| [Mellotron](models/autoregressive.md#mellotron) | Autoregressive | T, S → S |
-| [MeloTTS](models/flow-vae.md#melo-tts) | Flow / VAE | T → S |
-| [Metis](models/token-lm.md#metis) | Token LM | T, S → S |
-| [MFCIG-CSS](models/token-lm.md#mfcig-css) | Token LM | T, S, V → S |
-| [MiDashengLM-Gen](models/continuous-lm.md#midashenglm-gen) | Continuous LM | T → S, A |
-| [MiniMax-Speech](models/token-lm.md#minimax-speech) | Token LM | T, S → S |
-| [MixedG2P-T5](models/token-lm.md#mixedg2p-t5) | Token LM | T, S → S |
-| [MM-MovieDubber](models/diffusion.md#mm-moviedubber) | Diffusion / flow | T, V → S |
-| [MoE-TTS](models/token-lm.md#moe-tts) | Token LM | T → S |
-| [MoonCast](models/token-lm.md#mooncast) | Token LM | T, S → S |
-| [MOSS-TTS](models/token-lm.md#moss-tts) | Token LM | T, S → S |
-| [MOSS-TTS-Nano](models/token-lm.md#moss-tts-nano) | Token LM | T, S → S |
-| [MOSS-TTS-Realtime](models/token-lm.md#moss-tts-realtime) | Token LM | T, S → S |
-| [MOSS-TTSD](models/token-lm.md#moss-ttsd) | Token LM | T, S → S |
-| [MOSS-VoiceGenerator](models/token-lm.md#moss-voicegenerator) | Token LM | T → S |
-| [MP-ELD](models/continuous-lm.md#mp-eld) | Continuous LM | T, S → S |
-| [MPE-TTS](models/token-lm.md#mpe-tts) | Token LM | T, S → S |
-| [Multistage multimodal TTS](models/diffusion.md#multistage-multimodal-tts) | Diffusion / flow | T, I → S |
-| [Muyan-TTS](models/token-lm.md#muyan-tts) | Token LM | T, S → S |
-| [NaturalSpeech](models/flow-vae.md#naturalspeech) | Flow / VAE | T → S |
-| [NaturalSpeech 2](models/diffusion.md#naturalspeech-2) | Diffusion / flow | T, S → S |
-| [NaturalSpeech 3](models/diffusion.md#naturalspeech-3) | Diffusion / flow | T, S → S |
-| [NeuTTS Air](models/token-lm.md#neutts-air) | Token LM | T, S → S |
-| [NeuTTS Nano](models/token-lm.md#neutts-nano) | Token LM | T, S → S |
-| [NeuTTS-2E](models/token-lm.md#neutts-2e) | Token LM | T → S |
-| [NR-LauraTTS](models/token-lm.md#nr-lauratts) | Token LM | T, S → S |
-| [NVSpeech TTS](models/token-lm.md#nvspeech-tts) | Token LM | T, S → S |
-| [Nüshu-PitchVITS](models/flow-vae.md#nushu-pitchvits) | Flow / VAE | T → S |
-| [Ojibwe-Mi'kmaq-Maliseet TTS](models/diffusion.md#ojibwe-mi-kmaq-maliseet-tts) | Diffusion / flow | T → S |
-| [OmniVoice](models/token-lm.md#omnivoice) | Token LM | T, S → S |
-| [OpusLM](models/token-lm.md#opuslm) | Token LM | T, S → S |
-| [Orpheus TTS](models/token-lm.md#orpheus-tts) | Token LM | T, S → S |
-| [OscillaTTS](models/diffusion.md#oscillatts) | Diffusion / flow | T, S → S |
-| [OuteTTS](models/token-lm.md#outetts) | Token LM | T, S → S |
-| [OV-InstructTTS](models/token-lm.md#ov-instructtts) | Token LM | T → S |
-| [OZSpeech](models/token-lm.md#ozspeech) | Token LM | T, S → S |
-| [PALLE](models/token-lm.md#palle) | Token LM | T, S → S |
-| [Parallel GPT](models/token-lm.md#parallel-gpt) | Token LM | T, S → S |
-| [Parallel Tacotron](models/parallel.md#parallel-tacotron) | Parallel | T → S |
-| [Parallel Tacotron 2](models/parallel.md#parallel-tacotron-2) | Parallel | T → S |
-| [ParaStyleTTS](models/parallel.md#parastyletts) | Parallel | T → S |
-| [Parler-TTS](models/token-lm.md#parler-tts) | Token LM | T → S |
-| [Parler-TTS Hinglish adaptation](models/token-lm.md#parler-tts-hinglish-adaptation) | Token LM | T → S |
-| [PFluxTTS](models/diffusion.md#pfluxtts) | Diffusion / flow | T, S → S |
-| [Phoenix TTS](models/token-lm.md#phoenix-tts) | Token LM | T, S → S |
-| [Phoneme-tone adaptive Thai TTS](models/parallel.md#phoneme-tone-adaptive-thai-tts) | Parallel | T, S → S |
-| [PilotTTS](models/token-lm.md#pilottts) | Token LM | T, S → S |
-| [Piper (VITS voices)](models/flow-vae.md#piper) | Flow / VAE | T → S |
-| [Pocket TTS](models/continuous-lm.md#pocket-tts) | Continuous LM | T, S → S |
-| [PortaSpeech](models/flow-vae.md#portaspeech) | Flow / VAE | T → S |
-| [PROEMO](models/parallel.md#proemo) | Parallel | T → S |
-| [Progressive face-conditioned TTS](models/flow-vae.md#progressive-face-conditioned-tts) | Flow / VAE | T, I → S |
-| [Prompt-Unseen-Emotion](models/token-lm.md#prompt-unseen-emotion) | Token LM | T → S |
-| [PromptTTS](models/parallel.md#prompttts) | Parallel | T → S |
-| [PromptTTS 2](models/diffusion.md#prompttts-2) | Diffusion / flow | T → S |
-| [ProtoDisent-TTS](models/flow-vae.md#protodisent-tts) | Flow / VAE | T, S → S |
-| [PS-TTS](models/token-lm.md#ps-tts) | Token LM | T, S → S |
-| [QTTS](models/token-lm.md#qtts) | Token LM | T, S → S |
-| [Qwen-Audio-3.0-TTS](models/token-lm.md#qwen-audio-3-0-tts) | Token LM | T, S → S |
-| [Qwen3-TTS](models/token-lm.md#qwen3-tts) | Token LM | T, S → S |
-| [RADKA-CSS](models/token-lm.md#radka-css) | Token LM | T, S → S |
-| [RALL-E](models/token-lm.md#rall-e) | Token LM | T, S → S |
-| [Raon-OpenTTS](models/diffusion.md#raon-opentts) | Diffusion / flow | T, S → S |
-| [RapFlow-TTS](models/diffusion.md#rapflow-tts) | Diffusion / flow | T, S → S |
-| [ReGenVoice](models/diffusion.md#regenvoice) | Diffusion / flow | T, S → S |
-| [ReStyle-TTS](models/diffusion.md#restyle-tts) | Diffusion / flow | T, S → S |
-| [RTFree-F5](models/diffusion.md#rtfree-f5) | Diffusion / flow | T, S → S |
-| [RV-TTS](models/diffusion.md#rv-tts) | Diffusion / flow | T, I → S |
-| [RWKVTTS](models/token-lm.md#rwkvtts) | Token LM | T, S → S |
-| [S5-TTS](models/token-lm.md#s5-tts) | Token LM | T, S → S |
-| [Sarashina2.2-TTS](models/token-lm.md#sarashina2-2-tts) | Token LM | T, S → S |
-| [SASLM](models/continuous-lm.md#saslm) | Continuous LM | T, S → S |
-| [Seed-TTS](models/token-lm.md#seed-tts) | Token LM | T, S → S |
-| [Self-distilled zero-shot TTS](models/compact.md#self-distilled-zero-shot-tts) | Compact | T, S → S |
-| [SelfTTS](models/flow-vae.md#selftts) | Flow / VAE | T, S → S |
-| [SemaVoice](models/continuous-lm.md#semavoice) | Continuous LM | T, S → S |
-| [SemBridge](models/continuous-lm.md#sembridge) | Continuous LM | T, S → S |
-| [Shallow Flow Matching TTS](models/diffusion.md#shallow-flow-matching-tts) | Diffusion / flow | T, S → S |
-| [SLED](models/continuous-lm.md#sled) | Continuous LM | T, S → S |
-| [SlimSpeech](models/compact.md#slimspeech) | Compact | T, S → S |
-| [SMLLE](models/token-lm.md#smlle) | Token LM | T, S → S |
-| [SoulX-Podcast](models/token-lm.md#soulx-podcast) | Token LM | T, S → S |
-| [Spark-TTS](models/token-lm.md#spark-tts) | Token LM | T, S → S |
-| [SpeakStream](models/continuous-lm.md#speakstream) | Continuous LM | T, S → S |
-| [SPEAR-TTS](models/token-lm.md#spear-tts) | Token LM | T, S → S |
-| [SpeechAccentLLM](models/token-lm.md#speechaccentllm) | Token LM | T, S → S |
-| [SpeechEdit](models/token-lm.md#speechedit) | Token LM | T, S → S |
-| [SpeechT5](models/autoregressive.md#speecht5) | Autoregressive | T, S → S |
-| [SpeechX](models/token-lm.md#speechx) | Token LM | T, S → S |
-| [SpeedySpeech](models/parallel.md#speedyspeech) | Parallel | T → S |
-| [Spotlight-TTS](models/diffusion.md#spotlight-tts) | Diffusion / flow | T, S → S |
-| [StellarTTS](models/compact.md#stellartts) | Compact | T, S → S |
-| [Step-Audio-EditX](models/token-lm.md#step-audio-editx) | Token LM | T, S → S |
-| [Step-Audio-TTS](models/token-lm.md#step-audio-tts) | Token LM | T, S → S |
-| [StepAudio 2.5 TTS](models/token-lm.md#stepaudio-2-5-tts) | Token LM | T, S → S |
-| [Stochastic-alignment continuous TTS](models/continuous-lm.md#stochastic-alignment-continuous-tts) | Continuous LM | T, S → S |
-| [StreamMel](models/continuous-lm.md#streammel) | Continuous LM | T, S → S |
-| [StyleTTS](models/parallel.md#styletts) | Parallel | T, S → S |
-| [StyleTTS 2](models/diffusion.md#styletts-2) | Diffusion / flow | T, S → S |
-| [Supertonic](models/compact.md#supertonic) | Compact | T, S → S |
-| [Supertonic 2](models/compact.md#supertonic-2) | Compact | T → S |
-| [Supertonic 3](models/compact.md#supertonic-3) | Compact | T → S |
-| [SwanVoice](models/diffusion.md#swanvoice) | Diffusion / flow | T, S → S |
-| [SyncSpeech](models/token-lm.md#syncspeech) | Token LM | T, S → S |
-| [Tacotron](models/autoregressive.md#tacotron) | Autoregressive | T → S |
-| [Tacotron 2](models/autoregressive.md#tacotron-2) | Autoregressive | T → S |
-| [TADA](models/continuous-lm.md#tada) | Continuous LM | T, S → S |
-| [TED-TTS](models/token-lm.md#ted-tts) | Token LM | T, S → S |
-| [Tibetan-TTS](models/token-lm.md#tibetan-tts) | Token LM | T, S → S |
-| [TinyWave](models/token-lm.md#tinywave) | Token LM | T, S → S |
-| [TLDR (TTS)](models/token-lm.md#tldr-tts) | Token LM | T, S → S |
-| [TMD-TTS (formerly FMSD-TTS)](models/diffusion.md#tmd-tts) | Diffusion / flow | T → S |
-| [TontaubeV1](models/token-lm.md#tontaubev1) | Token LM | T, S → S |
-| [Tortoise TTS](models/token-lm.md#tortoise-tts) | Token LM | T, S → S |
-| [Transformer TTS](models/autoregressive.md#transformer-tts) | Autoregressive | T → S |
-| [TTS-CtrlNet](models/diffusion.md#tts-ctrlnet) | Diffusion / flow | T, S → S |
-| [TTS-Transducer](models/token-lm.md#tts-transducer) | Token LM | T, S → S |
-| [TTSYoruba](models/concatenative.md#ttsyoruba) | Concatenative | T → S |
-| [UDDETTS](models/token-lm.md#uddetts) | Token LM | T → S |
-| [UmbraTTS](models/diffusion.md#umbratts) | Diffusion / flow | T, S, A → S |
-| [UniFlow-Audio](models/diffusion.md#uniflow-audio) | Diffusion / flow | T, S, A, I, V → S, A |
-| [UNISON](models/diffusion.md#unison) | Diffusion / flow | T, S, A → S, A |
-| [UniSonate](models/diffusion.md#unisonate) | Diffusion / flow | T → S |
-| [UniSpeaker](models/diffusion.md#unispeaker) | Diffusion / flow | T, S, I → S |
-| [UniTAF](models/token-lm.md#unitaf) | Token LM | T → S |
-| [UniTalker](models/token-lm.md#unitalker) | Token LM | T, S, V → S |
-| [UniTTS](models/token-lm.md#unitts) | Token LM | T, S → S |
-| [UniVocal](models/token-lm.md#univocal) | Token LM | T, S → S |
-| [UniVoice (ASR and TTS)](models/diffusion.md#univoice-asr-and-tts) | Diffusion / flow | T, S → S |
-| [UniVoice (speech and singing)](models/diffusion.md#univoice-speech-and-singing) | Diffusion / flow | T, S → S |
-| [UniWav (TTS)](models/diffusion.md#uniwav-tts) | Diffusion / flow | T, S → S, A |
-| [USCF-conditioned TTS](models/diffusion.md#uscf-conditioned-tts) | Diffusion / flow | T, S → S |
-| [V-CASS](models/token-lm.md#v-cass) | Token LM | T, V → S |
-| [VALL-E](models/token-lm.md#vall-e) | Token LM | T, S → S |
-| [VALL-E 2](models/token-lm.md#vall-e-2) | Token LM | T, S → S |
-| [VALL-E X](models/token-lm.md#vall-e-x) | Token LM | T, S → S |
-| [VALL-T](models/token-lm.md#vall-t) | Token LM | T, S → S |
-| [Vclip](models/flow-vae.md#vclip) | Flow / VAE | T, I → S |
-| [Vevo](models/token-lm.md#vevo) | Token LM | T, S → S |
-| [VibeVoice](models/continuous-lm.md#vibevoice) | Continuous LM | T, S → S |
-| [VibeVoice-Realtime](models/continuous-lm.md#vibevoice-realtime) | Continuous LM | T → S |
-| [VisualSpeech](models/parallel.md#visualspeech) | Parallel | T, V → S |
-| [VITS](models/flow-vae.md#vits) | Flow / VAE | T → S |
-| [VITS2](models/flow-vae.md#vits-2) | Flow / VAE | T → S |
-| [VividVoice](models/diffusion.md#vividvoice) | Diffusion / flow | T, I, V → S |
-| [VocalNet-M2](models/token-lm.md#vocalnet-m2) | Token LM | T, S → S |
-| [Voicebox](models/diffusion.md#voicebox) | Diffusion / flow | T, S → S |
-| [VoiceChat-TTS](models/continuous-lm.md#voicechat-tts) | Continuous LM | T → S |
-| [VoiceCraft](models/token-lm.md#voicecraft) | Token LM | T, S → S |
-| [VoiceCraft-Dub](models/token-lm.md#voicecraft-dub) | Token LM | T, S, V → S |
-| [VoiceDesigner](models/diffusion.md#voicedesigner) | Diffusion / flow | T, S → S |
-| [VoiceSculptor](models/token-lm.md#voicesculptor) | Token LM | T, S → S |
-| [VoxCPM](models/continuous-lm.md#voxcpm) | Continuous LM | T, S → S |
-| [VoxCPM2](models/continuous-lm.md#voxcpm2) | Continuous LM | T, S → S |
-| [Voxtral TTS](models/token-lm.md#voxtral-tts) | Token LM | T, S → S |
-| [VoXtream](models/token-lm.md#voxtream) | Token LM | T, S → S |
-| [VoXtream2](models/token-lm.md#voxtream2) | Token LM | T, S → S |
-| [VSpeechLM](models/token-lm.md#vspeechlm) | Token LM | T, V → S |
-| [Wave-Tacotron](models/autoregressive.md#wave-tacotron) | Autoregressive | T → S |
-| [WavTTS](models/diffusion.md#wavtts) | Diffusion / flow | T, S → S |
-| [WenetSpeech-Wu TTS](models/token-lm.md#wenetspeech-wu-tts) | Token LM | T, S → S |
-| [WeSCon](models/token-lm.md#wescon) | Token LM | T, S → S |
-| [WhisperSpeech](models/token-lm.md#whisperspeech) | Token LM | T, S → S |
-| [WordVoice](models/token-lm.md#wordvoice) | Token LM | T, S → S |
-| [X-Voice](models/diffusion.md#x-voice) | Diffusion / flow | T, S → S |
-| [X2Streaming-TTS](models/token-lm.md#x2streaming-tts) | Token LM | T, S → S |
-| [XEmoRAG](models/token-lm.md#xemorag) | Token LM | T, S → S |
-| [XTTS](models/token-lm.md#xtts) | Token LM | T, S → S |
-| [YourTTS](models/flow-vae.md#yourtts) | Flow / VAE | T, S → S |
-| [ZipVoice](models/diffusion.md#zipvoice) | Diffusion / flow | T, S → S |
-| [ZipVoice-Dialog](models/diffusion.md#zipvoice-dialog) | Diffusion / flow | T, S → S |
-| [Zonos](models/token-lm.md#zonos) | Token LM | T, S → S |
+| Image | Model | Group | Input → output |
+| --- | --- | --- | --- |
+| <a href="models/diffusion.md#a2tts"><img src="assets/architectures/a2tts.png" alt="A2TTS — Source figure" width="280"></a> | [A2TTS](models/diffusion.md#a2tts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#affectron"><img src="assets/architectures/affectron.png" alt="Affectron — Source figure" width="280"></a> | [Affectron](models/token-lm.md#affectron) | Token LM | T, S → S |
+| <a href="models/token-lm.md#agentsteertts"><img src="assets/architectures/agentsteertts.png" alt="AgentSteerTTS — Source figure" width="280"></a> | [AgentSteerTTS](models/token-lm.md#agentsteertts) | Token LM | T, S → S |
+| <a href="models/diffusion.md#aligndit"><img src="assets/architectures/aligndit.png" alt="AlignDiT — Source figure" width="280"></a> | [AlignDiT](models/diffusion.md#aligndit) | Diffusion / flow | T, S, V → S |
+| <a href="models/parallel.md#amnet"><img src="assets/architectures/amnet.png" alt="AMNet — Source figure" width="280"></a> | [AMNet](models/parallel.md#amnet) | Parallel | T → S |
+| <a href="models/diffusion.md#archi-tts"><img src="assets/architectures/archi-tts.png" alt="ARCHI-TTS — Source figure" width="228"></a> | [ARCHI-TTS](models/diffusion.md#archi-tts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#atrie"><img src="assets/architectures/atrie.png" alt="ATRIE — Source figure" width="280"></a> | [ATRIE](models/token-lm.md#atrie) | Token LM | T → S |
+| <a href="models/token-lm.md#audiobook-cc"><img src="assets/architectures/audiobook-cc.png" alt="Audiobook-CC — Source figure" width="280"></a> | [Audiobook-CC](models/token-lm.md#audiobook-cc) | Token LM | T, S → S |
+| <a href="models/token-lm.md#auemochat"><img src="assets/architectures/auemochat.png" alt="AuEmoChat — Source figure" width="280"></a> | [AuEmoChat](models/token-lm.md#auemochat) | Token LM | T, S, V → S |
+| <a href="models/diffusion.md#auk"><img src="assets/architectures/auk.png" alt="AuK — Source figure" width="280"></a> | [AuK](models/diffusion.md#auk) | Diffusion / flow | T, S → S, A |
+| <a href="models/diffusion.md#authentic-dubber"><img src="assets/architectures/authentic-dubber.png" alt="Authentic-Dubber — Source figure" width="265"></a> | [Authentic-Dubber](models/diffusion.md#authentic-dubber) | Diffusion / flow | T, S, V → S |
+| <a href="models/diffusion.md#autosift"><img src="assets/architectures/autosift.png" alt="AutoSIFT — Source figure" width="280"></a> | [AutoSIFT](models/diffusion.md#autosift) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#autostyle-tts"><img src="assets/architectures/autostyle-tts.png" alt="AutoStyle-TTS — Source figure" width="280"></a> | [AutoStyle-TTS](models/token-lm.md#autostyle-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#avlm-expressive-speech"><img src="assets/architectures/avlm-expressive-speech.png" alt="AVLM (expressive speech) — Source figure" width="280"></a> | [AVLM (expressive speech)](models/token-lm.md#avlm-expressive-speech) | Token LM | T, S, V → S |
+| <a href="models/token-lm.md#bagpiper-tts"><img src="assets/architectures/bagpiper-tts.png" alt="Bagpiper-TTS — Source figure" width="280"></a> | [Bagpiper-TTS](models/token-lm.md#bagpiper-tts) | Token LM | T → S |
+| <a href="models/diffusion.md#barewave"><img src="assets/architectures/barewave.png" alt="BareWave — Source figure" width="280"></a> | [BareWave](models/diffusion.md#barewave) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#bark"><img src="assets/architectures/bark.svg" alt="Bark — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Bark](models/token-lm.md#bark) | Token LM | T → S, A |
+| <a href="models/token-lm.md#base-tts"><img src="assets/architectures/base-tts.png" alt="BASE TTS — Source figure" width="280"></a> | [BASE TTS](models/token-lm.md#base-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#batontts-batonvoice"><img src="assets/architectures/batontts-batonvoice.png" alt="BatonTTS (BatonVoice) — Source figure" width="280"></a> | [BatonTTS (BatonVoice)](models/token-lm.md#batontts-batonvoice) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#belle"><img src="assets/architectures/belle.png" alt="BELLE — Source figure" width="280"></a> | [BELLE](models/continuous-lm.md#belle) | Continuous LM | T, S → S |
+| <a href="models/compact.md#bittts"><img src="assets/architectures/bittts.png" alt="BitTTS — Source figure" width="280"></a> | [BitTTS](models/compact.md#bittts) | Compact | T → S |
+| <a href="models/token-lm.md#block-wise-mimi-tts"><img src="assets/architectures/block-wise-mimi-tts.png" alt="Block-wise Mimi TTS — Source figure" width="280"></a> | [Block-wise Mimi TTS](models/token-lm.md#block-wise-mimi-tts) | Token LM | T → S |
+| <a href="models/token-lm.md#bntts"><img src="assets/architectures/bntts.png" alt="BnTTS — Source figure" width="215"></a> | [BnTTS](models/token-lm.md#bntts) | Token LM | T, S → S |
+| <a href="models/diffusion.md#bolbosh"><img src="assets/architectures/bolbosh.png" alt="Bolbosh — Source figure" width="280"></a> | [Bolbosh](models/diffusion.md#bolbosh) | Diffusion / flow | T → S |
+| <a href="models/continuous-lm.md#borderless-long-speech-synthesis"><img src="assets/architectures/borderless-long-speech-synthesis.svg" alt="Borderless Long Speech Synthesis — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Borderless Long Speech Synthesis](models/continuous-lm.md#borderless-long-speech-synthesis) | Continuous LM | T, S → S |
+| <a href="models/token-lm.md#breezyvoice"><img src="assets/architectures/breezyvoice.png" alt="BreezyVoice — Source figure" width="280"></a> | [BreezyVoice](models/token-lm.md#breezyvoice) | Token LM | T, S → S |
+| <a href="models/token-lm.md#bridgetts"><img src="assets/architectures/bridgetts.png" alt="BridgeTTS — Source figure" width="277"></a> | [BridgeTTS](models/token-lm.md#bridgetts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#bvs"><img src="assets/architectures/bvs.png" alt="BVS — Source figure" width="280"></a> | [BVS](models/token-lm.md#bvs) | Token LM | T, V → S, A |
+| <a href="models/token-lm.md#cam-tts"><img src="assets/architectures/cam-tts.png" alt="CAM-TTS — Source figure" width="280"></a> | [CAM-TTS](models/token-lm.md#cam-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#captalk"><img src="assets/architectures/captalk.png" alt="CapTalk — Source figure" width="280"></a> | [CapTalk](models/token-lm.md#captalk) | Token LM | T, S → S |
+| <a href="models/diffusion.md#cast-tts"><img src="assets/architectures/cast-tts.png" alt="CAST-TTS — Source figure" width="280"></a> | [CAST-TTS](models/diffusion.md#cast-tts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#cat-tts"><img src="assets/architectures/cat-tts.png" alt="CaT-TTS — Source figure" width="280"></a> | [CaT-TTS](models/token-lm.md#cat-tts) | Token LM | T, S → S |
+| <a href="models/parallel.md#causal-prosody-fastspeech-2"><img src="assets/architectures/causal-prosody-fastspeech-2.png" alt="Causal-prosody FastSpeech 2 — Source figure" width="280"></a> | [Causal-prosody FastSpeech 2](models/parallel.md#causal-prosody-fastspeech-2) | Parallel | T → S |
+| <a href="models/diffusion.md#cde-styletts"><img src="assets/architectures/cde-styletts.png" alt="CDE-StyleTTS — Source figure" width="280"></a> | [CDE-StyleTTS](models/diffusion.md#cde-styletts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#chain-of-details-tts"><img src="assets/architectures/chain-of-details-tts.png" alt="Chain-of-Details TTS — Source figure" width="280"></a> | [Chain-of-Details TTS](models/token-lm.md#chain-of-details-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#chain-talker"><img src="assets/architectures/chain-talker.png" alt="Chain-Talker — Source figure" width="280"></a> | [Chain-Talker](models/token-lm.md#chain-talker) | Token LM | T, S → S |
+| <a href="models/token-lm.md#chatterbox"><img src="assets/architectures/chatterbox.svg" alt="Chatterbox — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Chatterbox](models/token-lm.md#chatterbox) | Token LM | T, S → S |
+| <a href="models/token-lm.md#chatterbox-flash"><img src="assets/architectures/chatterbox-flash.png" alt="Chatterbox-Flash — Source figure" width="280"></a> | [Chatterbox-Flash](models/token-lm.md#chatterbox-flash) | Token LM | T, S → S |
+| <a href="models/token-lm.md#chattts"><img src="assets/architectures/chattts.svg" alt="ChatTTS — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [ChatTTS](models/token-lm.md#chattts) | Token LM | T → S |
+| <a href="models/token-lm.md#clam-tts"><img src="assets/architectures/clam-tts.png" alt="CLaM-TTS — Source figure" width="280"></a> | [CLaM-TTS](models/token-lm.md#clam-tts) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#clear"><img src="assets/architectures/clear.png" alt="CLEAR — Source figure" width="280"></a> | [CLEAR](models/continuous-lm.md#clear) | Continuous LM | T, S → S |
+| <a href="models/parallel.md#clip-tts"><img src="assets/architectures/clip-tts.png" alt="Clip-TTS — Source figure" width="280"></a> | [Clip-TTS](models/parallel.md#clip-tts) | Parallel | T → S |
+| <a href="models/compact.md#compact-neural-accessibility-tts"><img src="assets/architectures/compact-neural-accessibility-tts.png" alt="Compact neural accessibility TTS — Source figure" width="70"></a> | [Compact neural accessibility TTS](models/compact.md#compact-neural-accessibility-tts) | Compact | T → S |
+| <a href="models/token-lm.md#compressed-to-fine-speech-lm"><img src="assets/architectures/compressed-to-fine-speech-lm.png" alt="Compressed-to-fine speech LM — Source figure" width="280"></a> | [Compressed-to-fine speech LM](models/token-lm.md#compressed-to-fine-speech-lm) | Token LM | T, S → S |
+| <a href="models/token-lm.md#confucius4-tts"><img src="assets/architectures/confucius4-tts.png" alt="Confucius4-TTS — Source figure" width="234"></a> | [Confucius4-TTS](models/token-lm.md#confucius4-tts) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#continuous-token-diffusion-tts"><img src="assets/architectures/continuous-token-diffusion-tts.png" alt="Continuous-token diffusion TTS — Source figure" width="280"></a> | [Continuous-token diffusion TTS](models/continuous-lm.md#continuous-token-diffusion-tts) | Continuous LM | T, S → S |
+| <a href="models/token-lm.md#controllable-masked-speech-tts"><img src="assets/architectures/controllable-masked-speech-tts.png" alt="Controllable masked-speech TTS — Source figure" width="265"></a> | [Controllable masked-speech TTS](models/token-lm.md#controllable-masked-speech-tts) | Token LM | T, S, A → S |
+| <a href="models/diffusion.md#cookvoice"><img src="assets/architectures/cookvoice.png" alt="CookVoice — Source figure" width="280"></a> | [CookVoice](models/diffusion.md#cookvoice) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#cosyedit2"><img src="assets/architectures/cosyedit2.png" alt="CosyEdit2 — Source figure" width="280"></a> | [CosyEdit2](models/token-lm.md#cosyedit2) | Token LM | T, S → S |
+| <a href="models/diffusion.md#cosyncdit"><img src="assets/architectures/cosyncdit.png" alt="CoSyncDiT — Source figure" width="280"></a> | [CoSyncDiT](models/diffusion.md#cosyncdit) | Diffusion / flow | T, S, V → S |
+| <a href="models/token-lm.md#cosyvoice"><img src="assets/architectures/cosyvoice.png" alt="CosyVoice — Source figure" width="280"></a> | [CosyVoice](models/token-lm.md#cosyvoice) | Token LM | T, S → S |
+| <a href="models/token-lm.md#cosyvoice-2"><img src="assets/architectures/cosyvoice-2.png" alt="CosyVoice 2 — Source figure" width="280"></a> | [CosyVoice 2](models/token-lm.md#cosyvoice-2) | Token LM | T, S → S |
+| <a href="models/token-lm.md#cosyvoice-3"><img src="assets/architectures/cosyvoice-3.png" alt="CosyVoice 3 — Source figure" width="280"></a> | [CosyVoice 3](models/token-lm.md#cosyvoice-3) | Token LM | T, S → S |
+| <a href="models/token-lm.md#cosywhisper-whispsynth"><img src="assets/architectures/cosywhisper-whispsynth.png" alt="CosyWhisper (WhispSynth) — Source figure" width="280"></a> | [CosyWhisper (WhispSynth)](models/token-lm.md#cosywhisper-whispsynth) | Token LM | T, S → S |
+| <a href="models/diffusion.md#covomix2"><img src="assets/architectures/covomix2.png" alt="CoVoMix2 — Source figure" width="279"></a> | [CoVoMix2](models/diffusion.md#covomix2) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#cross-lingual-f5-tts"><img src="assets/architectures/cross-lingual-f5-tts.png" alt="Cross-Lingual F5-TTS — Source figure" width="273"></a> | [Cross-Lingual F5-TTS](models/diffusion.md#cross-lingual-f5-tts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#crossaccent-tts"><img src="assets/architectures/crossaccent-tts.png" alt="CrossAccent-TTS — Source figure" width="280"></a> | [CrossAccent-TTS](models/token-lm.md#crossaccent-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#csm"><img src="assets/architectures/csm.svg" alt="CSM — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [CSM](models/token-lm.md#csm) | Token LM | T, S → S |
+| <a href="models/token-lm.md#ctc-tts"><img src="assets/architectures/ctc-tts.png" alt="CTC-TTS — Source figure" width="280"></a> | [CTC-TTS](models/token-lm.md#ctc-tts) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#ctrlspeech"><img src="assets/architectures/ctrlspeech.png" alt="CtrlSpeech — Source figure" width="280"></a> | [CtrlSpeech](models/continuous-lm.md#ctrlspeech) | Continuous LM | T, S → S |
+| <a href="models/continuous-lm.md#cutetts"><img src="assets/architectures/cutetts.png" alt="CuteTTS — Source figure" width="280"></a> | [CuteTTS](models/continuous-lm.md#cutetts) | Continuous LM | T, S → S |
+| <a href="models/diffusion.md#daien-tts"><img src="assets/architectures/daien-tts.png" alt="DAIEN-TTS — Source figure" width="280"></a> | [DAIEN-TTS](models/diffusion.md#daien-tts) | Diffusion / flow | T, S, A → S |
+| <a href="models/diffusion.md#dars"><img src="assets/architectures/dars.png" alt="DARS — Source figure" width="280"></a> | [DARS](models/diffusion.md#dars) | Diffusion / flow | T → S |
+| <a href="models/token-lm.md#dcar"><img src="assets/architectures/dcar.png" alt="DCAR — Source figure" width="270"></a> | [DCAR](models/token-lm.md#dcar) | Token LM | T, S → S |
+| <a href="models/autoregressive.md#deep-voice"><img src="assets/architectures/deep-voice.png" alt="Deep Voice — Source figure" width="280"></a> | [Deep Voice](models/autoregressive.md#deep-voice) | Autoregressive | T → S |
+| <a href="models/autoregressive.md#deep-voice-2"><img src="assets/architectures/deep-voice-2.png" alt="Deep Voice 2 — Source figure" width="280"></a> | [Deep Voice 2](models/autoregressive.md#deep-voice-2) | Autoregressive | T → S |
+| <a href="models/autoregressive.md#deep-voice-3"><img src="assets/architectures/deep-voice-3.png" alt="Deep Voice 3 — Source figure" width="280"></a> | [Deep Voice 3](models/autoregressive.md#deep-voice-3) | Autoregressive | T → S |
+| <a href="models/token-lm.md#deepasmr"><img src="assets/architectures/deepasmr.png" alt="DeepASMR — Source figure" width="280"></a> | [DeepASMR](models/token-lm.md#deepasmr) | Token LM | T, S → S |
+| <a href="models/diffusion.md#deepdubber-v1"><img src="assets/architectures/deepdubber-v1.png" alt="DeepDubber-V1 — Source figure" width="280"></a> | [DeepDubber-V1](models/diffusion.md#deepdubber-v1) | Diffusion / flow | T, V → S |
+| <a href="models/token-lm.md#deepdubbing"><img src="assets/architectures/deepdubbing.png" alt="DeepDubbing — Source figure" width="280"></a> | [DeepDubbing](models/token-lm.md#deepdubbing) | Token LM | T, S → S |
+| <a href="models/parallel.md#delightfultts"><img src="assets/architectures/delightfultts.png" alt="DelightfulTTS — Source figure" width="242"></a> | [DelightfulTTS](models/parallel.md#delightfultts) | Parallel | T → S |
+| <a href="models/token-lm.md#delta-tts"><img src="assets/architectures/delta-tts.png" alt="DELTA-TTS — Source figure" width="280"></a> | [DELTA-TTS](models/token-lm.md#delta-tts) | Token LM | T, S → S |
+| <a href="models/diffusion.md#depflow"><img src="assets/architectures/depflow.png" alt="DepFlow — Source figure" width="280"></a> | [DepFlow](models/diffusion.md#depflow) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#dia"><img src="assets/architectures/dia.svg" alt="Dia — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Dia](models/token-lm.md#dia) | Token LM | T, S → S |
+| <a href="models/token-lm.md#dia2"><img src="assets/architectures/dia2.svg" alt="Dia2 — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Dia2](models/token-lm.md#dia2) | Token LM | T, S → S |
+| <a href="models/token-lm.md#dialospeech"><img src="assets/architectures/dialospeech.png" alt="DialoSpeech — Source figure" width="280"></a> | [DialoSpeech](models/token-lm.md#dialospeech) | Token LM | T, S → S |
+| <a href="models/parallel.md#diemo-tts"><img src="assets/architectures/diemo-tts.png" alt="DiEmo-TTS — Source figure" width="280"></a> | [DiEmo-TTS](models/parallel.md#diemo-tts) | Parallel | T, S → S |
+| <a href="models/diffusion.md#diff-tts"><img src="assets/architectures/diff-tts.png" alt="Diff-TTS — Source figure" width="238"></a> | [Diff-TTS](models/diffusion.md#diff-tts) | Diffusion / flow | T → S |
+| <a href="models/token-lm.md#diffcss"><img src="assets/architectures/diffcss.png" alt="DiffCSS — Source figure" width="280"></a> | [DiffCSS](models/token-lm.md#diffcss) | Token LM | T, S → S |
+| <a href="models/token-lm.md#diflow-tts"><img src="assets/architectures/diflow-tts.png" alt="DiFlow-TTS — Source figure" width="280"></a> | [DiFlow-TTS](models/token-lm.md#diflow-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#diflowdubber"><img src="assets/architectures/diflowdubber.png" alt="DiFlowDubber — Source figure" width="280"></a> | [DiFlowDubber](models/token-lm.md#diflowdubber) | Token LM | T, S, V → S |
+| <a href="models/token-lm.md#disco-speech"><img src="assets/architectures/disco-speech.png" alt="DisCo-Speech — Source figure" width="280"></a> | [DisCo-Speech](models/token-lm.md#disco-speech) | Token LM | T, S → S |
+| <a href="models/token-lm.md#disspeech"><img src="assets/architectures/disspeech.png" alt="DisSpeech — Source figure" width="280"></a> | [DisSpeech](models/token-lm.md#disspeech) | Token LM | T → S |
+| <a href="models/token-lm.md#distar"><img src="assets/architectures/distar.png" alt="DiSTAR — Source figure" width="280"></a> | [DiSTAR](models/token-lm.md#distar) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#ditar"><img src="assets/architectures/ditar.png" alt="DiTAR — Source figure" width="280"></a> | [DiTAR](models/continuous-lm.md#ditar) | Continuous LM | T, S → S |
+| <a href="models/diffusion.md#ditto-tts"><img src="assets/architectures/ditto-tts.png" alt="DiTTo-TTS — Source figure" width="280"></a> | [DiTTo-TTS](models/diffusion.md#ditto-tts) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#dmospeech-2"><img src="assets/architectures/dmospeech-2.png" alt="DMOSpeech 2 — Source figure" width="280"></a> | [DMOSpeech 2](models/diffusion.md#dmospeech-2) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#dmp-tts"><img src="assets/architectures/dmp-tts.png" alt="DMP-TTS — Source figure" width="280"></a> | [DMP-TTS](models/diffusion.md#dmp-tts) | Diffusion / flow | T, S → S |
+| <a href="models/continuous-lm.md#dots-tts"><img src="assets/architectures/dots-tts.png" alt="dots.tts — Source figure" width="280"></a> | [dots.tts](models/continuous-lm.md#dots-tts) | Continuous LM | T, S → S |
+| <a href="models/token-lm.md#dragon-fm"><img src="assets/architectures/dragon-fm.png" alt="Dragon-FM — Source figure" width="280"></a> | [Dragon-FM](models/token-lm.md#dragon-fm) | Token LM | T, S → S |
+| <a href="models/diffusion.md#drawspeech"><img src="assets/architectures/drawspeech.png" alt="DrawSpeech — Source figure" width="280"></a> | [DrawSpeech](models/diffusion.md#drawspeech) | Diffusion / flow | T, I → S |
+| <a href="models/diffusion.md#ds-tts"><img src="assets/architectures/ds-tts.png" alt="DS-TTS — Source figure" width="280"></a> | [DS-TTS](models/diffusion.md#ds-tts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#dualdub"><img src="assets/architectures/dualdub.png" alt="DualDub — Source figure" width="280"></a> | [DualDub](models/token-lm.md#dualdub) | Token LM | T, V → S |
+| <a href="models/token-lm.md#dualspeechlm"><img src="assets/architectures/dualspeechlm.png" alt="DualSpeechLM — Source figure" width="280"></a> | [DualSpeechLM](models/token-lm.md#dualspeechlm) | Token LM | T, S → S |
+| <a href="models/diffusion.md#e2-tts"><img src="assets/architectures/e2-tts.png" alt="E2 TTS — Source figure" width="280"></a> | [E2 TTS](models/diffusion.md#e2-tts) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#ectspeech"><img src="assets/architectures/ectspeech.png" alt="ECTSpeech — Source figure" width="280"></a> | [ECTSpeech](models/diffusion.md#ectspeech) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#ella-v"><img src="assets/architectures/ella-v.png" alt="ELLA-V — Source figure" width="280"></a> | [ELLA-V](models/token-lm.md#ella-v) | Token LM | T, S → S |
+| <a href="models/parallel.md#eme-tts"><img src="assets/architectures/eme-tts.png" alt="EME-TTS — Source figure" width="119"></a> | [EME-TTS](models/parallel.md#eme-tts) | Parallel | T → S |
+| <a href="models/token-lm.md#emm-tts"><img src="assets/architectures/emm-tts.png" alt="EMM-TTS — Source figure" width="280"></a> | [EMM-TTS](models/token-lm.md#emm-tts) | Token LM | T, S → S |
+| <a href="models/diffusion.md#emojivoice"><img src="assets/architectures/emojivoice.png" alt="EmojiVoice — Source figure" width="280"></a> | [EmojiVoice](models/diffusion.md#emojivoice) | Diffusion / flow | T → S |
+| <a href="models/token-lm.md#emoshift"><img src="assets/architectures/emoshift.png" alt="EmoShift — Source figure" width="280"></a> | [EmoShift](models/token-lm.md#emoshift) | Token LM | T → S |
+| <a href="models/token-lm.md#emosslsphere"><img src="assets/architectures/emosslsphere.png" alt="EmoSSLSphere — Source figure" width="280"></a> | [EmoSSLSphere](models/token-lm.md#emosslsphere) | Token LM | T → S |
+| <a href="models/diffusion.md#emosteer-tts"><img src="assets/architectures/emosteer-tts.png" alt="EmoSteer-TTS — Source figure" width="280"></a> | [EmoSteer-TTS](models/diffusion.md#emosteer-tts) | Diffusion / flow | T, S → S |
+| <a href="models/parallel.md#emotion-timbre-disentangled-tts"><img src="assets/architectures/emotion-timbre-disentangled-tts.png" alt="Emotion-timbre disentangled TTS — Source figure" width="280"></a> | [Emotion-timbre disentangled TTS](models/parallel.md#emotion-timbre-disentangled-tts) | Parallel | T, S → S |
+| <a href="models/parallel.md#emotivoice"><img src="assets/architectures/emotivoice.svg" alt="EmotiVoice — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [EmotiVoice](models/parallel.md#emotivoice) | Parallel | T → S |
+| <a href="models/token-lm.md#emotra-tts"><img src="assets/architectures/emotra-tts.png" alt="EmoTra-TTS — Source figure" width="280"></a> | [EmoTra-TTS](models/token-lm.md#emotra-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#emovoice"><img src="assets/architectures/emovoice.png" alt="EmoVoice — Source figure" width="280"></a> | [EmoVoice](models/token-lm.md#emovoice) | Token LM | T → S |
+| <a href="models/token-lm.md#end-to-end-discrete-token-tts"><img src="assets/architectures/end-to-end-discrete-token-tts.png" alt="End-to-end discrete-token TTS — Source figure" width="280"></a> | [End-to-end discrete-token TTS](models/token-lm.md#end-to-end-discrete-token-tts) | Token LM | T, S → S |
+| <a href="models/diffusion.md#f5-tts"><img src="assets/architectures/f5-tts.png" alt="F5-TTS — Source figure" width="280"></a> | [F5-TTS](models/diffusion.md#f5-tts) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#f5r-tts"><img src="assets/architectures/f5r-tts.png" alt="F5R-TTS — Source figure" width="142"></a> | [F5R-TTS](models/diffusion.md#f5r-tts) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#face-adapted-styletts-2"><img src="assets/architectures/face-adapted-styletts-2.png" alt="Face-adapted StyleTTS 2 — Source figure" width="280"></a> | [Face-adapted StyleTTS 2](models/diffusion.md#face-adapted-styletts-2) | Diffusion / flow | T, I → S |
+| <a href="models/diffusion.md#facespeak"><img src="assets/architectures/facespeak.png" alt="FaceSpeak — Source figure" width="280"></a> | [FaceSpeak](models/diffusion.md#facespeak) | Diffusion / flow | T, I → S |
+| <a href="models/token-lm.md#facialtalker"><img src="assets/architectures/facialtalker.png" alt="FacialTalker — Source figure" width="280"></a> | [FacialTalker](models/token-lm.md#facialtalker) | Token LM | T, S, V → S |
+| <a href="models/parallel.md#fastpitch"><img src="assets/architectures/fastpitch.png" alt="FastPitch — Source figure" width="280"></a> | [FastPitch](models/parallel.md#fastpitch) | Parallel | T → S |
+| <a href="models/parallel.md#fastspeech"><img src="assets/architectures/fastspeech.png" alt="FastSpeech — Source figure" width="280"></a> | [FastSpeech](models/parallel.md#fastspeech) | Parallel | T → S |
+| <a href="models/parallel.md#fastspeech-2"><img src="assets/architectures/fastspeech-2.png" alt="FastSpeech 2 — Source figure" width="280"></a> | [FastSpeech 2](models/parallel.md#fastspeech-2) | Parallel | T → S |
+| <a href="models/token-lm.md#fc-tts"><img src="assets/architectures/fc-tts.png" alt="FC-TTS — Source figure" width="280"></a> | [FC-TTS](models/token-lm.md#fc-tts) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#felle"><img src="assets/architectures/felle.png" alt="FELLE — Source figure" width="280"></a> | [FELLE](models/continuous-lm.md#felle) | Continuous LM | T, S → S |
+| <a href="models/diffusion.md#finecombo-tts"><img src="assets/architectures/finecombo-tts.png" alt="FineCombo-TTS — Source figure" width="280"></a> | [FineCombo-TTS](models/diffusion.md#finecombo-tts) | Diffusion / flow | T, S → S |
+| <a href="models/continuous-lm.md#fireredaudio"><img src="assets/architectures/fireredaudio.png" alt="FireRedAudio — Source figure" width="280"></a> | [FireRedAudio](models/continuous-lm.md#fireredaudio) | Continuous LM | T, S → S, A |
+| <a href="models/token-lm.md#fireredtts"><img src="assets/architectures/fireredtts.png" alt="FireRedTTS — Source figure" width="280"></a> | [FireRedTTS](models/token-lm.md#fireredtts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#fireredtts-1s"><img src="assets/architectures/fireredtts-1s.png" alt="FireRedTTS-1S — Source figure" width="280"></a> | [FireRedTTS-1S](models/token-lm.md#fireredtts-1s) | Token LM | T, S → S |
+| <a href="models/token-lm.md#fireredtts-2"><img src="assets/architectures/fireredtts-2.png" alt="FireRedTTS-2 — Source figure" width="280"></a> | [FireRedTTS-2](models/token-lm.md#fireredtts-2) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#fireredtts3"><img src="assets/architectures/fireredtts3.png" alt="FireRedTTS3 — Source figure" width="280"></a> | [FireRedTTS3](models/continuous-lm.md#fireredtts3) | Continuous LM | T, S → S |
+| <a href="models/token-lm.md#openaudio-s1"><img src="assets/architectures/openaudio-s1.svg" alt="Fish Audio S1 / OpenAudio S1 — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Fish Audio S1 / OpenAudio S1](models/token-lm.md#openaudio-s1) | Token LM | T, S → S |
+| <a href="models/token-lm.md#fish-audio-s2"><img src="assets/architectures/fish-audio-s2.png" alt="Fish Audio S2 — Source figure" width="280"></a> | [Fish Audio S2](models/token-lm.md#fish-audio-s2) | Token LM | T, S → S |
+| <a href="models/token-lm.md#fish-speech"><img src="assets/architectures/fish-speech.png" alt="Fish Speech — Source figure" width="280"></a> | [Fish Speech](models/token-lm.md#fish-speech) | Token LM | T, S → S |
+| <a href="models/diffusion.md#flamed-tts"><img src="assets/architectures/flamed-tts.png" alt="Flamed-TTS — Source figure" width="280"></a> | [Flamed-TTS](models/diffusion.md#flamed-tts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#flashtts"><img src="assets/architectures/flashtts.png" alt="FlashTTS — Source figure" width="280"></a> | [FlashTTS](models/token-lm.md#flashtts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#flespeech"><img src="assets/architectures/flespeech.png" alt="FleSpeech — Source figure" width="258"></a> | [FleSpeech](models/token-lm.md#flespeech) | Token LM | T, S, I → S |
+| <a href="models/token-lm.md#flexivoice"><img src="assets/architectures/flexivoice.png" alt="FlexiVoice — Source figure" width="280"></a> | [FlexiVoice](models/token-lm.md#flexivoice) | Token LM | T, S → S |
+| <a href="models/diffusion.md#flexspeech"><img src="assets/architectures/flexspeech.png" alt="FlexSpeech — Source figure" width="280"></a> | [FlexSpeech](models/diffusion.md#flexspeech) | Diffusion / flow | T, S → S |
+| <a href="models/flow-vae.md#flowtron"><img src="assets/architectures/flowtron.png" alt="Flowtron — Source figure" width="280"></a> | [Flowtron](models/flow-vae.md#flowtron) | Flow / VAE | T, S → S |
+| <a href="models/flow-vae.md#fnh-tts"><img src="assets/architectures/fnh-tts.png" alt="FNH-TTS — Source figure" width="280"></a> | [FNH-TTS](models/flow-vae.md#fnh-tts) | Flow / VAE | T, S → S |
+| <a href="models/token-lm.md#frame-stacked-local-transformer-tts"><img src="assets/architectures/frame-stacked-local-transformer-tts.png" alt="Frame-stacked local Transformer TTS — Source figure" width="280"></a> | [Frame-stacked local Transformer TTS](models/token-lm.md#frame-stacked-local-transformer-tts) | Token LM | T, S → S |
+| <a href="models/diffusion.md#freyatts"><img src="assets/architectures/freyatts.png" alt="FreyaTTS — Source figure" width="280"></a> | [FreyaTTS](models/diffusion.md#freyatts) | Diffusion / flow | T → S |
+| <a href="models/api.md#gemini-2-5-tts"><img src="assets/architectures/gemini-2-5-tts.svg" alt="Gemini 2.5 TTS — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Gemini 2.5 TTS](models/api.md#gemini-2-5-tts) | API | T → S |
+| <a href="models/api.md#gemini-3-1-flash-tts"><img src="assets/architectures/gemini-3-1-flash-tts.svg" alt="Gemini 3.1 Flash TTS — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Gemini 3.1 Flash TTS](models/api.md#gemini-3-1-flash-tts) | API | T → S |
+| <a href="models/token-lm.md#gibbstts"><img src="assets/architectures/gibbstts.png" alt="GibbsTTS — Source figure" width="280"></a> | [GibbsTTS](models/token-lm.md#gibbstts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#glm-tts"><img src="assets/architectures/glm-tts.png" alt="GLM-TTS — Source figure" width="220"></a> | [GLM-TTS](models/token-lm.md#glm-tts) | Token LM | T, S → S |
+| <a href="models/flow-vae.md#glow-tts"><img src="assets/architectures/glow-tts.png" alt="Glow-TTS — Source figure" width="280"></a> | [Glow-TTS](models/flow-vae.md#glow-tts) | Flow / VAE | T → S |
+| <a href="models/token-lm.md#goat-tts"><img src="assets/architectures/goat-tts.png" alt="GOAT-TTS — Source figure" width="280"></a> | [GOAT-TTS](models/token-lm.md#goat-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#gpa"><img src="assets/architectures/gpa.png" alt="GPA — Source figure" width="280"></a> | [GPA](models/token-lm.md#gpa) | Token LM | T, S → S |
+| <a href="models/api.md#gpt-4o-mini-tts"><img src="assets/architectures/gpt-4o-mini-tts.svg" alt="GPT-4o Mini TTS — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [GPT-4o Mini TTS](models/api.md#gpt-4o-mini-tts) | API | T → S |
+| <a href="models/token-lm.md#gpt-sovits"><img src="assets/architectures/gpt-sovits.svg" alt="GPT-SoVITS — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [GPT-SoVITS](models/token-lm.md#gpt-sovits) | Token LM | T, S → S |
+| <a href="models/diffusion.md#grad-tts"><img src="assets/architectures/grad-tts.png" alt="Grad-TTS — Source figure" width="280"></a> | [Grad-TTS](models/diffusion.md#grad-tts) | Diffusion / flow | T → S |
+| <a href="models/token-lm.md#graft"><img src="assets/architectures/graft.png" alt="GRAFT — Source figure" width="280"></a> | [GRAFT](models/token-lm.md#graft) | Token LM | T, S → S |
+| <a href="models/parallel.md#gsa-tts"><img src="assets/architectures/gsa-tts.png" alt="GSA-TTS — Source figure" width="280"></a> | [GSA-TTS](models/parallel.md#gsa-tts) | Parallel | T, S → S |
+| <a href="models/autoregressive.md#gst-tacotron"><img src="assets/architectures/gst-tacotron.png" alt="GST-Tacotron — Source figure" width="280"></a> | [GST-Tacotron](models/autoregressive.md#gst-tacotron) | Autoregressive | T, S → S |
+| <a href="models/diffusion.md#habibi"><img src="assets/architectures/habibi.png" alt="Habibi — Source figure" width="280"></a> | [Habibi](models/diffusion.md#habibi) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#hd-ppt"><img src="assets/architectures/hd-ppt.png" alt="HD-PPT — Source figure" width="280"></a> | [HD-PPT](models/token-lm.md#hd-ppt) | Token LM | T, S → S |
+| <a href="models/token-lm.md#higgs-audio-v2"><img src="assets/architectures/higgs-audio-v2.png" alt="Higgs Audio v2 — Source figure" width="280"></a> | [Higgs Audio v2](models/token-lm.md#higgs-audio-v2) | Token LM | T, S → S |
+| <a href="models/token-lm.md#higgs-audio-v2-5"><img src="assets/architectures/higgs-audio-v2-5.svg" alt="Higgs Audio v2.5 — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Higgs Audio v2.5](models/token-lm.md#higgs-audio-v2-5) | Token LM | T, S → S |
+| <a href="models/token-lm.md#higgs-audio-v3-tts"><img src="assets/architectures/higgs-audio-v3-tts.png" alt="Higgs Audio v3 TTS — Source figure" width="280"></a> | [Higgs Audio v3 TTS](models/token-lm.md#higgs-audio-v3-tts) | Token LM | T, S → S |
+| <a href="models/diffusion.md#histyle"><img src="assets/architectures/histyle.png" alt="HiStyle — Source figure" width="280"></a> | [HiStyle](models/diffusion.md#histyle) | Diffusion / flow | T → S |
+| <a href="models/continuous-lm.md#holidubber"><img src="assets/architectures/holidubber.png" alt="HoliDubber — Source figure" width="280"></a> | [HoliDubber](models/continuous-lm.md#holidubber) | Continuous LM | T, V → S |
+| <a href="models/continuous-lm.md#holitok-tts"><img src="assets/architectures/holitok-tts.png" alt="HoliTok (TTS) — Source figure" width="280"></a> | [HoliTok (TTS)](models/continuous-lm.md#holitok-tts) | Continuous LM | T, S → S |
+| <a href="models/api.md#hume-octave-tts"><img src="assets/architectures/hume-octave-tts.svg" alt="Hume Octave TTS — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Hume Octave TTS](models/api.md#hume-octave-tts) | API | T, S → S |
+| <a href="models/diffusion.md#immersivetts"><img src="assets/architectures/immersivetts.png" alt="ImmersiveTTS — Source figure" width="280"></a> | [ImmersiveTTS](models/diffusion.md#immersivetts) | Diffusion / flow | T, S, A → S, A |
+| <a href="models/token-lm.md#indextts"><img src="assets/architectures/indextts.png" alt="IndexTTS — Source figure" width="280"></a> | [IndexTTS](models/token-lm.md#indextts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#indextts-2-5"><img src="assets/architectures/indextts-2-5.png" alt="IndexTTS 2.5 — Source figure" width="280"></a> | [IndexTTS 2.5](models/token-lm.md#indextts-2-5) | Token LM | T, S → S |
+| <a href="models/token-lm.md#indextts2"><img src="assets/architectures/indextts2.png" alt="IndexTTS2 — Source figure" width="280"></a> | [IndexTTS2](models/token-lm.md#indextts2) | Token LM | T, S → S |
+| <a href="models/diffusion.md#instructaudio"><img src="assets/architectures/instructaudio.png" alt="InstructAudio — Source figure" width="280"></a> | [InstructAudio](models/diffusion.md#instructaudio) | Diffusion / flow | T → S |
+| <a href="models/diffusion.md#intmeanflow"><img src="assets/architectures/intmeanflow.png" alt="IntMeanFlow — Source figure" width="280"></a> | [IntMeanFlow](models/diffusion.md#intmeanflow) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#inworld-tts-1"><img src="assets/architectures/inworld-tts-1.png" alt="Inworld TTS-1 — Source figure" width="280"></a> | [Inworld TTS-1](models/token-lm.md#inworld-tts-1) | Token LM | T → S |
+| <a href="models/continuous-lm.md#jaitts"><img src="assets/architectures/jaitts.png" alt="JaiTTS — Source figure" width="280"></a> | [JaiTTS](models/continuous-lm.md#jaitts) | Continuous LM | T, S → S |
+| <a href="models/diffusion.md#jam-flow"><img src="assets/architectures/jam-flow.png" alt="JAM-Flow — Source figure" width="280"></a> | [JAM-Flow](models/diffusion.md#jam-flow) | Diffusion / flow | T, S, V → S |
+| <a href="models/token-lm.md#jelly"><img src="assets/architectures/jelly.png" alt="JELLY — Source figure" width="280"></a> | [JELLY](models/token-lm.md#jelly) | Token LM | T, S → S |
+| <a href="models/parallel.md#jets"><img src="assets/architectures/jets.png" alt="JETS — Source figure" width="270"></a> | [JETS](models/parallel.md#jets) | Parallel | T → S |
+| <a href="models/parallel.md#joint-non-autoregressive-stt-tts"><img src="assets/architectures/joint-non-autoregressive-stt-tts.png" alt="Joint non-autoregressive STT-TTS — Source figure" width="280"></a> | [Joint non-autoregressive STT-TTS](models/parallel.md#joint-non-autoregressive-stt-tts) | Parallel | T → S |
+| <a href="models/diffusion.md#joycent"><img src="assets/architectures/joycent.png" alt="Joycent — Source figure" width="280"></a> | [Joycent](models/diffusion.md#joycent) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#joyvoice"><img src="assets/architectures/joyvoice.png" alt="JoyVoice — Source figure" width="280"></a> | [JoyVoice](models/token-lm.md#joyvoice) | Token LM | T, S → S |
+| <a href="models/diffusion.md#kaburi-tts"><img src="assets/architectures/kaburi-tts.png" alt="KABURI-TTS — Source figure" width="226"></a> | [KABURI-TTS](models/diffusion.md#kaburi-tts) | Diffusion / flow | T → S |
+| <a href="models/compact.md#kitten-tts"><img src="assets/architectures/kitten-tts.svg" alt="KittenTTS — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [KittenTTS](models/compact.md#kitten-tts) | Compact | T → S |
+| <a href="models/token-lm.md#koel-tts"><img src="assets/architectures/koel-tts.png" alt="Koel-TTS — Source figure" width="280"></a> | [Koel-TTS](models/token-lm.md#koel-tts) | Token LM | T, S → S |
+| <a href="models/compact.md#kokoro"><img src="assets/architectures/kokoro.svg" alt="Kokoro — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Kokoro](models/compact.md#kokoro) | Compact | T → S |
+| <a href="models/token-lm.md#kyutai-tts-dsm"><img src="assets/architectures/kyutai-tts-dsm.png" alt="Kyutai TTS (DSM) — Source figure" width="280"></a> | [Kyutai TTS (DSM)](models/token-lm.md#kyutai-tts-dsm) | Token LM | T, S → S |
+| <a href="models/parallel.md#lanstyletts"><img src="assets/architectures/lanstyletts.png" alt="LanStyleTTS — Source figure" width="229"></a> | [LanStyleTTS](models/parallel.md#lanstyletts) | Parallel | T, S → S |
+| <a href="models/token-lm.md#latinx"><img src="assets/architectures/latinx.png" alt="LatinX — Source figure" width="280"></a> | [LatinX](models/token-lm.md#latinx) | Token LM | T, S → S |
+| <a href="models/compact.md#le2e-tts"><img src="assets/architectures/le2e-tts.png" alt="LE2E-TTS — Source figure" width="280"></a> | [LE2E-TTS](models/compact.md#le2e-tts) | Compact | T → S |
+| <a href="models/parallel.md#lightspeech"><img src="assets/architectures/lightspeech.svg" alt="LightSpeech — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [LightSpeech](models/parallel.md#lightspeech) | Parallel | T → S |
+| <a href="models/token-lm.md#llada-tts"><img src="assets/architectures/llada-tts.png" alt="LLaDA-TTS — Source figure" width="280"></a> | [LLaDA-TTS](models/token-lm.md#llada-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#llasa"><img src="assets/architectures/llasa.png" alt="Llasa — Source figure" width="209"></a> | [Llasa](models/token-lm.md#llasa) | Token LM | T, S → S |
+| <a href="models/token-lm.md#llasa-plus"><img src="assets/architectures/llasa-plus.png" alt="Llasa+ — Source figure" width="280"></a> | [Llasa+](models/token-lm.md#llasa-plus) | Token LM | T, S → S |
+| <a href="models/token-lm.md#llmvox"><img src="assets/architectures/llmvox.png" alt="LLMVoX — Source figure" width="280"></a> | [LLMVoX](models/token-lm.md#llmvox) | Token LM | T → S |
+| <a href="models/diffusion.md#lombard-matcha-tts"><img src="assets/architectures/lombard-matcha-tts.png" alt="Lombard Matcha-TTS — Source figure" width="205"></a> | [Lombard Matcha-TTS](models/diffusion.md#lombard-matcha-tts) | Diffusion / flow | T → S |
+| <a href="models/diffusion.md#longcat-audiodit"><img src="assets/architectures/longcat-audiodit.png" alt="LongCat-AudioDiT — Source figure" width="280"></a> | [LongCat-AudioDiT](models/diffusion.md#longcat-audiodit) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#lorp-tts"><img src="assets/architectures/lorp-tts.png" alt="LoRP-TTS — Source figure" width="280"></a> | [LoRP-TTS](models/diffusion.md#lorp-tts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#luna-tts"><img src="assets/architectures/luna-tts.png" alt="Luna-TTS — Source figure" width="280"></a> | [Luna-TTS](models/token-lm.md#luna-tts) | Token LM | T, S → S |
+| <a href="models/diffusion.md#m3-tts"><img src="assets/architectures/m3-tts.png" alt="M3-TTS — Source figure" width="280"></a> | [M3-TTS](models/diffusion.md#m3-tts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#magic-tts"><img src="assets/architectures/magic-tts.png" alt="MAGIC-TTS — Source figure" width="280"></a> | [MAGIC-TTS](models/token-lm.md#magic-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#magpietts-lf"><img src="assets/architectures/magpietts-lf.png" alt="MagpieTTS-LF — Source figure" width="244"></a> | [MagpieTTS-LF](models/token-lm.md#magpietts-lf) | Token LM | T, S → S |
+| <a href="models/diffusion.md#mambavoicecloning"><img src="assets/architectures/mambavoicecloning.png" alt="MambaVoiceCloning — Source figure" width="280"></a> | [MambaVoiceCloning](models/diffusion.md#mambavoicecloning) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#mamtra"><img src="assets/architectures/mamtra.png" alt="MamTra — Source figure" width="280"></a> | [MamTra](models/diffusion.md#mamtra) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#manchutts"><img src="assets/architectures/manchutts.png" alt="ManchuTTS — Source figure" width="280"></a> | [ManchuTTS](models/diffusion.md#manchutts) | Diffusion / flow | T → S |
+| <a href="models/token-lm.md#marco-voice"><img src="assets/architectures/marco-voice.png" alt="Marco-Voice — Source figure" width="280"></a> | [Marco-Voice](models/token-lm.md#marco-voice) | Token LM | T, S → S |
+| <a href="models/token-lm.md#mars6"><img src="assets/architectures/mars6.png" alt="MARS6 — Source figure" width="280"></a> | [MARS6](models/token-lm.md#mars6) | Token LM | T, S → S |
+| <a href="models/token-lm.md#masked-style-tts"><img src="assets/architectures/masked-style-tts.png" alt="Masked-style TTS — Source figure" width="280"></a> | [Masked-style TTS](models/token-lm.md#masked-style-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#maskgct"><img src="assets/architectures/maskgct.png" alt="MaskGCT — Source figure" width="280"></a> | [MaskGCT](models/token-lm.md#maskgct) | Token LM | T, S → S |
+| <a href="models/diffusion.md#matcha-tts"><img src="assets/architectures/matcha-tts.png" alt="Matcha-TTS — Source figure" width="280"></a> | [Matcha-TTS](models/diffusion.md#matcha-tts) | Diffusion / flow | T → S |
+| <a href="models/token-lm.md#mave"><img src="assets/architectures/mave.png" alt="MAVE — Source figure" width="280"></a> | [MAVE](models/token-lm.md#mave) | Token LM | T, S → S |
+| <a href="models/token-lm.md#mega-tts"><img src="assets/architectures/mega-tts.png" alt="Mega-TTS — Source figure" width="280"></a> | [Mega-TTS](models/token-lm.md#mega-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#mega-tts-2"><img src="assets/architectures/mega-tts-2.png" alt="Mega-TTS 2 — Source figure" width="280"></a> | [Mega-TTS 2](models/token-lm.md#mega-tts-2) | Token LM | T, S → S |
+| <a href="models/diffusion.md#mega-tts-3"><img src="assets/architectures/mega-tts-3.png" alt="MegaTTS 3 — Source figure" width="280"></a> | [MegaTTS 3](models/diffusion.md#mega-tts-3) | Diffusion / flow | T, S → S |
+| <a href="models/autoregressive.md#meitei-mayek-tts"><img src="assets/architectures/meitei-mayek-tts.png" alt="Meitei Mayek TTS — Source figure" width="280"></a> | [Meitei Mayek TTS](models/autoregressive.md#meitei-mayek-tts) | Autoregressive | T → S |
+| <a href="models/continuous-lm.md#mel-llm-tts"><img src="assets/architectures/mel-llm-tts.png" alt="Mel-LLM (TTS) — Source figure" width="280"></a> | [Mel-LLM (TTS)](models/continuous-lm.md#mel-llm-tts) | Continuous LM | T → S |
+| <a href="models/continuous-lm.md#mela-tts"><img src="assets/architectures/mela-tts.png" alt="MELA-TTS — Source figure" width="280"></a> | [MELA-TTS](models/continuous-lm.md#mela-tts) | Continuous LM | T, S → S |
+| <a href="models/token-lm.md#meld"><img src="assets/architectures/meld.png" alt="MELD — Source figure" width="280"></a> | [MELD](models/token-lm.md#meld) | Token LM | T, S → S |
+| <a href="models/autoregressive.md#mellotron"><img src="assets/architectures/mellotron.svg" alt="Mellotron — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Mellotron](models/autoregressive.md#mellotron) | Autoregressive | T, S → S |
+| <a href="models/flow-vae.md#melo-tts"><img src="assets/architectures/melo-tts.svg" alt="MeloTTS — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [MeloTTS](models/flow-vae.md#melo-tts) | Flow / VAE | T → S |
+| <a href="models/token-lm.md#metis"><img src="assets/architectures/metis.png" alt="Metis — Source figure" width="143"></a> | [Metis](models/token-lm.md#metis) | Token LM | T, S → S |
+| <a href="models/token-lm.md#mfcig-css"><img src="assets/architectures/mfcig-css.png" alt="MFCIG-CSS — Source figure" width="280"></a> | [MFCIG-CSS](models/token-lm.md#mfcig-css) | Token LM | T, S, V → S |
+| <a href="models/continuous-lm.md#midashenglm-gen"><img src="assets/architectures/midashenglm-gen.png" alt="MiDashengLM-Gen — Source figure" width="152"></a> | [MiDashengLM-Gen](models/continuous-lm.md#midashenglm-gen) | Continuous LM | T → S, A |
+| <a href="models/token-lm.md#minimax-speech"><img src="assets/architectures/minimax-speech.png" alt="MiniMax-Speech — Source figure" width="280"></a> | [MiniMax-Speech](models/token-lm.md#minimax-speech) | Token LM | T, S → S |
+| <a href="models/token-lm.md#mixedg2p-t5"><img src="assets/architectures/mixedg2p-t5.png" alt="MixedG2P-T5 — Source figure" width="213"></a> | [MixedG2P-T5](models/token-lm.md#mixedg2p-t5) | Token LM | T, S → S |
+| <a href="models/diffusion.md#mm-moviedubber"><img src="assets/architectures/mm-moviedubber.png" alt="MM-MovieDubber — Source figure" width="280"></a> | [MM-MovieDubber](models/diffusion.md#mm-moviedubber) | Diffusion / flow | T, V → S |
+| <a href="models/token-lm.md#moe-tts"><img src="assets/architectures/moe-tts.png" alt="MoE-TTS — Source figure" width="280"></a> | [MoE-TTS](models/token-lm.md#moe-tts) | Token LM | T → S |
+| <a href="models/token-lm.md#mooncast"><img src="assets/architectures/mooncast.png" alt="MoonCast — Source figure" width="280"></a> | [MoonCast](models/token-lm.md#mooncast) | Token LM | T, S → S |
+| <a href="models/token-lm.md#moss-tts"><img src="assets/architectures/moss-tts.png" alt="MOSS-TTS — Source figure" width="280"></a> | [MOSS-TTS](models/token-lm.md#moss-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#moss-tts-nano"><img src="assets/architectures/moss-tts-nano.png" alt="MOSS-TTS-Nano — Source figure" width="280"></a> | [MOSS-TTS-Nano](models/token-lm.md#moss-tts-nano) | Token LM | T, S → S |
+| <a href="models/token-lm.md#moss-tts-realtime"><img src="assets/architectures/moss-tts-realtime.svg" alt="MOSS-TTS-Realtime — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [MOSS-TTS-Realtime](models/token-lm.md#moss-tts-realtime) | Token LM | T, S → S |
+| <a href="models/token-lm.md#moss-ttsd"><img src="assets/architectures/moss-ttsd.png" alt="MOSS-TTSD — Source figure" width="280"></a> | [MOSS-TTSD](models/token-lm.md#moss-ttsd) | Token LM | T, S → S |
+| <a href="models/token-lm.md#moss-voicegenerator"><img src="assets/architectures/moss-voicegenerator.png" alt="MOSS-VoiceGenerator — Source figure" width="280"></a> | [MOSS-VoiceGenerator](models/token-lm.md#moss-voicegenerator) | Token LM | T → S |
+| <a href="models/continuous-lm.md#mp-eld"><img src="assets/architectures/mp-eld.png" alt="MP-ELD — Source figure" width="280"></a> | [MP-ELD](models/continuous-lm.md#mp-eld) | Continuous LM | T, S → S |
+| <a href="models/token-lm.md#mpe-tts"><img src="assets/architectures/mpe-tts.png" alt="MPE-TTS — Source figure" width="266"></a> | [MPE-TTS](models/token-lm.md#mpe-tts) | Token LM | T, S → S |
+| <a href="models/diffusion.md#multistage-multimodal-tts"><img src="assets/architectures/multistage-multimodal-tts.png" alt="Multistage multimodal TTS — Source figure" width="280"></a> | [Multistage multimodal TTS](models/diffusion.md#multistage-multimodal-tts) | Diffusion / flow | T, I → S |
+| <a href="models/token-lm.md#muyan-tts"><img src="assets/architectures/muyan-tts.png" alt="Muyan-TTS — Source figure" width="280"></a> | [Muyan-TTS](models/token-lm.md#muyan-tts) | Token LM | T, S → S |
+| <a href="models/flow-vae.md#naturalspeech"><img src="assets/architectures/naturalspeech.png" alt="NaturalSpeech — Source figure" width="280"></a> | [NaturalSpeech](models/flow-vae.md#naturalspeech) | Flow / VAE | T → S |
+| <a href="models/diffusion.md#naturalspeech-2"><img src="assets/architectures/naturalspeech-2.png" alt="NaturalSpeech 2 — Source figure" width="280"></a> | [NaturalSpeech 2](models/diffusion.md#naturalspeech-2) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#naturalspeech-3"><img src="assets/architectures/naturalspeech-3.png" alt="NaturalSpeech 3 — Source figure" width="280"></a> | [NaturalSpeech 3](models/diffusion.md#naturalspeech-3) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#neutts-air"><img src="assets/architectures/neutts-air.svg" alt="NeuTTS Air — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [NeuTTS Air](models/token-lm.md#neutts-air) | Token LM | T, S → S |
+| <a href="models/token-lm.md#neutts-nano"><img src="assets/architectures/neutts-nano.svg" alt="NeuTTS Nano — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [NeuTTS Nano](models/token-lm.md#neutts-nano) | Token LM | T, S → S |
+| <a href="models/token-lm.md#neutts-2e"><img src="assets/architectures/neutts-2e.svg" alt="NeuTTS-2E — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [NeuTTS-2E](models/token-lm.md#neutts-2e) | Token LM | T → S |
+| <a href="models/token-lm.md#nr-lauratts"><img src="assets/architectures/nr-lauratts.png" alt="NR-LauraTTS — Source figure" width="230"></a> | [NR-LauraTTS](models/token-lm.md#nr-lauratts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#nvspeech-tts"><img src="assets/architectures/nvspeech-tts.png" alt="NVSpeech TTS — Source figure" width="280"></a> | [NVSpeech TTS](models/token-lm.md#nvspeech-tts) | Token LM | T, S → S |
+| <a href="models/flow-vae.md#nushu-pitchvits"><img src="assets/architectures/nushu-pitchvits.png" alt="Nüshu-PitchVITS — Source figure" width="280"></a> | [Nüshu-PitchVITS](models/flow-vae.md#nushu-pitchvits) | Flow / VAE | T → S |
+| <a href="models/diffusion.md#ojibwe-mi-kmaq-maliseet-tts"><img src="assets/architectures/ojibwe-mi-kmaq-maliseet-tts.png" alt="Ojibwe-Mi&#x27;kmaq-Maliseet TTS — Source figure" width="280"></a> | [Ojibwe-Mi'kmaq-Maliseet TTS](models/diffusion.md#ojibwe-mi-kmaq-maliseet-tts) | Diffusion / flow | T → S |
+| <a href="models/token-lm.md#omnivoice"><img src="assets/architectures/omnivoice.png" alt="OmniVoice — Source figure" width="280"></a> | [OmniVoice](models/token-lm.md#omnivoice) | Token LM | T, S → S |
+| <a href="models/token-lm.md#opuslm"><img src="assets/architectures/opuslm.png" alt="OpusLM — Source figure" width="280"></a> | [OpusLM](models/token-lm.md#opuslm) | Token LM | T, S → S |
+| <a href="models/token-lm.md#orpheus-tts"><img src="assets/architectures/orpheus-tts.svg" alt="Orpheus TTS — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Orpheus TTS](models/token-lm.md#orpheus-tts) | Token LM | T, S → S |
+| <a href="models/diffusion.md#oscillatts"><img src="assets/architectures/oscillatts.png" alt="OscillaTTS — Source figure" width="280"></a> | [OscillaTTS](models/diffusion.md#oscillatts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#outetts"><img src="assets/architectures/outetts.svg" alt="OuteTTS — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [OuteTTS](models/token-lm.md#outetts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#ov-instructtts"><img src="assets/architectures/ov-instructtts.png" alt="OV-InstructTTS — Source figure" width="246"></a> | [OV-InstructTTS](models/token-lm.md#ov-instructtts) | Token LM | T → S |
+| <a href="models/token-lm.md#ozspeech"><img src="assets/architectures/ozspeech.png" alt="OZSpeech — Source figure" width="280"></a> | [OZSpeech](models/token-lm.md#ozspeech) | Token LM | T, S → S |
+| <a href="models/token-lm.md#palle"><img src="assets/architectures/palle.png" alt="PALLE — Source figure" width="280"></a> | [PALLE](models/token-lm.md#palle) | Token LM | T, S → S |
+| <a href="models/token-lm.md#parallel-gpt"><img src="assets/architectures/parallel-gpt.png" alt="Parallel GPT — Source figure" width="280"></a> | [Parallel GPT](models/token-lm.md#parallel-gpt) | Token LM | T, S → S |
+| <a href="models/parallel.md#parallel-tacotron"><img src="assets/architectures/parallel-tacotron.png" alt="Parallel Tacotron — Source figure" width="280"></a> | [Parallel Tacotron](models/parallel.md#parallel-tacotron) | Parallel | T → S |
+| <a href="models/parallel.md#parallel-tacotron-2"><img src="assets/architectures/parallel-tacotron-2.png" alt="Parallel Tacotron 2 — Source figure" width="128"></a> | [Parallel Tacotron 2](models/parallel.md#parallel-tacotron-2) | Parallel | T → S |
+| <a href="models/parallel.md#parastyletts"><img src="assets/architectures/parastyletts.png" alt="ParaStyleTTS — Source figure" width="158"></a> | [ParaStyleTTS](models/parallel.md#parastyletts) | Parallel | T → S |
+| <a href="models/token-lm.md#parler-tts"><img src="assets/architectures/parler-tts.png" alt="Parler-TTS — Source figure" width="280"></a> | [Parler-TTS](models/token-lm.md#parler-tts) | Token LM | T → S |
+| <a href="models/token-lm.md#parler-tts-hinglish-adaptation"><img src="assets/architectures/parler-tts-hinglish-adaptation.png" alt="Parler-TTS Hinglish adaptation — Source figure" width="280"></a> | [Parler-TTS Hinglish adaptation](models/token-lm.md#parler-tts-hinglish-adaptation) | Token LM | T → S |
+| <a href="models/diffusion.md#pfluxtts"><img src="assets/architectures/pfluxtts.png" alt="PFluxTTS — Source figure" width="280"></a> | [PFluxTTS](models/diffusion.md#pfluxtts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#phoenix-tts"><img src="assets/architectures/phoenix-tts.png" alt="Phoenix TTS — Source figure" width="238"></a> | [Phoenix TTS](models/token-lm.md#phoenix-tts) | Token LM | T, S → S |
+| <a href="models/parallel.md#phoneme-tone-adaptive-thai-tts"><img src="assets/architectures/phoneme-tone-adaptive-thai-tts.png" alt="Phoneme-tone adaptive Thai TTS — Source figure" width="280"></a> | [Phoneme-tone adaptive Thai TTS](models/parallel.md#phoneme-tone-adaptive-thai-tts) | Parallel | T, S → S |
+| <a href="models/token-lm.md#pilottts"><img src="assets/architectures/pilottts.png" alt="PilotTTS — Source figure" width="280"></a> | [PilotTTS](models/token-lm.md#pilottts) | Token LM | T, S → S |
+| <a href="models/flow-vae.md#piper"><img src="assets/architectures/piper.svg" alt="Piper (VITS voices) — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Piper (VITS voices)](models/flow-vae.md#piper) | Flow / VAE | T → S |
+| <a href="models/continuous-lm.md#pocket-tts"><img src="assets/architectures/pocket-tts.png" alt="Pocket TTS — Source figure" width="280"></a> | [Pocket TTS](models/continuous-lm.md#pocket-tts) | Continuous LM | T, S → S |
+| <a href="models/flow-vae.md#portaspeech"><img src="assets/architectures/portaspeech.png" alt="PortaSpeech — Source figure" width="280"></a> | [PortaSpeech](models/flow-vae.md#portaspeech) | Flow / VAE | T → S |
+| <a href="models/parallel.md#proemo"><img src="assets/architectures/proemo.png" alt="PROEMO — Source figure" width="280"></a> | [PROEMO](models/parallel.md#proemo) | Parallel | T → S |
+| <a href="models/flow-vae.md#progressive-face-conditioned-tts"><img src="assets/architectures/progressive-face-conditioned-tts.png" alt="Progressive face-conditioned TTS — Source figure" width="280"></a> | [Progressive face-conditioned TTS](models/flow-vae.md#progressive-face-conditioned-tts) | Flow / VAE | T, I → S |
+| <a href="models/token-lm.md#prompt-unseen-emotion"><img src="assets/architectures/prompt-unseen-emotion.png" alt="Prompt-Unseen-Emotion — Source figure" width="280"></a> | [Prompt-Unseen-Emotion](models/token-lm.md#prompt-unseen-emotion) | Token LM | T → S |
+| <a href="models/parallel.md#prompttts"><img src="assets/architectures/prompttts.png" alt="PromptTTS — Source figure" width="280"></a> | [PromptTTS](models/parallel.md#prompttts) | Parallel | T → S |
+| <a href="models/diffusion.md#prompttts-2"><img src="assets/architectures/prompttts-2.png" alt="PromptTTS 2 — Source figure" width="280"></a> | [PromptTTS 2](models/diffusion.md#prompttts-2) | Diffusion / flow | T → S |
+| <a href="models/flow-vae.md#protodisent-tts"><img src="assets/architectures/protodisent-tts.png" alt="ProtoDisent-TTS — Source figure" width="280"></a> | [ProtoDisent-TTS](models/flow-vae.md#protodisent-tts) | Flow / VAE | T, S → S |
+| <a href="models/token-lm.md#ps-tts"><img src="assets/architectures/ps-tts.png" alt="PS-TTS — Source figure" width="280"></a> | [PS-TTS](models/token-lm.md#ps-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#qtts"><img src="assets/architectures/qtts.png" alt="QTTS — Source figure" width="280"></a> | [QTTS](models/token-lm.md#qtts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#qwen-audio-3-0-tts"><img src="assets/architectures/qwen-audio-3-0-tts.png" alt="Qwen-Audio-3.0-TTS — Source figure" width="280"></a> | [Qwen-Audio-3.0-TTS](models/token-lm.md#qwen-audio-3-0-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#qwen3-tts"><img src="assets/architectures/qwen3-tts.png" alt="Qwen3-TTS — Source figure" width="280"></a> | [Qwen3-TTS](models/token-lm.md#qwen3-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#radka-css"><img src="assets/architectures/radka-css.png" alt="RADKA-CSS — Source figure" width="280"></a> | [RADKA-CSS](models/token-lm.md#radka-css) | Token LM | T, S → S |
+| <a href="models/token-lm.md#rall-e"><img src="assets/architectures/rall-e.png" alt="RALL-E — Source figure" width="280"></a> | [RALL-E](models/token-lm.md#rall-e) | Token LM | T, S → S |
+| <a href="models/diffusion.md#raon-opentts"><img src="assets/architectures/raon-opentts.png" alt="Raon-OpenTTS — Source figure" width="280"></a> | [Raon-OpenTTS](models/diffusion.md#raon-opentts) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#rapflow-tts"><img src="assets/architectures/rapflow-tts.png" alt="RapFlow-TTS — Source figure" width="280"></a> | [RapFlow-TTS](models/diffusion.md#rapflow-tts) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#regenvoice"><img src="assets/architectures/regenvoice.png" alt="ReGenVoice — Source figure" width="280"></a> | [ReGenVoice](models/diffusion.md#regenvoice) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#restyle-tts"><img src="assets/architectures/restyle-tts.png" alt="ReStyle-TTS — Source figure" width="280"></a> | [ReStyle-TTS](models/diffusion.md#restyle-tts) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#rtfree-f5"><img src="assets/architectures/rtfree-f5.png" alt="RTFree-F5 — Source figure" width="280"></a> | [RTFree-F5](models/diffusion.md#rtfree-f5) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#rv-tts"><img src="assets/architectures/rv-tts.png" alt="RV-TTS — Source figure" width="280"></a> | [RV-TTS](models/diffusion.md#rv-tts) | Diffusion / flow | T, I → S |
+| <a href="models/token-lm.md#rwkvtts"><img src="assets/architectures/rwkvtts.png" alt="RWKVTTS — Source figure" width="179"></a> | [RWKVTTS](models/token-lm.md#rwkvtts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#s5-tts"><img src="assets/architectures/s5-tts.png" alt="S5-TTS — Source figure" width="280"></a> | [S5-TTS](models/token-lm.md#s5-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#sarashina2-2-tts"><img src="assets/architectures/sarashina2-2-tts.png" alt="Sarashina2.2-TTS — Source figure" width="280"></a> | [Sarashina2.2-TTS](models/token-lm.md#sarashina2-2-tts) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#saslm"><img src="assets/architectures/saslm.png" alt="SASLM — Source figure" width="280"></a> | [SASLM](models/continuous-lm.md#saslm) | Continuous LM | T, S → S |
+| <a href="models/token-lm.md#seed-tts"><img src="assets/architectures/seed-tts.png" alt="Seed-TTS — Source figure" width="280"></a> | [Seed-TTS](models/token-lm.md#seed-tts) | Token LM | T, S → S |
+| <a href="models/compact.md#self-distilled-zero-shot-tts"><img src="assets/architectures/self-distilled-zero-shot-tts.png" alt="Self-distilled zero-shot TTS — Source figure" width="280"></a> | [Self-distilled zero-shot TTS](models/compact.md#self-distilled-zero-shot-tts) | Compact | T, S → S |
+| <a href="models/flow-vae.md#selftts"><img src="assets/architectures/selftts.png" alt="SelfTTS — Source figure" width="280"></a> | [SelfTTS](models/flow-vae.md#selftts) | Flow / VAE | T, S → S |
+| <a href="models/continuous-lm.md#semavoice"><img src="assets/architectures/semavoice.png" alt="SemaVoice — Source figure" width="280"></a> | [SemaVoice](models/continuous-lm.md#semavoice) | Continuous LM | T, S → S |
+| <a href="models/continuous-lm.md#sembridge"><img src="assets/architectures/sembridge.png" alt="SemBridge — Source figure" width="280"></a> | [SemBridge](models/continuous-lm.md#sembridge) | Continuous LM | T, S → S |
+| <a href="models/diffusion.md#shallow-flow-matching-tts"><img src="assets/architectures/shallow-flow-matching-tts.png" alt="Shallow Flow Matching TTS — Source figure" width="155"></a> | [Shallow Flow Matching TTS](models/diffusion.md#shallow-flow-matching-tts) | Diffusion / flow | T, S → S |
+| <a href="models/continuous-lm.md#sled"><img src="assets/architectures/sled.png" alt="SLED — Source figure" width="280"></a> | [SLED](models/continuous-lm.md#sled) | Continuous LM | T, S → S |
+| <a href="models/compact.md#slimspeech"><img src="assets/architectures/slimspeech.png" alt="SlimSpeech — Source figure" width="280"></a> | [SlimSpeech](models/compact.md#slimspeech) | Compact | T, S → S |
+| <a href="models/token-lm.md#smlle"><img src="assets/architectures/smlle.png" alt="SMLLE — Source figure" width="280"></a> | [SMLLE](models/token-lm.md#smlle) | Token LM | T, S → S |
+| <a href="models/token-lm.md#soulx-podcast"><img src="assets/architectures/soulx-podcast.png" alt="SoulX-Podcast — Source figure" width="280"></a> | [SoulX-Podcast](models/token-lm.md#soulx-podcast) | Token LM | T, S → S |
+| <a href="models/token-lm.md#spark-tts"><img src="assets/architectures/spark-tts.png" alt="Spark-TTS — Source figure" width="280"></a> | [Spark-TTS](models/token-lm.md#spark-tts) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#speakstream"><img src="assets/architectures/speakstream.png" alt="SpeakStream — Source figure" width="194"></a> | [SpeakStream](models/continuous-lm.md#speakstream) | Continuous LM | T, S → S |
+| <a href="models/token-lm.md#spear-tts"><img src="assets/architectures/spear-tts.png" alt="SPEAR-TTS — Source figure" width="280"></a> | [SPEAR-TTS](models/token-lm.md#spear-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#speechaccentllm"><img src="assets/architectures/speechaccentllm.png" alt="SpeechAccentLLM — Source figure" width="280"></a> | [SpeechAccentLLM](models/token-lm.md#speechaccentllm) | Token LM | T, S → S |
+| <a href="models/token-lm.md#speechedit"><img src="assets/architectures/speechedit.png" alt="SpeechEdit — Source figure" width="280"></a> | [SpeechEdit](models/token-lm.md#speechedit) | Token LM | T, S → S |
+| <a href="models/autoregressive.md#speecht5"><img src="assets/architectures/speecht5.png" alt="SpeechT5 — Source figure" width="280"></a> | [SpeechT5](models/autoregressive.md#speecht5) | Autoregressive | T, S → S |
+| <a href="models/token-lm.md#speechx"><img src="assets/architectures/speechx.png" alt="SpeechX — Source figure" width="280"></a> | [SpeechX](models/token-lm.md#speechx) | Token LM | T, S → S |
+| <a href="models/parallel.md#speedyspeech"><img src="assets/architectures/speedyspeech.png" alt="SpeedySpeech — Source figure" width="280"></a> | [SpeedySpeech](models/parallel.md#speedyspeech) | Parallel | T → S |
+| <a href="models/diffusion.md#spotlight-tts"><img src="assets/architectures/spotlight-tts.png" alt="Spotlight-TTS — Source figure" width="280"></a> | [Spotlight-TTS](models/diffusion.md#spotlight-tts) | Diffusion / flow | T, S → S |
+| <a href="models/compact.md#stellartts"><img src="assets/architectures/stellartts.png" alt="StellarTTS — Source figure" width="280"></a> | [StellarTTS](models/compact.md#stellartts) | Compact | T, S → S |
+| <a href="models/token-lm.md#step-audio-editx"><img src="assets/architectures/step-audio-editx.png" alt="Step-Audio-EditX — Source figure" width="280"></a> | [Step-Audio-EditX](models/token-lm.md#step-audio-editx) | Token LM | T, S → S |
+| <a href="models/token-lm.md#step-audio-tts"><img src="assets/architectures/step-audio-tts.png" alt="Step-Audio-TTS — Source figure" width="280"></a> | [Step-Audio-TTS](models/token-lm.md#step-audio-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#stepaudio-2-5-tts"><img src="assets/architectures/stepaudio-2-5-tts.png" alt="StepAudio 2.5 TTS — Source figure" width="280"></a> | [StepAudio 2.5 TTS](models/token-lm.md#stepaudio-2-5-tts) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#stochastic-alignment-continuous-tts"><img src="assets/architectures/stochastic-alignment-continuous-tts.png" alt="Stochastic-alignment continuous TTS — Source figure" width="280"></a> | [Stochastic-alignment continuous TTS](models/continuous-lm.md#stochastic-alignment-continuous-tts) | Continuous LM | T, S → S |
+| <a href="models/continuous-lm.md#streammel"><img src="assets/architectures/streammel.png" alt="StreamMel — Source figure" width="280"></a> | [StreamMel](models/continuous-lm.md#streammel) | Continuous LM | T, S → S |
+| <a href="models/parallel.md#styletts"><img src="assets/architectures/styletts.png" alt="StyleTTS — Source figure" width="280"></a> | [StyleTTS](models/parallel.md#styletts) | Parallel | T, S → S |
+| <a href="models/diffusion.md#styletts-2"><img src="assets/architectures/styletts-2.png" alt="StyleTTS 2 — Source figure" width="272"></a> | [StyleTTS 2](models/diffusion.md#styletts-2) | Diffusion / flow | T, S → S |
+| <a href="models/compact.md#supertonic"><img src="assets/architectures/supertonic.png" alt="Supertonic — Source figure" width="280"></a> | [Supertonic](models/compact.md#supertonic) | Compact | T, S → S |
+| <a href="models/compact.md#supertonic-2"><img src="assets/architectures/supertonic-2.svg" alt="Supertonic 2 — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Supertonic 2](models/compact.md#supertonic-2) | Compact | T → S |
+| <a href="models/compact.md#supertonic-3"><img src="assets/architectures/supertonic-3.svg" alt="Supertonic 3 — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [Supertonic 3](models/compact.md#supertonic-3) | Compact | T → S |
+| <a href="models/diffusion.md#swanvoice"><img src="assets/architectures/swanvoice.png" alt="SwanVoice — Source figure" width="280"></a> | [SwanVoice](models/diffusion.md#swanvoice) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#syncspeech"><img src="assets/architectures/syncspeech.png" alt="SyncSpeech — Source figure" width="280"></a> | [SyncSpeech](models/token-lm.md#syncspeech) | Token LM | T, S → S |
+| <a href="models/autoregressive.md#tacotron"><img src="assets/architectures/tacotron.png" alt="Tacotron — Source figure" width="280"></a> | [Tacotron](models/autoregressive.md#tacotron) | Autoregressive | T → S |
+| <a href="models/autoregressive.md#tacotron-2"><img src="assets/architectures/tacotron-2.png" alt="Tacotron 2 — Source figure" width="280"></a> | [Tacotron 2](models/autoregressive.md#tacotron-2) | Autoregressive | T → S |
+| <a href="models/continuous-lm.md#tada"><img src="assets/architectures/tada.png" alt="TADA — Source figure" width="168"></a> | [TADA](models/continuous-lm.md#tada) | Continuous LM | T, S → S |
+| <a href="models/token-lm.md#ted-tts"><img src="assets/architectures/ted-tts.png" alt="TED-TTS — Source figure" width="280"></a> | [TED-TTS](models/token-lm.md#ted-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#tibetan-tts"><img src="assets/architectures/tibetan-tts.png" alt="Tibetan-TTS — Source figure" width="280"></a> | [Tibetan-TTS](models/token-lm.md#tibetan-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#tinywave"><img src="assets/architectures/tinywave.png" alt="TinyWave — Source figure" width="280"></a> | [TinyWave](models/token-lm.md#tinywave) | Token LM | T, S → S |
+| <a href="models/token-lm.md#tldr-tts"><img src="assets/architectures/tldr-tts.png" alt="TLDR (TTS) — Source figure" width="280"></a> | [TLDR (TTS)](models/token-lm.md#tldr-tts) | Token LM | T, S → S |
+| <a href="models/diffusion.md#tmd-tts"><img src="assets/architectures/tmd-tts.png" alt="TMD-TTS (formerly FMSD-TTS) — Source figure" width="280"></a> | [TMD-TTS (formerly FMSD-TTS)](models/diffusion.md#tmd-tts) | Diffusion / flow | T → S |
+| <a href="models/token-lm.md#tontaubev1"><img src="assets/architectures/tontaubev1.png" alt="TontaubeV1 — Source figure" width="280"></a> | [TontaubeV1](models/token-lm.md#tontaubev1) | Token LM | T, S → S |
+| <a href="models/token-lm.md#tortoise-tts"><img src="assets/architectures/tortoise-tts.png" alt="Tortoise TTS — Source figure" width="280"></a> | [Tortoise TTS](models/token-lm.md#tortoise-tts) | Token LM | T, S → S |
+| <a href="models/autoregressive.md#transformer-tts"><img src="assets/architectures/transformer-tts.png" alt="Transformer TTS — Source figure" width="140"></a> | [Transformer TTS](models/autoregressive.md#transformer-tts) | Autoregressive | T → S |
+| <a href="models/diffusion.md#tts-ctrlnet"><img src="assets/architectures/tts-ctrlnet.png" alt="TTS-CtrlNet — Source figure" width="247"></a> | [TTS-CtrlNet](models/diffusion.md#tts-ctrlnet) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#tts-transducer"><img src="assets/architectures/tts-transducer.png" alt="TTS-Transducer — Source figure" width="173"></a> | [TTS-Transducer](models/token-lm.md#tts-transducer) | Token LM | T, S → S |
+| <a href="models/concatenative.md#ttsyoruba"><img src="assets/architectures/ttsyoruba.svg" alt="TTSYoruba — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [TTSYoruba](models/concatenative.md#ttsyoruba) | Concatenative | T → S |
+| <a href="models/token-lm.md#uddetts"><img src="assets/architectures/uddetts.png" alt="UDDETTS — Source figure" width="280"></a> | [UDDETTS](models/token-lm.md#uddetts) | Token LM | T → S |
+| <a href="models/diffusion.md#umbratts"><img src="assets/architectures/umbratts.png" alt="UmbraTTS — Source figure" width="224"></a> | [UmbraTTS](models/diffusion.md#umbratts) | Diffusion / flow | T, S, A → S |
+| <a href="models/diffusion.md#uniflow-audio"><img src="assets/architectures/uniflow-audio.png" alt="UniFlow-Audio — Source figure" width="280"></a> | [UniFlow-Audio](models/diffusion.md#uniflow-audio) | Diffusion / flow | T, S, A, I, V → S, A |
+| <a href="models/diffusion.md#unison"><img src="assets/architectures/unison.png" alt="UNISON — Source figure" width="280"></a> | [UNISON](models/diffusion.md#unison) | Diffusion / flow | T, S, A → S, A |
+| <a href="models/diffusion.md#unisonate"><img src="assets/architectures/unisonate.png" alt="UniSonate — Source figure" width="280"></a> | [UniSonate](models/diffusion.md#unisonate) | Diffusion / flow | T → S |
+| <a href="models/diffusion.md#unispeaker"><img src="assets/architectures/unispeaker.png" alt="UniSpeaker — Source figure" width="280"></a> | [UniSpeaker](models/diffusion.md#unispeaker) | Diffusion / flow | T, S, I → S |
+| <a href="models/token-lm.md#unitaf"><img src="assets/architectures/unitaf.png" alt="UniTAF — Source figure" width="280"></a> | [UniTAF](models/token-lm.md#unitaf) | Token LM | T → S |
+| <a href="models/token-lm.md#unitalker"><img src="assets/architectures/unitalker.png" alt="UniTalker — Source figure" width="280"></a> | [UniTalker](models/token-lm.md#unitalker) | Token LM | T, S, V → S |
+| <a href="models/token-lm.md#unitts"><img src="assets/architectures/unitts.png" alt="UniTTS — Source figure" width="280"></a> | [UniTTS](models/token-lm.md#unitts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#univocal"><img src="assets/architectures/univocal.png" alt="UniVocal — Source figure" width="280"></a> | [UniVocal](models/token-lm.md#univocal) | Token LM | T, S → S |
+| <a href="models/diffusion.md#univoice-asr-and-tts"><img src="assets/architectures/univoice-asr-and-tts.png" alt="UniVoice (ASR and TTS) — Source figure" width="280"></a> | [UniVoice (ASR and TTS)](models/diffusion.md#univoice-asr-and-tts) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#univoice-speech-and-singing"><img src="assets/architectures/univoice-speech-and-singing.png" alt="UniVoice (speech and singing) — Source figure" width="279"></a> | [UniVoice (speech and singing)](models/diffusion.md#univoice-speech-and-singing) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#uniwav-tts"><img src="assets/architectures/uniwav-tts.png" alt="UniWav (TTS) — Source figure" width="280"></a> | [UniWav (TTS)](models/diffusion.md#uniwav-tts) | Diffusion / flow | T, S → S, A |
+| <a href="models/diffusion.md#uscf-conditioned-tts"><img src="assets/architectures/uscf-conditioned-tts.png" alt="USCF-conditioned TTS — Source figure" width="280"></a> | [USCF-conditioned TTS](models/diffusion.md#uscf-conditioned-tts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#v-cass"><img src="assets/architectures/v-cass.png" alt="V-CASS — Source figure" width="186"></a> | [V-CASS](models/token-lm.md#v-cass) | Token LM | T, V → S |
+| <a href="models/token-lm.md#vall-e"><img src="assets/architectures/vall-e.png" alt="VALL-E — Source figure" width="280"></a> | [VALL-E](models/token-lm.md#vall-e) | Token LM | T, S → S |
+| <a href="models/token-lm.md#vall-e-2"><img src="assets/architectures/vall-e-2.png" alt="VALL-E 2 — Source figure" width="280"></a> | [VALL-E 2](models/token-lm.md#vall-e-2) | Token LM | T, S → S |
+| <a href="models/token-lm.md#vall-e-x"><img src="assets/architectures/vall-e-x.png" alt="VALL-E X — Source figure" width="280"></a> | [VALL-E X](models/token-lm.md#vall-e-x) | Token LM | T, S → S |
+| <a href="models/token-lm.md#vall-t"><img src="assets/architectures/vall-t.png" alt="VALL-T — Source figure" width="273"></a> | [VALL-T](models/token-lm.md#vall-t) | Token LM | T, S → S |
+| <a href="models/flow-vae.md#vclip"><img src="assets/architectures/vclip.png" alt="Vclip — Source figure" width="245"></a> | [Vclip](models/flow-vae.md#vclip) | Flow / VAE | T, I → S |
+| <a href="models/token-lm.md#vevo"><img src="assets/architectures/vevo.png" alt="Vevo — Source figure" width="280"></a> | [Vevo](models/token-lm.md#vevo) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#vibevoice"><img src="assets/architectures/vibevoice.png" alt="VibeVoice — Source figure" width="280"></a> | [VibeVoice](models/continuous-lm.md#vibevoice) | Continuous LM | T, S → S |
+| <a href="models/continuous-lm.md#vibevoice-realtime"><img src="assets/architectures/vibevoice-realtime.png" alt="VibeVoice-Realtime — Source figure" width="280"></a> | [VibeVoice-Realtime](models/continuous-lm.md#vibevoice-realtime) | Continuous LM | T → S |
+| <a href="models/parallel.md#visualspeech"><img src="assets/architectures/visualspeech.png" alt="VisualSpeech — Source figure" width="280"></a> | [VisualSpeech](models/parallel.md#visualspeech) | Parallel | T, V → S |
+| <a href="models/flow-vae.md#vits"><img src="assets/architectures/vits.png" alt="VITS — Source figure" width="280"></a> | [VITS](models/flow-vae.md#vits) | Flow / VAE | T → S |
+| <a href="models/flow-vae.md#vits-2"><img src="assets/architectures/vits-2.png" alt="VITS2 — Source figure" width="280"></a> | [VITS2](models/flow-vae.md#vits-2) | Flow / VAE | T → S |
+| <a href="models/diffusion.md#vividvoice"><img src="assets/architectures/vividvoice.png" alt="VividVoice — Source figure" width="280"></a> | [VividVoice](models/diffusion.md#vividvoice) | Diffusion / flow | T, I, V → S |
+| <a href="models/token-lm.md#vocalnet-m2"><img src="assets/architectures/vocalnet-m2.png" alt="VocalNet-M2 — Source figure" width="280"></a> | [VocalNet-M2](models/token-lm.md#vocalnet-m2) | Token LM | T, S → S |
+| <a href="models/diffusion.md#voicebox"><img src="assets/architectures/voicebox.png" alt="Voicebox — Source figure" width="280"></a> | [Voicebox](models/diffusion.md#voicebox) | Diffusion / flow | T, S → S |
+| <a href="models/continuous-lm.md#voicechat-tts"><img src="assets/architectures/voicechat-tts.png" alt="VoiceChat-TTS — Source figure" width="280"></a> | [VoiceChat-TTS](models/continuous-lm.md#voicechat-tts) | Continuous LM | T → S |
+| <a href="models/token-lm.md#voicecraft"><img src="assets/architectures/voicecraft.png" alt="VoiceCraft — Source figure" width="280"></a> | [VoiceCraft](models/token-lm.md#voicecraft) | Token LM | T, S → S |
+| <a href="models/token-lm.md#voicecraft-dub"><img src="assets/architectures/voicecraft-dub.png" alt="VoiceCraft-Dub — Source figure" width="280"></a> | [VoiceCraft-Dub](models/token-lm.md#voicecraft-dub) | Token LM | T, S, V → S |
+| <a href="models/diffusion.md#voicedesigner"><img src="assets/architectures/voicedesigner.png" alt="VoiceDesigner — Source figure" width="280"></a> | [VoiceDesigner](models/diffusion.md#voicedesigner) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#voicesculptor"><img src="assets/architectures/voicesculptor.png" alt="VoiceSculptor — Source figure" width="280"></a> | [VoiceSculptor](models/token-lm.md#voicesculptor) | Token LM | T, S → S |
+| <a href="models/continuous-lm.md#voxcpm"><img src="assets/architectures/voxcpm.png" alt="VoxCPM — Source figure" width="280"></a> | [VoxCPM](models/continuous-lm.md#voxcpm) | Continuous LM | T, S → S |
+| <a href="models/continuous-lm.md#voxcpm2"><img src="assets/architectures/voxcpm2.png" alt="VoxCPM2 — Source figure" width="280"></a> | [VoxCPM2](models/continuous-lm.md#voxcpm2) | Continuous LM | T, S → S |
+| <a href="models/token-lm.md#voxtral-tts"><img src="assets/architectures/voxtral-tts.png" alt="Voxtral TTS — Source figure" width="280"></a> | [Voxtral TTS](models/token-lm.md#voxtral-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#voxtream"><img src="assets/architectures/voxtream.png" alt="VoXtream — Source figure" width="280"></a> | [VoXtream](models/token-lm.md#voxtream) | Token LM | T, S → S |
+| <a href="models/token-lm.md#voxtream2"><img src="assets/architectures/voxtream2.png" alt="VoXtream2 — Source figure" width="280"></a> | [VoXtream2](models/token-lm.md#voxtream2) | Token LM | T, S → S |
+| <a href="models/token-lm.md#vspeechlm"><img src="assets/architectures/vspeechlm.png" alt="VSpeechLM — Source figure" width="280"></a> | [VSpeechLM](models/token-lm.md#vspeechlm) | Token LM | T, V → S |
+| <a href="models/autoregressive.md#wave-tacotron"><img src="assets/architectures/wave-tacotron.png" alt="Wave-Tacotron — Source figure" width="280"></a> | [Wave-Tacotron](models/autoregressive.md#wave-tacotron) | Autoregressive | T → S |
+| <a href="models/diffusion.md#wavtts"><img src="assets/architectures/wavtts.png" alt="WavTTS — Source figure" width="280"></a> | [WavTTS](models/diffusion.md#wavtts) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#wenetspeech-wu-tts"><img src="assets/architectures/wenetspeech-wu-tts.png" alt="WenetSpeech-Wu TTS — Source figure" width="280"></a> | [WenetSpeech-Wu TTS](models/token-lm.md#wenetspeech-wu-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#wescon"><img src="assets/architectures/wescon.png" alt="WeSCon — Source figure" width="280"></a> | [WeSCon](models/token-lm.md#wescon) | Token LM | T, S → S |
+| <a href="models/token-lm.md#whisperspeech"><img src="assets/architectures/whisperspeech.svg" alt="WhisperSpeech — Editorial input/output diagram" width="280"></a><br><sub>Editorial input/output diagram</sub> | [WhisperSpeech](models/token-lm.md#whisperspeech) | Token LM | T, S → S |
+| <a href="models/token-lm.md#wordvoice"><img src="assets/architectures/wordvoice.png" alt="WordVoice — Source figure" width="280"></a> | [WordVoice](models/token-lm.md#wordvoice) | Token LM | T, S → S |
+| <a href="models/diffusion.md#x-voice"><img src="assets/architectures/x-voice.png" alt="X-Voice — Source figure" width="280"></a> | [X-Voice](models/diffusion.md#x-voice) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#x2streaming-tts"><img src="assets/architectures/x2streaming-tts.png" alt="X2Streaming-TTS — Source figure" width="280"></a> | [X2Streaming-TTS](models/token-lm.md#x2streaming-tts) | Token LM | T, S → S |
+| <a href="models/token-lm.md#xemorag"><img src="assets/architectures/xemorag.png" alt="XEmoRAG — Source figure" width="280"></a> | [XEmoRAG](models/token-lm.md#xemorag) | Token LM | T, S → S |
+| <a href="models/token-lm.md#xtts"><img src="assets/architectures/xtts.png" alt="XTTS — Source figure" width="260"></a> | [XTTS](models/token-lm.md#xtts) | Token LM | T, S → S |
+| <a href="models/flow-vae.md#yourtts"><img src="assets/architectures/yourtts.png" alt="YourTTS — Source figure" width="280"></a> | [YourTTS](models/flow-vae.md#yourtts) | Flow / VAE | T, S → S |
+| <a href="models/diffusion.md#zipvoice"><img src="assets/architectures/zipvoice.png" alt="ZipVoice — Source figure" width="226"></a> | [ZipVoice](models/diffusion.md#zipvoice) | Diffusion / flow | T, S → S |
+| <a href="models/diffusion.md#zipvoice-dialog"><img src="assets/architectures/zipvoice-dialog.png" alt="ZipVoice-Dialog — Source figure" width="230"></a> | [ZipVoice-Dialog](models/diffusion.md#zipvoice-dialog) | Diffusion / flow | T, S → S |
+| <a href="models/token-lm.md#zonos"><img src="assets/architectures/zonos.png" alt="Zonos — Source figure" width="280"></a> | [Zonos](models/token-lm.md#zonos) | Token LM | T, S → S |
 
 ---
 

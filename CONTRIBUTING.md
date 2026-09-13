@@ -15,6 +15,8 @@ The generator uses only the Python standard library. It checks metadata, duplica
 
 The optional `description` field appears on the architecture card and in [model descriptions](docs/model-descriptions.md). Keep it out of the README model table so the main index stays compact.
 
+Every model must have a visible image in the README index and its architecture card. Description entries also display the full figure. The generator adds these images from the figure manifest; keep editorial diagrams labeled wherever they appear.
+
 The [TTS-arxiv-daily collection](docs/tts-arxiv-daily.md) also requires a `description` and `github_status` (`author-linked` or `not-found`) for every included family. Keep its complete [screening ledger](data/tts-arxiv-daily.json) in sync when correcting an imported record. New imports require a first paper submission from 2025 onward; an older paper's later revision does not qualify. Record author-link evidence for GitHub sources, describe placeholders and data-only repositories, and preserve withdrawal or replacement notices. The generator checks row coverage, paper-to-model mappings, the date threshold, descriptions, images and GitHub status consistency.
 
 Do not infer architecture from a product name, equate reference conditioning with conversational understanding, or claim an acoustic model alone emits a waveform. Undated sources can remain undated. Repository timestamps are not release dates.
