@@ -32,7 +32,9 @@ Dates refer to papers or announcements, not necessarily model releases.
 
 Gemini-derived text-to-speech.
 
-[Docs 1](https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-preview-tts) · [Docs 2](https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro-preview-tts)
+Gemini 2.5 TTS converts supplied text into speech with prompt-based control of accent, pace, style and emotion. The Flash and Pro interfaces support single-speaker narration and two-speaker scripts with separately assigned voices. These are dedicated speech-generation endpoints; their internal acoustic architecture is not fully disclosed in the public documentation.
+
+[Docs 1](https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-preview-tts) · [Docs 2](https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro-preview-tts) · [Docs 3](https://ai.google.dev/gemini-api/docs/speech-generation)
 
 ![Gemini 2.5 TTS — Input/output diagram](../assets/architectures/gemini-2-5-tts.svg)
 
@@ -57,7 +59,9 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 
 Gemini-derived text-to-speech.
 
-[Docs](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-tts-preview)
+Gemini 3.1 Flash TTS adds expressive audio tags to prompt-steered speech generation, giving authors more local control over narration and delivery. It targets natural, responsive multilingual synthesis through a managed API. The public preview documentation describes the interface and controls, without enough architectural detail to reconstruct the underlying speech generator.
+
+[Docs 1](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-tts-preview) · [Docs 2](https://ai.google.dev/gemini-api/docs/speech-generation)
 
 ![Gemini 3.1 Flash TTS — Input/output diagram](../assets/architectures/gemini-3-1-flash-tts.svg)
 
@@ -82,7 +86,9 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 
 GPT-derived speech synthesizer.
 
-[Docs](https://developers.openai.com/api/docs/models/gpt-4o-mini-tts)
+GPT-4o Mini TTS combines the text to be spoken with instructions that steer accent, speed, tone and emotional delivery. The Speech API can stream audio before the full result is complete and supports several output formats. It provides a managed synthesis component for narration and voice applications; public documentation does not disclose the complete acoustic architecture.
+
+[Docs 1](https://developers.openai.com/api/docs/models/gpt-4o-mini-tts) · [Docs 2](https://developers.openai.com/api/docs/guides/text-to-speech)
 
 ![GPT-4o Mini TTS — Input/output diagram](../assets/architectures/gpt-4o-mini-tts.svg)
 
@@ -106,6 +112,8 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 ### Hume Octave TTS
 
 LLM-based expressive speech synthesis.
+
+Octave uses text context and acting instructions to adjust pronunciation, emphasis, tempo and emotional delivery. Its API supports voice creation from descriptions, voice cloning and continuation across longer passages. Octave 1 and the Octave 2 preview have different feature coverage; the public interface is documented more fully than the internal speech-model architecture.
 
 [Docs](https://dev.hume.ai/docs/text-to-speech-tts/overview)
 

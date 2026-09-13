@@ -77,9 +77,11 @@ def validate(catalog):
         raise ValueError("models must be a nonempty list")
     ids, names = set(), set()
     required = {"id", "name", "category", "inputs", "outputs", "interaction", "architecture", "notes", "variants", "source_date", "source_date_kind", "sources"}
+    optional = {"description"}
     for m in models:
-        if set(m) != required:
-            raise ValueError(f'{m.get("id", "entry")}: unexpected/missing fields: {set(m) ^ required}')
+        missing, unexpected = required - set(m), set(m) - required - optional
+        if missing or unexpected:
+            raise ValueError(f'{m.get("id", "entry")}: missing fields {missing}; unexpected fields {unexpected}')
         mid = m["id"]
         if not isinstance(mid, str) or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", mid) or mid in ids:
             raise ValueError(f"Invalid or duplicate id: {mid}")
@@ -87,6 +89,8 @@ def validate(catalog):
         for field in ("name", "architecture", "notes"):
             if not isinstance(m[field], str) or not m[field].strip():
                 raise ValueError(f"{mid}: {field} must contain text")
+        if "description" in m and (not isinstance(m["description"], str) or not m["description"].strip()):
+            raise ValueError(f"{mid}: description must contain text when provided")
         if m["name"].casefold() in names:
             raise ValueError(f'{mid}: duplicate name; disambiguate separate models')
         names.add(m["name"].casefold())
@@ -135,7 +139,12 @@ def render_category(key, models, cutoff, figures):
         visual_type = "Input/output diagram" if figure["kind"] == "io-diagram" else figure["locator"]
         lines += [
             f'<a id="{m["id"]}"></a>', "", f'### {m["name"]}', "",
-            m["architecture"].rstrip(".") + ".", "", sources(m), "",
+            m["architecture"].rstrip(".") + ".", "",
+        ]
+        if m.get("description"):
+            lines += [m["description"], ""]
+        lines += [
+            sources(m), "",
             f'![{cell(m["name"])} — {visual_type}](../{figure["path"]})', "",
             f'*{visual_type} · [Source]({figure["source_url"]})*', "",
             "<details>", "<summary>Details</summary>", "",
@@ -156,7 +165,7 @@ def render_readme(catalog, figures):
         "# Awesome TTS Architectures [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)", "", GENERATED, "",
         "A visual catalog of text-to-speech models, from Tacotron to speech language models. Diagrams, primary sources and short notes for every entry.", "",
         f'**{len(models)} models and families · Reviewed {catalog["as_of"]}**', "",
-        "[Models](#models) · [Architectures](#architectures) · [Timeline](docs/timeline.md) · [Methodology](docs/methodology.md) · [Contribute](CONTRIBUTING.md)", "",
+        "[Models](#models) · [Architectures](#architectures) · [2025–2026 descriptions](docs/model-descriptions.md) · [Timeline](docs/timeline.md) · [Methodology](docs/methodology.md) · [Contribute](CONTRIBUTING.md)", "",
         "## Architectures", "",
         "| VAE · VITS | Flow matching · F5-TTS |", "| --- | --- |",
         f'| [![VITS architecture]({figures["vits"]["path"]})](models/flow-vae.md#vits) | [![F5-TTS architecture]({figures["f5-tts"]["path"]})](models/diffusion.md#f5-tts) |', "",
@@ -177,6 +186,26 @@ def render_readme(catalog, figures):
         "[JSON catalog](data/models.json) · [Apache 2.0](LICENSE) · [Third-party figure notice](assets/architectures/FIGURE_NOTICE.md)", "",
     ]
     return "\n".join(lines)
+
+
+def render_descriptions(catalog):
+    models = sorted_models([m for m in catalog["models"] if m.get("description")])
+    lines = [
+        "# TTS model descriptions · 2025–2026", "", GENERATED, "",
+        "[← All models](../README.md#models)", "",
+        f'**{len(models)} model families and releases · Reviewed {catalog["as_of"]}**', "",
+        "Short explanations of the catalog's 2025–2026 models and family updates, including later releases of older paper families. Each entry links to its architecture image and primary sources. Verified source dates are listed in the [timeline](timeline.md); undated records remain undated.", "",
+        "<details>", "<summary>Model index</summary>", "",
+    ]
+    lines += [f'- [{m["name"]}](#{m["id"]})' for m in models]
+    lines += ["", "</details>", "", "## Descriptions", ""]
+    for m in models:
+        lines += [
+            f'<a id="{m["id"]}"></a>', "", f'### {m["name"]}', "",
+            m["description"], "",
+            f'[Architecture and figure]({link(m, "../")}) · {sources(m)}', "",
+        ]
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def render_timeline(catalog):
@@ -233,6 +262,7 @@ def main():
         figures = manifest["models"]
         outputs = {
             ROOT / "README.md": render_readme(catalog, figures),
+            ROOT / "docs/model-descriptions.md": render_descriptions(catalog),
             ROOT / "docs/timeline.md": render_timeline(catalog),
             ROOT / "assets/architectures/CREDITS.md": render_credits(models, manifest),
         }
@@ -254,7 +284,8 @@ def main():
         if stale:
             raise ValueError("Stale generated files: " + ", ".join(stale) + "; run python3 scripts/catalog.py")
         unique_sources = {s["url"] for m in models for s in m["sources"]}
-        print(f'{"Checked" if args.check else "Rendered"} {len(models)} entries, {len(unique_sources)} unique primary sources, {len(figures)} model visuals; catalog integrity, figure assets and local links OK.')
+        described = sum(bool(m.get("description")) for m in models)
+        print(f'{"Checked" if args.check else "Rendered"} {len(models)} entries, {described} descriptions, {len(unique_sources)} unique primary sources, {len(figures)} model visuals; catalog integrity, figure assets and local links OK.')
     except (ValueError, KeyError, TypeError, OSError) as exc:
         print(f"Catalog error: {exc}", file=sys.stderr)
         return 1

@@ -105,7 +105,9 @@ Learns speech infilling without a phoneme aligner or explicit duration predictor
 
 Flow-matching Transformer with ConvNeXt text refinement.
 
-[Paper](https://arxiv.org/abs/2410.06885)
+F5-TTS learns text-guided speech infilling with flow matching, refining character representations before a Transformer predicts the speech trajectory. A reference clip supplies voice context, and Sway Sampling controls how inference steps are distributed. The 2025 v1 Base release refines training and inference within the same general architecture for zero-shot speech synthesis.
+
+[Paper](https://arxiv.org/abs/2410.06885) · [Repository](https://github.com/SWivid/F5-TTS)
 
 ![F5-TTS — Figure 1](../assets/architectures/f5-tts.png)
 
@@ -117,6 +119,8 @@ Flow-matching Transformer with ConvNeXt text refinement.
 **Input → output:** T, S → S · **Interaction:** generation
 
 Pads character sequences to speech length and learns text-guided audio infilling; Sway Sampling adjusts inference steps.
+
+**Variants:** F5-TTS v1 Base.
 
 </details>
 
@@ -167,6 +171,8 @@ An ODE decoder generates mel spectrograms from aligned text representations, fol
 ### MegaTTS 3
 
 Sparse-alignment latent diffusion Transformer.
+
+MegaTTS 3 guides a latent diffusion Transformer with sparse text-speech alignment boundaries, leaving the model room to learn finer timing. Classifier-free guidance controls accent strength, while piecewise rectified flow reduces sampling work. The design targets robust zero-shot voice synthesis with more flexible alignment than a fully fixed duration sequence.
 
 [Paper](https://arxiv.org/abs/2502.18924)
 

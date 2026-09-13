@@ -6,7 +6,7 @@ A visual catalog of text-to-speech models, from Tacotron to speech language mode
 
 **117 models and families · Reviewed 2026-09-13**
 
-[Models](#models) · [Architectures](#architectures) · [Timeline](docs/timeline.md) · [Methodology](docs/methodology.md) · [Contribute](CONTRIBUTING.md)
+[Models](#models) · [Architectures](#architectures) · [2025–2026 descriptions](docs/model-descriptions.md) · [Timeline](docs/timeline.md) · [Methodology](docs/methodology.md) · [Contribute](CONTRIBUTING.md)
 
 ## Architectures
 

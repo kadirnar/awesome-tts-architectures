@@ -33,6 +33,8 @@ Dates refer to papers or announcements, not necessarily model releases.
 
 Compact neural speech synthesis with ONNX inference.
 
+KittenTTS provides small ONNX speech models with built-in voices and adjustable playback speed. The Mini, Micro and Nano releases offer different size and inference tradeoffs for CPU-oriented applications. The official README documents usage more fully than internal acoustic design, so the catalog presents it as a compact synthesis family without asserting an undisclosed architecture.
+
 [Repository](https://github.com/KittenML/KittenTTS)
 
 ![KittenTTS — Input/output diagram](../assets/architectures/kitten-tts.svg)
@@ -57,6 +59,8 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 ### Kokoro
 
 StyleTTS 2-derived decoder with iSTFTNet.
+
+Kokoro's 2025 v1.0 release uses a compact StyleTTS 2-derived decoder with an iSTFTNet waveform generator. The released model relies on preset voice representations and omits style diffusion and a reference encoder. It is suited to lightweight narration and application speech where a small synthesis model and ready-made voices are useful.
 
 [Model card](https://huggingface.co/hexgrad/Kokoro-82M)
 
@@ -83,6 +87,8 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 
 Compact speech synthesis with iterative ONNX inference.
 
+The original Supertonic release provides English speech synthesis through a compact ONNX pipeline and supplied voice-style assets. It is designed to run on the user's device and exposes inference controls without requiring a cloud speech call. The public release is centered on preset voices; its model card does not fully specify the internal architecture.
+
 [Model card](https://huggingface.co/Supertone/supertonic)
 
 ![Supertonic — Input/output diagram](../assets/architectures/supertonic.svg)
@@ -106,6 +112,8 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 
 Multilingual compact speech synthesis with ONNX inference.
 
+Supertonic 2 extends the local ONNX synthesis line to five languages while retaining voice-style conditioning and a compact model. It provides a practical path to multilingual narration on devices that can run the supplied inference stack. Creating a new voice-style asset is a separate workflow from generating speech with an existing asset.
+
 [Model card](https://huggingface.co/Supertone/supertonic-2)
 
 ![Supertonic 2 — Input/output diagram](../assets/architectures/supertonic-2.svg)
@@ -128,6 +136,8 @@ Editorial summary of documented inputs and outputs; internal architecture is not
 ### Supertonic 3
 
 Compact multilingual synthesis with expression controls.
+
+Supertonic 3 expands language coverage and adds expression tags while keeping local ONNX inference and preset voice styles. The release targets more reliable reading across short and long text, with controls for events such as breaths or laughter. Custom voice-style creation is offered through a separate service; downloaded styles can then condition local synthesis.
 
 [Model card](https://huggingface.co/Supertone/supertonic-3)
 

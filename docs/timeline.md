@@ -4,7 +4,7 @@
 
 [← Model index](../README.md#models)
 
-Reviewed as of **2026-09-13**. 82 entries have a verified source date; 35 are undated in this catalog.
+Reviewed as of **2026-09-13**. 83 entries have a verified source date; 34 are undated in this catalog.
 
 These are dates of the linked paper or explicitly dated announcement. An arXiv submission can precede or follow model/weights/API availability. A paper's first submission date can also precede the release of variants discussed in later revisions. Repository updates, API snapshot suffixes and model training cutoffs are not treated as release dates.
 
@@ -17,6 +17,7 @@ These are dates of the linked paper or explicitly dated announcement. An arXiv s
 | 2026-03-18 | [MOSS-TTS](../models/token-lm.md#moss-tts) | paper | [Paper](https://arxiv.org/abs/2603.18090) · [Repository](https://github.com/OpenMOSS/MOSS-TTS) |
 | 2026-03-09 | [Fish Audio S2](../models/token-lm.md#fish-audio-s2) | paper | [Paper](https://arxiv.org/abs/2603.08823) · [Repository](https://github.com/fishaudio/fish-speech) |
 | 2026-01-22 | [Qwen3-TTS](../models/token-lm.md#qwen3-tts) | paper | [Paper](https://arxiv.org/abs/2601.15621) · [Repository](https://github.com/QwenLM/Qwen3-TTS) |
+| 2026-01-09 | [Higgs Audio v2.5](../models/token-lm.md#higgs-audio-v2-5) | announcement | [Announcement](https://www.boson.ai/blog/higgs-audio-v2.5) |
 | 2026-01-07 | [IndexTTS 2.5](../models/token-lm.md#indextts-2-5) | paper | [Paper](https://arxiv.org/abs/2601.03888) |
 | 2025-12-16 | [GLM-TTS](../models/token-lm.md#glm-tts) | paper | [Paper](https://arxiv.org/abs/2512.14291) · [Repository](https://github.com/zai-org/GLM-TTS) |
 | 2025-09-29 | [VoxCPM](../models/continuous-lm.md#voxcpm) | paper | [Paper](https://arxiv.org/abs/2509.24650) |
@@ -25,16 +26,16 @@ These are dates of the linked paper or explicitly dated announcement. An arXiv s
 | 2025-08-26 | [VibeVoice](../models/continuous-lm.md#vibevoice) | paper | [Paper](https://arxiv.org/abs/2508.19205) |
 | 2025-08-08 | [Llasa+](../models/token-lm.md#llasa-plus) | paper | [Paper](https://arxiv.org/abs/2508.06262) |
 | 2025-06-23 | [IndexTTS2](../models/token-lm.md#indextts2) | paper | [Paper](https://arxiv.org/abs/2506.21619) |
-| 2025-05-23 | [CosyVoice 3](../models/token-lm.md#cosyvoice-3) | paper | [Paper](https://arxiv.org/abs/2505.17589) |
+| 2025-05-23 | [CosyVoice 3](../models/token-lm.md#cosyvoice-3) | paper | [Paper](https://arxiv.org/abs/2505.17589) · [Repository](https://github.com/QwenAudio/CosyVoice) |
 | 2025-05-12 | [MiniMax-Speech](../models/token-lm.md#minimax-speech) | paper | [Paper](https://arxiv.org/abs/2505.07916) |
 | 2025-03-03 | [Spark-TTS](../models/token-lm.md#spark-tts) | paper | [Paper](https://arxiv.org/abs/2503.01710) · [Repository](https://github.com/SparkAudio/Spark-TTS) |
 | 2025-02-26 | [MegaTTS 3](../models/diffusion.md#mega-tts-3) | paper | [Paper](https://arxiv.org/abs/2502.18924) |
-| 2025-02-17 | [Step-Audio-TTS](../models/token-lm.md#step-audio-tts) | paper | [Paper](https://arxiv.org/abs/2502.11946) |
+| 2025-02-17 | [Step-Audio-TTS](../models/token-lm.md#step-audio-tts) | paper | [Paper](https://arxiv.org/abs/2502.11946) · [Repository](https://github.com/stepfun-ai/Step-Audio) |
 | 2025-02-08 | [IndexTTS](../models/token-lm.md#indextts) | paper | [Paper](https://arxiv.org/abs/2502.05512) |
 | 2025-02-06 | [Llasa](../models/token-lm.md#llasa) | paper | [Paper](https://arxiv.org/abs/2502.04128) |
 | 2024-12-13 | [CosyVoice 2](../models/token-lm.md#cosyvoice-2) | paper | [Paper](https://arxiv.org/abs/2412.10117) |
 | 2024-11-02 | [Fish Speech](../models/token-lm.md#fish-speech) | paper | [Paper](https://arxiv.org/abs/2411.01156) · [Repository](https://github.com/fishaudio/fish-speech) |
-| 2024-10-09 | [F5-TTS](../models/diffusion.md#f5-tts) | paper | [Paper](https://arxiv.org/abs/2410.06885) |
+| 2024-10-09 | [F5-TTS](../models/diffusion.md#f5-tts) | paper | [Paper](https://arxiv.org/abs/2410.06885) · [Repository](https://github.com/SWivid/F5-TTS) |
 | 2024-09-05 | [FireRedTTS](../models/token-lm.md#fireredtts) | paper | [Paper](https://arxiv.org/abs/2409.03283) |
 | 2024-09-01 | [MaskGCT](../models/token-lm.md#maskgct) | paper | [Paper](https://arxiv.org/abs/2409.00750) |
 | 2024-07-07 | [CosyVoice](../models/token-lm.md#cosyvoice) | paper | [Paper](https://arxiv.org/abs/2407.05407) |
@@ -110,7 +111,6 @@ These entries remain searchable without assigning a guessed publication or relea
 - [GPT-4o Mini TTS](../models/api.md#gpt-4o-mini-tts)
 - [GPT-SoVITS](../models/token-lm.md#gpt-sovits)
 - [Higgs Audio v2](../models/token-lm.md#higgs-audio-v2)
-- [Higgs Audio v2.5](../models/token-lm.md#higgs-audio-v2-5)
 - [Higgs Audio v3 TTS](../models/token-lm.md#higgs-audio-v3-tts)
 - [Hume Octave TTS](../models/api.md#hume-octave-tts)
 - [KittenTTS](../models/compact.md#kitten-tts)

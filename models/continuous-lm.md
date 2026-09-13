@@ -33,6 +33,8 @@ Dates refer to papers or announcements, not necessarily model releases.
 
 Continuous autoregressive FlowLM.
 
+Pocket TTS uses continuous autoregressive speech modeling with a flow-based output mechanism, avoiding long sequences of discrete acoustic codebooks. It combines a small language-model backbone with streaming audio reconstruction and reusable voice conditioning. The project targets CPU-based speech synthesis; language-specific models and runtime choices affect its speed and voice behavior.
+
 [Repository](https://github.com/kyutai-labs/pocket-tts) · [Paper](https://arxiv.org/abs/2509.06926)
 
 ![Pocket TTS — Figure 1](../assets/architectures/pocket-tts.png)
@@ -55,6 +57,8 @@ Small streaming synthesizer derived from continuous audio language modeling.
 ### VibeVoice
 
 Next-token diffusion over continuous speech latents.
+
+VibeVoice autoregressively generates continuous speech latents with a diffusion head, using compressed acoustic and semantic representations to extend context. It targets long, multi-speaker recordings in which voices and delivery should remain coherent across a script. The original research studies recordings lasting up to 90 minutes with four speakers; those limits do not describe every family variant.
 
 [Paper](https://arxiv.org/abs/2508.19205)
 
@@ -79,7 +83,9 @@ Synthesizes long scripted conversations; ASR is a separate model in the same pro
 
 Streaming next-token diffusion.
 
-[Repository](https://github.com/microsoft/VibeVoice)
+VibeVoice-Realtime interleaves incoming text chunks with diffusion-based acoustic generation so playback can begin while more text is arriving. The smaller 0.5B design keeps the acoustic tokenizer and removes the semantic tokenizer used by the longer-form model. It focuses on single-speaker streaming, with preset voice embeddings and experimental language coverage documented separately.
+
+[Repository](https://github.com/microsoft/VibeVoice) · [Docs](https://github.com/microsoft/VibeVoice/blob/main/docs/vibevoice-realtime-0.5b.md)
 
 ![VibeVoice-Realtime — Official architecture diagram](../assets/architectures/vibevoice-realtime.png)
 
@@ -101,6 +107,8 @@ Incremental text-to-speech member of the VibeVoice family.
 ### VoxCPM
 
 Hierarchical semantic/acoustic LM and diffusion.
+
+VoxCPM divides synthesis into semantic/prosodic planning and residual acoustic modeling, then uses a local diffusion decoder to produce continuous speech latents. These components are trained together without an external discrete speech tokenizer. Reference conditioning supports voice cloning, while text context helps determine the rhythm and expressive shape of the generated utterance.
 
 [Paper](https://arxiv.org/abs/2509.24650)
 
@@ -124,6 +132,8 @@ Tokenizer-free speech generation with voice conditioning.
 ### VoxCPM2
 
 Hierarchical diffusion-autoregressive model.
+
+VoxCPM2 expands the same hierarchical approach to multilingual synthesis, voice design and style-controlled cloning within one backbone. An asymmetric AudioVAE encodes lower-rate audio and reconstructs higher-rate output, while a unified input sequence expresses the different generation tasks. It serves applications that need both reference-based voices and description-driven control from one model family.
 
 [Paper](https://arxiv.org/abs/2606.06928) · [Repository](https://github.com/OpenBMB/VoxCPM)
 

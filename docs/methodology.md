@@ -40,6 +40,8 @@ Modality sets summarize the family. They do not promise all combinations for all
 
 Architecture and capability statements use linked papers, developer repositories, model cards and official documentation. Review levels distinguish abstracts, READMEs and other source types; they do not imply reproducing results or running model weights. Source dates mean first paper submissions or explicitly dated announcements, not necessarily release dates. Missing dates remain blank.
 
+The [2025–2026 descriptions](model-descriptions.md) explain synthesis methods, voice controls and intended use in one paragraph per family. This collection includes later releases of older families, such as F5-TTS v1 Base, without changing their original paper dates. Descriptions distinguish paper proposals from released controls and avoid inferring undisclosed architecture from API behavior.
+
 Every card has a local image. Paper or developer figures retain attribution and their original download URL in [figure credits](../assets/architectures/CREDITS.md). Multi-panel PDF excerpts preserve the technical content. Where a suitable primary-source figure is unavailable, a generated SVG explicitly summarizes documented inputs and outputs without inventing internal architecture. Third-party figures retain their own rights; see the [figure notice](../assets/architectures/FIGURE_NOTICE.md).
 
 The catalog format and initial speech-generation entries are adapted from [Awesome Omni Architectures](https://github.com/kadirnar/awesome-omni-architectures). The TTS scope additionally includes conventional neural acoustic models and diffusion systems. The [neural speech synthesis survey](https://arxiv.org/abs/2106.15561) was used for discovery; model-level claims cite their own primary sources.
